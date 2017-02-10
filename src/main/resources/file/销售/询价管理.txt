@@ -1,0 +1,29 @@
+询价编码 inquiry_code     inquCode
+询价日期 inquiry_date     inquName
+客户编码 customer_code    custCode
+客户名称 customer_name    custName
+客户电话 customer_tel     custTel
+客户地址 customer_addr    custAddr
+客户联系人 customer_contact_by     custContactBy
+客户联系人电话 customer_contact_by_tel   custContactByTel
+客户联系人邮箱 customer_contact_by_email  custContactByEmail
+客户联系人移动电话 customer_contact_phone  custContactByPhone
+通知人编码   notifier_code   notifierCode
+通知人名称 notifier_name     notifierName
+备注 remark
+
+
+询价子表------
+
+产品编码 product_code    prodCode
+产品名称 product_name    prodName
+型号规格 type_model      typeModel
+数量 qty
+单位 unit
+单价  univalent
+货币 currency
+制造商编码 manufacturer_code     manufaCode
+制造商名称 manufacturer_name      manufaName
+货期（交期） delivery_time       delivTime
+备注 remark
+

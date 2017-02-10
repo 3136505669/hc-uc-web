@@ -1,0 +1,14 @@
+报销编号 reimbursementCode      reimburCode
+提 请 人 drawBy
+费用科目 exacct
+报 销 人 ReimbursementBy     reimburBy
+报销部门 ReimbursementDept    reimburDept
+报销日期 ReimbursementDate    reimburDate
+报销金额 ReimbursementAmount    reimburAmount
+用途说明 ApplicationDescription          ApplicaDesc  
+审批情况 examineandapprovesituation       examApprovSituat
+第一审批用户 firstexamineandapproveuser  firstExamAppruser
+第二审批用户 secondexamineandapproveuser  secondExamAppruser
+第三审批用户 thirdexamineandapproveuser    thirdExamAppruser
+审批意见  examineandapproveopinion         examApprOpinion
+备　　注 Remark                   remark

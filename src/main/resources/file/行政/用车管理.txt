@@ -1,0 +1,25 @@
+用车单编码 use_car_code  useCarCode
+出发地点 place_of_departure   placeDeparture
+是否单程 or_not_one_way      orNotOneWay
+目的地 destination
+申请原因 apply_reason         applyReason
+用车人员编码 use_car_by_code       useCarByCode
+用车人员名称 use_car_by_name       useCarByName
+用车人数 use_car_by_qty            useCarByQty
+申请用车时间 apply_use_car_date    applyUseCarDate
+用车结束时间 use_car_end_date        useCarEndDate
+预计使用天数 expect_use_fatalism    expectUseFatalism
+部门  dept
+车牌 plate_number           plateNumber
+司机编码 driver_code         driverCode
+司机名称 driver_name              driverName
+出发时间  depart_date              departDate
+公里表 Kilometer
+出发记录人 depart_record_by          departRecordBy
+返回时间 back_date                   backDate
+返回公里表 back_Kilometer           bacKilometer
+实际行驶 actual_run                   actualRun
+返回记录人 back_record_by             backRecordBy
+实际使用天数 actual_use_fatalism            actualUseFatalism
+备注  remark
+

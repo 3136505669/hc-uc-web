@@ -1,0 +1,51 @@
+合同编码 contract_code    contractCode
+购买方（甲方）编码 buy_code  buyCode
+购买方（甲方）名称 buy_name   buyName
+购买方（甲方）地址  buy_addr  buyAddr
+购买方（甲方）电话 buy_tel   buyTel
+购买方（甲方）传真 buy_fax   buyFax
+购买方（甲方）联系人 buy_contact_by  buyContactBy
+销售方（乙方）编码 sales_code  salesCode
+销售方（乙方）名称 sales_name  salesName
+销售方（乙方）地址 sales_addr  salesAddr
+销售方（乙方）电话 sales_tel   salesTel
+销售方（乙方）传真 sales_fax   salesFax
+销售方（乙方）联系人 sales_contact_by   salesContactBy
+合同内容 contract_content    contractContent
+合同文件 contract_file       contractFile
+合同文件1 contract_file1   contractFile1
+合同文件2 contract_file2   contractFile2
+合同图片1 contract_image1   contractImage1
+合同图片2 contract_image2   contractImage2
+合同图片3 contract_image3   contractImage3
+购买方（甲方）代表编码 buy_represent_code   buyRepreCode
+购买方（甲方）代表名称 buy_represent_name   buyRepreName
+购买方（甲方）签字日期 buy_sign_date        buySignDate
+销售方（乙方）代表编码 sales_represent_code    salesRepreCode
+销售方（乙方）代表名称 sales_represent_name     salesRepreName
+销售方（乙方）签字日期 sales_sign_date      salesSignDate
+
+申请人编码  apply_by_code  applByCode
+申请人名称  apply_by_name   applByName
+审批人编码 examine_approve_by_code   examApprByCode
+审批人名称 examine_approve_by_name   examApprByName
+审批意见 examine_approve_opinion     examApprOpinion
+终审人编码 Final_judge_code      FinalJudgeCode
+终审人名称  Final_judge_name     FinalJudgeName
+复审意见 review_opinion      reviewOpinion
+备注 remark                  remark
+
+
+
+合同子表------ 
+产品编码 product_code    prodCode
+产品名称 product_name    prodName
+型号规格 type_model      typeModel
+产品描述  product_desc   prodDesc
+客户型号  customer_type  custType
+数量 qty           qty
+单位 unit   unit
+单价  univalent    univalent
+货币 currency  currency
+备注 remark  remark
+

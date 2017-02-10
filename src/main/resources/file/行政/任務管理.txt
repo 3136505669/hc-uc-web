@@ -1,0 +1,33 @@
+任务编码  task_code  taskCode
+下达任务日期 Issued_task_date   issuedTaskDate
+任务完成日期 finish_task_date    finishTaskDate
+任务主题  task_subject     taskSubject
+任务内容  task_Content           taskContent
+任务负责人 task_respBy             taskRespBy
+任务参与人  task_involvBy            taskInvolvBy
+关联着  AssociatedBy              associatedBy
+下达任务者 Issued_taskBy                issuedTaskBy
+备注  remart 
+任务完成情况  task_finish_situation     taskFinSituation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

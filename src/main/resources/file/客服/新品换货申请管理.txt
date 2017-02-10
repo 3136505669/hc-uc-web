@@ -1,0 +1,43 @@
+新品换货申请单编码 New_barter_apply_code       newBarApplyCode
+申请员工编码 apply_Employee_code     applyEmployeeCode
+申请员工名称 apply_Employee_name      applyEmployeeName
+所在部门 location_dept                  locationDept
+申请日期  apply_date                   applyDate
+从哪个公司编码  from_comp_code           fromCompCode
+从哪个公司名称  from_comp_name           fromCompName
+到哪个公司编码  to_comp_code            toCompCode
+到哪个公司名称  to_comp_name          toCompName
+从哪个公司联系电话  from_comp_tel   fromCompTel
+从哪个公司联系传真  from_comp_fax   fromCompFax
+从哪个公司地址  from_comp_addr      fromCompAddr
+从哪个公司邮编  from_comp_zip                fromCompZip
+从哪个公司联系人  from_comp_contast_by         fromCompContastBy
+到哪个公司联系电话 to_comp_tel  toCompTel
+到哪个公司联系传真 to_comp_fax   toCompFax
+到哪个公司邮编 to_comp_zip              toCompZip
+到哪个公司联系人 to_comp__contast_by   toCompContastBy 
+PI单号 pi_order_no                           piOrderNo
+收件日期 consignee_date                  consigneeDate
+销货日期 sales_date                  salesDate
+检验情况----
+检验日期 checkout_date                  checkoutDate
+现象描述 Phenomenon_description            PhenomenonDesc
+结论 conclusion
+---------
+技术工程师意见 technology_opinion          techOpinion
+分公司经理意见  manager_opinion              managerOpinion
+总公司技术主管意见 charge_opinion             chargeOpinion
+是否收到坏品 or_not_get_Bad                   orNotGetBad
+OP处理意见  op_handle_opinion               opHandleOpinion
+备注  remark
+
+
+新品换货子表---
+型号 model
+序列号 serial_no                          serialNo
+要求换货原因 require_barter_reason             requiBartReason
+运行环境 JRE                 jre
+购买日期 buy_date              buyDate
+备注  remark
+
+

@@ -1,0 +1,25 @@
+销售机会单编码 sales_opportunities_code   salesOpportCode
+销售机会 sales_opportunities     salesOpport
+销售进度 sales_opportunities_schedule   salesOpportSch
+机会来源 opportunities_source   opportSource
+销售员编码 sales_code   salesCode
+销售员名称 sales_name   salesName
+公司编码 company_code   compCode
+公司名称 company_name   compName
+公司邮编 company_zip   compZip
+公司地址 company_addr   compAddr
+公司联系人 company_contact_by  compContactBy
+公司联系电话 company_tel  compTel
+公司联系传真 company_fax   compFax
+预计金额 expect_sum      expectSum
+创建日期 creaty_by     creatyBy
+结束日期 end_date     endDate
+成功率估计 Success_rate_estimate   SucRateEstimate
+当前状态 current_state    currentState
+终止原因 end_reason      endReason
+最后更新人编码 updated_by_code    updatedByCode
+最后更新人名称 updated_by_name   updatedByName
+相关描述 related_description   relatDesc
+备注 remark
+
+

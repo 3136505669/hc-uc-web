@@ -1,0 +1,30 @@
+转正申请编码  Positive_apply_code           positApplyCode
+转正员工编码  Positive_Employee_code             PositiEmploCode
+转正员工名称  Positive_Employee_name       PositiEmploName
+提请人  drawBy
+职位  position
+到岗日期 To_gang_date             toGangDate
+申请日期  apply_date                applyDate
+应转正日期 should_Positive_date               shouPosiDate
+转正申请内容 Positive_apply_Contents        PosiApplyContents
+转正状态  Positive_State            PositiveState
+备注    remark
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

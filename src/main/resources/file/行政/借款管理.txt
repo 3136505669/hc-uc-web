@@ -1,0 +1,13 @@
+借款编号 loanCode
+借款主题
+借 款 人 loanBy
+借款日期 loanDate
+借款金额 loanAmount
+借款事由 loanReason
+预计还款报销日期 Expected_Repayment_reimbursement_date    expRepayReimburDate
+提 请 人 drawBy
+审批情况 examineandapprovesituation       examApprovSituat
+第一审批用户 firstexamineandapproveuser  firstExamAppruser
+第二审批用户 secondexamineandapproveuser  secondExamAppruser
+第三审批用户 thirdexamineandapproveuser    thirdExamAppruser
+审批意见  examineandapproveopinion         examApprOpinion

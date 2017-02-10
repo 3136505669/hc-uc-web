@@ -1,0 +1,27 @@
+客户服务单编码 customer_serve_code   custServeCode
+客户服务单主题 customer_serve_theme   custServeTheme
+服务类别 serve_type             serveType
+服务等级 serve_level            serveLevel
+当前状态 current_state          currentState
+服务日期 serve_date             serveDate
+订单号 order_no               orderNo
+合同号  pact_no                    pactNo
+结束日期 end_date              endDate
+产品编码  product_code            prodCode
+产品型号  product_model          prodModel
+产品名称 product_name            prodName
+数量 qty
+单位 unit
+所在部门 location_dept          locationDept
+部门编号 dept_code                deptCode
+技术问题  technical_matters             technicalMatters
+客户编码 customer_code    custCode
+客户名称 customer_name     custName
+业务员 business_by          businessBy
+服务内容 serve_content      serveContent
+登记人 register_by            registerBy
+登记日期 register_date
+责任人 answer_for_by            answerForBy
+备注  remark
+
+

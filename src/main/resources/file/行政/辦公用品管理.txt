@@ -1,0 +1,29 @@
+申 请 人 apply_by    applyBy  
+申请日期 apply_date     applyDate
+申 领 人 Apply_for_By    ApplyForBy
+联 系 人 Contact_By    ContactBy
+联系电话 Contact_Tel   ContactTel
+类　　别 category
+货　　币 currency
+备　　注 remark
+审 批 人  examineandapproveBy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

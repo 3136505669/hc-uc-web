@@ -1,0 +1,34 @@
+奖惩编码 Reward_and_punishment_code   rewardPunishCode
+员工编码 Employee_code     employCode
+员工姓名 Employee_name     employName
+公司编码 company_code      compCode
+公司名称 company_name       compName
+部门  dept
+职位 position
+奖惩种类  Reward_and_punishment_species       rewardPunishSpec
+奖惩依据  Reward_and_punishment_according_to  rewardPunSpecAccTo
+提请人  drawBy
+所在部门 location_dept            locaDept
+登记日期 register_date            registerDate
+奖惩原因 Reward_and_punishment_reason     rewardPunishReason
+备注  remark
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

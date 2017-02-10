@@ -1,0 +1,24 @@
+辞职单编码 resign_code       resignCode
+辞职人编码  resign_by_code    resignByCode
+辞职人名称 resign_by_name     resignByName
+辞职类别 resign_type        resignType
+个人原因 personal_reasons             perReasons
+提请人编码 Draw_by_code     drawByCode
+提请人名称 Draw_by_name     drawByName
+辞职时间 resign_date       resignDate
+辞职事由 resign_Reason         resignReason
+备注  remark
+
+
+
+
+
+
+
+
+
+
+
+
+
+

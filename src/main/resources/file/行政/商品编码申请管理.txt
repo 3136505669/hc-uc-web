@@ -1,0 +1,18 @@
+商品编码申请单编码 goods_no_apply_code     goodsNoApplCode
+申请员工编码 apply_Employee_code       applyEmployCode
+申请员工名称 apply_Employee_name       applyEmployName
+所在部门 location_dept                locationDept
+申请日期  apply_date                  applyDate
+物品编码 goods_code                  goodsCode
+物品名称 goods_name                   goodsName
+所属大分类  The_large_assortment      theLargeAssortment
+规格型号 Specification_model           SpecModel
+具体参数 Specific_parameters         SpecParameters
+颜色 colour
+尺寸结构 Size_structure              sizeStructure
+厂家编码 vender_code                   venderCode
+厂家名称 vender_name                venderName
+图片   image_log                     imageLog
+备注 remark 
+
+

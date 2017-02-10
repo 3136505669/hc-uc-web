@@ -1,0 +1,34 @@
+维修单编码 maintain_code    maintainCode
+业务员编码 salesman_code          salesmanCode
+业务员名称 salesman_name         salesmanName
+维修员编码 maintain_by_code         maintainByCode
+维修员名称 maintain_by_name       maintainByName
+客户编码 customer_code                  custCode
+客户名称 customer_name                  custName
+客户地址 customer_addr               custAddr
+客户电话 customer_tel                custTel
+客户传真 customer_fax              custFax
+客户联系人 customer_contact_by           custContactBy
+客户邮箱 customer_email                     custEmail
+维修类别 maintain_type                        maintainType
+外发厂编码 putting_out_factory_code          puttOutFactCode
+外发厂名称 putting_out_factory_name         puttOutFactName
+产品编码 product_code               prodCode
+产品名称   product_name     prodName
+机身号码 airframe_no         airframeNo
+处理方式 process_mode          processMode
+运费支付 freight_payment     freightPayment
+保修 guarantee
+运费 freight
+运输方式 transport_mode         transportMode
+数量  qty
+单位 unit
+费用支付 cost_payment        costPayment
+收件日期 consignee_date           consigneeDate
+故障现象 fault_phenomenon          faultPhenomenon
+故障原因 fault_reason             faultReason
+维修记录 maintain_record           maintainRecord
+维修费用 maintain_cost             maintainCost
+备注  remark
+
+

@@ -1,0 +1,38 @@
+盖章单编码 seal_code  sealCode
+借用部门 borrow_dept  borrowDept
+经办人编码 handle_by_Code  handleByCode
+经办人名称 handle_by_name    handleByName
+借印人编码 Borrow_India_by_code    borrowIndiaByCode
+借印人名称 Borrow_India_by_name    borrowIndiaByName
+借出时间 loan_date             loanDate
+使用期限 use_term             useTerm
+借印类别 Borrow_India_type       borrowIndiaType
+重要内容说明 Important_content_description       imporContentDesc
+使用范围 use_scope     useScope
+用印承诺 India_Promise        indiaPromise
+用印内容 India_content           indiaContent
+用印见证人 India_witness_by     indiaWitnBy
+备注 remark
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

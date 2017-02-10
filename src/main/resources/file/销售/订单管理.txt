@@ -1,0 +1,39 @@
+订单编码  order_code                    orderCode
+责任人编码 person_liable_code           perLiabCode
+责任人名称 person_liable_name           perLiabName
+仓库编码   warehouse_code               warehouseCode
+仓库名称   warehouse_name               warehouseName
+客户编码 customer_code                  custCode
+客户名称 customer_name                  custName
+收货地址  take_delivery_addr            takDelivAddr
+收货人    take_delivery_by              takDelivBy
+联系电话  contact_tel                   contactTel
+是否预付  or_not_prepay                 orNotPrepay
+其它费用   other_charges                otherCharges
+发票 invoice                            invoice
+运输方式 transport_mode                 transportMode
+合同编码 contract_code                  contractCode
+付款方式 payment_mode                   paymentMode
+付款天数 payment_day_qty                paymentDayQty
+客户交期 customer_delivery_time         custDelivTime
+运费负担 freight_burden                 freightBurden
+运费金额 freight_sum                    freightSum
+货币 currency                           currency
+订单日期 order_date                     orderDate
+银行 bank                               bank
+审批人编码 examine_approve_by_code      exaApprByCode
+审批人名称 examine_approve_by_name      exaApprByName
+备注  remark                            remark
+
+订单子表------
+
+产品编码 product_code               prodCode
+产品名称 product_name               prodName
+型号规格 type_model                 typeModel
+产品描述  product_desc              prodDesc
+订单数量 order_qty                  orderQty
+单位 unit                           unit
+单价  univalent                     univalent
+货币 currency                       currency
+备注 remark                         remark
+

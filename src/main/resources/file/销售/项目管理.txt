@@ -1,0 +1,25 @@
+项目编码  project_code      projtCode
+项目名称  project_name    projtName
+申请人编码  apply_by_code   applByCode
+申请人名称  apply_by_name   applByName
+负责人编码 person_in_charge_by_code    perChargeByCode
+负责人名称 person_in_charge_by_name    perChargeByName
+项目金额  project_sum   projtSum
+项目阶段  project_stage  projtStage 
+立项日期 project_approval_date   projtApprDate
+项目来源 project_source  projtSource
+成功率估计 success_rate_estimate   sucRateEstimate
+当前状态 current_state   currentState
+终止原因 end_reason      endReason
+客户编码 customer_code    custCode
+客户名称 customer_name    custName
+联系人  contact_by      contactBy
+联系电话 contact_tel    contactTel
+项目简介、主要产品及数量 Introduction    introduction
+跟进措施 Root_measure       rootMeasure
+需配合/支持措施 cooperate_Root_measure  coopRootMeasure
+结　　果 result
+小　　结 summary
+备注 remark
+
+

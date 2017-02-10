@@ -1,0 +1,12 @@
+日程編碼  agenda_for_the_day_code  agendaForDayCode
+日程类型  agenda_for_the_day_type   agendaForDayType
+日程名称  agenda_for_the_day_name       agendaForDayName
+日程员工  agenda_for_the_day_Employee   agendaForDayEmploy
+开始时间  start_date           startDate
+结束时间  end_date            endDate
+是否提醒  or_not_remind           orNotRemind
+提醒时间  remind_date          remindDate
+所在部门  location_dept             locationDept
+是否共享  or_not_share      orNotShare
+日程描述  agenda_for_the_day_describe    agendaForDayDescribe
+备注      remark

@@ -1,0 +1,41 @@
+出差单编码 evection_code     evectionCode
+出差员工id evection_Employee_id     evectionEmployId
+出差员工姓名 evection_Employee_name   evectionEmployName
+提请人 DrawBy                  drawBy
+申请日期 apply_date              applyDate
+目的地 destination
+出差日期 evection_date            evectionDate
+出差目的 evection_goal              evectionGoal
+访问公司名称 visit_company_name            visitCompName
+访问公司编码 visit_company_code            visitCompCode
+联系人编码 Contact_code              contactCode
+联系人姓名 Contact_name          contactName
+联系人电话 Contact_tel          contactTel
+访问主要事由 visit_Reason      visitReason
+访问备注 visit_Remark              visitRemark
+交通费用 traffic_Cost              trafficCost
+食宿费用 board and lodging_Cost     boardLodCost
+其他费用 other_Cost           otherCost
+费用备注 Cost_remark           costRemark
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

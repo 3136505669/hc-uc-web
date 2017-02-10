@@ -1,0 +1,47 @@
+佣金申请单编码  commission_apply_code    commiApplyCode
+申请员工编码 apply_Employee_code         applyEmployCode
+申请员工名称 apply_Employee_name            applyEmployName
+所在部门 location_dept               locationDept
+申请日期  apply_date                applyDate
+业务成交情况id business_id             businessId
+申请佣金原因 commission_apply_reason            commApplyReason
+佣金收取人情况内容(含姓名、职位等) commission_collect_by_Content     commCollectByContent
+佣金支付方式 commission_payment_mode                commPaymentMode
+收款银行 payment_bank                            paymentBank
+佣金申请支付日期 commission_payment_date             commPaymentDate
+佣金实际支付日期 commission_paymented_date     commPaymentedDate
+备注 remark
+
+业务成交情况子表
+业务成交情况id
+客户编码 Customer_code  CustCode
+客户名称 Customer_name   CustName
+PI单号 pi_No              piNo
+品名 name_of_a_part      nameOfaPart
+单价 Amount                   amount
+金额单位 Amount_unit        amountUnit
+数量 QTY                  qty
+数量单位 QTY_unit    qtyUnit
+佣金 commission
+备注 remark
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

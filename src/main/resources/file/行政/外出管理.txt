@@ -1,0 +1,42 @@
+外出单编码 egress_code    egressCode
+外出员工id egress_Employee_id     egressEmployId
+外出员工姓名 egress_Employee_name   egressEmployName
+提请人 drawBy
+申请日期 apply_date          applyDate
+客户编码 customers_code      custCode
+客户名称  customers_name            custName
+ 客户地址  customers_addr              custAddr
+客户联系人 customers_Contact_by             custContactBy
+客户联系电话 customers_Contact_tel    custContactTel
+事务处理  business_process             businessProcess
+外出时间  egress_date                     egressDate
+预定返回时间 Reservation_return_date        reservaReturnDate
+实际返回时间 practical_return_date             practReturnDate
+事务处理状况 business_process_Status           businProcStatus
+审批情况 examineandapprovesituation             examApprSitu
+第一审批用户 firstexamineandapproveuser    firstExamAppruser
+第二审批用户 secondexamineandapproveuser    secondExamAppruser
+第三审批用户 thirdexamineandapproveuser    thirdExamAppruser
+审批意见  examineandapprove_opinion         examApprOpinion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

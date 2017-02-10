@@ -1,0 +1,61 @@
+員工編碼  employeeCode
+員工姓名  employeeName
+所在部门  locationDept
+职　　位  position
+入职日期  entryDate
+出生年月  dateOfBirth
+性　　别  sex
+ 政治面貌  politicalStatus
+民　　族  nation
+身　　高   height 
+身份证号码  idCardNo
+特　　长   specialty
+户口所在地  placeOfResidence
+现居住地 presentResidence
+照片   imageLog
+籍　　贯 nativePlace
+ 婚姻状况  maritalStatus
+ 联系电话  contactPhone
+毕业院校  graduateSchool
+ 就读时间  atDate
+ 专　　业  professional
+学　　制  lengthSschool
+学历 degree
+ 学位  degreePosition
+ 是否离职 orNotTurnover
+ 离职时间  turnoverDate
+外语水平 foreignLanLevel
+ 计算机水平  computerLevel
+紧急情况联系人 emergencyBy
+ 紧急情况联系电话  emergencyTel
+紧急情况联系人地址 emergencyAddress
+家庭成员ID  membersId
+工作經歷ID  experienceId
+转正情况 posiSituation
+ 参保情况  insuredSituation
+合同签订情况 contractSignSituat
+备　　注  remark
+
+
+
+家庭成員子表
+家庭成员ID
+姓名 name
+关系   relationship
+工作单位 workUnits  
+担任职位 holdOffice
+联系电话  contactPhone
+
+
+
+工作經歷子表
+工作經歷ID
+开始时间  startDate
+终止时间  endDate
+工作单位及部门  workUnitsDept
+担任职务 holdOffice
+联系电话 contactPhone
+
+
+
+

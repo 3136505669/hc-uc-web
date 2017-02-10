@@ -1,0 +1,32 @@
+请假单编码 leave_code   leaveCode
+请假人编码 leave_by_code   leaveByCode
+请假人名称 leave_by_name   leaveByName
+请假类别  leave_type     leaveType
+提请人编码 Draw_by_code     drawByCode
+提请人名称 Draw_by_name     drawByName
+请假开始时间 leave_start_date   leaveStartDate
+请假结束时间 leave_end_date     leaveEndDate
+总共请假时间  total_leave_date   totalLeaveDate
+请假事由 leave_Reason    leaveReason
+备注   remark
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+付款编号 paymentCode
+付款日期 paymentDate
+申 请 人 applyBy
+申请部门 applyDept
+收款单位 ReceivablesOrganization     ReceivOrganiz
+收款帐户 ReceivablesAccount      ReceivAccount
+开户银行 bankAccount
+付款方式 payment_mode      paymentMode
+金额(RMB) Amount                 amount
+付款说明 payment_description                   paymentDesc
+审批情况 examineandapprovesituation             examApprSitu
+第一审批用户 firstexamineandapproveuser    firstExamAppruser
+第二审批用户 secondexamineandapproveuser    secondExamAppruser
+第三审批用户 thirdexamineandapproveuser    thirdExamAppruser
+第四审批用户 fourthexamineandapproveuser    fourthExamAppruser
+审批意见  examineandapprove_opinion         examApprOpinion

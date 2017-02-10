@@ -1,0 +1,11 @@
+退货单编码 Return_goods_code   returnGoodsCode
+责任人编码 in_charge_by_code    inChargeByCode
+责任人名称 in_charge_by_name    inChargeByName
+主题 subject
+客户编码 customer_code   custCode
+客户名称 customer_name   custName
+货币 currency
+退货日期 Return_goods_date  returnGoodsDate
+备注  remark      
+
+

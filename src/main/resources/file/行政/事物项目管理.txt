@@ -1,0 +1,15 @@
+事物项目编码 thing_item_code            thingItemCode
+立项人编码 project_approval_by_code      projtApprByCode
+立项人名称 project_approval_by_name    projtApprByName
+立项日期 project_approval_date   projtApprDate
+开始日期 start_date                          startDate
+预计完成日期 Expected_completion_date            expecCompletDate
+项目编码 project_code            projectCode
+项目名称 project_name             projectName
+紧急程度 Urgency_level                 urgencyLevel
+项目负责人 project_Person_in_charge_s           projtPerCharges
+参与人员 partake_by_s                   partakeBys
+协助人员 assist_by_s                 assistBys
+项目简介 project_synopsis             projtSynopsis
+备注 remark
+

@@ -1,0 +1,31 @@
+样品单编码 sample_code      sampleCode
+责任人编码 person_liable_code  perLiableCode
+责任人名称 person_liable_name   perLiableName
+仓库编码   warehouse_code   warehouseCode
+仓库名称   warehouse_name   warehouseName
+客户编码 customer_code     custCode
+客户名称 customer_name     custName
+收货地址  take_delivery_addr   takDelivAddr
+联系人 contact_by    contactBy
+联系电话 contact_tel    contactTel
+登记日期 register_date    registerDate
+样品货币 sample_currency    sampleCurrency
+运输方式 transport_mode    transportMode
+发货日期 delivery_date    delivDate
+运费 freight
+保险 insurance
+特别要求 ad_hoc_request     adHocRequest
+备注  remark
+
+样品子表------
+
+产品编码 product_code
+产品名称 product_name
+型号规格 type_model
+产品描述  product_desc
+数量 qty
+单位 unit
+单价  univalent
+货币 currency
+备注 remark
+
