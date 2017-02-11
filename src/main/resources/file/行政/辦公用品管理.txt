@@ -1,3 +1,4 @@
+办公用品编码   office_supplies_code   offSupplCode
 申 请 人 apply_by    applyBy  
 申请日期 apply_date     applyDate
 申 领 人 Apply_for_By    ApplyForBy
