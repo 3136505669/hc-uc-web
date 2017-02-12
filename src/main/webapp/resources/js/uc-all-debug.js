@@ -34,7 +34,7 @@ Ext.define('Hc_Framework.Application', {
  * All rights Reserved, Designed By Hc
  * Copyright:   Copyright(C) 2014-2015
  * Company:     Wonhigh.
- * author:      jinxi.li
+ * author:      wudefeng
  * Createdate:  2015/01/20
  *
  * Modification  History:
@@ -314,6 +314,802 @@ function binl2b64(binarray)
   }
   return str;
 }
+/**
+ * Description: 日程管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcAgendaForDay', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcagendaforday',
+
+    fields: [
+        {name: 'agendaForDayCode'},
+        {name: 'agendaForDayType'},
+        {name: 'agendaForDayName'},
+        
+        {name: 'agendaForDayEmploy'},
+        {name: 'startDate'},
+        {name: 'endDate'},
+        
+        {name: 'orNotRemind'},
+        {name: 'remindDate'},
+        {name: 'locationDept'},
+        
+        {name: 'orNotShare'},
+        {name: 'agendaForDayDescribe'},
+        {name: 'remark'},
+   ],
+
+    idProperty: 'agendaForDayCode'
+});
+/**
+ * Description: 佣金管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcCommission', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hccommission',
+
+    fields: [
+        {name: 'commiApplyCode'},
+        {name: 'applyEmployCode'},
+        {name: 'applyEmployName'},
+        
+        {name: 'locationDept'},
+        {name: 'applyDate'},
+        {name: 'businessId'},
+        
+        {name: 'commApplyReason'},
+        {name: 'commCollectByContent'},
+        {name: 'commPaymentMode'},
+        
+        {name: 'paymentBank'},
+        {name: 'commPaymentDate'},
+        {name: 'commPaymentedDate'},
+        
+        {name: 'remark'}
+   ],
+
+    idProperty: 'commiApplyCode'
+});
+/**
+ * Description: 佣金管理子表 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcSubCommission', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcsubcommission',
+
+    fields: [
+        {name: 'id'},
+        {name: 'businessId'},
+        {name: 'CustCode'},
+        
+        {name: 'CustName'},
+        {name: 'piNo'},
+        {name: 'nameOfaPart'},
+        
+        {name: 'amount'},
+        {name: 'amountUnit'},
+        {name: 'qty'},
+        
+        {name: 'qtyUnit'},
+        {name: 'commission'},
+        {name: 'remark'},
+
+    ],
+
+    idProperty: 'id'
+});
+/**
+ * Description: 客户投诉管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcCustomerComplain', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hccustomercomplain',
+
+    fields: [
+        {name: 'custComplainCode'},
+        {name: 'custComplainName'},
+        {name: 'complainType'},
+        
+        {name: 'complainLevel'},
+        {name: 'currentState'},
+        {name: 'complainDate'},
+        
+        {name: 'invoiceNo'},
+        {name: 'batchNo'},
+        {name: 'orderNo'},
+        
+        {name: 'pactNo'},
+        {name: 'prodCode'},
+        {name: 'prodModel'},
+        
+        {name: 'prodName'},
+        {name: 'qty'},
+        {name: 'unit'},
+        
+        {name: 'qualityStrd'},
+        {name: 'transportStrd'},
+        {name: 'supplierCode'},
+        
+        {name: 'supplierName'},
+        {name: 'suppliDelivDate'},
+        {name: 'custCode'},
+        
+        {name: 'custName'},
+        {name: 'delivDate'},
+        {name: 'complainContent'},
+        
+        {name: 'registerBy'},
+        {name: 'registerDate'},
+        {name: 'answerForBy'},
+        
+        {name: 'remark'}
+
+    ],
+
+    idProperty: 'custComplainCode'
+});
+/**
+ * Description: 客户服务管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcCustomerServe', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hccustomerserve',
+
+    fields: [
+        {name: 'custServeCode'},
+        {name: 'custServeTheme'},
+        {name: 'serveType'},
+        
+        {name: 'serveLevel'},
+        {name: 'currentState'},
+        {name: 'serveDate'},
+        
+        {name: 'orderNo'},
+        {name: 'pactNo'},
+        {name: 'endDate'},
+        
+        {name: 'prodCode'},
+        {name: 'prodModel'},
+        {name: 'prodName'},
+        
+        {name: 'qty'},
+        {name: 'unit'},
+        {name: 'locationDept'},
+        
+        {name: 'deptCode'},
+        {name: 'technicalMatters'},
+        {name: 'custCode'},
+        
+        {name: 'custName'},
+        {name: 'businessBy'},
+        {name: 'serveContent'},
+        
+        {name: 'registerBy'},
+        {name: 'registerDate'},
+        {name: 'answerForBy'},
+        
+        {name: 'remark'}
+    ],
+
+    idProperty: 'custServeCode'
+});
+/**
+ * Description: 外出管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcEgress', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcegress',
+
+    fields: [
+        {name: 'egressCode'},
+        {name: 'egressEmployId'},
+        {name: 'egressEmployName'},
+        
+        {name: 'drawBy'},
+        {name: 'applyDate'},
+        {name: 'custCode'},
+        
+        {name: 'custName'},
+        {name: 'custAddr'},
+        {name: 'custContactBy'},
+        
+        {name: 'custContactTel'},
+        {name: 'businessProcess'},
+        {name: 'egressDate'},
+        
+        {name: 'reservaReturnDate'},
+        {name: 'practReturnDate'},
+        {name: 'businProcStatus'},
+        
+        {name: 'examApprSitu'},
+        {name: 'firstExamAppruser'},
+        {name: 'secondExamAppruser'},
+        
+        {name: 'thirdExamAppruser'},
+        {name: 'examApprOpinion'}
+   ],
+
+    idProperty: 'egressCode'
+});
+/**
+ * Description: 员工管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcEmployee', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcemployee',
+
+    fields: [
+        {name: 'employeeCode'},
+        {name: 'employeeName'},
+        {name: 'locationDept'},
+        
+        {name: 'position'},
+        {name: 'entryDate'},
+        {name: 'dateOfBirth'},
+        
+        {name: 'sex'},
+        {name: 'politicalStatus'},
+        {name: 'nation'},
+        
+        {name: 'height'},
+        {name: 'idCardNo'},
+        {name: 'specialty'},
+        
+        {name: 'placeOfResidence'},
+        {name: 'presentResidence'},
+        {name: 'imageLog'},
+        
+        {name: 'nativePlace'},
+        {name: 'maritalStatus'},
+        {name: 'contactPhone'},
+        
+        {name: 'graduateSchool'},
+        {name: 'atDate'},
+        {name: 'professional'},
+        
+        {name: 'lengthSschool'},
+        {name: 'degree'},
+        {name: 'degreePosition'},
+        
+        {name: 'orNotTurnover'},
+        {name: 'turnoverDate'},
+        {name: 'foreignLanLevel'},
+        
+        {name: 'computerLevel'},
+        {name: 'emergencyBy'},
+        {name: 'emergencyTel'},
+        
+        {name: 'emergencyAddress'},
+        {name: 'membersId'},
+        {name: 'experienceId'},
+        
+        {name: 'posiSituation'},
+        {name: 'insuredSituation'},
+        {name: 'contractSignSituat'},
+        
+        {name: 'remark'},
+   ],
+
+    idProperty: 'employeeCode'
+});
+/**
+ * Description: 员工经历管理子表 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcSubEmployeeExperience', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcsubemployeeexperience',
+
+    fields: [
+        {name: 'id'},
+        {name: 'experienceId'},
+        {name: 'startDate'},
+        
+        {name: 'endDate'},
+        {name: 'workUnitsDept'},
+        {name: 'holdOffice'},
+        
+        {name: 'contactPhone'}
+    ],
+
+    idProperty: 'id'
+});
+/**
+ * Description: 员工家庭关系管理子表 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcSubEmployeeRelationShip', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcsubemployeerelationship',
+
+    fields: [
+        {name: 'id'},
+        {name: 'membersId'},
+        {name: 'name'},
+        
+        {name: 'relationship'},
+        {name: 'workUnits'},
+        {name: 'holdOffice'},
+        
+        {name: 'contactPhone'}
+
+    ],
+
+    idProperty: 'id'
+});
+/**
+ * Description: 出差管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcEvection', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcevection',
+
+    fields: [
+        {name: 'evectionCode'},
+        {name: 'evectionEmployId'},
+        {name: 'evectionEmployName'},
+        
+        {name: 'drawBy'},
+        {name: 'applyDate'},
+        {name: 'destination'},
+        
+        {name: 'evectionDate'},
+        {name: 'evectionGoal'},
+        {name: 'visitCompName'},
+        
+        {name: 'visitCompCode'},
+        {name: 'contactCode'},
+        {name: 'contactName'},
+        
+        {name: 'contactTel'},
+        {name: 'visitReason'},
+        {name: 'visitRemark'},
+        
+        {name: 'trafficCost'},
+        {name: 'boardLodCost'},
+        {name: 'otherCost'},
+        
+        {name: 'costRemark'}
+
+    ],
+
+    idProperty: 'evectionCode'
+});
+/**
+ * Description: 商品编码申请管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcGoodsNoApply', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcgoodsnoapply',
+
+    fields: [
+        {name: 'goodsNoApplCode'},
+        {name: 'applyEmployCode'},
+        {name: 'applyEmployName'},
+        
+        {name: 'locationDept'},
+        {name: 'applyDate'},
+        {name: 'goodsCode'},
+        
+        {name: 'goodsName'},
+        {name: 'theLargeAssortment'},
+        {name: 'specModel'},
+        
+        {name: 'specParameters'},
+        {name: 'colour'},
+        {name: 'sizeStructure'},
+        
+        {name: 'venderCode'},
+        {name: 'venderName'},
+        {name: 'imageLog'},
+        
+        {name: 'remark'},
+   ],
+
+    idProperty: 'goodsNoApplCode'
+});
+/**
+ * Description: 内部签呈管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcInsidePetition', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcinsidepetition',
+
+    fields: [
+        {name: 'insiPetiCode'},
+        {name: 'applyEmployCode'},
+        {name: 'applyEmployName'},
+        
+        {name: 'locationDept'},
+        {name: 'applyDate'},
+        {name: 'dense'},
+        
+        {name: 'urgenTimeLimit'},
+        {name: 'fileName'},
+        {name: 'fileSend'},
+        
+        {name: 'postTo'},
+        {name: 'forwardTo'},
+        {name: 'ccTo'},
+        
+        {name: 'circulatTo'},
+        {name: 'emailTo'},
+        {name: 'content'},
+        
+        {name: 'remark'}
+
+   ],
+
+    idProperty: 'insiPetiCode'
+});
+/**
+ * Description: 请假管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcLeave', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcleave',
+
+    fields: [
+        {name: 'leaveCode'},
+        {name: 'leaveByCode'},
+        {name: 'leaveByName'},
+        
+        {name: 'leaveType'},
+        {name: 'drawByCode'},
+        {name: 'drawByName'},
+        
+        {name: 'leaveStartDate'},
+        {name: 'leaveEndDate'},
+        {name: 'totalLeaveDate'},
+        
+        {name: 'leaveReason'},
+        {name: 'remark'}
+   ],
+
+    idProperty: 'leaveCode'
+});
+/**
+ * Description: 借款管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcLoan', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcloan',
+
+    fields: [
+        {name: 'loanCode'},
+        {name: 'loanTheme'},
+        {name: 'loanBy'},
+        
+        {name: 'loanDate'},
+        {name: 'loanAmount'},
+        {name: 'loanReason'},
+        
+        {name: 'expRepayReimburDate'},
+        {name: 'drawBy'},
+        {name: 'examApprovSituat'},
+        
+        {name: 'firstExamAppruser'},
+        {name: 'secondExamAppruser'},
+        {name: 'thirdExamAppruser'},
+        
+        {name: 'examApprOpinion'}
+
+   ],
+
+    idProperty: 'loanCode'
+});
+/**
+ * Description:维修管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcMaintain', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcmaintain',
+
+    fields: [
+        {name: 'maintainCode'},
+        {name: 'salesmanCode'},
+        {name: 'salesmanName'},
+        
+        {name: 'maintainByCode'},
+        {name: 'maintainByName'},
+        {name: 'custCode'},
+        
+        {name: 'custName'},
+        {name: 'custAddr'},
+        {name: 'custTel'},
+        
+        {name: 'custFax'},
+        {name: 'custContactBy'},
+        {name: 'custEmail'},
+        
+        {name: 'maintainType'},
+        {name: 'puttOutFactCode'},
+        {name: 'puttOutFactName'},
+        
+        {name: 'prodCode'},
+        {name: 'prodName'},
+        {name: 'airframeNo'},
+        
+        {name: 'processMode'},
+        {name: 'freightPayment'},
+        {name: 'guarantee'},
+        
+        {name: 'freight'},
+        {name: 'transportMode'},
+        {name: 'qty'},
+        
+        {name: 'unit'},
+        {name: 'costPayment'},
+        {name: 'consigneeDate'},
+        
+        {name: 'faultPhenomenon'},
+        {name: 'faultReason'},
+        {name: 'maintainRecord'},
+        
+        {name: 'maintainCost'},
+        {name: 'remark'}
+   ],
+
+    idProperty: 'maintainCode'
+});
+/**
+ * Description:新品换货管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcNewBarterApply', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcnewbarterapply',
+
+    fields: [
+        {name: 'newBarApplyCode'},
+        {name: 'applyEmployeeCode'},
+        {name: 'applyEmployeeName'},
+        
+        {name: 'locationDept'},
+        {name: 'applyDate'},
+        {name: 'fromCompCode'},
+        
+        {name: 'fromCompName'},
+        {name: 'toCompCode'},
+        {name: 'toCompName'},
+        
+        {name: 'fromCompTel'},
+        {name: 'fromCompFax'},
+        {name: 'fromCompAddr'},
+        
+        {name: 'fromCompZip'},
+        {name: 'fromCompContastBy'},
+        {name: 'toCompTel'},
+        
+        {name: 'toCompFax'},
+        {name: 'toCompZip'},
+        {name: 'toCompContastBy'},
+        
+        {name: 'piOrderNo'},
+        {name: 'consigneeDate'},
+        {name: 'salesDate'},
+        
+        {name: 'checkoutDate'},
+        {name: 'PhenomenonDesc'},
+        {name: 'conclusion'},
+        
+        {name: 'techOpinion'},
+        {name: 'managerOpinion'},
+        {name: 'chargeOpinion'},
+        
+        {name: 'orNotGetBad'},
+        {name: 'opHandleOpinion'},
+        {name: 'remark'}
+   ],
+
+    idProperty: 'newBarApplyCode'
+});
+/**
+ * Description: 新品换货管理子表 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcSubNewBarterApply', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcsubnewbarterapply',
+
+    fields: [
+        {name: 'id'},
+        {name: 'model'},
+        {name: 'serialNo'},
+        
+        {name: 'requiBartReason'},
+        {name: 'jre'},
+        {name: 'buyDate'},
+        
+        {name: 'remark'}
+
+    ],
+
+    idProperty: 'id'
+});
 /**
  * Description: 供应商管理 view
  * All rights Reserved, Designed By Hc
@@ -1541,6 +2337,42 @@ Ext.define('Hc_Framework.model.SubHcSupplierShipment', {
     idProperty: 'productNo'
 });
 /**
+ * Description: 办公用品管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcOfficeSupplies', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcofficesupplies',
+
+    fields: [
+        {name: 'offSupplCode'},
+        {name: 'applyBy'},
+        {name: 'applyDate'},
+        
+        {name: 'applyForBy'},
+        {name: 'contactBy'},
+        {name: 'contactTel'},
+        
+        {name: 'category'},
+        {name: 'currency'},
+        {name: 'examineandapproveBy'},
+        
+        {name: 'remark'}
+    ],
+
+    idProperty: 'offSupplCode'
+});
+/**
  * Description: 当前用户
  * All rights Reserved, Designed By Hc
  * Copyright:   Copyright(C) 2014-2015
@@ -2068,6 +2900,88 @@ Ext.define('Hc_Framework.model.MainTree', {
     ]
 });
 /**
+ * Description: 付款管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcPayment', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcpayment',
+
+    fields: [
+        {name: 'paymentCode'},
+        {name: 'paymentDate'},
+        {name: 'applyBy'},
+        
+        {name: 'applyDept'},
+        {name: 'receivOrganiz'},
+        {name: 'receivAccount'},
+        
+        {name: 'bankAccount'},
+        {name: 'paymentMode'},
+        {name: 'amount'},
+        
+        {name: 'paymentDesc'},
+        {name: 'examApprSitu'},
+        {name: 'firstExamAppruser'},
+        
+        {name: 'secondExamAppruser'},
+        {name: 'thirdExamAppruser'},
+        {name: 'fourthExamAppruser'},
+        
+        {name: 'examApprOpinion'}
+
+   ],
+
+    idProperty: 'paymentCode'
+});
+/**
+ * Description: 转正申请管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcPositive', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcpositive',
+
+    fields: [
+        {name: 'positApplyCode'},
+        {name: 'PositiEmploCode'},
+        {name: 'PositiEmploName'},
+        
+        {name: 'drawBy'},
+        {name: 'position'},
+        {name: 'toGangDate'},
+        
+        {name: 'applyDate'},
+        {name: 'shouPosiDate'},
+        {name: 'posiApplyContents'},
+        
+        {name: 'positiveState'},
+        {name: 'remark'},
+   ],
+
+    idProperty: 'positApplyCode'
+});
+/**
  * Description: 客户管理 view
  * All rights Reserved, Designed By Hc
  * Copyright:   Copyright(C) 2016-2017
@@ -2293,6 +3207,947 @@ Ext.define('Hc_Framework.model.HcSupplierProductList', {
     ],
 
     idProperty: 'productNo'
+});
+/**
+ * Description: 报销管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcReimbursement', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcreimbursement',
+
+    fields: [
+        {name: 'reimburCode'},
+        {name: 'drawByCode'},
+        {name: 'drawByName'},
+        
+        {name: 'exacct'},
+        {name: 'reimburByCode'},
+        {name: 'reimburBy'},
+        
+        {name: 'reimburDept'},
+        {name: 'reimburDate'},
+        {name: 'reimburAmount'},
+        
+        {name: 'ApplicaDesc'},
+        {name: 'examApprovSituat'},
+        {name: 'firstExamAppruser'},
+        
+        {name: 'secondExamAppruser'},
+        {name: 'thirdExamAppruser'},
+        {name: 'examApprOpinion'},
+        
+        {name: 'remark'}
+
+   ],
+
+    idProperty: 'reimburCode'
+});
+/**
+ * Description: 辞职管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcResign', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcresign',
+
+    fields: [
+        {name: 'resignCode'},
+        {name: 'resignByCode'},
+        {name: 'resignByName'},
+        
+        {name: 'resignType'},
+        {name: 'perReasons'},
+        {name: 'drawByCode'},
+        
+        {name: 'drawByName'},
+        {name: 'resignDate'},
+        {name: 'resignReason'},
+        
+        {name: 'remark'},
+   ],
+
+    idProperty: 'resignCode'
+});
+/**
+ * Description: 退货管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcReturnGoods', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcreturngoods',
+
+    fields: [
+        {name: 'returnGoodsCode'},
+        {name: 'inChargeByCode'},
+        {name: 'inChargeByName'},
+        
+        {name: 'subject'},
+        {name: 'custCode'},
+        {name: 'custName'},
+        
+        {name: 'currency'},
+        {name: 'returnGoodsDate'},
+        {name: 'remark'}
+   ],
+
+    idProperty: 'returnGoodsCode'
+});
+/**
+ * Description: 奖惩管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcRewardPunishment', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcrewardpunishment',
+
+    fields: [
+        {name: 'rewardPunishCode'},
+        {name: 'employCode'},
+        {name: 'employName'},
+        
+        {name: 'compCode'},
+        {name: 'compName'},
+        {name: 'dept'},
+        
+        {name: 'position'},
+        {name: 'rewardPunishSpec'},
+        {name: 'rewardPunSpecAccTo'},
+        
+        {name: 'drawBy'},
+        {name: 'locaDept'},
+        {name: 'registerDate'},
+        
+        {name: 'rewardPunishReason'},
+        {name: 'remark'}
+
+   ],
+
+    idProperty: 'rewardPunishCode'
+});
+/**
+ * Description: 薪资异动管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcSalaryPunishment', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcsalarypunishment',
+
+    fields: [
+        {name: 'salaryPunishCode'},
+        {name: 'employeeCode'},
+        {name: 'employeeName'},
+        
+        {name: 'drawBy'},
+        {name: 'position'},
+        {name: 'checkDate'},
+        
+        {name: 'applyDate'},
+        {name: 'serviDate'},
+        {name: 'noticeMatters'},
+        
+        {name: 'originalSalary'},
+        {name: 'adjustRate'},
+        {name: 'adjustAmount'},
+        
+        {name: 'adjustedAmount'},
+        {name: 'desc'},
+        {name: 'remark'},
+   ],
+
+    idProperty: 'salaryPunishCode'
+});
+/**
+ * Description: 合同管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcContract', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hccontract',
+
+    fields: [
+        {name: 'contractCode'},
+        {name: 'buyCode'},
+        {name: 'buyName'},
+        
+        {name: 'buyAddr'},
+        {name: 'buyTel'},
+        {name: 'buyFax'},
+        
+        {name: 'buyContactBy'},
+        {name: 'salesCode'},
+        {name: 'salesName'},
+        
+        {name: 'salesAddr'},
+        {name: 'salesTel'},
+        {name: 'salesFax'},
+        
+        {name: 'salesContactBy'},
+        {name: 'contractContent'},
+        {name: 'contractFile'},
+        
+        {name: 'contractFile1'},
+        {name: 'contractFile2'},
+        {name: 'contractImage1'},
+        
+        {name: 'contractImage2'},
+        {name: 'contractImage3'},
+        {name: 'buyRepreCode'},
+        
+        {name: 'buyRepreName'},
+        {name: 'buySignDate'},
+        {name: 'salesRepreCode'},
+        
+        {name: 'salesRepreName'},
+        {name: 'salesSignDate'},
+        {name: 'applByCode'},
+        
+        {name: 'applByName'},
+        {name: 'examApprByCode'},
+        {name: 'examApprByName'},
+        
+        {name: 'examApprOpinion'},
+        {name: 'FinalJudgeCode'},
+        {name: 'FinalJudgeName'},
+        
+        {name: 'reviewOpinion'},
+        {name: 'remark'}
+    ],
+
+    idProperty: 'contractCode'
+});
+/**
+ * Description: 合同管理子表 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcSubContract', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcsubcontract',
+
+    fields: [
+        {name: 'id'},
+        {name: 'prodCode'},
+        {name: 'prodName'},
+        
+        {name: 'typeModel'},
+        {name: 'prodDesc'},
+        {name: 'custType'},
+        
+        {name: 'qty'},
+        {name: 'unit'},
+        {name: 'univalent'},
+        
+        {name: 'currency'},
+        {name: 'remark'}
+ 
+    ],
+
+    idProperty: 'id'
+});
+/**
+ * Description: 询价管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcInquiry', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcinquiry',
+
+    fields: [
+        {name: 'inquCode'},
+        {name: 'inquName'},
+        {name: 'custCode'},
+        
+        {name: 'custName'},
+        {name: 'custTel'},
+        {name: 'custAddr'},
+        
+        {name: 'custContactBy'},
+        {name: 'custContactByTel'},
+        {name: 'custContactByEmail'},
+        
+        {name: 'custContactByPhone'},
+        {name: 'notifierCode'},
+        {name: 'notifierName'},
+        
+        {name: 'remark'}
+    ],
+
+    idProperty: 'inquCode'
+});
+/**
+ * Description: 询价管理子表 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcSubInquiry', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcsubinquiry',
+
+    fields: [
+        {name: 'id'},
+        {name: 'prodCode'},
+        {name: 'prodName'},
+        
+        {name: 'typeModel'},
+        {name: 'qty'},
+        {name: 'unit'},
+        
+        {name: 'univalent'},
+        {name: 'currency'},
+        {name: 'manufaCode'},
+        
+        {name: 'manufaName'},
+        {name: 'delivTime'},
+        {name: 'remark'},
+      
+    ],
+
+    idProperty: 'id'
+});
+/**
+ * Description: 订单管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcOrder', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcorder',
+
+    fields: [
+        {name: 'orderCode'},
+        {name: 'perLiabCode'},
+        {name: 'perLiabName'},
+        
+        {name: 'warehouseCode'},
+        {name: 'warehouseName'},
+        {name: 'custCode'},
+        
+        {name: 'custName'},
+        {name: 'takDelivAddr'},
+        {name: 'takDelivBy'},
+        
+        {name: 'contactTel'},
+        {name: 'orNotPrepay'},
+        {name: 'otherCharges'},
+        
+        {name: 'invoice'},
+        {name: 'transportMode'},
+        {name: 'contractCode'},
+        
+        {name: 'paymentMode'},
+        {name: 'paymentDayQty'},
+        {name: 'custDelivTime'},
+        
+        {name: 'freightBurden'},
+        {name: 'freightSum'},
+        {name: 'currency'},
+        
+        {name: 'orderDate'},
+        {name: 'bank'},
+        {name: 'exaApprByCode'},
+        
+        {name: 'exaApprByName'},
+        {name: 'remark'}
+    ],
+
+    idProperty: 'orderCode'
+});
+/**
+ * Description: 订单管理子表 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcSubOrder', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcsuborder',
+
+    fields: [
+        {name: 'id'},
+        {name: 'prodCode'},
+        {name: 'prodName'},
+        
+        {name: 'typeModel'},
+        {name: 'prodDesc'},
+        {name: 'orderQty'},
+        
+        {name: 'unit'},
+        {name: 'univalent'},
+        {name: 'currency'},
+        
+        {name: 'remark'}
+
+    ],
+
+    idProperty: 'id'
+});
+/**
+ * Description: 项目管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcProject', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcproject',
+
+    fields: [
+        {name: 'projtCode'},
+        {name: 'projtName'},
+        {name: 'applByCode'},
+        
+        {name: 'applByName'},
+        {name: 'perChargeByCode'},
+        {name: 'perChargeByName'},
+        
+        {name: 'projtSum'},
+        {name: 'projtStage'},
+        {name: 'projtApprDate'},
+        
+        {name: 'projtSource'},
+        {name: 'sucRateEstimate'},
+        {name: 'currentState'},
+        
+        {name: 'endReason'},
+        {name: 'custCode'},
+        {name: 'custName'},
+        
+        {name: 'contactBy'},
+        {name: 'contactTel'},
+        {name: 'introduction'},
+        
+        {name: 'rootMeasure'},
+        {name: 'coopRootMeasure'},
+        {name: 'result'},
+        
+        {name: 'summary'},
+        {name: 'remark'}
+    ],
+
+    idProperty: 'projtCode'
+});
+/**
+ * Description: 报价管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcQuote', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcquote',
+
+    fields: [
+        {name: 'quoteCode'},
+        {name: 'quoteByCode'},
+        {name: 'quoteByName'},
+        
+        {name: 'custCode'},
+        {name: 'custName'},
+        {name: 'custTel'},
+        
+        {name: 'custAddr'},
+        {name: 'custFax'},
+        {name: 'contactByCode'},
+        {name: 'contactBy'},
+        
+        {name: 'contacTByTel'},
+        {name: 'contactByEmail'},
+        {name: 'quoteMode'},
+        
+        {name: 'purposePlace'},
+        {name: 'deliverGoodsMode'},
+        {name: 'deliverGoodsDate'},
+        
+        {name: 'paymentMode'},
+        {name: 'packing'},
+        {name: 'remark'},
+        
+        {name: 'currency'},
+        {name: 'examApprByCode'},
+        {name: 'examApprByName'},
+        
+        {name: 'freight'},
+        {name: 'insurance'},
+        {name: 'taxRate'},
+        
+        {name: 'rebate'},
+    ],
+
+    idProperty: 'quoteCode'
+});
+/**
+ * Description: 报价管理子表 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcSubQuote', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcsubquote',
+
+    fields: [
+        {name: 'id'},
+        {name: 'prodCode'},
+        {name: 'prodName'},
+        
+        {name: 'typeModel'},
+        {name: 'qty'},
+        {name: 'unit'},
+        
+        {name: 'univalent'},
+        {name: 'currency'},
+        {name: 'prodDesc'},
+        
+        {name: 'brand'},
+        {name: 'manufCode'},
+        {name: 'manufName'},
+        
+        {name: 'deliveTime'},
+        {name: 'remark'},
+    ],
+
+    idProperty: 'id'
+});
+/**
+ * Description: 销售机会管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcSalesOpportunities', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcsalesopportunities',
+
+    fields: [
+        {name: 'salesOpportCode'},
+        {name: 'salesOpport'},
+        {name: 'salesOpportSch'},
+        
+        {name: 'opportSource'},
+        {name: 'salesCode'},
+        {name: 'salesName'},
+        
+        {name: 'compCode'},
+        {name: 'compName'},
+        {name: 'compZip'},
+        
+        {name: 'compAddr'},
+        {name: 'compContactBy'},
+        {name: 'compTel'},
+        
+        {name: 'compFax'},
+        {name: 'expectSum'},
+        {name: 'creatyBy'},
+        
+        {name: 'endDate'},
+        {name: 'SucRateEstimate'},
+        {name: 'currentState'},
+        
+        {name: 'endReason'},
+        {name: 'updatedByCode'},
+        {name: 'updatedByName'},
+        
+        {name: 'relatDesc'},
+        {name: 'remark'}
+       
+    ],
+
+    idProperty: 'salesOpportCode'
+});
+/**
+ * Description: 样品管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcSample', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcsample',
+
+    fields: [
+        {name: 'sampleCode'},
+        {name: 'perLiableCode'},
+        {name: 'perLiableName'},
+        
+        {name: 'warehouseCode'},
+        {name: 'warehouseName'},
+        {name: 'custCode'},
+        
+        {name: 'custName'},
+        {name: 'takDelivAddr'},
+        {name: 'contactBy'},
+        
+        {name: 'contactTel'},
+        {name: 'registerDate'},
+        {name: 'sampleCurrency'},
+        
+        {name: 'transportMode'},
+        {name: 'delivDate'},
+        {name: 'freight'},
+        
+        {name: 'insurance'},
+        {name: 'adHocRequest'},
+        {name: 'remark'}
+    ],
+
+    idProperty: 'sampleCode'
+});
+/**
+ * Description: 样品管理子表 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcSubSample', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcsubsample',
+
+    fields: [
+        {name: 'id'},
+        {name: 'prodCode'},
+        {name: 'prodName'},
+        
+        {name: 'typeModel'},
+        {name: 'prodDesc'},
+        {name: 'qty'},
+        
+        {name: 'unit'},
+        {name: 'univalent'},
+        {name: 'currency'},
+        
+        {name: 'remark'}
+    ],
+
+    idProperty: 'id'
+});
+/**
+ * Description: 盖章管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcSeal', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcseal',
+
+    fields: [
+        {name: 'sealCode'},
+        {name: 'borrowDept'},
+        {name: 'handleByCode'},
+        
+        {name: 'handleByName'},
+        {name: 'borrowIndiaByCode'},
+        {name: 'borrowIndiaByName'},
+        
+        {name: 'loanDate'},
+        {name: 'useTerm'},
+        {name: 'borrowIndiaType'},
+        
+        {name: 'imporContentDesc'},
+        {name: 'useScope'},
+        {name: 'indiaPromise'},
+        
+        {name: 'indiaContent'},
+        {name: 'indiaWitnBy'},
+        {name: 'remark'},
+
+   ],
+
+    idProperty: 'sealCode'
+});
+/**
+ * Description: 任务管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcTask', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hctask',
+
+    fields: [
+        {name: 'taskCode'},
+        {name: 'issuedTaskDate'},
+        {name: 'finishTaskDate'},
+        
+        {name: 'taskSubject'},
+        {name: 'taskContent'},
+        {name: 'taskRespBy'},
+        
+        {name: 'taskInvolvBy'},
+        {name: 'associatedBy'},
+        {name: 'issuedTaskBy'},
+        
+        {name: 'taskFinSituation'},
+        {name: 'remart'}
+   ],
+
+    idProperty: 'taskCode'
+});
+/**
+ * Description: 事物项目管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcThingItem', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcthingitem',
+
+    fields: [
+        {name: 'thingItemCode'},
+        {name: 'projtApprByCode'},
+        {name: 'projtApprByName'},
+        
+        {name: 'projtApprDate'},
+        {name: 'startDate'},
+        {name: 'expecCompletDate'},
+        
+        {name: 'projectCode'},
+        {name: 'projectName'},
+        {name: 'urgencyLevel'},
+        
+        {name: 'projtPerCharges'},
+        {name: 'partakeBys'},
+        {name: 'assistBys'},
+        
+        {name: 'projtSynopsis'},
+        {name: 'remark'}
+   ],
+
+    idProperty: 'thingItemCode'
+});
+/**
+ * Description: 用车管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcUseCar', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcusecar',
+
+    fields: [
+        {name: 'useCarCode'},
+        {name: 'placeDeparture'},
+        {name: 'orNotOneWay'},
+        
+        {name: 'destination'},
+        {name: 'applyReason'},
+        {name: 'useCarByCode'},
+        
+        {name: 'useCarByName'},
+        {name: 'useCarByQty'},
+        {name: 'applyUseCarDate'},
+        
+        {name: 'useCarEndDate'},
+        {name: 'expectUseFatalism'},
+        {name: 'dept'},
+        
+        {name: 'plateNumber'},
+        {name: 'driverCode'},
+        {name: 'driverName'},
+        
+        {name: 'departDate'},
+        {name: 'Kilometer'},
+        {name: 'departRecordBy'},
+        
+        {name: 'backDate'},
+        {name: 'bacKilometer'},
+        {name: 'actualRun'},
+        
+        {name: 'backRecordBy'},
+        {name: 'actualUseFatalism'},
+        {name: 'remark'},
+   ],
+
+    idProperty: 'useCarCode'
 });
 Ext.define('Hc_Framework.store.City',{
     extend:'Hc_Common.store.ComBase',
@@ -22185,6 +24040,2198 @@ Ext.define('Hc_Framework.view.hc.SubHcSupplierProductListModel', {
     extend: 'Hc_Common.view.BaseWinPageModel',
 
     alias: 'viewmodel.subhcsupplierproductlistmodel'
+});
+/**
+ * Description: 订单管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2014-2015
+ * Company:     hc.
+ * author:      jinxi.li
+ * Createdate:  2016/01/26
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define("Hc_Framework.view.hc.HcOrder", {
+    extend: "Hc_Common.view.BaseSimplePage",
+
+    alias: 'widget.hcorder',
+
+    
+
+    controller: "hcordercontroller",
+
+    viewModel: {
+        type: "hcordermodel"
+    },
+    title_:'订单管理',
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+            searchItems: [ 
+			{
+			    xtype: 'textfield', 
+			    fieldLabel: '订单编码', 
+			    name: 'orderCode'
+			}
+            ],
+
+            gridModel: 'Hc_Framework.model.HcOrder',
+            gridSubGrid:'',
+            gridColumns: [
+                          {
+                          	header: '订单编码', 
+                          	dataIndex: 'orderCode', 
+                          	width: '15%',
+                          	renderer: function (data, metadata, record, rowIndex, columnIndex, store) {  
+                          		return '<span onclick=""><a href="#">'+data+' </a></span>';
+                            }
+                          },
+                          {
+                          	header: '责任人名称', 
+                          	dataIndex: 'perLiabName', 
+                          	width: 250
+                          },
+                          {
+              				dataIndex: 'custName',
+              				header: '客户名称',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'custAddr',
+                				header: '客户地址',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'takDelivAddr',
+                				header: '收货地址 ',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'takDelivBy',
+              				header: '收货人',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'contactTel',
+                				header: '联系电话',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'transportMode',
+              				header: '运输方式',
+              				width: 150
+                          },
+                          {
+              				dataIndex: 'contractCode',
+              				header: '合同编码',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'custDelivTime',
+                				header: '客户交期',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'remark',
+                				header: '备注',
+                				width: 150
+                          }            
+            ],
+            allendflag:false,
+            gridPrimaryKey: 'orderCode',
+            gridLoadUrl: Hc.basePath + 'hc_order_list/list.json',
+            gridLoadSubUrl: Hc.basePath + 'hc_order_list/listAll.json',
+            gridSaveUrl: Hc.basePath + 'hc_order_list/batchOperate.json',
+            gridExportUrl: Hc.basePath + 'hc_order_list/do_export.json',
+            gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_order_list/deleteMasterCustomer.json',
+            gridAddMasterCustomerUrl: Hc.basePath + 'hc_order_list/addMasterCustomer.json',
+            gridImportUrl: Hc.basePath + '',
+            subWinTableName:'Hc_Framework.view.hc.SubHcOrder',
+            subformActivate:false
+        });
+        me.callParent();
+    }
+});
+/**
+ * Description: 订单管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+
+Ext.define('Hc_Framework.view.hc.HcOrderController', {
+	extend : 'Hc_Common.view.BaseSimplePageController',
+
+	alias : 'controller.hcordercontroller',
+	
+	init: function () {
+		var me = this;
+		Ext.apply(me, {
+			windowFlag:true,
+			newobj:this.view.subWinTableName
+		})
+		me.callParent();
+	},
+	onEditClick:function( obj , record , item , index , e , eOpts){
+      
+	},
+	onEditClick_:function(obj , td , cellIndex , record , tr , rowIndex , e , eOpts ){
+		var store = Ext.create('Hc_Common.store.Base', {
+            model:'Hc_Framework.model.HcOrder',
+            autoLoad: false,
+            groupField: 'inquiredQTY_quotedPrice$',
+            proxy: {
+                url: this.view.gridLoadSubUrl
+            }
+        });
+		
+		store.proxy.extraParams['quoteCode'] = record.data.quoteCode; 
+		store.load();	      	 
+		if(cellIndex==0){
+	    	Ext.create(this.view.subWinTableName,{
+	    		title:'编辑',
+	    		record:record,
+	    		me_:this,
+	    		store:store
+	    	}).show();
+	    	this.view.subformActivate=true;
+	    	this.onBtnCancelClick();
+		}
+    	
+    }
+	
+});
+/**
+ * Description: 订单管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.view.hc.HcOrderModel', {
+    extend: 'Hc_Common.view.BaseSimplePageModel',
+
+    alias: 'viewmodel.hcordermodel'
+});
+Ext.define("Hc_Framework.view.hc.SubHcOrder", {
+    extend: "Hc_Common.view.BaseWinPage",
+
+    alias: 'widget.subhcquote',
+
+    
+
+    controller: "subhcordercontroller",
+
+    viewModel: {
+        type: "subhcordermodel"
+    },
+    title:'新增',
+    width: 1000,
+    height:620,
+    
+    maxWidth:1000,
+   // maxHeight:620,
+    
+    minWidth:1000,
+    minHeight:620,
+    
+    layout:'border',//设置窗口内部布局
+    closeAction:'hide',
+    plain:false,//true则主体背景透明，false则和主体背景有些差别
+    collapsible:false,//是否可收缩
+    modal:true,//是否为模式窗体
+   
+    dockedItems:[{
+    	 xtype: 'toolbar',
+    	 dock: 'top',
+    	 items: [
+           {
+             text: '保存',
+             handler:'onBtnSaveClick',
+             glyph: Hc.Icon.btnSave
+           },
+           {
+               text: '编辑',
+               handler:'onBtnEditClick',
+               glyph: Hc.Icon.btnEdit
+           },
+           {
+               text: '取消',
+               handler:'onBtnCancelClick',
+               glyph: Hc.Icon.btnCancel
+             }
+         ]
+    }],
+    listeners: {
+    	beforeshow:function(obj ,eOpts){
+    		 var currentUser = Ext.create("Hc_Framework.store.CurrentUser");
+    	        currentUser.load();
+    		 var  userCreator;
+             var   supplierNo_;
+             
+             if(this.title=='新增'){
+            	// this.lookupReference('createUser').setValue(currentUser.getAt(0).data.userName);
+                 supplierNo_='PE'+Ext.util.Format.date((new Date()), "Y").substring(2,5)+Ext.util.Format.date((new Date()), "Y").substring(0,2)+Ext.util.Format.date((new Date()), "dmHis");
+              /*   this.lookupReference('inquiryNo').setValue(supplierNo_);
+                // this.lookupReference('modifyUser').disabled=true;
+                 //this.lookupReference('modifyDate').disabled=true;
+                 
+                 this.lookupReference('contactsName').disabled=true;
+                 this.lookupReference('contactsTel').disabled=true;
+                 this.lookupReference('contactsFax').disabled=true;
+                 this.lookupReference('supplierName').disabled=true;
+                 
+                 
+                // this.lookupReference('localDepartment').setValue(currentUser.getAt(0).data.deptName);
+                 this.lookupReference('inquiryDate').setValue(Ext.util.Format.date((new Date()),'Y-m-d H:i:s'));
+
+            */
+             }else if(this.title=='编辑'){
+           	 for(i=0;i<this.record.getFields().length;i++){
+	                 var  name=Ext.util.Format.trim(this.record.getFields()[i].getName())
+           		 
+           		 if((this.getReferences())[name]){
+           			 if(this.lookupReference(name).is('combo')){
+               			 this.lookupReference(name).setRawValue(this.record.get(name));
+               		 }else{
+               			 this.lookupReference(name).setValue(this.record.get(name));
+               		 }
+           			this.lookupReference(name).disable();
+           		 }
+           	 }
+             }
+             this.lookupReference('subhcsuppliercustomer').title='>>>>'+this.me_.view.title_;
+    	}
+    },
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+       	 items:[
+       	        {
+       	         xtype:'panel',
+       	         defaults: {
+       	        	
+                 },
+                 layout: {
+                	 type: 'absolute'
+                 },
+                 reference:'subhcsuppliercustomer',
+                 region: "north",
+                 bodyStyle: 'background:#cbdbe0;',
+                 padding:'3 0 3 0',//(top, right, bottom, left).
+                    items: [
+                            {
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 3,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '订单编码',
+									    name: 'orderCode',
+				     					reference:'orderCode',
+									    listeners: {
+									    	beforerender: function(obj) {
+											   obj.fieldLabel+='<font size="2px" color="red">*</font>';
+									        }
+										  }
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '责任人名称',
+									    name: 'perLiabName',
+				     					reference:'perLiabName'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '仓库名称',
+									    name: 'warehouseName',
+				     					reference:'warehouseName'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '合同编码',
+									    name: 'contractCode',
+				     					reference:'contractCode'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:57,
+                            	width:980,
+                            	layout: {
+                                  	 type: 'table',
+                                       columns:4
+                                   },
+                                x: 3,
+                                y: 35,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                               	items:[
+   									{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户名称',
+	   								    name: 'custName',
+	   								
+				     					reference:'custName'
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									   // width:313,
+   									    fieldLabel: '收货人',
+   									    name: 'takDelivBy',
+				     					reference:'takDelivBy',
+   									    colspan:1
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									    width:500,
+   									    fieldLabel: '收货地址',
+   									    name: 'takDelivAddr',
+				     					reference:'takDelivAddr',
+   									    colspan:4
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '联系电话',
+	   								    name: 'contactTel',
+	   								
+				     					reference:'contactTel'
+   									}
+                               	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 95,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '运输方式',
+									    name: 'transportMode',
+				     					reference:'transportMode'
+									   
+									},{
+									    xtype:'datefield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '付款方式 ',
+									    name: 'paymentMode',
+				     					reference:'paymentMode'
+									   
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '付款天数',
+									    name: 'paymentDayQty',
+				     					reference:'paymentDayQty',
+									 
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '客户交期',
+									    name: 'custDelivTime',
+				     					reference:'custDelivTime',
+									 
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '订单日期',
+									    name: 'orderDate',
+				     					reference:'orderDate',
+									 
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:56,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 128,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '是否预付',
+									    name: 'orNotPrepay',
+				     					reference:'orNotPrepay',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '发票',
+									    name: 'invoice',
+				     					reference:'invoice',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '运费负担',
+									    name: 'freightBurden',
+				     					reference:'freightBurden',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '运费金额',
+									    name: 'freightSum',
+				     					reference:'freightSum',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '货币',
+									    name: 'currency',
+				     					reference:'currency',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '其它费用',
+									    name: 'otherCharges',
+				     					reference:'otherCharges',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '银行',
+									    name: 'bank',
+				     					reference:'bank',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 188,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '审批人',
+									    name: 'examApprByName',
+				     					reference:'examApprByName'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:70,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 222,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注',
+									    name: 'remark',
+				     					reference:'remark',
+									    colspan:4
+									}
+                            	]
+                            }
+                     ]
+       	            
+       	        },{
+          	         xtype:'panel',
+          	         layout: {
+                   	 type: 'fit',
+                    },
+                    region: "center",
+                    bodyStyle: 'background:#ceebe0; padding:0px;border:0px',
+                    scrollable:true,
+                    items:[{
+                   	 xtype:'grid',
+                   	 enableHdMenu:false,
+                   	 sortableColumns:false,
+                   	 columnLines: true,
+                   	 enableColumnHide:false,
+                   	 enableColumnMove:false,
+                   	 store:me.store,
+                   	 features: [{
+             		        ftype: 'summary'
+             		     }],
+                   	 columns: {
+                   		    items: [
+                   		        {
+                   		            text: "序号",
+                   		            dataIndex: "id",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品编码",
+                   		            dataIndex: "prodCode",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品名称",
+                   		            dataIndex: "prodName",
+                   		            width: 150
+                   		        },{
+                   		            text: "型号规格",
+                   		            dataIndex: "typeModel",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品描述",
+                   		            dataIndex: "prodDesc",
+                   		            width: 150
+                   		        },{
+                   		            text: "订单数量",
+                   		            dataIndex: "orderQty",
+                   		            width: 150
+                   		        },{
+                   		            text: "单位",
+                   		            dataIndex: "unit",
+                   		            width: 150
+                   		        },{
+                   		            text: "单价",
+                   		            dataIndex: "univalent",
+                   		            width: 150
+                   		        },{
+                   		            text: "货币",
+                   		            dataIndex: "currency",
+                   		            width: 150
+                   		        },{
+                   		            text: "备注",
+                   		            dataIndex: "remark",
+                   		            width: 150
+                   		        },{
+                   		            text: "合计",
+                   		            dataIndex: "inquiredQTY_quotedPrice$",
+                   		            width: 150,
+                   		            summaryType: 'sum',
+   	                		      	summaryRenderer: function(value, summaryData, dataIndex) {
+   	                		            return'金额总计:'+value;
+   	                		        }
+                   		        }
+                   		    ]
+                   		}
+                   	 
+                   	 
+                   	 
+                 }]
+          	   }
+       	 ]
+       });
+        me.callParent();
+    }
+});
+Ext.define('Hc_Framework.view.hc.SubHcOrderController', {
+	extend : 'Hc_Common.view.BaseWinPageController',
+
+	alias : 'controller.subhcordercontroller',
+	flag:false,
+	record_:'',
+	init: function () {
+		var me = this;
+		var  record=Ext.create('Hc_Framework.model.HcOrder',{});
+		this.record_=record
+		for(i=0;i<record.getFields().length;i++){
+			var  name=Ext.util.Format.trim(record.getFields()[i].getName())
+	   		 
+	   		if((this.getReferences())[name]){
+				this.lookupReference(name).on("change", me.onBtnchange, me);	   			 
+	   		 }
+     	}
+		me.callParent();
+	},
+	onBtnEditClick:function(){
+		for(i=0;i<this.record_.getFields().length;i++){
+            var  name=Ext.util.Format.trim(this.record_.getFields()[i].getName())
+  		 if((this.getReferences())[name]){
+  			 if('contactsName'==name||'contactsTel'==name||'contactsFax'==name||'supplierName'==name){
+  				this.lookupReference(name).disable();
+  			 }else{
+  				this.lookupReference(name).enable();
+  			 }
+  			
+  		 }
+  	    }
+		//this.view.lookupReference('inquiryNo').enable()
+
+	},
+	onBtnchange:function(obj , newValue , oldValue , eOpt){
+	 	var  store_=this.view.me_.workObject.store;
+		store_.beginUpdate();
+	 	if(obj.is('combo')){
+	 		this.view.record.set(obj.name, obj.getRawValue()); 		
+	 	}else{
+	 		this.view.record.set(obj.name, obj.getRawValue()); 	
+	 	}
+
+
+	 	
+	 	if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+	 	store_.endUpdate();
+	},
+	onBtnSaveClick:function(){
+	    if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+
+	    for(i=0;i<this.record_.getFields().length-3;i++){
+			
+			  if(!this.lookupReference(Ext.util.Format.trim(this.record_.getFields()[i].getName())).isValid()){
+				  return;
+			  }
+		}
+	    this.view.me_.workObject.store.add(this.view.record);
+	    this.view.me_.onBtnSaveClick(null,this)
+	},
+	onBtnCancelClick:function(){
+		if(this.flag){
+			  this.view.me_.workObject.store.removeAt(this.view.me_.workObject.store.getCount()-1);
+			  //this.view.me_.workObject.getStore().rejectChanges();
+			  this.view.me_.workObject.view.refresh();
+			  this.flag=false
+		}
+		
+      if(this.view.title=='编辑'){
+    		
+      	this.view.me_.workObject.store.rejectChanges()
+      	this.view.me_.workObject.view.refresh();
+    		
+    	}
+          this.view.me_.view.subformActivate=false;
+		  this.view.hide();
+	}
+	
+});
+Ext.define('Hc_Framework.view.hc.SubHcOrderModel', {
+    extend: 'Hc_Common.view.BaseWinPageModel',
+
+    alias: 'viewmodel.subhcordermodel'
+});
+/**
+ * Description: 项目管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2014-2015
+ * Company:     hc.
+ * author:      jinxi.li
+ * Createdate:  2016/01/26
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define("Hc_Framework.view.hc.HcProject", {
+    extend: "Hc_Common.view.BaseSimplePage",
+
+    alias: 'widget.hcproject',
+
+    
+
+    controller: "hcprojectcontroller",
+
+    viewModel: {
+        type: "hcprojectmodel"
+    },
+    title_:'项目管理',
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+            searchItems: [ 
+			{
+			    xtype: 'textfield', 
+			    fieldLabel: '项目编码', 
+			    name: 'projtCode'
+			},{
+			    xtype: 'textfield', 
+			    fieldLabel: '项目名称', 
+			    name: 'projtName'
+			}
+            ],
+
+            gridModel: 'Hc_Framework.model.HcProject',
+            gridSubGrid:'',
+            gridColumns: [
+                          {
+                          	header: '项目编码', 
+                          	dataIndex: 'projtCode', 
+                          	width: '15%',
+                          	renderer: function (data, metadata, record, rowIndex, columnIndex, store) {  
+                          		return '<span onclick=""><a href="#">'+data+' </a></span>';
+                            }
+                          },
+                          {
+                          	header: '项目名称', 
+                          	dataIndex: 'projtName', 
+                          	width: 250
+                          },
+                          {
+              				dataIndex: 'applByName',
+              				header: '申请人',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'perChargeByName',
+                				header: '负责人',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'projtStage',
+                				header: '项目阶段 ',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'projtApprDate',
+              				header: '立项日期',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'projtSource',
+                				header: '项目来源',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'currentState',
+              				header: '当前状态',
+              				width: 150
+                          },
+                          {
+              				dataIndex: 'custName',
+              				header: '客户名称',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'contactBy',
+                				header: '联系人',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'remark',
+                				header: '备注',
+                				width: 150
+                          }            
+            ],
+            allendflag:false,
+            gridPrimaryKey: 'projtCode',
+            gridLoadUrl: Hc.basePath + 'hc_project_list/list.json',
+            gridLoadSubUrl: Hc.basePath + 'hc_project_list/listAll.json',
+            gridSaveUrl: Hc.basePath + 'hc_project_list/batchOperate.json',
+            gridExportUrl: Hc.basePath + 'hc_project_list/do_export.json',
+            gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_project_list/deleteMasterCustomer.json',
+            gridAddMasterCustomerUrl: Hc.basePath + 'hc_project_list/addMasterCustomer.json',
+            gridImportUrl: Hc.basePath + '',
+            subWinTableName:'Hc_Framework.view.hc.SubHcProject',
+            subformActivate:false
+        });
+        me.callParent();
+    }
+});
+/**
+ * Description: 项目管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+
+Ext.define('Hc_Framework.view.hc.HcProjectController', {
+	extend : 'Hc_Common.view.BaseSimplePageController',
+
+	alias : 'controller.hcprojectcontroller',
+	
+	init: function () {
+		var me = this;
+		Ext.apply(me, {
+			windowFlag:true,
+			newobj:this.view.subWinTableName
+		})
+		me.callParent();
+	},
+	onEditClick:function( obj , record , item , index , e , eOpts){
+      
+	},
+	onEditClick_:function(obj , td , cellIndex , record , tr , rowIndex , e , eOpts ){
+		var store = Ext.create('Hc_Common.store.Base', {
+            model:'Hc_Framework.model.HcProject',
+            autoLoad: false,
+            groupField: 'inquiredQTY_quotedPrice$',
+            proxy: {
+                url: this.view.gridLoadSubUrl
+            }
+        });
+		
+		store.proxy.extraParams['quoteCode'] = record.data.quoteCode; 
+		store.load();	      	 
+		if(cellIndex==0){
+	    	Ext.create(this.view.subWinTableName,{
+	    		title:'编辑',
+	    		record:record,
+	    		me_:this,
+	    		store:store
+	    	}).show();
+	    	this.view.subformActivate=true;
+	    	this.onBtnCancelClick();
+		}
+    	
+    }
+	
+});
+/**
+ * Description: 项目管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.view.hc.HcProjectModel', {
+    extend: 'Hc_Common.view.BaseSimplePageModel',
+
+    alias: 'viewmodel.hcprojectmodel'
+});
+Ext.define("Hc_Framework.view.hc.SubHcProject", {
+    extend: "Hc_Common.view.BaseWinPage",
+
+    alias: 'widget.subhcproject',
+
+    
+
+    controller: "subhcprojectcontroller",
+
+    viewModel: {
+        type: "subhcprojectmodel"
+    },
+    title:'新增',
+    width: 1000,
+    height:620,
+    
+    maxWidth:1000,
+   // maxHeight:620,
+    
+    minWidth:1000,
+    minHeight:620,
+    
+    layout:'border',//设置窗口内部布局
+    closeAction:'hide',
+    plain:false,//true则主体背景透明，false则和主体背景有些差别
+    collapsible:false,//是否可收缩
+    modal:true,//是否为模式窗体
+   
+    dockedItems:[{
+    	 xtype: 'toolbar',
+    	 dock: 'top',
+    	 items: [
+           {
+             text: '保存',
+             handler:'onBtnSaveClick',
+             glyph: Hc.Icon.btnSave
+           },
+           {
+               text: '编辑',
+               handler:'onBtnEditClick',
+               glyph: Hc.Icon.btnEdit
+           },
+           {
+               text: '取消',
+               handler:'onBtnCancelClick',
+               glyph: Hc.Icon.btnCancel
+             }
+         ]
+    }],
+    listeners: {
+    	beforeshow:function(obj ,eOpts){
+    		 var currentUser = Ext.create("Hc_Framework.store.CurrentUser");
+    	        currentUser.load();
+    		 var  userCreator;
+             var   supplierNo_;
+             
+             if(this.title=='新增'){
+            	// this.lookupReference('createUser').setValue(currentUser.getAt(0).data.userName);
+                 supplierNo_='PE'+Ext.util.Format.date((new Date()), "Y").substring(2,5)+Ext.util.Format.date((new Date()), "Y").substring(0,2)+Ext.util.Format.date((new Date()), "dmHis");
+              /*   this.lookupReference('inquiryNo').setValue(supplierNo_);
+                // this.lookupReference('modifyUser').disabled=true;
+                 //this.lookupReference('modifyDate').disabled=true;
+                 
+                 this.lookupReference('contactsName').disabled=true;
+                 this.lookupReference('contactsTel').disabled=true;
+                 this.lookupReference('contactsFax').disabled=true;
+                 this.lookupReference('supplierName').disabled=true;
+                 
+                 
+                // this.lookupReference('localDepartment').setValue(currentUser.getAt(0).data.deptName);
+                 this.lookupReference('inquiryDate').setValue(Ext.util.Format.date((new Date()),'Y-m-d H:i:s'));
+
+            */
+             }else if(this.title=='编辑'){
+           	 for(i=0;i<this.record.getFields().length;i++){
+	                 var  name=Ext.util.Format.trim(this.record.getFields()[i].getName())
+           		 
+           		 if((this.getReferences())[name]){
+           			 if(this.lookupReference(name).is('combo')){
+               			 this.lookupReference(name).setRawValue(this.record.get(name));
+               		 }else{
+               			 this.lookupReference(name).setValue(this.record.get(name));
+               		 }
+           			this.lookupReference(name).disable();
+           		 }
+           	 }
+             }
+             this.lookupReference('subhcsuppliercustomer').title='>>>>'+this.me_.view.title_;
+    	}
+    },
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+       	 items:[
+       	        {
+       	         xtype:'panel',
+       	         defaults: {
+       	        	
+                 },
+                 layout: {
+                	 type: 'absolute'
+                 },
+                 reference:'subhcsuppliercustomer',
+                 region: "north",
+                 height:3000,
+                 bodyStyle: 'background:#cbdbe0;',
+                 padding:'3 0 3 0',//(top, right, bottom, left).
+                    items: [
+                            {
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 3,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '项目编码',
+									    name: 'projtCode',
+				     					reference:'projtCode',
+									    listeners: {
+									    	beforerender: function(obj) {
+											   obj.fieldLabel+='<font size="2px" color="red">*</font>';
+									        }
+										  }
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '项目名称',
+									    name: 'projtName',
+				     					reference:'projtName'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '申请人',
+									    name: 'applByName',
+				     					reference:'applByName'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '负责人',
+									    name: 'perChargeByName',
+				     					reference:'perChargeByName'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:57,
+                            	width:980,
+                            	layout: {
+                                  	 type: 'table',
+                                       columns:4
+                                   },
+                                x: 3,
+                                y: 35,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                               	items:[
+   									{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '项目金额',
+	   								    name: 'projtSum',
+	   								
+				     					reference:'projtSum'
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									   // width:313,
+   									    fieldLabel: '项目阶段',
+   									    name: 'projtStage',
+				     					reference:'projtStage',
+   									    colspan:1
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									    width:500,
+   									    fieldLabel: '项目来源',
+   									    name: 'projtSource',
+				     					reference:'projtSource',
+   									    colspan:4
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '立项日期',
+	   								    name: 'projtApprDate',
+	   								
+				     					reference:'projtApprDate'
+   									}
+                               	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 95,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '成功率估计',
+									    name: 'sucRateEstimate',
+				     					reference:'sucRateEstimate'
+									   
+									},{
+									    xtype:'datefield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '当前状态 ',
+									    name: 'currentState',
+				     					reference:'currentState'
+									   
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '付款天数',
+									    name: 'paymentDayQty',
+				     					reference:'paymentDayQty',
+									 
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 128,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '客户名称',
+									    name: 'custName',
+				     					reference:'custName',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系人',
+									    name: 'contactBy',
+				     					reference:'contactBy',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系电话',
+									    name: 'contactTel',
+				     					reference:'contactTel',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:450,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                defaults: {
+                       	        	//height:20
+                                },
+                                x: 3,
+                                y: 160,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									   // height:1,
+									    fieldLabel: '终止原因',
+									    name: 'endReason',
+											reference:'endReason',
+									    colspan:4
+									},{
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '项目简介、主要产品及数量',
+									    name: 'introduction',
+											reference:'introduction',
+									    colspan:4
+									},{
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '跟进措施',
+									    name: 'rootMeasure',
+											reference:'rootMeasure',
+									    colspan:4
+									},{
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '需配合/支持措施',
+									    name: 'coopRootMeasure',
+											reference:'coopRootMeasure',
+									    colspan:4
+									},{
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '结　　果',
+									    name: 'result',
+											reference:'result',
+									    colspan:4
+									},{
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '小　　结',
+									    name: 'summary_',
+											reference:'summary_',
+									    colspan:4
+									},{
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注',
+									    name: 'remark',
+				     					reference:'remark',
+									    colspan:4
+									}
+                            	]
+                            }
+                     ]
+       	            
+       	        }
+       	 ]
+       });
+        me.callParent();
+    }
+});
+Ext.define('Hc_Framework.view.hc.SubHcProjectController', {
+	extend : 'Hc_Common.view.BaseWinPageController',
+
+	alias : 'controller.subhcprojectcontroller',
+	flag:false,
+	record_:'',
+	init: function () {
+		var me = this;
+		var  record=Ext.create('Hc_Framework.model.HcProject',{});
+		this.record_=record
+		for(i=0;i<record.getFields().length;i++){
+			var  name=Ext.util.Format.trim(record.getFields()[i].getName())
+	   		 
+	   		if((this.getReferences())[name]){
+				this.lookupReference(name).on("change", me.onBtnchange, me);	   			 
+	   		 }
+     	}
+		me.callParent();
+	},
+	onBtnEditClick:function(){
+		for(i=0;i<this.record_.getFields().length;i++){
+            var  name=Ext.util.Format.trim(this.record_.getFields()[i].getName())
+  		 if((this.getReferences())[name]){
+  			 if('contactsName'==name||'contactsTel'==name||'contactsFax'==name||'supplierName'==name){
+  				this.lookupReference(name).disable();
+  			 }else{
+  				this.lookupReference(name).enable();
+  			 }
+  			
+  		 }
+  	    }
+		//this.view.lookupReference('inquiryNo').enable()
+
+	},
+	onBtnchange:function(obj , newValue , oldValue , eOpt){
+	 	var  store_=this.view.me_.workObject.store;
+		store_.beginUpdate();
+	 	if(obj.is('combo')){
+	 		this.view.record.set(obj.name, obj.getRawValue()); 		
+	 	}else{
+	 		this.view.record.set(obj.name, obj.getRawValue()); 	
+	 	}
+
+
+	 	
+	 	if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+	 	store_.endUpdate();
+	},
+	onBtnSaveClick:function(){
+	    if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+
+	    for(i=0;i<this.record_.getFields().length-3;i++){
+			
+			  if(!this.lookupReference(Ext.util.Format.trim(this.record_.getFields()[i].getName())).isValid()){
+				  return;
+			  }
+		}
+	    this.view.me_.workObject.store.add(this.view.record);
+	    this.view.me_.onBtnSaveClick(null,this)
+	},
+	onBtnCancelClick:function(){
+		if(this.flag){
+			  this.view.me_.workObject.store.removeAt(this.view.me_.workObject.store.getCount()-1);
+			  //this.view.me_.workObject.getStore().rejectChanges();
+			  this.view.me_.workObject.view.refresh();
+			  this.flag=false
+		}
+		
+      if(this.view.title=='编辑'){
+    		
+      	this.view.me_.workObject.store.rejectChanges()
+      	this.view.me_.workObject.view.refresh();
+    		
+    	}
+          this.view.me_.view.subformActivate=false;
+		  this.view.hide();
+	}
+	
+});
+Ext.define('Hc_Framework.view.hc.SubHcProjectModel', {
+    extend: 'Hc_Common.view.BaseWinPageModel',
+
+    alias: 'viewmodel.subhcprojectmodel'
+});
+/**
+ * Description: 报价管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2014-2015
+ * Company:     hc.
+ * author:      jinxi.li
+ * Createdate:  2016/01/26
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define("Hc_Framework.view.hc.HcQuote", {
+    extend: "Hc_Common.view.BaseSimplePage",
+
+    alias: 'widget.hcquote',
+
+    
+
+    controller: "hcquotecontroller",
+
+    viewModel: {
+        type: "hcquotemodel"
+    },
+    title_:'报价管理',
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+            searchItems: [ 
+			{
+			    xtype: 'textfield', 
+			    fieldLabel: '报价编码', 
+			    name: 'quoteCode'
+			}
+            ],
+
+            gridModel: 'Hc_Framework.model.HcQuote',
+            gridSubGrid:'',
+            gridColumns: [
+                          {
+                          	header: '报价编码', 
+                          	dataIndex: 'quoteCode', 
+                          	width: '15%',
+                          	renderer: function (data, metadata, record, rowIndex, columnIndex, store) {  
+                          		return '<span onclick=""><a href="#">'+data+' </a></span>';
+                            }
+                          },
+                          {
+                          	header: '报价人名称', 
+                          	dataIndex: 'quoteByName', 
+                          	width: 250
+                          },
+                          {
+              				dataIndex: 'custName',
+              				header: '客户名称',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'custAddr',
+                				header: '客户地址',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'custTel',
+                				header: '客户电话 ',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'contactBy',
+              				header: '联系人',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'quoteMode',
+                				header: '报价方式',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'deliverGoodsDate',
+              				header: '交货时间',
+              				width: 150
+                          },
+                          {
+              				dataIndex: 'currency',
+              				header: '货币',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'taxRate',
+                				header: '税率',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'remark',
+                				header: '备注',
+                				width: 150
+                          }            
+            ],
+            allendflag:false,
+            gridPrimaryKey: 'quoteCode',
+            gridLoadUrl: Hc.basePath + 'hc_quote_list/list.json',
+            gridLoadSubUrl: Hc.basePath + 'hc_quote_list/listAll.json',
+            gridSaveUrl: Hc.basePath + 'hc_quote_list/batchOperate.json',
+            gridExportUrl: Hc.basePath + 'hc_quote_list/do_export.json',
+            gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_quote_list/deleteMasterCustomer.json',
+            gridAddMasterCustomerUrl: Hc.basePath + 'hc_quote_list/addMasterCustomer.json',
+            gridImportUrl: Hc.basePath + '',
+            subWinTableName:'Hc_Framework.view.hc.HcQuote',
+            subformActivate:false
+        });
+        me.callParent();
+    }
+});
+/**
+ * Description: 报价管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+
+Ext.define('Hc_Framework.view.hc.HcQuoteController', {
+	extend : 'Hc_Common.view.BaseSimplePageController',
+
+	alias : 'controller.hcquotecontroller',
+	
+	init: function () {
+		var me = this;
+		Ext.apply(me, {
+			windowFlag:true,
+			newobj:this.view.subWinTableName
+		})
+		me.callParent();
+	},
+	onEditClick:function( obj , record , item , index , e , eOpts){
+      
+	},
+	onEditClick_:function(obj , td , cellIndex , record , tr , rowIndex , e , eOpts ){
+		var store = Ext.create('Hc_Common.store.Base', {
+            model:'Hc_Framework.model.HcQuote',
+            autoLoad: false,
+            groupField: 'inquiredQTY_quotedPrice$',
+            proxy: {
+                url: this.view.gridLoadSubUrl
+            }
+        });
+		
+		store.proxy.extraParams['quoteCode'] = record.data.quoteCode; 
+		store.load();	      	 
+		if(cellIndex==0){
+	    	Ext.create(this.view.subWinTableName,{
+	    		title:'编辑',
+	    		record:record,
+	    		me_:this,
+	    		store:store
+	    	}).show();
+	    	this.view.subformActivate=true;
+	    	this.onBtnCancelClick();
+		}
+    	
+    }
+	
+});
+/**
+ * Description: 报价管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.view.hc.HcQuoteModel', {
+    extend: 'Hc_Common.view.BaseSimplePageModel',
+
+    alias: 'viewmodel.hcquotemodel'
+});
+Ext.define("Hc_Framework.view.hc.SubHcQuote", {
+    extend: "Hc_Common.view.BaseWinPage",
+
+    alias: 'widget.subhcquote',
+
+    
+
+    controller: "subhcquotecontroller",
+
+    viewModel: {
+        type: "subhcquotemodel"
+    },
+    title:'新增',
+    width: 1000,
+    height:620,
+    
+    maxWidth:1000,
+   // maxHeight:620,
+    
+    minWidth:1000,
+    minHeight:620,
+    
+    layout:'border',//设置窗口内部布局
+    closeAction:'hide',
+    plain:false,//true则主体背景透明，false则和主体背景有些差别
+    collapsible:false,//是否可收缩
+    modal:true,//是否为模式窗体
+   
+    dockedItems:[{
+    	 xtype: 'toolbar',
+    	 dock: 'top',
+    	 items: [
+           {
+             text: '保存',
+             handler:'onBtnSaveClick',
+             glyph: Hc.Icon.btnSave
+           },
+           {
+               text: '编辑',
+               handler:'onBtnEditClick',
+               glyph: Hc.Icon.btnEdit
+           },
+           {
+               text: '取消',
+               handler:'onBtnCancelClick',
+               glyph: Hc.Icon.btnCancel
+             }
+         ]
+    }],
+    listeners: {
+    	beforeshow:function(obj ,eOpts){
+    		 var currentUser = Ext.create("Hc_Framework.store.CurrentUser");
+    	        currentUser.load();
+    		 var  userCreator;
+             var   supplierNo_;
+             
+             if(this.title=='新增'){
+            	// this.lookupReference('createUser').setValue(currentUser.getAt(0).data.userName);
+                 supplierNo_='PE'+Ext.util.Format.date((new Date()), "Y").substring(2,5)+Ext.util.Format.date((new Date()), "Y").substring(0,2)+Ext.util.Format.date((new Date()), "dmHis");
+              /*   this.lookupReference('inquiryNo').setValue(supplierNo_);
+                // this.lookupReference('modifyUser').disabled=true;
+                 //this.lookupReference('modifyDate').disabled=true;
+                 
+                 this.lookupReference('contactsName').disabled=true;
+                 this.lookupReference('contactsTel').disabled=true;
+                 this.lookupReference('contactsFax').disabled=true;
+                 this.lookupReference('supplierName').disabled=true;
+                 
+                 
+                // this.lookupReference('localDepartment').setValue(currentUser.getAt(0).data.deptName);
+                 this.lookupReference('inquiryDate').setValue(Ext.util.Format.date((new Date()),'Y-m-d H:i:s'));
+
+            */
+             }else if(this.title=='编辑'){
+           	 for(i=0;i<this.record.getFields().length;i++){
+	                 var  name=Ext.util.Format.trim(this.record.getFields()[i].getName())
+           		 
+           		 if((this.getReferences())[name]){
+           			 if(this.lookupReference(name).is('combo')){
+               			 this.lookupReference(name).setRawValue(this.record.get(name));
+               		 }else{
+               			 this.lookupReference(name).setValue(this.record.get(name));
+               		 }
+           			this.lookupReference(name).disable();
+           		 }
+           	 }
+             }
+             this.lookupReference('subhcsuppliercustomer').title='>>>>'+this.me_.view.title_;
+    	}
+    },
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+       	 items:[
+       	        {
+       	         xtype:'panel',
+       	         defaults: {
+       	        	
+                 },
+                 layout: {
+                	 type: 'absolute'
+                 },
+                 reference:'subhcsuppliercustomer',
+                 region: "north",
+                 bodyStyle: 'background:#cbdbe0;',
+                 padding:'3 0 3 0',//(top, right, bottom, left).
+                    items: [
+                            {
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 3,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价编码',
+									    name: 'quoteCode',
+				     					reference:'quoteCode',
+									    listeners: {
+									    	beforerender: function(obj) {
+											   obj.fieldLabel+='<font size="2px" color="red">*</font>';
+									        }
+										  }
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人编码',
+									    name: 'quoteByCode',
+				     					reference:'quoteByCode'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人名称',
+									    name: 'quoteByName',
+				     					reference:'quoteByName'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价方式',
+									    name: 'quoteMode',
+				     					reference:'quoteMode'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:57,
+                            	width:980,
+                            	layout: {
+                                  	 type: 'table',
+                                       columns:4
+                                   },
+                                x: 3,
+                                y: 35,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                               	items:[
+   									{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户编码',
+	   								    name: 'custCode',
+	   								
+				     					reference:'custCode'
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									   // width:313,
+   									    fieldLabel: '客户名称',
+   									    name: 'custName',
+				     					reference:'custName',
+   									    colspan:1
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									    width:500,
+   									    fieldLabel: '客户地址',
+   									    name: 'custAddr',
+				     					reference:'custAddr',
+   									    colspan:4
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户电话',
+	   								    name: 'custTel',
+	   								
+				     					reference:'custTel'
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户传真',
+	   								    name: 'custFax',
+	   								
+				     					reference:'custFax'
+   									}
+   								
+                               	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 95,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系人名称',
+									    name: 'contact_by',
+				     					reference:'contact_by'
+									   
+									},{
+									    xtype:'datefield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系电话 ',
+									    name: 'contacTByTel',
+				     					reference:'contacTByTel'
+									   
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系邮件',
+									    name: 'contactByEmail',
+				     					reference:'contactByEmail',
+									 
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:56,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 128,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '目的站',
+									    name: 'purposePlace',
+				     					reference:'purposePlace',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '包装',
+									    name: 'packing',
+				     					reference:'packing',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '货币',
+									    name: 'currency',
+				     					reference:'currency',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货方式',
+									    name: 'deliverGoodsMode',
+				     					reference:'deliverGoodsMode',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货时间',
+									    name: 'deliverGoodsDate',
+				     					reference:'deliverGoodsDate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '付款方式',
+									    name: 'paymentMode',
+				     					reference:'paymentMode',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 188,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '运费',
+									    name: 'freight',
+				     					reference:'freight',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '保险',
+									    name: 'insurance',
+				     					reference:'insurance',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '税率',
+									    name: 'tax_rate',
+				     					reference:'tax_rate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '折扣',
+									    name: 'rebate',
+				     					reference:'rebate',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 222,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '审批人',
+									    name: 'examApprByName',
+				     					reference:'examApprByName'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:70,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 255,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注',
+									    name: 'remark',
+				     					reference:'remark',
+									    colspan:4
+									}
+                            	]
+                            }
+                     ]
+       	            
+       	        },{
+          	         xtype:'panel',
+          	         layout: {
+                   	 type: 'fit',
+                    },
+                    region: "center",
+                    bodyStyle: 'background:#ceebe0; padding:0px;border:0px',
+                    scrollable:true,
+                    items:[{
+                   	 xtype:'grid',
+                   	 enableHdMenu:false,
+                   	 sortableColumns:false,
+                   	 columnLines: true,
+                   	 enableColumnHide:false,
+                   	 enableColumnMove:false,
+                   	 store:me.store,
+                   	 features: [{
+             		        ftype: 'summary'
+             		     }],
+                   	 columns: {
+                   		    items: [
+                   		        {
+                   		            text: "序号",
+                   		            dataIndex: "id",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品编码",
+                   		            dataIndex: "prodCode",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品名称",
+                   		            dataIndex: "prodName",
+                   		            width: 150
+                   		        },{
+                   		            text: "型号规格",
+                   		            dataIndex: "typeModel",
+                   		            width: 150
+                   		        },{
+                   		            text: "数量",
+                   		            dataIndex: "qty",
+                   		            width: 150
+                   		        },{
+                   		            text: "单位",
+                   		            dataIndex: "unit",
+                   		            width: 150
+                   		        },{
+                   		            text: "单价",
+                   		            dataIndex: "univalent",
+                   		            width: 150
+                   		        },{
+                   		            text: "货币",
+                   		            dataIndex: "currency",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品描述",
+                   		            dataIndex: "prodDesc",
+                   		            width: 150
+                   		        },{
+                   		            text: "品牌",
+                   		            dataIndex: "brand",
+                   		            width: 150
+                   		        },{
+                   		            text: "制造商名称",
+                   		            dataIndex: "manufName",
+                   		            width: 150
+                   		        },{
+                   		            text: "货期（交期）",
+                   		            dataIndex: "deliveTime",
+                   		            width: 150
+                   		        },{
+                   		            text: "备注",
+                   		            dataIndex: "remark",
+                   		            width: 150
+                   		        },{
+                   		            text: "合计",
+                   		            dataIndex: "inquiredQTY_quotedPrice$",
+                   		            width: 150,
+                   		            summaryType: 'sum',
+   	                		      	summaryRenderer: function(value, summaryData, dataIndex) {
+   	                		            return'金额总计:'+value;
+   	                		        }
+                   		        }
+                   		    ]
+                   		}
+                   	 
+                   	 
+                   	 
+                 }]
+          	   }
+       	 ]
+       });
+        me.callParent();
+    }
+});
+Ext.define('Hc_Framework.view.hc.SubHcQuoteController', {
+	extend : 'Hc_Common.view.BaseWinPageController',
+
+	alias : 'controller.subhcquotecontroller',
+	flag:false,
+	record_:'',
+	init: function () {
+		var me = this;
+		var  record=Ext.create('Hc_Framework.model.HcQuote',{});
+		this.record_=record
+		for(i=0;i<record.getFields().length;i++){
+			var  name=Ext.util.Format.trim(record.getFields()[i].getName())
+	   		 
+	   		if((this.getReferences())[name]){
+				this.lookupReference(name).on("change", me.onBtnchange, me);	   			 
+	   		 }
+     	}
+		me.callParent();
+	},
+	onBtnEditClick:function(){
+		for(i=0;i<this.record_.getFields().length;i++){
+            var  name=Ext.util.Format.trim(this.record_.getFields()[i].getName())
+  		 if((this.getReferences())[name]){
+  			 if('contactsName'==name||'contactsTel'==name||'contactsFax'==name||'supplierName'==name){
+  				this.lookupReference(name).disable();
+  			 }else{
+  				this.lookupReference(name).enable();
+  			 }
+  			
+  		 }
+  	    }
+		//this.view.lookupReference('inquiryNo').enable()
+
+	},
+	onBtnchange:function(obj , newValue , oldValue , eOpt){
+	 	var  store_=this.view.me_.workObject.store;
+		store_.beginUpdate();
+	 	if(obj.is('combo')){
+	 		this.view.record.set(obj.name, obj.getRawValue()); 		
+	 	}else{
+	 		this.view.record.set(obj.name, obj.getRawValue()); 	
+	 	}
+
+
+	 	
+	 	if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+	 	store_.endUpdate();
+	},
+	onBtnSaveClick:function(){
+	    if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+
+	    for(i=0;i<this.record_.getFields().length-3;i++){
+			
+			  if(!this.lookupReference(Ext.util.Format.trim(this.record_.getFields()[i].getName())).isValid()){
+				  return;
+			  }
+		}
+	    this.view.me_.workObject.store.add(this.view.record);
+	    this.view.me_.onBtnSaveClick(null,this)
+	},
+	onBtnCancelClick:function(){
+		if(this.flag){
+			  this.view.me_.workObject.store.removeAt(this.view.me_.workObject.store.getCount()-1);
+			  //this.view.me_.workObject.getStore().rejectChanges();
+			  this.view.me_.workObject.view.refresh();
+			  this.flag=false
+		}
+		
+      if(this.view.title=='编辑'){
+    		
+      	this.view.me_.workObject.store.rejectChanges()
+      	this.view.me_.workObject.view.refresh();
+    		
+    	}
+          this.view.me_.view.subformActivate=false;
+		  this.view.hide();
+	}
+	
+});
+Ext.define('Hc_Framework.view.hc.SubHcQuoteModel', {
+    extend: 'Hc_Common.view.BaseWinPageModel',
+
+    alias: 'viewmodel.subhcquotemodel'
 });
 /**
  * Description: 主框架应用程序入口

@@ -27,6 +27,7 @@ Ext.define('Hc_Framework.model.HcQuote', {
         
         {name: 'custAddr'},
         {name: 'custFax'},
+        {name: 'contactByCode'},
         {name: 'contactBy'},
         
         {name: 'contacTByTel'},

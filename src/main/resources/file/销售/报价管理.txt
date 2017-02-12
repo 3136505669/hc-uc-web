@@ -6,7 +6,8 @@
 客户电话 customer_tel                 custTel
 客户地址 customer_addr                custAddr
 客户传真 customer_fax                 custFax
-联系人   contact_by                   contactBy
+联系人编码   contact_by_code          contactByCode
+联系人名称   contact_by                   contactBy
 联系电话 contact_by_tel               contacTByTel
 联系邮件 contact_by_email             contactByEmail
 报价方式 quote_mode                   quoteMode
