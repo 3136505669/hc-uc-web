@@ -1,16 +1,16 @@
-¸¶¿î±àºÅ paymentCode
-¸¶¿îÈÕÆÚ paymentDate
-Éê Çë ÈË applyBy
-ÉêÇë²¿ÃÅ applyDept
-ÊÕ¿îµ¥Î» ReceivablesOrganization     ReceivOrganiz
-ÊÕ¿îÕÊ»§ ReceivablesAccount      ReceivAccount
-¿ª»§ÒøĞĞ bankAccount
-¸¶¿î·½Ê½ payment_mode      paymentMode
-½ğ¶î(RMB) Amount                 amount
-¸¶¿îËµÃ÷ payment_description                   paymentDesc
-ÉóÅúÇé¿ö examineandapprovesituation             examApprSitu
-µÚÒ»ÉóÅúÓÃ»§ firstexamineandapproveuser    firstExamAppruser
-µÚ¶şÉóÅúÓÃ»§ secondexamineandapproveuser    secondExamAppruser
-µÚÈıÉóÅúÓÃ»§ thirdexamineandapproveuser    thirdExamAppruser
-µÚËÄÉóÅúÓÃ»§ fourthexamineandapproveuser    fourthExamAppruser
-ÉóÅúÒâ¼û  examineandapprove_opinion         examApprOpinion
+ä»˜æ¬¾ç¼–å· paymentCode
+ä»˜æ¬¾æ—¥æœŸ paymentDate
+ç”³ è¯· äºº applyBy
+ç”³è¯·éƒ¨é—¨ applyDept
+æ”¶æ¬¾å•ä½ ReceivablesOrganization     ReceivOrganiz
+æ”¶æ¬¾å¸æˆ· ReceivablesAccount      ReceivAccount
+å¼€æˆ·é“¶è¡Œ bankAccount
+ä»˜æ¬¾æ–¹å¼ payment_mode      paymentMode
+é‡‘é¢(RMB) Amount                 amount
+ä»˜æ¬¾è¯´æ˜ payment_description                   paymentDesc
+å®¡æ‰¹æƒ…å†µ examineandapprovesituation             examApprSitu
+ç¬¬ä¸€å®¡æ‰¹ç”¨æˆ· firstexamineandapproveuser    firstExamAppruser
+ç¬¬äºŒå®¡æ‰¹ç”¨æˆ· secondexamineandapproveuser    secondExamAppruser
+ç¬¬ä¸‰å®¡æ‰¹ç”¨æˆ· thirdexamineandapproveuser    thirdExamAppruser
+ç¬¬å››å®¡æ‰¹ç”¨æˆ· fourthexamineandapproveuser    fourthExamAppruser
+å®¡æ‰¹æ„è§  examineandapprove_opinion         examApprOpinion

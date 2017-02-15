@@ -1,14 +1,14 @@
-Çë¼Ùµ¥±àÂë leave_code   leaveCode
-Çë¼ÙÈË±àÂë leave_by_code   leaveByCode
-Çë¼ÙÈËÃû³Æ leave_by_name   leaveByName
-Çë¼ÙÀà±ğ  leave_type     leaveType
-ÌáÇëÈË±àÂë Draw_by_code     drawByCode
-ÌáÇëÈËÃû³Æ Draw_by_name     drawByName
-Çë¼Ù¿ªÊ¼Ê±¼ä leave_start_date   leaveStartDate
-Çë¼Ù½áÊøÊ±¼ä leave_end_date     leaveEndDate
-×Ü¹²Çë¼ÙÊ±¼ä  total_leave_date   totalLeaveDate
-Çë¼ÙÊÂÓÉ leave_Reason    leaveReason
-±¸×¢   remark
+è¯·å‡å•ç¼–ç  leave_code   leaveCode
+è¯·å‡äººç¼–ç  leave_by_code   leaveByCode
+è¯·å‡äººåç§° leave_by_name   leaveByName
+è¯·å‡ç±»åˆ«  leave_type     leaveType
+æè¯·äººç¼–ç  Draw_by_code     drawByCode
+æè¯·äººåç§° Draw_by_name     drawByName
+è¯·å‡å¼€å§‹æ—¶é—´ leave_start_date   leaveStartDate
+è¯·å‡ç»“æŸæ—¶é—´ leave_end_date     leaveEndDate
+æ€»å…±è¯·å‡æ—¶é—´  total_leave_date   totalLeaveDate
+è¯·å‡äº‹ç”± leave_Reason    leaveReason
+å¤‡æ³¨   remark
 
 
 

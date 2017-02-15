@@ -1,13 +1,13 @@
-½è¿î±àºÅ loanCode
-½è¿îÖ÷Ìâ
-½è ¿î ÈË loanBy
-½è¿îÈÕÆÚ loanDate
-½è¿î½ğ¶î loanAmount
-½è¿îÊÂÓÉ loanReason
-Ô¤¼Æ»¹¿î±¨ÏúÈÕÆÚ Expected_Repayment_reimbursement_date    expRepayReimburDate
-Ìá Çë ÈË drawBy
-ÉóÅúÇé¿ö examineandapprovesituation       examApprovSituat
-µÚÒ»ÉóÅúÓÃ»§ firstexamineandapproveuser  firstExamAppruser
-µÚ¶şÉóÅúÓÃ»§ secondexamineandapproveuser  secondExamAppruser
-µÚÈıÉóÅúÓÃ»§ thirdexamineandapproveuser    thirdExamAppruser
-ÉóÅúÒâ¼û  examineandapproveopinion         examApprOpinion
+å€Ÿæ¬¾ç¼–å· loanCode
+å€Ÿæ¬¾ä¸»é¢˜   loanTheme
+å€Ÿ æ¬¾ äºº loanBy
+å€Ÿæ¬¾æ—¥æœŸ loanDate
+å€Ÿæ¬¾é‡‘é¢ loanAmount
+å€Ÿæ¬¾äº‹ç”± loanReason
+é¢„è®¡è¿˜æ¬¾æŠ¥é”€æ—¥æœŸ Expected_Repayment_reimbursement_date    expRepayReimburDate
+æ è¯· äºº drawBy
+å®¡æ‰¹æƒ…å†µ examineandapprovesituation       examApprovSituat
+ç¬¬ä¸€å®¡æ‰¹ç”¨æˆ· firstexamineandapproveuser  firstExamAppruser
+ç¬¬äºŒå®¡æ‰¹ç”¨æˆ· secondexamineandapproveuser  secondExamAppruser
+ç¬¬ä¸‰å®¡æ‰¹ç”¨æˆ· thirdexamineandapproveuser    thirdExamAppruser
+å®¡æ‰¹æ„è§  examineandapproveopinion         examApprOpinion

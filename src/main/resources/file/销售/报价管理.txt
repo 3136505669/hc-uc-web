@@ -1,43 +1,41 @@
-±¨¼Û±àÂë quote_code                   quoteCode
-±¨¼ÛÈË±àÂë quote_by_code              quoteByCode
-±¨¼ÛÈËÃû³Æ quote_by_name              quoteByName
-¿Í»§±àÂë customer_code                custCode
-¿Í»§Ãû³Æ customer_name                custName
-¿Í»§µç»° customer_tel                 custTel
-¿Í»§µØÖ· customer_addr                custAddr
-¿Í»§´«Õæ customer_fax                 custFax
-ÁªÏµÈË±àÂë   contact_by_code          contactByCode
-ÁªÏµÈËÃû³Æ   contact_by                   contactBy
-ÁªÏµµç»° contact_by_tel               contacTByTel
-ÁªÏµÓÊ¼ş contact_by_email             contactByEmail
-±¨¼Û·½Ê½ quote_mode                   quoteMode
-Ä¿µÄÕ¾ purpose_place                  purposePlace
-½»»õ·½Ê½ deliver_goods_mode           deliverGoodsMode
-½»»õÊ±¼ä deliver_goods_date           deliverGoodsDate
-¸¶¿î·½Ê½ payment_mode                 paymentMode
-°ü×° packing                          packing
-±¸×¢ remark                           remark
-»õ±Ò currency                         currency
-ÉóÅúÈË±àÂë examine_approve_by_code    examApprByCode
-ÉóÅúÈËÃû³Æ examine_approve_by_name    examApprByName
-ÔË·Ñ freight                          freight
-±£ÏÕ insurance                        insurance
-Ë°ÂÊ tax_rate                         taxRate
-ÕÛ¿Û rebate                            rebate
-±¸×¢ remark                            remark 
+æŠ¥ä»·ç¼–ç  quote_code                   quoteCode
+æŠ¥ä»·äººç¼–ç  quote_by_code              quoteByCode
+æŠ¥ä»·äººåç§° quote_by_name              quoteByName
+å®¢æˆ·ç¼–ç  customer_code                custCode
+å®¢æˆ·åç§° customer_name                custName
+å®¢æˆ·ç”µè¯ customer_tel                 custTel
+å®¢æˆ·åœ°å€ customer_addr                custAddr
+å®¢æˆ·ä¼ çœŸ customer_fax                 custFax
+è”ç³»äºº   contact_by                   contactBy
+è”ç³»ç”µè¯ contact_by_tel               contacTByTel
+è”ç³»é‚®ä»¶ contact_by_email             contactByEmail
+æŠ¥ä»·æ–¹å¼ quote_mode                   quoteMode
+ç›®çš„ç«™ purpose_place                  purposePlace
+äº¤è´§æ–¹å¼ deliver_goods_mode           deliverGoodsMode
+äº¤è´§æ—¶é—´ deliver_goods_date           deliverGoodsDate
+ä»˜æ¬¾æ–¹å¼ payment_mode                 paymentMode
+åŒ…è£… packing                          packing
+è´§å¸ currency                         currency
+å®¡æ‰¹äººç¼–ç  examine_approve_by_code    examApprByCode
+å®¡æ‰¹äººåç§° examine_approve_by_name    examApprByName
+è¿è´¹ freight                          freight
+ä¿é™© insurance                        insurance
+ç¨ç‡ tax_rate                         taxRate
+æŠ˜æ‰£ rebate                            rebate
+å¤‡æ³¨ remark                            remark 
 
-±¨¼Û×Ó±í------
+æŠ¥ä»·å­è¡¨------
 
-²úÆ·±àÂë product_code                  prodCode
-²úÆ·Ãû³Æ product_name                  prodName
-ĞÍºÅ¹æ¸ñ type_model                    typeModel
-ÊıÁ¿ qty                               qty
-µ¥Î» unit                              unit
-µ¥¼Û  univalent                        univalent
-»õ±Ò currency                          currency
-²úÆ·ÃèÊö  product_desc                 prodDesc
-Æ·ÅÆ brand                             brand
-ÖÆÔìÉÌ±àÂë manufacturer_code           manufCode
-ÖÆÔìÉÌÃû³Æ manufacturer_name           manufName
-»õÆÚ£¨½»ÆÚ£© delivery_time             deliveTime
-±¸×¢ remark                            remark
+äº§å“ç¼–ç  product_code                  prodCode
+äº§å“åç§° product_name                  prodName
+å‹å·è§„æ ¼ type_model                    typeModel
+æ•°é‡ qty                               qty
+å•ä½ unit                              unit
+å•ä»·  univalent                        univalent
+è´§å¸ currency                          currency
+äº§å“æè¿°  product_desc                 prodDesc
+å“ç‰Œ brand                             brand
+åˆ¶é€ å•†ç¼–ç  manufacturer_code           manufCode
+åˆ¶é€ å•†åç§° manufacturer_name           manufName
+è´§æœŸï¼ˆäº¤æœŸï¼‰ delivery_time             deliveTime
+å¤‡æ³¨ remark                            remark

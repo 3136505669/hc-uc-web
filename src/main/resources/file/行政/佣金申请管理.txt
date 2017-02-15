@@ -1,29 +1,29 @@
-Ó¶½ğÉêÇëµ¥±àÂë  commission_apply_code    commiApplyCode
-ÉêÇëÔ±¹¤±àÂë apply_Employee_code         applyEmployCode
-ÉêÇëÔ±¹¤Ãû³Æ apply_Employee_name            applyEmployName
-ËùÔÚ²¿ÃÅ location_dept               locationDept
-ÉêÇëÈÕÆÚ  apply_date                applyDate
-ÒµÎñ³É½»Çé¿öid business_id             businessId
-ÉêÇëÓ¶½ğÔ­Òò commission_apply_reason            commApplyReason
-Ó¶½ğÊÕÈ¡ÈËÇé¿öÄÚÈİ(º¬ĞÕÃû¡¢Ö°Î»µÈ) commission_collect_by_Content     commCollectByContent
-Ó¶½ğÖ§¸¶·½Ê½ commission_payment_mode                commPaymentMode
-ÊÕ¿îÒøĞĞ payment_bank                            paymentBank
-Ó¶½ğÉêÇëÖ§¸¶ÈÕÆÚ commission_payment_date             commPaymentDate
-Ó¶½ğÊµ¼ÊÖ§¸¶ÈÕÆÚ commission_paymented_date     commPaymentedDate
-±¸×¢ remark
+ä½£é‡‘ç”³è¯·å•ç¼–ç   commission_apply_code    commiApplyCode
+ç”³è¯·å‘˜å·¥ç¼–ç  apply_Employee_code         applyEmployCode
+ç”³è¯·å‘˜å·¥åç§° apply_Employee_name            applyEmployName
+æ‰€åœ¨éƒ¨é—¨ location_dept               locationDept
+ç”³è¯·æ—¥æœŸ  apply_date                applyDate
+ä¸šåŠ¡æˆäº¤æƒ…å†µid business_id             businessId
+ç”³è¯·ä½£é‡‘åŸå›  commission_apply_reason            commApplyReason
+ä½£é‡‘æ”¶å–äººæƒ…å†µå†…å®¹(å«å§“åã€èŒä½ç­‰) commission_collect_by_Content     commCollectByContent
+ä½£é‡‘æ”¯ä»˜æ–¹å¼ commission_payment_mode                commPaymentMode
+æ”¶æ¬¾é“¶è¡Œ payment_bank                            paymentBank
+ä½£é‡‘ç”³è¯·æ”¯ä»˜æ—¥æœŸ commission_payment_date             commPaymentDate
+ä½£é‡‘å®é™…æ”¯ä»˜æ—¥æœŸ commission_paymented_date     commPaymentedDate
+å¤‡æ³¨ remark
 
-ÒµÎñ³É½»Çé¿ö×Ó±í
-ÒµÎñ³É½»Çé¿öid
-¿Í»§±àÂë Customer_code  CustCode
-¿Í»§Ãû³Æ Customer_name   CustName
-PIµ¥ºÅ pi_No              piNo
-Æ·Ãû name_of_a_part      nameOfaPart
-µ¥¼Û Amount                   amount
-½ğ¶îµ¥Î» Amount_unit        amountUnit
-ÊıÁ¿ QTY                  qty
-ÊıÁ¿µ¥Î» QTY_unit    qtyUnit
-Ó¶½ğ commission
-±¸×¢ remark
+ä¸šåŠ¡æˆäº¤æƒ…å†µå­è¡¨
+ä¸šåŠ¡æˆäº¤æƒ…å†µid
+å®¢æˆ·ç¼–ç  Customer_code  CustCode
+å®¢æˆ·åç§° Customer_name   CustName
+PIå•å· pi_No              piNo
+å“å name_of_a_part      nameOfaPart
+å•ä»· Amount                   amount
+é‡‘é¢å•ä½ Amount_unit        amountUnit
+æ•°é‡ QTY                  qty
+æ•°é‡å•ä½ QTY_unit    qtyUnit
+ä½£é‡‘ commission
+å¤‡æ³¨ remark
 
 
 

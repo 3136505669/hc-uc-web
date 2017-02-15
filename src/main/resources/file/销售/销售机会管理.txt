@@ -1,25 +1,25 @@
-ÏúÊÛ»ú»áµ¥±àÂë sales_opportunities_code   salesOpportCode
-ÏúÊÛ»ú»á sales_opportunities     salesOpport
-ÏúÊÛ½ø¶È sales_opportunities_schedule   salesOpportSch
-»ú»áÀ´Ô´ opportunities_source   opportSource
-ÏúÊÛÔ±±àÂë sales_code   salesCode
-ÏúÊÛÔ±Ãû³Æ sales_name   salesName
-¹«Ë¾±àÂë company_code   compCode
-¹«Ë¾Ãû³Æ company_name   compName
-¹«Ë¾ÓÊ±à company_zip   compZip
-¹«Ë¾µØÖ· company_addr   compAddr
-¹«Ë¾ÁªÏµÈË company_contact_by  compContactBy
-¹«Ë¾ÁªÏµµç»° company_tel  compTel
-¹«Ë¾ÁªÏµ´«Õæ company_fax   compFax
-Ô¤¼Æ½ğ¶î expect_sum      expectSum
-´´½¨ÈÕÆÚ creaty_by     creatyBy
-½áÊøÈÕÆÚ end_date     endDate
-³É¹¦ÂÊ¹À¼Æ Success_rate_estimate   SucRateEstimate
-µ±Ç°×´Ì¬ current_state    currentState
-ÖÕÖ¹Ô­Òò end_reason      endReason
-×îºó¸üĞÂÈË±àÂë updated_by_code    updatedByCode
-×îºó¸üĞÂÈËÃû³Æ updated_by_name   updatedByName
-Ïà¹ØÃèÊö related_description   relatDesc
-±¸×¢ remark
+é”€å”®æœºä¼šå•ç¼–ç  sales_opportunities_code   salesOpportCode
+é”€å”®æœºä¼š sales_opportunities     salesOpport
+é”€å”®è¿›åº¦ sales_opportunities_schedule   salesOpportSch
+æœºä¼šæ¥æº opportunities_source   opportSource
+é”€å”®å‘˜ç¼–ç  sales_code   salesCode
+é”€å”®å‘˜åç§° sales_name   salesName
+å…¬å¸ç¼–ç  company_code   compCode
+å…¬å¸åç§° company_name   compName
+å…¬å¸é‚®ç¼– company_zip   compZip
+å…¬å¸åœ°å€ company_addr   compAddr
+å…¬å¸è”ç³»äºº company_contact_by  compContactBy
+å…¬å¸è”ç³»ç”µè¯ company_tel  compTel
+å…¬å¸è”ç³»ä¼ çœŸ company_fax   compFax
+é¢„è®¡é‡‘é¢ expect_sum      expectSum
+åˆ›å»ºæ—¥æœŸ creaty_date     creatyDate
+ç»“æŸæ—¥æœŸ end_date     endDate
+æˆåŠŸç‡ä¼°è®¡ Success_rate_estimate   SucRateEstimate
+å½“å‰çŠ¶æ€ current_state    currentState
+ç»ˆæ­¢åŸå›  end_reason      endReason
+æœ€åæ›´æ–°äººç¼–ç  updated_by_code    updatedByCode
+æœ€åæ›´æ–°äººåç§° updated_by_name   updatedByName
+ç›¸å…³æè¿° related_description   relatDesc
+å¤‡æ³¨ remark
 
 

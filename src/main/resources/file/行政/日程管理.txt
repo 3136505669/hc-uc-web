@@ -1,12 +1,12 @@
-ÈÕ³Ì¾´a  agenda_for_the_day_code  agendaForDayCode
-ÈÕ³ÌÀàĞÍ  agenda_for_the_day_type   agendaForDayType
-ÈÕ³ÌÃû³Æ  agenda_for_the_day_name       agendaForDayName
-ÈÕ³ÌÔ±¹¤  agenda_for_the_day_Employee   agendaForDayEmploy
-¿ªÊ¼Ê±¼ä  start_date           startDate
-½áÊøÊ±¼ä  end_date            endDate
-ÊÇ·ñÌáĞÑ  or_not_remind           orNotRemind
-ÌáĞÑÊ±¼ä  remind_date          remindDate
-ËùÔÚ²¿ÃÅ  location_dept             locationDept
-ÊÇ·ñ¹²Ïí  or_not_share      orNotShare
-ÈÕ³ÌÃèÊö  agenda_for_the_day_describe    agendaForDayDescribe
-±¸×¢      remark
+æ—¥ç¨‹ç·¨ç¢¼  agenda_for_the_day_code  agendaForDayCode
+æ—¥ç¨‹ç±»å‹  agenda_for_the_day_type   agendaForDayType
+æ—¥ç¨‹åç§°  agenda_for_the_day_name       agendaForDayName
+æ—¥ç¨‹å‘˜å·¥  agenda_for_the_day_Employee   agendaForDayEmploy
+å¼€å§‹æ—¶é—´  start_date           startDate
+ç»“æŸæ—¶é—´  end_date            endDate
+æ˜¯å¦æé†’  or_not_remind           orNotRemind
+æé†’æ—¶é—´  remind_date          remindDate
+æ‰€åœ¨éƒ¨é—¨  location_dept             locationDept
+æ˜¯å¦å…±äº«  or_not_share      orNotShare
+æ—¥ç¨‹æè¿°  agenda_for_the_day_describe    agendaForDayDescribe
+å¤‡æ³¨      remark

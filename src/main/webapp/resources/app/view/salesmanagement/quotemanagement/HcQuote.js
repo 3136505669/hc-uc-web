@@ -110,7 +110,7 @@ Ext.define("Hc_Framework.view.hc.HcQuote", {
             gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_quote_list/deleteMasterCustomer.json',
             gridAddMasterCustomerUrl: Hc.basePath + 'hc_quote_list/addMasterCustomer.json',
             gridImportUrl: Hc.basePath + '',
-            subWinTableName:'Hc_Framework.view.hc.HcQuote',
+            subWinTableName:'Hc_Framework.view.hc.SubHcQuote',
             subformActivate:false
         });
         me.callParent();

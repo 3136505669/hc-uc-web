@@ -1,13 +1,13 @@
-´ÇÖ°µ¥±àÂë resign_code       resignCode
-´ÇÖ°ÈË±àÂë  resign_by_code    resignByCode
-´ÇÖ°ÈËÃû³Æ resign_by_name     resignByName
-´ÇÖ°Àà±ğ resign_type        resignType
-¸öÈËÔ­Òò personal_reasons             perReasons
-ÌáÇëÈË±àÂë Draw_by_code     drawByCode
-ÌáÇëÈËÃû³Æ Draw_by_name     drawByName
-´ÇÖ°Ê±¼ä resign_date       resignDate
-´ÇÖ°ÊÂÓÉ resign_Reason         resignReason
-±¸×¢  remark
+è¾èŒå•ç¼–ç  resign_code       resignCode
+è¾èŒäººç¼–ç   resign_by_code    resignByCode
+è¾èŒäººåç§° resign_by_name     resignByName
+è¾èŒç±»åˆ« resign_type        resignType
+ä¸ªäººåŸå›  personal_reasons             perReasons
+æè¯·äººç¼–ç  Draw_by_code     drawByCode
+æè¯·äººåç§° Draw_by_name     drawByName
+è¾èŒæ—¶é—´ resign_date       resignDate
+è¾èŒäº‹ç”± resign_Reason         resignReason
+å¤‡æ³¨  remark
 
 
 

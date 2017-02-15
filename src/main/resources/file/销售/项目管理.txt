@@ -1,25 +1,25 @@
-ÏîÄ¿±àÂë  project_code      projtCode
-ÏîÄ¿Ãû³Æ  project_name    projtName
-ÉêÇëÈË±àÂë  apply_by_code   applByCode
-ÉêÇëÈËÃû³Æ  apply_by_name   applByName
-¸ºÔğÈË±àÂë person_in_charge_by_code    perChargeByCode
-¸ºÔğÈËÃû³Æ person_in_charge_by_name    perChargeByName
-ÏîÄ¿½ğ¶î  project_sum   projtSum
-ÏîÄ¿½×¶Î  project_stage  projtStage 
-Á¢ÏîÈÕÆÚ project_approval_date   projtApprDate
-ÏîÄ¿À´Ô´ project_source  projtSource
-³É¹¦ÂÊ¹À¼Æ success_rate_estimate   sucRateEstimate
-µ±Ç°×´Ì¬ current_state   currentState
-ÖÕÖ¹Ô­Òò end_reason      endReason
-¿Í»§±àÂë customer_code    custCode
-¿Í»§Ãû³Æ customer_name    custName
-ÁªÏµÈË  contact_by      contactBy
-ÁªÏµµç»° contact_tel    contactTel
-ÏîÄ¿¼ò½é¡¢Ö÷Òª²úÆ·¼°ÊıÁ¿ Introduction    introduction
-¸ú½ø´ëÊ© Root_measure       rootMeasure
-ĞèÅäºÏ/Ö§³Ö´ëÊ© cooperate_Root_measure  coopRootMeasure
-½á¡¡¡¡¹û result
-Ğ¡¡¡¡¡½á summary
-±¸×¢ remark
+é¡¹ç›®ç¼–ç   project_code      projtCode
+é¡¹ç›®åç§°  project_name    projtName
+ç”³è¯·äººç¼–ç   apply_by_code   applByCode
+ç”³è¯·äººåç§°  apply_by_name   applByName
+è´Ÿè´£äººç¼–ç  person_in_charge_by_code    perChargeByCode
+è´Ÿè´£äººåç§° person_in_charge_by_name    perChargeByName
+é¡¹ç›®é‡‘é¢  project_sum   projtSum
+é¡¹ç›®é˜¶æ®µ  project_stage  projtStage 
+ç«‹é¡¹æ—¥æœŸ project_approval_date   projtApprDate
+é¡¹ç›®æ¥æº project_source  projtSource
+æˆåŠŸç‡ä¼°è®¡ success_rate_estimate   sucRateEstimate
+å½“å‰çŠ¶æ€ current_state   currentState
+ç»ˆæ­¢åŸå›  end_reason      endReason
+å®¢æˆ·ç¼–ç  customer_code    custCode
+å®¢æˆ·åç§° customer_name    custName
+è”ç³»äºº  contact_by      contactBy
+è”ç³»ç”µè¯ contact_tel    contactTel
+é¡¹ç›®ç®€ä»‹ã€ä¸»è¦äº§å“åŠæ•°é‡ Introduction    introduction
+è·Ÿè¿›æªæ–½ Root_measure       rootMeasure
+éœ€é…åˆ/æ”¯æŒæªæ–½ cooperate_Root_measure  coopRootMeasure
+ç»“ã€€ã€€æœ result
+å°ã€€ã€€ç»“ summary
+å¤‡æ³¨ remark
 
 

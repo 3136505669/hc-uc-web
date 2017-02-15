@@ -1,39 +1,39 @@
-¶©µ¥±àÂë  order_code                    orderCode
-ÔğÈÎÈË±àÂë person_liable_code           perLiabCode
-ÔğÈÎÈËÃû³Æ person_liable_name           perLiabName
-²Ö¿â±àÂë   warehouse_code               warehouseCode
-²Ö¿âÃû³Æ   warehouse_name               warehouseName
-¿Í»§±àÂë customer_code                  custCode
-¿Í»§Ãû³Æ customer_name                  custName
-ÊÕ»õµØÖ·  take_delivery_addr            takDelivAddr
-ÊÕ»õÈË    take_delivery_by              takDelivBy
-ÁªÏµµç»°  contact_tel                   contactTel
-ÊÇ·ñÔ¤¸¶  or_not_prepay                 orNotPrepay
-ÆäËü·ÑÓÃ   other_charges                otherCharges
-·¢Æ± invoice                            invoice
-ÔËÊä·½Ê½ transport_mode                 transportMode
-ºÏÍ¬±àÂë contract_code                  contractCode
-¸¶¿î·½Ê½ payment_mode                   paymentMode
-¸¶¿îÌìÊı payment_day_qty                paymentDayQty
-¿Í»§½»ÆÚ customer_delivery_time         custDelivTime
-ÔË·Ñ¸ºµ£ freight_burden                 freightBurden
-ÔË·Ñ½ğ¶î freight_sum                    freightSum
-»õ±Ò currency                           currency
-¶©µ¥ÈÕÆÚ order_date                     orderDate
-ÒøĞĞ bank                               bank
-ÉóÅúÈË±àÂë examine_approve_by_code      exaApprByCode
-ÉóÅúÈËÃû³Æ examine_approve_by_name      exaApprByName
-±¸×¢  remark                            remark
+è®¢å•ç¼–ç   order_code                    orderCode
+è´£ä»»äººç¼–ç  person_liable_code           perLiabCode
+è´£ä»»äººåç§° person_liable_name           perLiabName
+ä»“åº“ç¼–ç    warehouse_code               warehouseCode
+ä»“åº“åç§°   warehouse_name               warehouseName
+å®¢æˆ·ç¼–ç  customer_code                  custCode
+å®¢æˆ·åç§° customer_name                  custName
+æ”¶è´§åœ°å€  take_delivery_addr            takDelivAddr
+æ”¶è´§äºº    take_delivery_by              takDelivBy
+è”ç³»ç”µè¯  contact_tel                   contactTel
+æ˜¯å¦é¢„ä»˜  or_not_prepay                 orNotPrepay
+å…¶å®ƒè´¹ç”¨   other_charges                otherCharges
+å‘ç¥¨ invoice                            invoice
+è¿è¾“æ–¹å¼ transport_mode                 transportMode
+åˆåŒç¼–ç  contract_code                  contractCode
+ä»˜æ¬¾æ–¹å¼ payment_mode                   paymentMode
+ä»˜æ¬¾å¤©æ•° payment_day_qty                paymentDayQty
+å®¢æˆ·äº¤æœŸ customer_delivery_time         custDelivTime
+è¿è´¹è´Ÿæ‹… freight_burden                 freightBurden
+è¿è´¹é‡‘é¢ freight_sum                    freightSum
+è´§å¸ currency                           currency
+è®¢å•æ—¥æœŸ order_date                     orderDate
+é“¶è¡Œ bank                               bank
+å®¡æ‰¹äººç¼–ç  examine_approve_by_code      exaApprByCode
+å®¡æ‰¹äººåç§° examine_approve_by_name      exaApprByName
+å¤‡æ³¨  remark                            remark
 
-¶©µ¥×Ó±í------
+è®¢å•å­è¡¨------
 
-²úÆ·±àÂë product_code               prodCode
-²úÆ·Ãû³Æ product_name               prodName
-ĞÍºÅ¹æ¸ñ type_model                 typeModel
-²úÆ·ÃèÊö  product_desc              prodDesc
-¶©µ¥ÊıÁ¿ order_qty                  orderQty
-µ¥Î» unit                           unit
-µ¥¼Û  univalent                     univalent
-»õ±Ò currency                       currency
-±¸×¢ remark                         remark
+äº§å“ç¼–ç  product_code               prodCode
+äº§å“åç§° product_name               prodName
+å‹å·è§„æ ¼ type_model                 typeModel
+äº§å“æè¿°  product_desc              prodDesc
+è®¢å•æ•°é‡ order_qty                  orderQty
+å•ä½ unit                           unit
+å•ä»·  univalent                     univalent
+è´§å¸ currency                       currency
+å¤‡æ³¨ remark                         remark
 

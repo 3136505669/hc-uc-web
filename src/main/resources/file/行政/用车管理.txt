@@ -1,25 +1,25 @@
-ÓÃ³µµ¥±àÂë use_car_code  useCarCode
-³ö·¢µØµã place_of_departure   placeDeparture
-ÊÇ·ñµ¥³Ì or_not_one_way      orNotOneWay
-Ä¿µÄµØ destination
-ÉêÇëÔ­Òò apply_reason         applyReason
-ÓÃ³µÈËÔ±±àÂë use_car_by_code       useCarByCode
-ÓÃ³µÈËÔ±Ãû³Æ use_car_by_name       useCarByName
-ÓÃ³µÈËÊı use_car_by_qty            useCarByQty
-ÉêÇëÓÃ³µÊ±¼ä apply_use_car_date    applyUseCarDate
-ÓÃ³µ½áÊøÊ±¼ä use_car_end_date        useCarEndDate
-Ô¤¼ÆÊ¹ÓÃÌìÊı expect_use_fatalism    expectUseFatalism
-²¿ÃÅ  dept
-³µÅÆ plate_number           plateNumber
-Ë¾»ú±àÂë driver_code         driverCode
-Ë¾»úÃû³Æ driver_name              driverName
-³ö·¢Ê±¼ä  depart_date              departDate
-¹«Àï±í Kilometer
-³ö·¢¼ÇÂ¼ÈË depart_record_by          departRecordBy
-·µ»ØÊ±¼ä back_date                   backDate
-·µ»Ø¹«Àï±í back_Kilometer           bacKilometer
-Êµ¼ÊĞĞÊ» actual_run                   actualRun
-·µ»Ø¼ÇÂ¼ÈË back_record_by             backRecordBy
-Êµ¼ÊÊ¹ÓÃÌìÊı actual_use_fatalism            actualUseFatalism
-±¸×¢  remark
+ç”¨è½¦å•ç¼–ç  use_car_code  useCarCode
+å‡ºå‘åœ°ç‚¹ place_of_departure   placeDeparture
+æ˜¯å¦å•ç¨‹ or_not_one_way      orNotOneWay
+ç›®çš„åœ° destination
+ç”³è¯·åŸå›  apply_reason         applyReason
+ç”¨è½¦äººå‘˜ç¼–ç  use_car_by_code       useCarByCode
+ç”¨è½¦äººå‘˜åç§° use_car_by_name       useCarByName
+ç”¨è½¦äººæ•° use_car_by_qty            useCarByQty
+ç”³è¯·ç”¨è½¦æ—¶é—´ apply_use_car_date    applyUseCarDate
+ç”¨è½¦ç»“æŸæ—¶é—´ use_car_end_date        useCarEndDate
+é¢„è®¡ä½¿ç”¨å¤©æ•° expect_use_fatalism    expectUseFatalism
+éƒ¨é—¨  dept
+è½¦ç‰Œ plate_number           plateNumber
+å¸æœºç¼–ç  driver_code         driverCode
+å¸æœºåç§° driver_name              driverName
+å‡ºå‘æ—¶é—´  depart_date              departDate
+å…¬é‡Œè¡¨ Kilometer
+å‡ºå‘è®°å½•äºº depart_record_by          departRecordBy
+è¿”å›æ—¶é—´ back_date                   backDate
+è¿”å›å…¬é‡Œè¡¨ back_Kilometer           bacKilometer
+å®é™…è¡Œé©¶ actual_run                   actualRun
+è¿”å›è®°å½•äºº back_record_by             backRecordBy
+å®é™…ä½¿ç”¨å¤©æ•° actual_use_fatalism            actualUseFatalism
+å¤‡æ³¨  remark
 

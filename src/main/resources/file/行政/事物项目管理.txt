@@ -1,15 +1,15 @@
-ÊÂÎïÏîÄ¿±àÂë thing_item_code            thingItemCode
-Á¢ÏîÈË±àÂë project_approval_by_code      projtApprByCode
-Á¢ÏîÈËÃû³Æ project_approval_by_name    projtApprByName
-Á¢ÏîÈÕÆÚ project_approval_date   projtApprDate
-¿ªÊ¼ÈÕÆÚ start_date                          startDate
-Ô¤¼ÆÍê³ÉÈÕÆÚ Expected_completion_date            expecCompletDate
-ÏîÄ¿±àÂë project_code            projectCode
-ÏîÄ¿Ãû³Æ project_name             projectName
-½ô¼±³Ì¶È Urgency_level                 urgencyLevel
-ÏîÄ¿¸ºÔğÈË project_Person_in_charge_s           projtPerCharges
-²ÎÓëÈËÔ± partake_by_s                   partakeBys
-Ğ­ÖúÈËÔ± assist_by_s                 assistBys
-ÏîÄ¿¼ò½é project_synopsis             projtSynopsis
-±¸×¢ remark
+äº‹ç‰©é¡¹ç›®ç¼–ç  thing_item_code            thingItemCode
+ç«‹é¡¹äººç¼–ç  project_approval_by_code      projtApprByCode
+ç«‹é¡¹äººåç§° project_approval_by_name    projtApprByName
+ç«‹é¡¹æ—¥æœŸ project_approval_date   projtApprDate
+å¼€å§‹æ—¥æœŸ start_date                          startDate
+é¢„è®¡å®Œæˆæ—¥æœŸ Expected_completion_date            expecCompletDate
+é¡¹ç›®ç¼–ç  project_code            projectCode
+é¡¹ç›®åç§° project_name             projectName
+ç´§æ€¥ç¨‹åº¦ Urgency_level                 urgencyLevel
+é¡¹ç›®è´Ÿè´£äºº project_Person_in_charge_s           projtPerCharges
+å‚ä¸äººå‘˜ partake_by_s                   partakeBys
+ååŠ©äººå‘˜ assist_by_s                 assistBys
+é¡¹ç›®ç®€ä»‹ project_synopsis             projtSynopsis
+å¤‡æ³¨ remark
 

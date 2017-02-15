@@ -1,31 +1,31 @@
-ÑùÆ·µ¥±àÂë sample_code      sampleCode
-ÔğÈÎÈË±àÂë person_liable_code  perLiableCode
-ÔğÈÎÈËÃû³Æ person_liable_name   perLiableName
-²Ö¿â±àÂë   warehouse_code   warehouseCode
-²Ö¿âÃû³Æ   warehouse_name   warehouseName
-¿Í»§±àÂë customer_code     custCode
-¿Í»§Ãû³Æ customer_name     custName
-ÊÕ»õµØÖ·  take_delivery_addr   takDelivAddr
-ÁªÏµÈË contact_by    contactBy
-ÁªÏµµç»° contact_tel    contactTel
-µÇ¼ÇÈÕÆÚ register_date    registerDate
-ÑùÆ·»õ±Ò sample_currency    sampleCurrency
-ÔËÊä·½Ê½ transport_mode    transportMode
-·¢»õÈÕÆÚ delivery_date    delivDate
-ÔË·Ñ freight
-±£ÏÕ insurance
-ÌØ±ğÒªÇó ad_hoc_request     adHocRequest
-±¸×¢  remark
+æ ·å“å•ç¼–ç  sample_code      sampleCode
+è´£ä»»äººç¼–ç  person_liable_code  perLiableCode
+è´£ä»»äººåç§° person_liable_name   perLiableName
+ä»“åº“ç¼–ç    warehouse_code   warehouseCode
+ä»“åº“åç§°   warehouse_name   warehouseName
+å®¢æˆ·ç¼–ç  customer_code     custCode
+å®¢æˆ·åç§° customer_name     custName
+æ”¶è´§åœ°å€  take_delivery_addr   takDelivAddr
+è”ç³»äºº contact_by    contactBy
+è”ç³»ç”µè¯ contact_tel    contactTel
+ç™»è®°æ—¥æœŸ register_date    registerDate
+æ ·å“è´§å¸ sample_currency    sampleCurrency
+è¿è¾“æ–¹å¼ transport_mode    transportMode
+å‘è´§æ—¥æœŸ delivery_date    delivDate
+è¿è´¹ freight
+ä¿é™© insurance
+ç‰¹åˆ«è¦æ±‚ ad_hoc_request     adHocRequest
+å¤‡æ³¨  remark
 
-ÑùÆ·×Ó±í------
+æ ·å“å­è¡¨------
 
-²úÆ·±àÂë product_code
-²úÆ·Ãû³Æ product_name
-ĞÍºÅ¹æ¸ñ type_model
-²úÆ·ÃèÊö  product_desc
-ÊıÁ¿ qty
-µ¥Î» unit
-µ¥¼Û  univalent
-»õ±Ò currency
-±¸×¢ remark
+äº§å“ç¼–ç  product_code
+äº§å“åç§° product_name
+å‹å·è§„æ ¼ type_model             typeModel
+äº§å“æè¿°  product_desc              prodDesc
+æ•°é‡ qty
+å•ä½ unit
+å•ä»·  univalent
+è´§å¸ currency
+å¤‡æ³¨ remark
 

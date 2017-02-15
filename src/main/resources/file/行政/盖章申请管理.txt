@@ -1,18 +1,18 @@
-¸ÇÕÂµ¥±àÂë seal_code  sealCode
-½èÓÃ²¿ÃÅ borrow_dept  borrowDept
-¾­°ìÈË±àÂë handle_by_Code  handleByCode
-¾­°ìÈËÃû³Æ handle_by_name    handleByName
-½èÓ¡ÈË±àÂë Borrow_India_by_code    borrowIndiaByCode
-½èÓ¡ÈËÃû³Æ Borrow_India_by_name    borrowIndiaByName
-½è³öÊ±¼ä loan_date             loanDate
-Ê¹ÓÃÆÚÏŞ use_term             useTerm
-½èÓ¡Àà±ğ Borrow_India_type       borrowIndiaType
-ÖØÒªÄÚÈİËµÃ÷ Important_content_description       imporContentDesc
-Ê¹ÓÃ·¶Î§ use_scope     useScope
-ÓÃÓ¡³ĞÅµ India_Promise        indiaPromise
-ÓÃÓ¡ÄÚÈİ India_content           indiaContent
-ÓÃÓ¡¼ûÖ¤ÈË India_witness_by     indiaWitnBy
-±¸×¢ remark
+ç›–ç« å•ç¼–ç  seal_code  sealCode
+å€Ÿç”¨éƒ¨é—¨ borrow_dept  borrowDept
+ç»åŠäººç¼–ç  handle_by_Code  handleByCode
+ç»åŠäººåç§° handle_by_name    handleByName
+å€Ÿå°äººç¼–ç  Borrow_India_by_code    borrowIndiaByCode
+å€Ÿå°äººåç§° Borrow_India_by_name    borrowIndiaByName
+å€Ÿå‡ºæ—¶é—´ loan_date             loanDate
+ä½¿ç”¨æœŸé™ use_term             useTerm
+å€Ÿå°ç±»åˆ« Borrow_India_type       borrowIndiaType
+é‡è¦å†…å®¹è¯´æ˜ Important_content_description       imporContentDesc
+ä½¿ç”¨èŒƒå›´ use_scope     useScope
+ç”¨å°æ‰¿è¯º India_Promise        indiaPromise
+ç”¨å°å†…å®¹ India_content           indiaContent
+ç”¨å°è§è¯äºº India_witness_by     indiaWitnBy
+å¤‡æ³¨ remark
 
 
 

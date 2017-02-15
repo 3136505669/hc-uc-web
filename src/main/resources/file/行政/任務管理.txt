@@ -1,14 +1,14 @@
-ÈÎÎñ±àÂë  task_code  taskCode
-ÏÂ´ïÈÎÎñÈÕÆÚ Issued_task_date   issuedTaskDate
-ÈÎÎñÍê³ÉÈÕÆÚ finish_task_date    finishTaskDate
-ÈÎÎñÖ÷Ìâ  task_subject     taskSubject
-ÈÎÎñÄÚÈİ  task_Content           taskContent
-ÈÎÎñ¸ºÔğÈË task_respBy             taskRespBy
-ÈÎÎñ²ÎÓëÈË  task_involvBy            taskInvolvBy
-¹ØÁª×Å  AssociatedBy              associatedBy
-ÏÂ´ïÈÎÎñÕß Issued_taskBy                issuedTaskBy
-±¸×¢  remart 
-ÈÎÎñÍê³ÉÇé¿ö  task_finish_situation     taskFinSituation
+ä»»åŠ¡ç¼–ç   task_code  taskCode
+ä¸‹è¾¾ä»»åŠ¡æ—¥æœŸ Issued_task_date   issuedTaskDate
+ä»»åŠ¡å®Œæˆæ—¥æœŸ finish_task_date    finishTaskDate
+ä»»åŠ¡ä¸»é¢˜  task_subject     taskSubject
+ä»»åŠ¡å†…å®¹  task_Content           taskContent
+ä»»åŠ¡è´Ÿè´£äºº task_respBy             taskRespBy
+ä»»åŠ¡å‚ä¸äºº  task_involvBy            taskInvolvBy
+å…³è”ç€  AssociatedBy              associatedBy
+ä¸‹è¾¾ä»»åŠ¡è€… Issued_taskBy                issuedTaskBy
+å¤‡æ³¨  remart 
+ä»»åŠ¡å®Œæˆæƒ…å†µ  task_finish_situation     taskFinSituation
 
 
 

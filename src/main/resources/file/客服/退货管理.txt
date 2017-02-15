@@ -1,11 +1,11 @@
-ÍË»õµ¥±àÂë Return_goods_code   returnGoodsCode
-ÔğÈÎÈË±àÂë in_charge_by_code    inChargeByCode
-ÔğÈÎÈËÃû³Æ in_charge_by_name    inChargeByName
-Ö÷Ìâ subject
-¿Í»§±àÂë customer_code   custCode
-¿Í»§Ãû³Æ customer_name   custName
-»õ±Ò currency
-ÍË»õÈÕÆÚ Return_goods_date  returnGoodsDate
-±¸×¢  remark      
+é€€è´§å•ç¼–ç  Return_goods_code   returnGoodsCode
+è´£ä»»äººç¼–ç  in_charge_by_code    inChargeByCode
+è´£ä»»äººåç§° in_charge_by_name    inChargeByName
+ä¸»é¢˜ subject
+å®¢æˆ·ç¼–ç  customer_code   custCode
+å®¢æˆ·åç§° customer_name   custName
+è´§å¸ currency
+é€€è´§æ—¥æœŸ Return_goods_date  returnGoodsDate
+å¤‡æ³¨  remark      
 
 

@@ -1,19 +1,19 @@
-ÄÚ²¿Ç©³Ê±àÂë inside_petition_code  insiPetiCode
-ÉêÇëÔ±¹¤±àÂë apply_Employee_code    applyEmployCode
-ÉêÇëÔ±¹¤Ãû³Æ apply_Employee_name    applyEmployName
-ËùÔÚ²¿ÃÅ location_dept    locationDept
-ÉêÇëÈÕÆÚ  apply_date       applyDate
-ÃÜ¼¶ Dense                      dense
-»º¼±Ê±ÏŞ Urgency_time_limit      urgenTimeLimit
-ÎÄ¼şÃû³Æ file_name  fileName
-ÎÄ¼şµİËÍ file_send     fileSend
-ÕÅÌùÖÁ post_to      postTo
-×ª·¢ÖÁ Forward_to    forwardTo
-³­ËÍÖÁ CC_to          ccTo
-´«ÔÄÖÁ Circulation_to   circulatTo
-EmailÖÁ Email_to     emailTo
-ÄÚÈİ content
-±¸×¢ remark
+å†…éƒ¨ç­¾å‘ˆç¼–ç  inside_petition_code  insiPetiCode
+ç”³è¯·å‘˜å·¥ç¼–ç  apply_Employee_code    applyEmployCode
+ç”³è¯·å‘˜å·¥åç§° apply_Employee_name    applyEmployName
+æ‰€åœ¨éƒ¨é—¨ location_dept    locationDept
+ç”³è¯·æ—¥æœŸ  apply_date       applyDate
+å¯†çº§ Dense                      dense
+ç¼“æ€¥æ—¶é™ Urgency_time_limit      urgenTimeLimit
+æ–‡ä»¶åç§° file_name  fileName
+æ–‡ä»¶é€’é€ file_send     fileSend
+å¼ è´´è‡³ post_to      postTo
+è½¬å‘è‡³ Forward_to    forwardTo
+æŠ„é€è‡³ CC_to          ccTo
+ä¼ é˜…è‡³ Circulation_to   circulatTo
+Emailè‡³ Email_to     emailTo
+å†…å®¹ content
+å¤‡æ³¨ remark
 
 
 

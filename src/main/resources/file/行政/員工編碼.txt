@@ -1,60 +1,60 @@
-†T¹¤¾´a  employeeCode
-†T¹¤ĞÕÃû  employeeName
-ËùÔÚ²¿ÃÅ  locationDept
-Ö°¡¡¡¡Î»  position
-ÈëÖ°ÈÕÆÚ  entryDate
-³öÉúÄêÔÂ  dateOfBirth
-ĞÔ¡¡¡¡±ğ  sex
- ÕşÖÎÃæÃ²  politicalStatus
-Ãñ¡¡¡¡×å  nation
-Éí¡¡¡¡¸ß   height 
-Éí·İÖ¤ºÅÂë  idCardNo
-ÌØ¡¡¡¡³¤   specialty
-»§¿ÚËùÔÚµØ  placeOfResidence
-ÏÖ¾Ó×¡µØ presentResidence
-ÕÕÆ¬   imageLog
-¼®¡¡¡¡¹á nativePlace
- »éÒö×´¿ö  maritalStatus
- ÁªÏµµç»°  contactPhone
-±ÏÒµÔºĞ£  graduateSchool
- ¾Í¶ÁÊ±¼ä  atDate
- ×¨¡¡¡¡Òµ  professional
-Ñ§¡¡¡¡ÖÆ  lengthSschool
-Ñ§Àú degree
- Ñ§Î»  degreePosition
- ÊÇ·ñÀëÖ° orNotTurnover
- ÀëÖ°Ê±¼ä  turnoverDate
-ÍâÓïË®Æ½ foreignLanLevel
- ¼ÆËã»úË®Æ½  computerLevel
-½ô¼±Çé¿öÁªÏµÈË emergencyBy
- ½ô¼±Çé¿öÁªÏµµç»°  emergencyTel
-½ô¼±Çé¿öÁªÏµÈËµØÖ· emergencyAddress
-¼ÒÍ¥³ÉÔ±ID  membersId
-¹¤×÷½›švID  experienceId
-×ªÕıÇé¿ö posiSituation
- ²Î±£Çé¿ö  insuredSituation
-ºÏÍ¬Ç©¶©Çé¿ö contractSignSituat
-±¸¡¡¡¡×¢  remark
+å“¡å·¥ç·¨ç¢¼  employeeCode
+å“¡å·¥å§“å  employeeName
+æ‰€åœ¨éƒ¨é—¨  locationDept
+èŒã€€ã€€ä½  position
+å…¥èŒæ—¥æœŸ  entryDate
+å‡ºç”Ÿå¹´æœˆ  dateOfBirth
+æ€§ã€€ã€€åˆ«  sex
+ æ”¿æ²»é¢è²Œ  politicalStatus
+æ°‘ã€€ã€€æ—  nation
+èº«ã€€ã€€é«˜   height 
+èº«ä»½è¯å·ç   idCardNo
+ç‰¹ã€€ã€€é•¿   specialty
+æˆ·å£æ‰€åœ¨åœ°  placeOfResidence
+ç°å±…ä½åœ° presentResidence
+ç…§ç‰‡   imageLog
+ç±ã€€ã€€è´¯ nativePlace
+ å©šå§»çŠ¶å†µ  maritalStatus
+ è”ç³»ç”µè¯  contactPhone
+æ¯•ä¸šé™¢æ ¡  graduateSchool
+ å°±è¯»æ—¶é—´  atDate
+ ä¸“ã€€ã€€ä¸š  professional
+å­¦ã€€ã€€åˆ¶  lengthSschool
+å­¦å† degree
+ å­¦ä½  degreePosition
+ æ˜¯å¦ç¦»èŒ orNotTurnover
+ ç¦»èŒæ—¶é—´  turnoverDate
+å¤–è¯­æ°´å¹³ foreignLanLevel
+ è®¡ç®—æœºæ°´å¹³  computerLevel
+ç´§æ€¥æƒ…å†µè”ç³»äºº emergencyBy
+ ç´§æ€¥æƒ…å†µè”ç³»ç”µè¯  emergencyTel
+ç´§æ€¥æƒ…å†µè”ç³»äººåœ°å€ emergencyAddress
+å®¶åº­æˆå‘˜ID  membersId
+å·¥ä½œç¶“æ­·ID  experienceId
+è½¬æ­£æƒ…å†µ posiSituation
+ å‚ä¿æƒ…å†µ  insuredSituation
+åˆåŒç­¾è®¢æƒ…å†µ contractSignSituat
+å¤‡ã€€ã€€æ³¨  remark
 
 
 
-¼ÒÍ¥³É†T×Ó±í
-¼ÒÍ¥³ÉÔ±ID
-ĞÕÃû name
-¹ØÏµ   relationship
-¹¤×÷µ¥Î» workUnits  
-µ£ÈÎÖ°Î» holdOffice
-ÁªÏµµç»°  contactPhone
+å®¶åº­æˆå“¡å­è¡¨
+å®¶åº­æˆå‘˜ID
+å§“å name
+å…³ç³»   relationship
+å·¥ä½œå•ä½ workUnits  
+æ‹…ä»»èŒä½ holdOffice
+è”ç³»ç”µè¯  contactPhone
 
 
 
-¹¤×÷½›šv×Ó±í
-¹¤×÷½›švID
-¿ªÊ¼Ê±¼ä  startDate
-ÖÕÖ¹Ê±¼ä  endDate
-¹¤×÷µ¥Î»¼°²¿ÃÅ  workUnitsDept
-µ£ÈÎÖ°Îñ holdOffice
-ÁªÏµµç»° contactPhone
+å·¥ä½œç¶“æ­·å­è¡¨
+å·¥ä½œç¶“æ­·ID
+å¼€å§‹æ—¶é—´  startDate
+ç»ˆæ­¢æ—¶é—´  endDate
+å·¥ä½œå•ä½åŠéƒ¨é—¨  workUnitsDept
+æ‹…ä»»èŒåŠ¡ holdOffice
+è”ç³»ç”µè¯ contactPhone
 
 
 

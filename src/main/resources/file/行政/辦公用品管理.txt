@@ -1,13 +1,13 @@
-°ì¹«ÓÃÆ·±àÂë   office_supplies_code   offSupplCode
-Éê Çë ÈË apply_by    applyBy  
-ÉêÇëÈÕÆÚ apply_date     applyDate
-Éê Áì ÈË Apply_for_By    ApplyForBy
-Áª Ïµ ÈË Contact_By    ContactBy
-ÁªÏµµç»° Contact_Tel   ContactTel
-Àà¡¡¡¡±ğ category
-»õ¡¡¡¡±Ò currency
-±¸¡¡¡¡×¢ remark
-Éó Åú ÈË  examineandapproveBy
+åŠå…¬ç”¨å“ç¼–ç    office_supplies_code   offSupplCode
+ç”³ è¯· äºº apply_by    applyBy  
+ç”³è¯·æ—¥æœŸ apply_date     applyDate
+ç”³ é¢† äºº Apply_for_By    applyForBy
+è” ç³» äºº Contact_By    contactBy
+è”ç³»ç”µè¯ Contact_Tel   contactTel
+ç±»ã€€ã€€åˆ« category
+è´§ã€€ã€€å¸ currency
+å¤‡ã€€ã€€æ³¨ remark
+å®¡ æ‰¹ äºº  examineandapproveBy
 
 
 

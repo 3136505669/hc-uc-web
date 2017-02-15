@@ -1,51 +1,51 @@
-ºÏÍ¬±àÂë contract_code    contractCode
-¹ºÂò·½£¨¼×·½£©±àÂë buy_code  buyCode
-¹ºÂò·½£¨¼×·½£©Ãû³Æ buy_name   buyName
-¹ºÂò·½£¨¼×·½£©µØÖ·  buy_addr  buyAddr
-¹ºÂò·½£¨¼×·½£©µç»° buy_tel   buyTel
-¹ºÂò·½£¨¼×·½£©´«Õæ buy_fax   buyFax
-¹ºÂò·½£¨¼×·½£©ÁªÏµÈË buy_contact_by  buyContactBy
-ÏúÊÛ·½£¨ÒÒ·½£©±àÂë sales_code  salesCode
-ÏúÊÛ·½£¨ÒÒ·½£©Ãû³Æ sales_name  salesName
-ÏúÊÛ·½£¨ÒÒ·½£©µØÖ· sales_addr  salesAddr
-ÏúÊÛ·½£¨ÒÒ·½£©µç»° sales_tel   salesTel
-ÏúÊÛ·½£¨ÒÒ·½£©´«Õæ sales_fax   salesFax
-ÏúÊÛ·½£¨ÒÒ·½£©ÁªÏµÈË sales_contact_by   salesContactBy
-ºÏÍ¬ÄÚÈİ contract_content    contractContent
-ºÏÍ¬ÎÄ¼ş contract_file       contractFile
-ºÏÍ¬ÎÄ¼ş1 contract_file1   contractFile1
-ºÏÍ¬ÎÄ¼ş2 contract_file2   contractFile2
-ºÏÍ¬Í¼Æ¬1 contract_image1   contractImage1
-ºÏÍ¬Í¼Æ¬2 contract_image2   contractImage2
-ºÏÍ¬Í¼Æ¬3 contract_image3   contractImage3
-¹ºÂò·½£¨¼×·½£©´ú±í±àÂë buy_represent_code   buyRepreCode
-¹ºÂò·½£¨¼×·½£©´ú±íÃû³Æ buy_represent_name   buyRepreName
-¹ºÂò·½£¨¼×·½£©Ç©×ÖÈÕÆÚ buy_sign_date        buySignDate
-ÏúÊÛ·½£¨ÒÒ·½£©´ú±í±àÂë sales_represent_code    salesRepreCode
-ÏúÊÛ·½£¨ÒÒ·½£©´ú±íÃû³Æ sales_represent_name     salesRepreName
-ÏúÊÛ·½£¨ÒÒ·½£©Ç©×ÖÈÕÆÚ sales_sign_date      salesSignDate
+åˆåŒç¼–ç  contract_code    contractCode
+è´­ä¹°æ–¹ï¼ˆç”²æ–¹ï¼‰ç¼–ç  buy_code  buyCode
+è´­ä¹°æ–¹ï¼ˆç”²æ–¹ï¼‰åç§° buy_name   buyName
+è´­ä¹°æ–¹ï¼ˆç”²æ–¹ï¼‰åœ°å€  buy_addr  buyAddr
+è´­ä¹°æ–¹ï¼ˆç”²æ–¹ï¼‰ç”µè¯ buy_tel   buyTel
+è´­ä¹°æ–¹ï¼ˆç”²æ–¹ï¼‰ä¼ çœŸ buy_fax   buyFax
+è´­ä¹°æ–¹ï¼ˆç”²æ–¹ï¼‰è”ç³»äºº buy_contact_by  buyContactBy
+é”€å”®æ–¹ï¼ˆä¹™æ–¹ï¼‰ç¼–ç  sales_code  salesCode
+é”€å”®æ–¹ï¼ˆä¹™æ–¹ï¼‰åç§° sales_name  salesName
+é”€å”®æ–¹ï¼ˆä¹™æ–¹ï¼‰åœ°å€ sales_addr  salesAddr
+é”€å”®æ–¹ï¼ˆä¹™æ–¹ï¼‰ç”µè¯ sales_tel   salesTel
+é”€å”®æ–¹ï¼ˆä¹™æ–¹ï¼‰ä¼ çœŸ sales_fax   salesFax
+é”€å”®æ–¹ï¼ˆä¹™æ–¹ï¼‰è”ç³»äºº sales_contact_by   salesContactBy
+åˆåŒå†…å®¹ contract_content    contractContent
+åˆåŒæ–‡ä»¶ contract_file       contractFile
+åˆåŒæ–‡ä»¶1 contract_file1   contractFile1
+åˆåŒæ–‡ä»¶2 contract_file2   contractFile2
+åˆåŒå›¾ç‰‡1 contract_image1   contractImage1
+åˆåŒå›¾ç‰‡2 contract_image2   contractImage2
+åˆåŒå›¾ç‰‡3 contract_image3   contractImage3
+è´­ä¹°æ–¹ï¼ˆç”²æ–¹ï¼‰ä»£è¡¨ç¼–ç  buy_represent_code   buyRepreCode
+è´­ä¹°æ–¹ï¼ˆç”²æ–¹ï¼‰ä»£è¡¨åç§° buy_represent_name   buyRepreName
+è´­ä¹°æ–¹ï¼ˆç”²æ–¹ï¼‰ç­¾å­—æ—¥æœŸ buy_sign_date        buySignDate
+é”€å”®æ–¹ï¼ˆä¹™æ–¹ï¼‰ä»£è¡¨ç¼–ç  sales_represent_code    salesRepreCode
+é”€å”®æ–¹ï¼ˆä¹™æ–¹ï¼‰ä»£è¡¨åç§° sales_represent_name     salesRepreName
+é”€å”®æ–¹ï¼ˆä¹™æ–¹ï¼‰ç­¾å­—æ—¥æœŸ sales_sign_date      salesSignDate
 
-ÉêÇëÈË±àÂë  apply_by_code  applByCode
-ÉêÇëÈËÃû³Æ  apply_by_name   applByName
-ÉóÅúÈË±àÂë examine_approve_by_code   examApprByCode
-ÉóÅúÈËÃû³Æ examine_approve_by_name   examApprByName
-ÉóÅúÒâ¼û examine_approve_opinion     examApprOpinion
-ÖÕÉóÈË±àÂë Final_judge_code      FinalJudgeCode
-ÖÕÉóÈËÃû³Æ  Final_judge_name     FinalJudgeName
-¸´ÉóÒâ¼û review_opinion      reviewOpinion
-±¸×¢ remark                  remark
+ç”³è¯·äººç¼–ç   apply_by_code  applByCode
+ç”³è¯·äººåç§°  apply_by_name   applByName
+å®¡æ‰¹äººç¼–ç  examine_approve_by_code   examApprByCode
+å®¡æ‰¹äººåç§° examine_approve_by_name   examApprByName
+å®¡æ‰¹æ„è§ examine_approve_opinion     examApprOpinion
+ç»ˆå®¡äººç¼–ç  Final_judge_code      FinalJudgeCode
+ç»ˆå®¡äººåç§°  Final_judge_name     FinalJudgeName
+å¤å®¡æ„è§ review_opinion      reviewOpinion
+å¤‡æ³¨ remark                  remark
 
 
 
-ºÏÍ¬×Ó±í------ 
-²úÆ·±àÂë product_code    prodCode
-²úÆ·Ãû³Æ product_name    prodName
-ĞÍºÅ¹æ¸ñ type_model      typeModel
-²úÆ·ÃèÊö  product_desc   prodDesc
-¿Í»§ĞÍºÅ  customer_type  custType
-ÊıÁ¿ qty           qty
-µ¥Î» unit   unit
-µ¥¼Û  univalent    univalent
-»õ±Ò currency  currency
-±¸×¢ remark  remark
+åˆåŒå­è¡¨------ 
+äº§å“ç¼–ç  product_code    prodCode
+äº§å“åç§° product_name    prodName
+å‹å·è§„æ ¼ type_model      typeModel
+äº§å“æè¿°  product_desc   prodDesc
+å®¢æˆ·å‹å·  customer_type  custType
+æ•°é‡ qty           qty
+å•ä½ unit   unit
+å•ä»·  univalent    univalent
+è´§å¸ currency  currency
+å¤‡æ³¨ remark  remark
 

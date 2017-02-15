@@ -1,18 +1,18 @@
-ÉÌÆ·±àÂëÉêÇëµ¥±àÂë goods_no_apply_code     goodsNoApplCode
-ÉêÇëÔ±¹¤±àÂë apply_Employee_code       applyEmployCode
-ÉêÇëÔ±¹¤Ãû³Æ apply_Employee_name       applyEmployName
-ËùÔÚ²¿ÃÅ location_dept                locationDept
-ÉêÇëÈÕÆÚ  apply_date                  applyDate
-ÎïÆ·±àÂë goods_code                  goodsCode
-ÎïÆ·Ãû³Æ goods_name                   goodsName
-ËùÊô´ó·ÖÀà  The_large_assortment      theLargeAssortment
-¹æ¸ñĞÍºÅ Specification_model           SpecModel
-¾ßÌå²ÎÊı Specific_parameters         SpecParameters
-ÑÕÉ« colour
-³ß´ç½á¹¹ Size_structure              sizeStructure
-³§¼Ò±àÂë vender_code                   venderCode
-³§¼ÒÃû³Æ vender_name                venderName
-Í¼Æ¬   image_log                     imageLog
-±¸×¢ remark 
+å•†å“ç¼–ç ç”³è¯·å•ç¼–ç  goods_no_apply_code     goodsNoApplCode
+ç”³è¯·å‘˜å·¥ç¼–ç  apply_Employee_code       applyEmployCode
+ç”³è¯·å‘˜å·¥åç§° apply_Employee_name       applyEmployName
+æ‰€åœ¨éƒ¨é—¨ location_dept                locationDept
+ç”³è¯·æ—¥æœŸ  apply_date                  applyDate
+ç‰©å“ç¼–ç  goods_code                  goodsCode
+ç‰©å“åç§° goods_name                   goodsName
+æ‰€å±å¤§åˆ†ç±»  The_large_assortment      theLargeAssortment
+è§„æ ¼å‹å· Specification_model           specModel
+å…·ä½“å‚æ•° Specific_parameters         specParameters
+é¢œè‰² colour
+å°ºå¯¸ç»“æ„ Size_structure              sizeStructure
+å‚å®¶ç¼–ç  vender_code                   venderCode
+å‚å®¶åç§° vender_name                venderName
+å›¾ç‰‡   image_log                     imageLog
+å¤‡æ³¨ remark 
 
 

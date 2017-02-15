@@ -1,27 +1,27 @@
-¿Í»§·şÎñµ¥±àÂë customer_serve_code   custServeCode
-¿Í»§·şÎñµ¥Ö÷Ìâ customer_serve_theme   custServeTheme
-·şÎñÀà±ğ serve_type             serveType
-·şÎñµÈ¼¶ serve_level            serveLevel
-µ±Ç°×´Ì¬ current_state          currentState
-·şÎñÈÕÆÚ serve_date             serveDate
-¶©µ¥ºÅ order_no               orderNo
-ºÏÍ¬ºÅ  pact_no                    pactNo
-½áÊøÈÕÆÚ end_date              endDate
-²úÆ·±àÂë  product_code            prodCode
-²úÆ·ĞÍºÅ  product_model          prodModel
-²úÆ·Ãû³Æ product_name            prodName
-ÊıÁ¿ qty
-µ¥Î» unit
-ËùÔÚ²¿ÃÅ location_dept          locationDept
-²¿ÃÅ±àºÅ dept_code                deptCode
-¼¼ÊõÎÊÌâ  technical_matters             technicalMatters
-¿Í»§±àÂë customer_code    custCode
-¿Í»§Ãû³Æ customer_name     custName
-ÒµÎñÔ± business_by          businessBy
-·şÎñÄÚÈİ serve_content      serveContent
-µÇ¼ÇÈË register_by            registerBy
-µÇ¼ÇÈÕÆÚ register_date
-ÔğÈÎÈË answer_for_by            answerForBy
-±¸×¢  remark
+å®¢æˆ·æœåŠ¡å•ç¼–ç  customer_serve_code   custServeCode
+å®¢æˆ·æœåŠ¡å•ä¸»é¢˜ customer_serve_theme   custServeTheme
+æœåŠ¡ç±»åˆ« serve_type             serveType
+æœåŠ¡ç­‰çº§ serve_level            serveLevel
+å½“å‰çŠ¶æ€ current_state          currentState
+æœåŠ¡æ—¥æœŸ serve_date             serveDate
+è®¢å•å· order_no               orderNo
+åˆåŒå·  pact_no                    pactNo
+ç»“æŸæ—¥æœŸ end_date              endDate
+äº§å“ç¼–ç   product_code            prodCode
+äº§å“å‹å·  product_model          prodModel
+äº§å“åç§° product_name            prodName
+æ•°é‡ qty
+å•ä½ unit
+æ‰€åœ¨éƒ¨é—¨ location_dept          locationDept
+éƒ¨é—¨ç¼–å· dept_code                deptCode
+æŠ€æœ¯é—®é¢˜  technical_matters             technicalMatters
+å®¢æˆ·ç¼–ç  customer_code    custCode
+å®¢æˆ·åç§° customer_name     custName
+ä¸šåŠ¡å‘˜ business_by          businessBy
+æœåŠ¡å†…å®¹ serve_content      serveContent
+ç™»è®°äºº register_by            registerBy
+ç™»è®°æ—¥æœŸ register_date         registerDate
+è´£ä»»äºº answer_for_by            answerForBy
+å¤‡æ³¨  remark
 
 

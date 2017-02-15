@@ -1,43 +1,43 @@
-ĞÂÆ·»»»õÉêÇëµ¥±àÂë New_barter_apply_code       newBarApplyCode
-ÉêÇëÔ±¹¤±àÂë apply_Employee_code     applyEmployeeCode
-ÉêÇëÔ±¹¤Ãû³Æ apply_Employee_name      applyEmployeeName
-ËùÔÚ²¿ÃÅ location_dept                  locationDept
-ÉêÇëÈÕÆÚ  apply_date                   applyDate
-´ÓÄÄ¸ö¹«Ë¾±àÂë  from_comp_code           fromCompCode
-´ÓÄÄ¸ö¹«Ë¾Ãû³Æ  from_comp_name           fromCompName
-µ½ÄÄ¸ö¹«Ë¾±àÂë  to_comp_code            toCompCode
-µ½ÄÄ¸ö¹«Ë¾Ãû³Æ  to_comp_name          toCompName
-´ÓÄÄ¸ö¹«Ë¾ÁªÏµµç»°  from_comp_tel   fromCompTel
-´ÓÄÄ¸ö¹«Ë¾ÁªÏµ´«Õæ  from_comp_fax   fromCompFax
-´ÓÄÄ¸ö¹«Ë¾µØÖ·  from_comp_addr      fromCompAddr
-´ÓÄÄ¸ö¹«Ë¾ÓÊ±à  from_comp_zip                fromCompZip
-´ÓÄÄ¸ö¹«Ë¾ÁªÏµÈË  from_comp_contast_by         fromCompContastBy
-µ½ÄÄ¸ö¹«Ë¾ÁªÏµµç»° to_comp_tel  toCompTel
-µ½ÄÄ¸ö¹«Ë¾ÁªÏµ´«Õæ to_comp_fax   toCompFax
-µ½ÄÄ¸ö¹«Ë¾ÓÊ±à to_comp_zip              toCompZip
-µ½ÄÄ¸ö¹«Ë¾ÁªÏµÈË to_comp__contast_by   toCompContastBy 
-PIµ¥ºÅ pi_order_no                           piOrderNo
-ÊÕ¼şÈÕÆÚ consignee_date                  consigneeDate
-Ïú»õÈÕÆÚ sales_date                  salesDate
-¼ìÑéÇé¿ö----
-¼ìÑéÈÕÆÚ checkout_date                  checkoutDate
-ÏÖÏóÃèÊö Phenomenon_description            PhenomenonDesc
-½áÂÛ conclusion
+æ–°å“æ¢è´§ç”³è¯·å•ç¼–ç  New_barter_apply_code       newBarApplyCode
+ç”³è¯·å‘˜å·¥ç¼–ç  apply_Employee_code     applyEmployeeCode
+ç”³è¯·å‘˜å·¥åç§° apply_Employee_name      applyEmployeeName
+æ‰€åœ¨éƒ¨é—¨ location_dept                  locationDept
+ç”³è¯·æ—¥æœŸ  apply_date                   applyDate
+ä»å“ªä¸ªå…¬å¸ç¼–ç   from_comp_code           fromCompCode
+ä»å“ªä¸ªå…¬å¸åç§°  from_comp_name           fromCompName
+åˆ°å“ªä¸ªå…¬å¸ç¼–ç   to_comp_code            toCompCode
+åˆ°å“ªä¸ªå…¬å¸åç§°  to_comp_name          toCompName
+ä»å“ªä¸ªå…¬å¸è”ç³»ç”µè¯  from_comp_tel   fromCompTel
+ä»å“ªä¸ªå…¬å¸è”ç³»ä¼ çœŸ  from_comp_fax   fromCompFax
+ä»å“ªä¸ªå…¬å¸åœ°å€  from_comp_addr      fromCompAddr
+ä»å“ªä¸ªå…¬å¸é‚®ç¼–  from_comp_zip                fromCompZip
+ä»å“ªä¸ªå…¬å¸è”ç³»äºº  from_comp_contast_by         fromCompContastBy
+åˆ°å“ªä¸ªå…¬å¸è”ç³»ç”µè¯ to_comp_tel  toCompTel
+åˆ°å“ªä¸ªå…¬å¸è”ç³»ä¼ çœŸ to_comp_fax   toCompFax
+åˆ°å“ªä¸ªå…¬å¸é‚®ç¼– to_comp_zip              toCompZip
+åˆ°å“ªä¸ªå…¬å¸è”ç³»äºº to_comp__contast_by   toCompContastBy 
+PIå•å· pi_order_no                           piOrderNo
+æ”¶ä»¶æ—¥æœŸ consignee_date                  consigneeDate
+é”€è´§æ—¥æœŸ sales_date                  salesDate
+æ£€éªŒæƒ…å†µ----
+æ£€éªŒæ—¥æœŸ checkout_date                  checkoutDate
+ç°è±¡æè¿° Phenomenon_description            PhenomenonDesc
+ç»“è®º conclusion
 ---------
-¼¼Êõ¹¤³ÌÊ¦Òâ¼û technology_opinion          techOpinion
-·Ö¹«Ë¾¾­ÀíÒâ¼û  manager_opinion              managerOpinion
-×Ü¹«Ë¾¼¼ÊõÖ÷¹ÜÒâ¼û charge_opinion             chargeOpinion
-ÊÇ·ñÊÕµ½»µÆ· or_not_get_Bad                   orNotGetBad
-OP´¦ÀíÒâ¼û  op_handle_opinion               opHandleOpinion
-±¸×¢  remark
+æŠ€æœ¯å·¥ç¨‹å¸ˆæ„è§ technology_opinion          techOpinion
+åˆ†å…¬å¸ç»ç†æ„è§  manager_opinion              managerOpinion
+æ€»å…¬å¸æŠ€æœ¯ä¸»ç®¡æ„è§ charge_opinion             chargeOpinion
+æ˜¯å¦æ”¶åˆ°åå“ or_not_get_Bad                   orNotGetBad
+OPå¤„ç†æ„è§  op_handle_opinion               opHandleOpinion
+å¤‡æ³¨  remark
 
 
-ĞÂÆ·»»»õ×Ó±í---
-ĞÍºÅ model
-ĞòÁĞºÅ serial_no                          serialNo
-ÒªÇó»»»õÔ­Òò require_barter_reason             requiBartReason
-ÔËĞĞ»·¾³ JRE                 jre
-¹ºÂòÈÕÆÚ buy_date              buyDate
-±¸×¢  remark
+æ–°å“æ¢è´§å­è¡¨---
+å‹å· model
+åºåˆ—å· serial_no                          serialNo
+è¦æ±‚æ¢è´§åŸå›  require_barter_reason             requiBartReason
+è¿è¡Œç¯å¢ƒ JRE                 jre
+è´­ä¹°æ—¥æœŸ buy_date              buyDate
+å¤‡æ³¨  remark
 
 

@@ -1,14 +1,16 @@
-±¨Ïú±àºÅ reimbursementCode      reimburCode
-Ìá Çë ÈË drawBy
-·ÑÓÃ¿ÆÄ¿ exacct
-±¨ Ïú ÈË ReimbursementBy     reimburBy
-±¨Ïú²¿ÃÅ ReimbursementDept    reimburDept
-±¨ÏúÈÕÆÚ ReimbursementDate    reimburDate
-±¨Ïú½ğ¶î ReimbursementAmount    reimburAmount
-ÓÃÍ¾ËµÃ÷ ApplicationDescription          ApplicaDesc  
-ÉóÅúÇé¿ö examineandapprovesituation       examApprovSituat
-µÚÒ»ÉóÅúÓÃ»§ firstexamineandapproveuser  firstExamAppruser
-µÚ¶şÉóÅúÓÃ»§ secondexamineandapproveuser  secondExamAppruser
-µÚÈıÉóÅúÓÃ»§ thirdexamineandapproveuser    thirdExamAppruser
-ÉóÅúÒâ¼û  examineandapproveopinion         examApprOpinion
-±¸¡¡¡¡×¢ Remark                   remark
+æŠ¥é”€ç¼–å· reimbursementCode      reimburCode
+æ è¯· äººç¼–ç   drawByCode
+æ è¯· äººåç§° drawByName
+è´¹ç”¨ç§‘ç›® exacct
+æŠ¥ é”€ äººç¼–ç  ReimbursementBy     reimburByCode
+æŠ¥ é”€ äººåç§° ReimbursementBy     reimburBy
+æŠ¥é”€éƒ¨é—¨ ReimbursementDept    reimburDept
+æŠ¥é”€æ—¥æœŸ ReimbursementDate    reimburDate
+æŠ¥é”€é‡‘é¢ ReimbursementAmount    reimburAmount
+ç”¨é€”è¯´æ˜ ApplicationDescription          ApplicaDesc  
+å®¡æ‰¹æƒ…å†µ examineandapprovesituation       examApprovSituat
+ç¬¬ä¸€å®¡æ‰¹ç”¨æˆ· firstexamineandapproveuser  firstExamAppruser
+ç¬¬äºŒå®¡æ‰¹ç”¨æˆ· secondexamineandapproveuser  secondExamAppruser
+ç¬¬ä¸‰å®¡æ‰¹ç”¨æˆ· thirdexamineandapproveuser    thirdExamAppruser
+å®¡æ‰¹æ„è§  examineandapproveopinion         examApprOpinion
+å¤‡ã€€ã€€æ³¨ Remark                   remark

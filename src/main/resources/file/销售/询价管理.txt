@@ -1,29 +1,29 @@
-Ñ¯¼Û±àÂë inquiry_code     inquCode
-Ñ¯¼ÛÈÕÆÚ inquiry_date     inquName
-¿Í»§±àÂë customer_code    custCode
-¿Í»§Ãû³Æ customer_name    custName
-¿Í»§µç»° customer_tel     custTel
-¿Í»§µØÖ· customer_addr    custAddr
-¿Í»§ÁªÏµÈË customer_contact_by     custContactBy
-¿Í»§ÁªÏµÈËµç»° customer_contact_by_tel   custContactByTel
-¿Í»§ÁªÏµÈËÓÊÏä customer_contact_by_email  custContactByEmail
-¿Í»§ÁªÏµÈËÒÆ¶¯µç»° customer_contact_phone  custContactByPhone
-Í¨ÖªÈË±àÂë   notifier_code   notifierCode
-Í¨ÖªÈËÃû³Æ notifier_name     notifierName
-±¸×¢ remark
+è¯¢ä»·ç¼–ç  inquiry_code     inquCode
+è¯¢ä»·æ—¥æœŸ inquiry_date     inquDate
+å®¢æˆ·ç¼–ç  customer_code    custCode
+å®¢æˆ·åç§° customer_name    custName
+å®¢æˆ·ç”µè¯ customer_tel     custTel
+å®¢æˆ·åœ°å€ customer_addr    custAddr
+å®¢æˆ·è”ç³»äºº customer_contact_by     custContactBy
+å®¢æˆ·è”ç³»äººç”µè¯ customer_contact_by_tel   custContactByTel
+å®¢æˆ·è”ç³»äººé‚®ç®± customer_contact_by_email  custContactByEmail
+å®¢æˆ·è”ç³»äººç§»åŠ¨ç”µè¯ customer_contact_phone  custContactByPhone
+é€šçŸ¥äººç¼–ç    notifier_code   notifierCode
+é€šçŸ¥äººåç§° notifier_name     notifierName
+å¤‡æ³¨ remark
 
 
-Ñ¯¼Û×Ó±í------
+è¯¢ä»·å­è¡¨------
 
-²úÆ·±àÂë product_code    prodCode
-²úÆ·Ãû³Æ product_name    prodName
-ĞÍºÅ¹æ¸ñ type_model      typeModel
-ÊıÁ¿ qty
-µ¥Î» unit
-µ¥¼Û  univalent
-»õ±Ò currency
-ÖÆÔìÉÌ±àÂë manufacturer_code     manufaCode
-ÖÆÔìÉÌÃû³Æ manufacturer_name      manufaName
-»õÆÚ£¨½»ÆÚ£© delivery_time       delivTime
-±¸×¢ remark
+äº§å“ç¼–ç  product_code    prodCode
+äº§å“åç§° product_name    prodName
+å‹å·è§„æ ¼ type_model      typeModel
+æ•°é‡ qty
+å•ä½ unit
+å•ä»·  univalent
+è´§å¸ currency
+åˆ¶é€ å•†ç¼–ç  manufacturer_code     manufaCode
+åˆ¶é€ å•†åç§° manufacturer_name      manufaName
+è´§æœŸï¼ˆäº¤æœŸï¼‰ delivery_time       delivTime
+å¤‡æ³¨ remark
 

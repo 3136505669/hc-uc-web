@@ -1,17 +1,17 @@
-½±³Í±àÂë Reward_and_punishment_code   rewardPunishCode
-Ô±¹¤±àÂë Employee_code     employCode
-Ô±¹¤ĞÕÃû Employee_name     employName
-¹«Ë¾±àÂë company_code      compCode
-¹«Ë¾Ãû³Æ company_name       compName
-²¿ÃÅ  dept
-Ö°Î» position
-½±³ÍÖÖÀà  Reward_and_punishment_species       rewardPunishSpec
-½±³ÍÒÀ¾İ  Reward_and_punishment_according_to  rewardPunSpecAccTo
-ÌáÇëÈË  drawBy
-ËùÔÚ²¿ÃÅ location_dept            locaDept
-µÇ¼ÇÈÕÆÚ register_date            registerDate
-½±³ÍÔ­Òò Reward_and_punishment_reason     rewardPunishReason
-±¸×¢  remark
+å¥–æƒ©ç¼–ç  Reward_and_punishment_code   rewardPunishCode
+å‘˜å·¥ç¼–ç  Employee_code     employCode
+å‘˜å·¥å§“å Employee_name     employName
+å…¬å¸ç¼–ç  company_code      compCode
+å…¬å¸åç§° company_name       compName
+éƒ¨é—¨  dept
+èŒä½ position
+å¥–æƒ©ç§ç±»  Reward_and_punishment_species       rewardPunishSpec
+å¥–æƒ©ä¾æ®  Reward_and_punishment_according_to  rewardPunSpecAccTo
+æè¯·äºº  drawBy
+æ‰€åœ¨éƒ¨é—¨ location_dept            locaDept
+ç™»è®°æ—¥æœŸ register_date            registerDate
+å¥–æƒ©åŸå›  Reward_and_punishment_reason     rewardPunishReason
+å¤‡æ³¨  remark
 
 
 

@@ -1,14 +1,14 @@
-×ªÕıÉêÇë±àÂë  Positive_apply_code           positApplyCode
-×ªÕıÔ±¹¤±àÂë  Positive_Employee_code             PositiEmploCode
-×ªÕıÔ±¹¤Ãû³Æ  Positive_Employee_name       PositiEmploName
-ÌáÇëÈË  drawBy
-Ö°Î»  position
-µ½¸ÚÈÕÆÚ To_gang_date             toGangDate
-ÉêÇëÈÕÆÚ  apply_date                applyDate
-Ó¦×ªÕıÈÕÆÚ should_Positive_date               shouPosiDate
-×ªÕıÉêÇëÄÚÈİ Positive_apply_Contents        PosiApplyContents
-×ªÕı×´Ì¬  Positive_State            PositiveState
-±¸×¢    remark
+è½¬æ­£ç”³è¯·ç¼–ç   Positive_apply_code           positApplyCode
+è½¬æ­£å‘˜å·¥ç¼–ç   Positive_Employee_code             PositiEmploCode
+è½¬æ­£å‘˜å·¥åç§°  Positive_Employee_name       PositiEmploName
+æè¯·äºº  drawBy
+èŒä½  position
+åˆ°å²—æ—¥æœŸ To_gang_date             toGangDate
+ç”³è¯·æ—¥æœŸ  apply_date                applyDate
+åº”è½¬æ­£æ—¥æœŸ should_Positive_date               shouPosiDate
+è½¬æ­£ç”³è¯·å†…å®¹ Positive_apply_Contents        PosiApplyContents
+è½¬æ­£çŠ¶æ€  Positive_State            PositiveState
+å¤‡æ³¨    remark
 
 
 

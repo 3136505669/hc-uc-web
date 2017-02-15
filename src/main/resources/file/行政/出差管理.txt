@@ -1,22 +1,22 @@
-³ö²îµ¥±àÂë evection_code     evectionCode
-³ö²îÔ±¹¤id evection_Employee_id     evectionEmployId
-³ö²îÔ±¹¤ĞÕÃû evection_Employee_name   evectionEmployName
-ÌáÇëÈË DrawBy                  drawBy
-ÉêÇëÈÕÆÚ apply_date              applyDate
-Ä¿µÄµØ destination
-³ö²îÈÕÆÚ evection_date            evectionDate
-³ö²îÄ¿µÄ evection_goal              evectionGoal
-·ÃÎÊ¹«Ë¾Ãû³Æ visit_company_name            visitCompName
-·ÃÎÊ¹«Ë¾±àÂë visit_company_code            visitCompCode
-ÁªÏµÈË±àÂë Contact_code              contactCode
-ÁªÏµÈËĞÕÃû Contact_name          contactName
-ÁªÏµÈËµç»° Contact_tel          contactTel
-·ÃÎÊÖ÷ÒªÊÂÓÉ visit_Reason      visitReason
-·ÃÎÊ±¸×¢ visit_Remark              visitRemark
-½»Í¨·ÑÓÃ traffic_Cost              trafficCost
-Ê³ËŞ·ÑÓÃ board and lodging_Cost     boardLodCost
-ÆäËû·ÑÓÃ other_Cost           otherCost
-·ÑÓÃ±¸×¢ Cost_remark           costRemark
+å‡ºå·®å•ç¼–ç  evection_code     evectionCode
+å‡ºå·®å‘˜å·¥id evection_Employee_id     evectionEmployId
+å‡ºå·®å‘˜å·¥å§“å evection_Employee_name   evectionEmployName
+æè¯·äºº DrawBy                  drawBy
+ç”³è¯·æ—¥æœŸ apply_date              applyDate
+ç›®çš„åœ° destination
+å‡ºå·®æ—¥æœŸ evection_date            evectionDate
+å‡ºå·®ç›®çš„ evection_goal              evectionGoal
+è®¿é—®å…¬å¸åç§° visit_company_name            visitCompName
+è®¿é—®å…¬å¸ç¼–ç  visit_company_code            visitCompCode
+è”ç³»äººç¼–ç  Contact_code              contactCode
+è”ç³»äººå§“å Contact_name          contactName
+è”ç³»äººç”µè¯ Contact_tel          contactTel
+è®¿é—®ä¸»è¦äº‹ç”± visit_Reason      visitReason
+è®¿é—®å¤‡æ³¨ visit_Remark              visitRemark
+äº¤é€šè´¹ç”¨ traffic_Cost              trafficCost
+é£Ÿå®¿è´¹ç”¨ board and lodging_Cost     boardLodCost
+å…¶ä»–è´¹ç”¨ other_Cost           otherCost
+è´¹ç”¨å¤‡æ³¨ Cost_remark           costRemark
 
 
 

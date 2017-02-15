@@ -1,31 +1,31 @@
-¿Í»§Í¶Ëßµ¥±àÂë customer_complain_code     custComplainCode
-¿Í»§Í¶Ëßµ¥Ö÷Ìâ customer_complain_theme    custComplainName
-Í¶ËßÀà±ğ complain_type       complainType
-Í¶ËßµÈ¼¶ complain_level     complainLevel
-µ±Ç°×´Ì¬ current_state      currentState
-Í¶ËßÈÕÆÚ complain_date      complainDate
-·¢Æ±ºÅ invoice_no     invoiceNo
-ÅúºÅ batch_no             batchNo
-¶©µ¥ºÅ order_no             orderNo
-ºÏÍ¬ºÅ  pact_no               pactNo
-²úÆ·±àÂë  product_code        prodCode
-²úÆ·ĞÍºÅ  product_model        prodModel
-²úÆ·Ãû³Æ product_name             prodName
-ÊıÁ¿ qty
-µ¥Î» unit
-ÖÊÁ¿±ê×¼ quality_standard     qualityStrd
-ÔËÊä±ê×¼ transport_standard    transportStrd
-¹©Ó¦ÉÌ±àÂë supplier_code    supplierCode
-¹©Ó¦ÉÌÃû³Æ supplier_name     supplierName
-¹©Ó¦ÉÌ·¢»õÈÕÆÚ supplier_delivery_date    suppliDelivDate
-¿Í»§±àÂë customer_code      custCode
-¿Í»§Ãû³Æ customer_name      custName
-·¢»õÈÕÆÚ delivery_date           delivDate
-Í¶ËßÄÚÈİ complain_content      complainContent
-µÇ¼ÇÈË register_by         registerBy
-µÇ¼ÇÈÕÆÚ register_date         registerDate
-ÔğÈÎÈË answer_for_by          answerForBy
-±¸×¢  remark
+å®¢æˆ·æŠ•è¯‰å•ç¼–ç  customer_complain_code     custComplainCode
+å®¢æˆ·æŠ•è¯‰å•ä¸»é¢˜ customer_complain_theme    custComplainName
+æŠ•è¯‰ç±»åˆ« complain_type       complainType
+æŠ•è¯‰ç­‰çº§ complain_level     complainLevel
+å½“å‰çŠ¶æ€ current_state      currentState
+æŠ•è¯‰æ—¥æœŸ complain_date      complainDate
+å‘ç¥¨å· invoice_no     invoiceNo
+æ‰¹å· batch_no             batchNo
+è®¢å•å· order_no             orderNo
+åˆåŒå·  pact_no               pactNo
+äº§å“ç¼–ç   product_code        prodCode
+äº§å“å‹å·  product_model        prodModel
+äº§å“åç§° product_name             prodName
+æ•°é‡ qty
+å•ä½ unit
+è´¨é‡æ ‡å‡† quality_standard     qualityStrd
+è¿è¾“æ ‡å‡† transport_standard    transportStrd
+ä¾›åº”å•†ç¼–ç  supplier_code    supplierCode
+ä¾›åº”å•†åç§° supplier_name     supplierName
+ä¾›åº”å•†å‘è´§æ—¥æœŸ supplier_delivery_date    suppliDelivDate
+å®¢æˆ·ç¼–ç  customer_code      custCode
+å®¢æˆ·åç§° customer_name      custName
+å‘è´§æ—¥æœŸ delivery_date           delivDate
+æŠ•è¯‰å†…å®¹ complain_content      complainContent
+ç™»è®°äºº register_by         registerBy
+ç™»è®°æ—¥æœŸ register_date         registerDate
+è´£ä»»äºº answer_for_by          answerForBy
+å¤‡æ³¨  remark
 
 
 

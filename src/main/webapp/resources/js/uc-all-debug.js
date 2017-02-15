@@ -432,123 +432,6 @@ Ext.define('Hc_Framework.model.HcSubCommission', {
     idProperty: 'id'
 });
 /**
- * Description: 客户投诉管理 view
- * All rights Reserved, Designed By Hc
- * Copyright:   Copyright(C) 2016-2017
- * Company:     hcsunmo
- * author:      jinxi.li
- * Createdate:  2016年8月21日
- *
- * Modification  History:
- * Date         Author             What
- * ------------------------------------------
- *
- */
-Ext.define('Hc_Framework.model.HcCustomerComplain', {
-    extend: Ext.data.Model,
-
-    alias: 'model.hccustomercomplain',
-
-    fields: [
-        {name: 'custComplainCode'},
-        {name: 'custComplainName'},
-        {name: 'complainType'},
-        
-        {name: 'complainLevel'},
-        {name: 'currentState'},
-        {name: 'complainDate'},
-        
-        {name: 'invoiceNo'},
-        {name: 'batchNo'},
-        {name: 'orderNo'},
-        
-        {name: 'pactNo'},
-        {name: 'prodCode'},
-        {name: 'prodModel'},
-        
-        {name: 'prodName'},
-        {name: 'qty'},
-        {name: 'unit'},
-        
-        {name: 'qualityStrd'},
-        {name: 'transportStrd'},
-        {name: 'supplierCode'},
-        
-        {name: 'supplierName'},
-        {name: 'suppliDelivDate'},
-        {name: 'custCode'},
-        
-        {name: 'custName'},
-        {name: 'delivDate'},
-        {name: 'complainContent'},
-        
-        {name: 'registerBy'},
-        {name: 'registerDate'},
-        {name: 'answerForBy'},
-        
-        {name: 'remark'}
-
-    ],
-
-    idProperty: 'custComplainCode'
-});
-/**
- * Description: 客户服务管理 view
- * All rights Reserved, Designed By Hc
- * Copyright:   Copyright(C) 2016-2017
- * Company:     hcsunmo
- * author:      jinxi.li
- * Createdate:  2016年8月21日
- *
- * Modification  History:
- * Date         Author             What
- * ------------------------------------------
- *
- */
-Ext.define('Hc_Framework.model.HcCustomerServe', {
-    extend: Ext.data.Model,
-
-    alias: 'model.hccustomerserve',
-
-    fields: [
-        {name: 'custServeCode'},
-        {name: 'custServeTheme'},
-        {name: 'serveType'},
-        
-        {name: 'serveLevel'},
-        {name: 'currentState'},
-        {name: 'serveDate'},
-        
-        {name: 'orderNo'},
-        {name: 'pactNo'},
-        {name: 'endDate'},
-        
-        {name: 'prodCode'},
-        {name: 'prodModel'},
-        {name: 'prodName'},
-        
-        {name: 'qty'},
-        {name: 'unit'},
-        {name: 'locationDept'},
-        
-        {name: 'deptCode'},
-        {name: 'technicalMatters'},
-        {name: 'custCode'},
-        
-        {name: 'custName'},
-        {name: 'businessBy'},
-        {name: 'serveContent'},
-        
-        {name: 'registerBy'},
-        {name: 'registerDate'},
-        {name: 'answerForBy'},
-        
-        {name: 'remark'}
-    ],
-
-    idProperty: 'custServeCode'
-});
-/**
  * Description: 外出管理 view
  * All rights Reserved, Designed By Hc
  * Copyright:   Copyright(C) 2016-2017
@@ -951,6 +834,581 @@ Ext.define('Hc_Framework.model.HcLoan', {
     idProperty: 'loanCode'
 });
 /**
+ * Description: 办公用品管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcOfficeSupplies', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcofficesupplies',
+
+    fields: [
+        {name: 'offSupplCode'},
+        {name: 'applyBy'},
+        {name: 'applyDate'},
+        
+        {name: 'applyForBy'},
+        {name: 'contactBy'},
+        {name: 'contactTel'},
+        
+        {name: 'category'},
+        {name: 'currency'},
+        {name: 'examineandapproveBy'},
+        
+        {name: 'remark'}
+    ],
+
+    idProperty: 'offSupplCode'
+});
+/**
+ * Description: 付款管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcPayment', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcpayment',
+
+    fields: [
+        {name: 'paymentCode'},
+        {name: 'paymentDate'},
+        {name: 'applyBy'},
+        
+        {name: 'applyDept'},
+        {name: 'receivOrganiz'},
+        {name: 'receivAccount'},
+        
+        {name: 'bankAccount'},
+        {name: 'paymentMode'},
+        {name: 'amount'},
+        
+        {name: 'paymentDesc'},
+        {name: 'examApprSitu'},
+        {name: 'firstExamAppruser'},
+        
+        {name: 'secondExamAppruser'},
+        {name: 'thirdExamAppruser'},
+        {name: 'fourthExamAppruser'},
+        
+        {name: 'examApprOpinion'}
+
+   ],
+
+    idProperty: 'paymentCode'
+});
+/**
+ * Description: 转正申请管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcPositive', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcpositive',
+
+    fields: [
+        {name: 'positApplyCode'},
+        {name: 'PositiEmploCode'},
+        {name: 'PositiEmploName'},
+        
+        {name: 'drawBy'},
+        {name: 'position'},
+        {name: 'toGangDate'},
+        
+        {name: 'applyDate'},
+        {name: 'shouPosiDate'},
+        {name: 'posiApplyContents'},
+        
+        {name: 'positiveState'},
+        {name: 'remark'},
+   ],
+
+    idProperty: 'positApplyCode'
+});
+/**
+ * Description: 报销管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcReimbursement', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcreimbursement',
+
+    fields: [
+        {name: 'reimburCode'},
+        {name: 'drawByCode'},
+        {name: 'drawByName'},
+        
+        {name: 'exacct'},
+        {name: 'reimburByCode'},
+        {name: 'reimburBy'},
+        
+        {name: 'reimburDept'},
+        {name: 'reimburDate'},
+        {name: 'reimburAmount'},
+        
+        {name: 'ApplicaDesc'},
+        {name: 'examApprovSituat'},
+        {name: 'firstExamAppruser'},
+        
+        {name: 'secondExamAppruser'},
+        {name: 'thirdExamAppruser'},
+        {name: 'examApprOpinion'},
+        
+        {name: 'remark'}
+
+   ],
+
+    idProperty: 'reimburCode'
+});
+/**
+ * Description: 辞职管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcResign', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcresign',
+
+    fields: [
+        {name: 'resignCode'},
+        {name: 'resignByCode'},
+        {name: 'resignByName'},
+        
+        {name: 'resignType'},
+        {name: 'perReasons'},
+        {name: 'drawByCode'},
+        
+        {name: 'drawByName'},
+        {name: 'resignDate'},
+        {name: 'resignReason'},
+        
+        {name: 'remark'},
+   ],
+
+    idProperty: 'resignCode'
+});
+/**
+ * Description: 奖惩管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcRewardPunishment', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcrewardpunishment',
+
+    fields: [
+        {name: 'rewardPunishCode'},
+        {name: 'employCode'},
+        {name: 'employName'},
+        
+        {name: 'compCode'},
+        {name: 'compName'},
+        {name: 'dept'},
+        
+        {name: 'position'},
+        {name: 'rewardPunishSpec'},
+        {name: 'rewardPunSpecAccTo'},
+        
+        {name: 'drawBy'},
+        {name: 'locaDept'},
+        {name: 'registerDate'},
+        
+        {name: 'rewardPunishReason'},
+        {name: 'remark'}
+
+   ],
+
+    idProperty: 'rewardPunishCode'
+});
+/**
+ * Description: 薪资异动管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcSalaryPunishment', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcsalarypunishment',
+
+    fields: [
+        {name: 'salaryPunishCode'},
+        {name: 'employeeCode'},
+        {name: 'employeeName'},
+        
+        {name: 'drawBy'},
+        {name: 'position'},
+        {name: 'checkDate'},
+        
+        {name: 'applyDate'},
+        {name: 'serviDate'},
+        {name: 'noticeMatters'},
+        
+        {name: 'originalSalary'},
+        {name: 'adjustRate'},
+        {name: 'adjustAmount'},
+        
+        {name: 'adjustedAmount'},
+        {name: 'desc'},
+        {name: 'remark'},
+   ],
+
+    idProperty: 'salaryPunishCode'
+});
+/**
+ * Description: 盖章管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcSeal', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcseal',
+
+    fields: [
+        {name: 'sealCode'},
+        {name: 'borrowDept'},
+        {name: 'handleByCode'},
+        
+        {name: 'handleByName'},
+        {name: 'borrowIndiaByCode'},
+        {name: 'borrowIndiaByName'},
+        
+        {name: 'loanDate'},
+        {name: 'useTerm'},
+        {name: 'borrowIndiaType'},
+        
+        {name: 'imporContentDesc'},
+        {name: 'useScope'},
+        {name: 'indiaPromise'},
+        
+        {name: 'indiaContent'},
+        {name: 'indiaWitnBy'},
+        {name: 'remark'},
+
+   ],
+
+    idProperty: 'sealCode'
+});
+/**
+ * Description: 任务管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcTask', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hctask',
+
+    fields: [
+        {name: 'taskCode'},
+        {name: 'issuedTaskDate'},
+        {name: 'finishTaskDate'},
+        
+        {name: 'taskSubject'},
+        {name: 'taskContent'},
+        {name: 'taskRespBy'},
+        
+        {name: 'taskInvolvBy'},
+        {name: 'associatedBy'},
+        {name: 'issuedTaskBy'},
+        
+        {name: 'taskFinSituation'},
+        {name: 'remart'}
+   ],
+
+    idProperty: 'taskCode'
+});
+/**
+ * Description: 事物项目管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcThingItem', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcthingitem',
+
+    fields: [
+        {name: 'thingItemCode'},
+        {name: 'projtApprByCode'},
+        {name: 'projtApprByName'},
+        
+        {name: 'projtApprDate'},
+        {name: 'startDate'},
+        {name: 'expecCompletDate'},
+        
+        {name: 'projectCode'},
+        {name: 'projectName'},
+        {name: 'urgencyLevel'},
+        
+        {name: 'projtPerCharges'},
+        {name: 'partakeBys'},
+        {name: 'assistBys'},
+        
+        {name: 'projtSynopsis'},
+        {name: 'remark'}
+   ],
+
+    idProperty: 'thingItemCode'
+});
+/**
+ * Description: 用车管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcUseCar', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcusecar',
+
+    fields: [
+        {name: 'useCarCode'},
+        {name: 'placeDeparture'},
+        {name: 'orNotOneWay'},
+        
+        {name: 'destination'},
+        {name: 'applyReason'},
+        {name: 'useCarByCode'},
+        
+        {name: 'useCarByName'},
+        {name: 'useCarByQty'},
+        {name: 'applyUseCarDate'},
+        
+        {name: 'useCarEndDate'},
+        {name: 'expectUseFatalism'},
+        {name: 'dept'},
+        
+        {name: 'plateNumber'},
+        {name: 'driverCode'},
+        {name: 'driverName'},
+        
+        {name: 'departDate'},
+        {name: 'Kilometer'},
+        {name: 'departRecordBy'},
+        
+        {name: 'backDate'},
+        {name: 'bacKilometer'},
+        {name: 'actualRun'},
+        
+        {name: 'backRecordBy'},
+        {name: 'actualUseFatalism'},
+        {name: 'remark'},
+   ],
+
+    idProperty: 'useCarCode'
+});
+/**
+ * Description: 客户投诉管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcCustomerComplain', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hccustomercomplain',
+
+    fields: [
+        {name: 'custComplainCode'},
+        {name: 'custComplainName'},
+        {name: 'complainType'},
+        
+        {name: 'complainLevel'},
+        {name: 'currentState'},
+        {name: 'complainDate'},
+        
+        {name: 'invoiceNo'},
+        {name: 'batchNo'},
+        {name: 'orderNo'},
+        
+        {name: 'pactNo'},
+        {name: 'prodCode'},
+        {name: 'prodModel'},
+        
+        {name: 'prodName'},
+        {name: 'qty'},
+        {name: 'unit'},
+        
+        {name: 'qualityStrd'},
+        {name: 'transportStrd'},
+        {name: 'supplierCode'},
+        
+        {name: 'supplierName'},
+        {name: 'suppliDelivDate'},
+        {name: 'custCode'},
+        
+        {name: 'custName'},
+        {name: 'delivDate'},
+        {name: 'complainContent'},
+        
+        {name: 'registerBy'},
+        {name: 'registerDate'},
+        {name: 'answerForBy'},
+        
+        {name: 'remark'}
+
+    ],
+
+    idProperty: 'custComplainCode'
+});
+/**
+ * Description: 客户服务管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcCustomerServe', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hccustomerserve',
+
+    fields: [
+        {name: 'custServeCode'},
+        {name: 'custServeTheme'},
+        {name: 'serveType'},
+        
+        {name: 'serveLevel'},
+        {name: 'currentState'},
+        {name: 'serveDate'},
+        
+        {name: 'orderNo'},
+        {name: 'pactNo'},
+        {name: 'endDate'},
+        
+        {name: 'prodCode'},
+        {name: 'prodModel'},
+        {name: 'prodName'},
+        
+        {name: 'qty'},
+        {name: 'unit'},
+        {name: 'locationDept'},
+        
+        {name: 'deptCode'},
+        {name: 'technicalMatters'},
+        {name: 'custCode'},
+        
+        {name: 'custName'},
+        {name: 'businessBy'},
+        {name: 'serveContent'},
+        
+        {name: 'registerBy'},
+        {name: 'registerDate'},
+        {name: 'answerForBy'},
+        
+        {name: 'remark'}
+    ],
+
+    idProperty: 'custServeCode'
+});
+/**
  * Description:维修管理 view
  * All rights Reserved, Designed By Hc
  * Copyright:   Copyright(C) 2016-2017
@@ -1109,6 +1567,40 @@ Ext.define('Hc_Framework.model.HcSubNewBarterApply', {
     ],
 
     idProperty: 'id'
+});
+/**
+ * Description: 退货管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月21日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.model.HcReturnGoods', {
+    extend: Ext.data.Model,
+
+    alias: 'model.hcreturngoods',
+
+    fields: [
+        {name: 'returnGoodsCode'},
+        {name: 'inChargeByCode'},
+        {name: 'inChargeByName'},
+        
+        {name: 'subject'},
+        {name: 'custCode'},
+        {name: 'custName'},
+        
+        {name: 'currency'},
+        {name: 'returnGoodsDate'},
+        {name: 'remark'}
+   ],
+
+    idProperty: 'returnGoodsCode'
 });
 /**
  * Description: 供应商管理 view
@@ -2337,42 +2829,6 @@ Ext.define('Hc_Framework.model.SubHcSupplierShipment', {
     idProperty: 'productNo'
 });
 /**
- * Description: 办公用品管理 view
- * All rights Reserved, Designed By Hc
- * Copyright:   Copyright(C) 2016-2017
- * Company:     hcsunmo
- * author:      jinxi.li
- * Createdate:  2016年8月21日
- *
- * Modification  History:
- * Date         Author             What
- * ------------------------------------------
- *
- */
-Ext.define('Hc_Framework.model.HcOfficeSupplies', {
-    extend: Ext.data.Model,
-
-    alias: 'model.hcofficesupplies',
-
-    fields: [
-        {name: 'offSupplCode'},
-        {name: 'applyBy'},
-        {name: 'applyDate'},
-        
-        {name: 'applyForBy'},
-        {name: 'contactBy'},
-        {name: 'contactTel'},
-        
-        {name: 'category'},
-        {name: 'currency'},
-        {name: 'examineandapproveBy'},
-        
-        {name: 'remark'}
-    ],
-
-    idProperty: 'offSupplCode'
-});
-/**
  * Description: 当前用户
  * All rights Reserved, Designed By Hc
  * Copyright:   Copyright(C) 2014-2015
@@ -2900,88 +3356,6 @@ Ext.define('Hc_Framework.model.MainTree', {
     ]
 });
 /**
- * Description: 付款管理 view
- * All rights Reserved, Designed By Hc
- * Copyright:   Copyright(C) 2016-2017
- * Company:     hcsunmo
- * author:      jinxi.li
- * Createdate:  2016年8月21日
- *
- * Modification  History:
- * Date         Author             What
- * ------------------------------------------
- *
- */
-Ext.define('Hc_Framework.model.HcPayment', {
-    extend: Ext.data.Model,
-
-    alias: 'model.hcpayment',
-
-    fields: [
-        {name: 'paymentCode'},
-        {name: 'paymentDate'},
-        {name: 'applyBy'},
-        
-        {name: 'applyDept'},
-        {name: 'receivOrganiz'},
-        {name: 'receivAccount'},
-        
-        {name: 'bankAccount'},
-        {name: 'paymentMode'},
-        {name: 'amount'},
-        
-        {name: 'paymentDesc'},
-        {name: 'examApprSitu'},
-        {name: 'firstExamAppruser'},
-        
-        {name: 'secondExamAppruser'},
-        {name: 'thirdExamAppruser'},
-        {name: 'fourthExamAppruser'},
-        
-        {name: 'examApprOpinion'}
-
-   ],
-
-    idProperty: 'paymentCode'
-});
-/**
- * Description: 转正申请管理 view
- * All rights Reserved, Designed By Hc
- * Copyright:   Copyright(C) 2016-2017
- * Company:     hcsunmo
- * author:      jinxi.li
- * Createdate:  2016年8月21日
- *
- * Modification  History:
- * Date         Author             What
- * ------------------------------------------
- *
- */
-Ext.define('Hc_Framework.model.HcPositive', {
-    extend: Ext.data.Model,
-
-    alias: 'model.hcpositive',
-
-    fields: [
-        {name: 'positApplyCode'},
-        {name: 'PositiEmploCode'},
-        {name: 'PositiEmploName'},
-        
-        {name: 'drawBy'},
-        {name: 'position'},
-        {name: 'toGangDate'},
-        
-        {name: 'applyDate'},
-        {name: 'shouPosiDate'},
-        {name: 'posiApplyContents'},
-        
-        {name: 'positiveState'},
-        {name: 'remark'},
-   ],
-
-    idProperty: 'positApplyCode'
-});
-/**
  * Description: 客户管理 view
  * All rights Reserved, Designed By Hc
  * Copyright:   Copyright(C) 2016-2017
@@ -3207,205 +3581,6 @@ Ext.define('Hc_Framework.model.HcSupplierProductList', {
     ],
 
     idProperty: 'productNo'
-});
-/**
- * Description: 报销管理 view
- * All rights Reserved, Designed By Hc
- * Copyright:   Copyright(C) 2016-2017
- * Company:     hcsunmo
- * author:      jinxi.li
- * Createdate:  2016年8月21日
- *
- * Modification  History:
- * Date         Author             What
- * ------------------------------------------
- *
- */
-Ext.define('Hc_Framework.model.HcReimbursement', {
-    extend: Ext.data.Model,
-
-    alias: 'model.hcreimbursement',
-
-    fields: [
-        {name: 'reimburCode'},
-        {name: 'drawByCode'},
-        {name: 'drawByName'},
-        
-        {name: 'exacct'},
-        {name: 'reimburByCode'},
-        {name: 'reimburBy'},
-        
-        {name: 'reimburDept'},
-        {name: 'reimburDate'},
-        {name: 'reimburAmount'},
-        
-        {name: 'ApplicaDesc'},
-        {name: 'examApprovSituat'},
-        {name: 'firstExamAppruser'},
-        
-        {name: 'secondExamAppruser'},
-        {name: 'thirdExamAppruser'},
-        {name: 'examApprOpinion'},
-        
-        {name: 'remark'}
-
-   ],
-
-    idProperty: 'reimburCode'
-});
-/**
- * Description: 辞职管理 view
- * All rights Reserved, Designed By Hc
- * Copyright:   Copyright(C) 2016-2017
- * Company:     hcsunmo
- * author:      jinxi.li
- * Createdate:  2016年8月21日
- *
- * Modification  History:
- * Date         Author             What
- * ------------------------------------------
- *
- */
-Ext.define('Hc_Framework.model.HcResign', {
-    extend: Ext.data.Model,
-
-    alias: 'model.hcresign',
-
-    fields: [
-        {name: 'resignCode'},
-        {name: 'resignByCode'},
-        {name: 'resignByName'},
-        
-        {name: 'resignType'},
-        {name: 'perReasons'},
-        {name: 'drawByCode'},
-        
-        {name: 'drawByName'},
-        {name: 'resignDate'},
-        {name: 'resignReason'},
-        
-        {name: 'remark'},
-   ],
-
-    idProperty: 'resignCode'
-});
-/**
- * Description: 退货管理 view
- * All rights Reserved, Designed By Hc
- * Copyright:   Copyright(C) 2016-2017
- * Company:     hcsunmo
- * author:      jinxi.li
- * Createdate:  2016年8月21日
- *
- * Modification  History:
- * Date         Author             What
- * ------------------------------------------
- *
- */
-Ext.define('Hc_Framework.model.HcReturnGoods', {
-    extend: Ext.data.Model,
-
-    alias: 'model.hcreturngoods',
-
-    fields: [
-        {name: 'returnGoodsCode'},
-        {name: 'inChargeByCode'},
-        {name: 'inChargeByName'},
-        
-        {name: 'subject'},
-        {name: 'custCode'},
-        {name: 'custName'},
-        
-        {name: 'currency'},
-        {name: 'returnGoodsDate'},
-        {name: 'remark'}
-   ],
-
-    idProperty: 'returnGoodsCode'
-});
-/**
- * Description: 奖惩管理 view
- * All rights Reserved, Designed By Hc
- * Copyright:   Copyright(C) 2016-2017
- * Company:     hcsunmo
- * author:      jinxi.li
- * Createdate:  2016年8月21日
- *
- * Modification  History:
- * Date         Author             What
- * ------------------------------------------
- *
- */
-Ext.define('Hc_Framework.model.HcRewardPunishment', {
-    extend: Ext.data.Model,
-
-    alias: 'model.hcrewardpunishment',
-
-    fields: [
-        {name: 'rewardPunishCode'},
-        {name: 'employCode'},
-        {name: 'employName'},
-        
-        {name: 'compCode'},
-        {name: 'compName'},
-        {name: 'dept'},
-        
-        {name: 'position'},
-        {name: 'rewardPunishSpec'},
-        {name: 'rewardPunSpecAccTo'},
-        
-        {name: 'drawBy'},
-        {name: 'locaDept'},
-        {name: 'registerDate'},
-        
-        {name: 'rewardPunishReason'},
-        {name: 'remark'}
-
-   ],
-
-    idProperty: 'rewardPunishCode'
-});
-/**
- * Description: 薪资异动管理 view
- * All rights Reserved, Designed By Hc
- * Copyright:   Copyright(C) 2016-2017
- * Company:     hcsunmo
- * author:      jinxi.li
- * Createdate:  2016年8月21日
- *
- * Modification  History:
- * Date         Author             What
- * ------------------------------------------
- *
- */
-Ext.define('Hc_Framework.model.HcSalaryPunishment', {
-    extend: Ext.data.Model,
-
-    alias: 'model.hcsalarypunishment',
-
-    fields: [
-        {name: 'salaryPunishCode'},
-        {name: 'employeeCode'},
-        {name: 'employeeName'},
-        
-        {name: 'drawBy'},
-        {name: 'position'},
-        {name: 'checkDate'},
-        
-        {name: 'applyDate'},
-        {name: 'serviDate'},
-        {name: 'noticeMatters'},
-        
-        {name: 'originalSalary'},
-        {name: 'adjustRate'},
-        {name: 'adjustAmount'},
-        
-        {name: 'adjustedAmount'},
-        {name: 'desc'},
-        {name: 'remark'},
-   ],
-
-    idProperty: 'salaryPunishCode'
 });
 /**
  * Description: 合同管理 view
@@ -3974,181 +4149,6 @@ Ext.define('Hc_Framework.model.HcSubSample', {
 
     idProperty: 'id'
 });
-/**
- * Description: 盖章管理 view
- * All rights Reserved, Designed By Hc
- * Copyright:   Copyright(C) 2016-2017
- * Company:     hcsunmo
- * author:      jinxi.li
- * Createdate:  2016年8月21日
- *
- * Modification  History:
- * Date         Author             What
- * ------------------------------------------
- *
- */
-Ext.define('Hc_Framework.model.HcSeal', {
-    extend: Ext.data.Model,
-
-    alias: 'model.hcseal',
-
-    fields: [
-        {name: 'sealCode'},
-        {name: 'borrowDept'},
-        {name: 'handleByCode'},
-        
-        {name: 'handleByName'},
-        {name: 'borrowIndiaByCode'},
-        {name: 'borrowIndiaByName'},
-        
-        {name: 'loanDate'},
-        {name: 'useTerm'},
-        {name: 'borrowIndiaType'},
-        
-        {name: 'imporContentDesc'},
-        {name: 'useScope'},
-        {name: 'indiaPromise'},
-        
-        {name: 'indiaContent'},
-        {name: 'indiaWitnBy'},
-        {name: 'remark'},
-
-   ],
-
-    idProperty: 'sealCode'
-});
-/**
- * Description: 任务管理 view
- * All rights Reserved, Designed By Hc
- * Copyright:   Copyright(C) 2016-2017
- * Company:     hcsunmo
- * author:      jinxi.li
- * Createdate:  2016年8月21日
- *
- * Modification  History:
- * Date         Author             What
- * ------------------------------------------
- *
- */
-Ext.define('Hc_Framework.model.HcTask', {
-    extend: Ext.data.Model,
-
-    alias: 'model.hctask',
-
-    fields: [
-        {name: 'taskCode'},
-        {name: 'issuedTaskDate'},
-        {name: 'finishTaskDate'},
-        
-        {name: 'taskSubject'},
-        {name: 'taskContent'},
-        {name: 'taskRespBy'},
-        
-        {name: 'taskInvolvBy'},
-        {name: 'associatedBy'},
-        {name: 'issuedTaskBy'},
-        
-        {name: 'taskFinSituation'},
-        {name: 'remart'}
-   ],
-
-    idProperty: 'taskCode'
-});
-/**
- * Description: 事物项目管理 view
- * All rights Reserved, Designed By Hc
- * Copyright:   Copyright(C) 2016-2017
- * Company:     hcsunmo
- * author:      jinxi.li
- * Createdate:  2016年8月21日
- *
- * Modification  History:
- * Date         Author             What
- * ------------------------------------------
- *
- */
-Ext.define('Hc_Framework.model.HcThingItem', {
-    extend: Ext.data.Model,
-
-    alias: 'model.hcthingitem',
-
-    fields: [
-        {name: 'thingItemCode'},
-        {name: 'projtApprByCode'},
-        {name: 'projtApprByName'},
-        
-        {name: 'projtApprDate'},
-        {name: 'startDate'},
-        {name: 'expecCompletDate'},
-        
-        {name: 'projectCode'},
-        {name: 'projectName'},
-        {name: 'urgencyLevel'},
-        
-        {name: 'projtPerCharges'},
-        {name: 'partakeBys'},
-        {name: 'assistBys'},
-        
-        {name: 'projtSynopsis'},
-        {name: 'remark'}
-   ],
-
-    idProperty: 'thingItemCode'
-});
-/**
- * Description: 用车管理 view
- * All rights Reserved, Designed By Hc
- * Copyright:   Copyright(C) 2016-2017
- * Company:     hcsunmo
- * author:      jinxi.li
- * Createdate:  2016年8月21日
- *
- * Modification  History:
- * Date         Author             What
- * ------------------------------------------
- *
- */
-Ext.define('Hc_Framework.model.HcUseCar', {
-    extend: Ext.data.Model,
-
-    alias: 'model.hcusecar',
-
-    fields: [
-        {name: 'useCarCode'},
-        {name: 'placeDeparture'},
-        {name: 'orNotOneWay'},
-        
-        {name: 'destination'},
-        {name: 'applyReason'},
-        {name: 'useCarByCode'},
-        
-        {name: 'useCarByName'},
-        {name: 'useCarByQty'},
-        {name: 'applyUseCarDate'},
-        
-        {name: 'useCarEndDate'},
-        {name: 'expectUseFatalism'},
-        {name: 'dept'},
-        
-        {name: 'plateNumber'},
-        {name: 'driverCode'},
-        {name: 'driverName'},
-        
-        {name: 'departDate'},
-        {name: 'Kilometer'},
-        {name: 'departRecordBy'},
-        
-        {name: 'backDate'},
-        {name: 'bacKilometer'},
-        {name: 'actualRun'},
-        
-        {name: 'backRecordBy'},
-        {name: 'actualUseFatalism'},
-        {name: 'remark'},
-   ],
-
-    idProperty: 'useCarCode'
-});
 Ext.define('Hc_Framework.store.City',{
     extend:'Hc_Common.store.ComBase',
   
@@ -4679,6 +4679,19340 @@ Ext.define('Hc_Framework.ux.UserList', {
 	initComponent: function () {
 		this.callParent();
 	}
+});
+/**
+ * Description: 日程管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2014-2015
+ * Company:     hc.
+ * author:      jinxi.li
+ * Createdate:  2016/01/26
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define("Hc_Framework.view.hc.HcAgendaForDay", {
+    extend: "Hc_Common.view.BaseSimplePage",
+
+    alias: 'widget.hcagendaforday',
+
+    
+
+    controller: "hcagendafordaycontroller",
+
+    viewModel: {
+        type: "hcagendafordaymodel"
+    },
+    title_:'日程管理',
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+            searchItems: [ 
+			{
+			    xtype: 'textfield', 
+			    fieldLabel: '日程編碼', 
+			    name: 'agendaForDayCode'
+			}
+            ],
+
+            gridModel: 'Hc_Framework.model.HcAgendaForDay',
+            gridSubGrid:'',
+            gridColumns: [
+                          {
+                          	header: '日程編碼', 
+                          	dataIndex: 'agendaForDayCode', 
+                          	width: '15%',
+                          	renderer: function (data, metadata, record, rowIndex, columnIndex, store) {  
+                          		return '<span onclick=""><a href="#">'+data+' </a></span>';
+                            }
+                          },
+                          {
+                          	header: '日程类型', 
+                          	dataIndex: 'agendaForDayType', 
+                          	width: 250
+                          },
+                          {
+              				dataIndex: 'agendaForDayName',
+              				header: '日程名称',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'agendaForDayEmploy',
+                				header: '员工',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'startDate',
+                				header: '开始时间 ',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'endDate',
+              				header: '结束时间',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'locationDept',
+                				header: '所在部门',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'remark',
+                				header: '备注',
+                				width: 150
+                          }            
+            ],
+            allendflag:false,
+            gridPrimaryKey: 'agendaForDayCode',
+            gridLoadUrl: Hc.basePath + 'hc_agenda_for_day_list/list.json',
+            gridLoadSubUrl: Hc.basePath + 'hc_agenda_for_day_list/listAll.json',
+            gridSaveUrl: Hc.basePath + 'hc_agenda_for_day_list/batchOperate.json',
+            gridExportUrl: Hc.basePath + 'hc_agenda_for_day_list/do_export.json',
+            gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_agenda_for_day_list/deleteMasterCustomer.json',
+            gridAddMasterCustomerUrl: Hc.basePath + 'hc_agenda_for_day_list/addMasterCustomer.json',
+            gridImportUrl: Hc.basePath + '',
+            subWinTableName:'Hc_Framework.view.hc.SubHcAgendaForDay',
+            subformActivate:false
+        });
+        me.callParent();
+    }
+});
+/**
+ * Description: 日程管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+
+Ext.define('Hc_Framework.view.hc.HcAgendaForDayController', {
+	extend : 'Hc_Common.view.BaseSimplePageController',
+
+	alias : 'controller.hcagendafordaycontroller',
+	
+	init: function () {
+		var me = this;
+		Ext.apply(me, {
+			windowFlag:true,
+			newobj:this.view.subWinTableName
+		})
+		me.callParent();
+	},
+	onEditClick:function( obj , record , item , index , e , eOpts){
+      
+	},
+	onEditClick_:function(obj , td , cellIndex , record , tr , rowIndex , e , eOpts ){
+		var store = Ext.create('Hc_Common.store.Base', {
+            model:'Hc_Framework.model.HcAgendaForDay',
+            autoLoad: false,
+            groupField: 'inquiredQTY_quotedPrice$',
+            proxy: {
+                url: this.view.gridLoadSubUrl
+            }
+        });
+		
+		store.proxy.extraParams['quoteCode'] = record.data.quoteCode; 
+		store.load();	      	 
+		if(cellIndex==0){
+	    	Ext.create(this.view.subWinTableName,{
+	    		title:'编辑',
+	    		record:record,
+	    		me_:this,
+	    		store:store
+	    	}).show();
+	    	this.view.subformActivate=true;
+	    	this.onBtnCancelClick();
+		}
+    	
+    }
+	
+});
+/**
+ * Description: 日程管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.view.hc.HcAgendaForDayModel', {
+    extend: 'Hc_Common.view.BaseSimplePageModel',
+
+    alias: 'viewmodel.hcagendafordaymodel'
+});
+Ext.define("Hc_Framework.view.hc.SubHcAgendaForDay", {
+    extend: "Hc_Common.view.BaseWinPage",
+
+    alias: 'widget.subhcagendaforday',
+
+    
+
+    controller: "subhcagendafordaycontroller",
+
+    viewModel: {
+        type: "subhcagendafordaymodel"
+    },
+    title:'新增',
+    width: 1000,
+    height:620,
+    
+    maxWidth:1000,
+   // maxHeight:620,
+    
+    minWidth:1000,
+    minHeight:620,
+    
+    layout:'border',//设置窗口内部布局
+    closeAction:'hide',
+    plain:false,//true则主体背景透明，false则和主体背景有些差别
+    collapsible:false,//是否可收缩
+    modal:true,//是否为模式窗体
+   
+    dockedItems:[{
+    	 xtype: 'toolbar',
+    	 dock: 'top',
+    	 items: [
+           {
+             text: '保存',
+             handler:'onBtnSaveClick',
+             glyph: Hc.Icon.btnSave
+           },
+           {
+               text: '编辑',
+               handler:'onBtnEditClick',
+               glyph: Hc.Icon.btnEdit
+           },
+           {
+               text: '取消',
+               handler:'onBtnCancelClick',
+               glyph: Hc.Icon.btnCancel
+             }
+         ]
+    }],
+    listeners: {
+    	beforeshow:function(obj ,eOpts){
+    		 var currentUser = Ext.create("Hc_Framework.store.CurrentUser");
+    	        currentUser.load();
+    		 var  userCreator;
+             var   supplierNo_;
+             
+             if(this.title=='新增'){
+            	// this.lookupReference('createUser').setValue(currentUser.getAt(0).data.userName);
+                 supplierNo_='PE'+Ext.util.Format.date((new Date()), "Y").substring(2,5)+Ext.util.Format.date((new Date()), "Y").substring(0,2)+Ext.util.Format.date((new Date()), "dmHis");
+              /*   this.lookupReference('inquiryNo').setValue(supplierNo_);
+                // this.lookupReference('modifyUser').disabled=true;
+                 //this.lookupReference('modifyDate').disabled=true;
+                 
+                 this.lookupReference('contactsName').disabled=true;
+                 this.lookupReference('contactsTel').disabled=true;
+                 this.lookupReference('contactsFax').disabled=true;
+                 this.lookupReference('supplierName').disabled=true;
+                 
+                 
+                // this.lookupReference('localDepartment').setValue(currentUser.getAt(0).data.deptName);
+                 this.lookupReference('inquiryDate').setValue(Ext.util.Format.date((new Date()),'Y-m-d H:i:s'));
+
+            */
+             }else if(this.title=='编辑'){
+           	 for(i=0;i<this.record.getFields().length;i++){
+	                 var  name=Ext.util.Format.trim(this.record.getFields()[i].getName())
+           		 
+           		 if((this.getReferences())[name]){
+           			 if(this.lookupReference(name).is('combo')){
+               			 this.lookupReference(name).setRawValue(this.record.get(name));
+               		 }else{
+               			 this.lookupReference(name).setValue(this.record.get(name));
+               		 }
+           			this.lookupReference(name).disable();
+           		 }
+           	 }
+             }
+             this.lookupReference('subhcsuppliercustomer').title='>>>>'+this.me_.view.title_;
+    	}
+    },
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+       	 items:[
+       	        {
+       	         xtype:'panel',
+       	         defaults: {
+       	        	
+                 },
+                 layout: {
+                	 type: 'absolute'
+                 },
+                 reference:'subhcsuppliercustomer',
+                 region: "north",
+                 bodyStyle: 'background:#cbdbe0;',
+                 padding:'3 0 3 0',//(top, right, bottom, left).
+                    items: [
+                            {
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 3,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价编码',
+									    name: 'quoteCode',
+				     					reference:'quoteCode',
+									    listeners: {
+									    	beforerender: function(obj) {
+											   obj.fieldLabel+='<font size="2px" color="red">*</font>';
+									        }
+										  }
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人编码',
+									    name: 'quoteByCode',
+				     					reference:'quoteByCode'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人名称',
+									    name: 'quoteByName',
+				     					reference:'quoteByName'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价方式',
+									    name: 'quoteMode',
+				     					reference:'quoteMode'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:57,
+                            	width:980,
+                            	layout: {
+                                  	 type: 'table',
+                                       columns:4
+                                   },
+                                x: 3,
+                                y: 35,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                               	items:[
+   									{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户编码',
+	   								    name: 'custCode',
+	   								
+				     					reference:'custCode'
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									   // width:313,
+   									    fieldLabel: '客户名称',
+   									    name: 'custName',
+				     					reference:'custName',
+   									    colspan:1
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									    width:500,
+   									    fieldLabel: '客户地址',
+   									    name: 'custAddr',
+				     					reference:'custAddr',
+   									    colspan:4
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户电话',
+	   								    name: 'custTel',
+	   								
+				     					reference:'custTel'
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户传真',
+	   								    name: 'custFax',
+	   								
+				     					reference:'custFax'
+   									}
+   								
+                               	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 95,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系人名称',
+									    name: 'contact_by',
+				     					reference:'contact_by'
+									   
+									},{
+									    xtype:'datefield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系电话 ',
+									    name: 'contacTByTel',
+				     					reference:'contacTByTel'
+									   
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系邮件',
+									    name: 'contactByEmail',
+				     					reference:'contactByEmail',
+									 
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:56,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 128,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '目的站',
+									    name: 'purposePlace',
+				     					reference:'purposePlace',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '包装',
+									    name: 'packing',
+				     					reference:'packing',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '货币',
+									    name: 'currency',
+				     					reference:'currency',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货方式',
+									    name: 'deliverGoodsMode',
+				     					reference:'deliverGoodsMode',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货时间',
+									    name: 'deliverGoodsDate',
+				     					reference:'deliverGoodsDate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '付款方式',
+									    name: 'paymentMode',
+				     					reference:'paymentMode',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 188,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '运费',
+									    name: 'freight',
+				     					reference:'freight',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '保险',
+									    name: 'insurance',
+				     					reference:'insurance',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '税率',
+									    name: 'tax_rate',
+				     					reference:'tax_rate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '折扣',
+									    name: 'rebate',
+				     					reference:'rebate',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 222,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '审批人',
+									    name: 'examApprByName',
+				     					reference:'examApprByName'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:70,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 255,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注',
+									    name: 'remark',
+				     					reference:'remark',
+									    colspan:4
+									}
+                            	]
+                            }
+                     ]
+       	            
+       	        },{
+          	         xtype:'panel',
+          	         layout: {
+                   	 type: 'fit',
+                    },
+                    region: "center",
+                    bodyStyle: 'background:#ceebe0; padding:0px;border:0px',
+                    scrollable:true,
+                    items:[{
+                   	 xtype:'grid',
+                   	 enableHdMenu:false,
+                   	 sortableColumns:false,
+                   	 columnLines: true,
+                   	 enableColumnHide:false,
+                   	 enableColumnMove:false,
+                   	 store:me.store,
+                   	 features: [{
+             		        ftype: 'summary'
+             		     }],
+                   	 columns: {
+                   		    items: [
+                   		        {
+                   		            text: "序号",
+                   		            dataIndex: "id",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品编码",
+                   		            dataIndex: "prodCode",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品名称",
+                   		            dataIndex: "prodName",
+                   		            width: 150
+                   		        },{
+                   		            text: "型号规格",
+                   		            dataIndex: "typeModel",
+                   		            width: 150
+                   		        },{
+                   		            text: "数量",
+                   		            dataIndex: "qty",
+                   		            width: 150
+                   		        },{
+                   		            text: "单位",
+                   		            dataIndex: "unit",
+                   		            width: 150
+                   		        },{
+                   		            text: "单价",
+                   		            dataIndex: "univalent",
+                   		            width: 150
+                   		        },{
+                   		            text: "货币",
+                   		            dataIndex: "currency",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品描述",
+                   		            dataIndex: "prodDesc",
+                   		            width: 150
+                   		        },{
+                   		            text: "品牌",
+                   		            dataIndex: "brand",
+                   		            width: 150
+                   		        },{
+                   		            text: "制造商名称",
+                   		            dataIndex: "manufName",
+                   		            width: 150
+                   		        },{
+                   		            text: "货期（交期）",
+                   		            dataIndex: "deliveTime",
+                   		            width: 150
+                   		        },{
+                   		            text: "备注",
+                   		            dataIndex: "remark",
+                   		            width: 150
+                   		        },{
+                   		            text: "合计",
+                   		            dataIndex: "inquiredQTY_quotedPrice$",
+                   		            width: 150,
+                   		            summaryType: 'sum',
+   	                		      	summaryRenderer: function(value, summaryData, dataIndex) {
+   	                		            return'金额总计:'+value;
+   	                		        }
+                   		        }
+                   		    ]
+                   		}
+                   	 
+                   	 
+                   	 
+                 }]
+          	   }
+       	 ]
+       });
+        me.callParent();
+    }
+});
+Ext.define('Hc_Framework.view.hc.SubHcAgendaForDayController', {
+	extend : 'Hc_Common.view.BaseWinPageController',
+
+	alias : 'controller.subhcagendafordaycontroller',
+	flag:false,
+	record_:'',
+	init: function () {
+		var me = this;
+		var  record=Ext.create('Hc_Framework.model.HcAgendaForDay',{});
+		this.record_=record
+		for(i=0;i<record.getFields().length;i++){
+			var  name=Ext.util.Format.trim(record.getFields()[i].getName())
+	   		 
+	   		if((this.getReferences())[name]){
+				this.lookupReference(name).on("change", me.onBtnchange, me);	   			 
+	   		 }
+     	}
+		me.callParent();
+	},
+	onBtnEditClick:function(){
+		for(i=0;i<this.record_.getFields().length;i++){
+            var  name=Ext.util.Format.trim(this.record_.getFields()[i].getName())
+  		 if((this.getReferences())[name]){
+  			 if('contactsName'==name||'contactsTel'==name||'contactsFax'==name||'supplierName'==name){
+  				this.lookupReference(name).disable();
+  			 }else{
+  				this.lookupReference(name).enable();
+  			 }
+  			
+  		 }
+  	    }
+		//this.view.lookupReference('inquiryNo').enable()
+
+	},
+	onBtnchange:function(obj , newValue , oldValue , eOpt){
+	 	var  store_=this.view.me_.workObject.store;
+		store_.beginUpdate();
+	 	if(obj.is('combo')){
+	 		this.view.record.set(obj.name, obj.getRawValue()); 		
+	 	}else{
+	 		this.view.record.set(obj.name, obj.getRawValue()); 	
+	 	}
+
+
+	 	
+	 	if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+	 	store_.endUpdate();
+	},
+	onBtnSaveClick:function(){
+	    if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+
+	    for(i=0;i<this.record_.getFields().length-3;i++){
+			
+			  if(!this.lookupReference(Ext.util.Format.trim(this.record_.getFields()[i].getName())).isValid()){
+				  return;
+			  }
+		}
+	    this.view.me_.workObject.store.add(this.view.record);
+	    this.view.me_.onBtnSaveClick(null,this)
+	},
+	onBtnCancelClick:function(){
+		if(this.flag){
+			  this.view.me_.workObject.store.removeAt(this.view.me_.workObject.store.getCount()-1);
+			  //this.view.me_.workObject.getStore().rejectChanges();
+			  this.view.me_.workObject.view.refresh();
+			  this.flag=false
+		}
+		
+      if(this.view.title=='编辑'){
+    		
+      	this.view.me_.workObject.store.rejectChanges()
+      	this.view.me_.workObject.view.refresh();
+    		
+    	}
+          this.view.me_.view.subformActivate=false;
+		  this.view.hide();
+	}
+	
+});
+Ext.define('Hc_Framework.view.hc.SubHcAgendaForDayModel', {
+    extend: 'Hc_Common.view.BaseWinPageModel',
+
+    alias: 'viewmodel.subhcagendafordaymodel'
+});
+/**
+ * Description: 佣金管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2014-2015
+ * Company:     hc.
+ * author:      jinxi.li
+ * Createdate:  2016/01/26
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define("Hc_Framework.view.hc.HcCommission", {
+    extend: "Hc_Common.view.BaseSimplePage",
+
+    alias: 'widget.hccommission',
+
+    
+
+    controller: "hccommissioncontroller",
+
+    viewModel: {
+        type: "hccommissionmodel"
+    },
+    title_:'佣金管理',
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+            searchItems: [ 
+			{
+			    xtype: 'textfield', 
+			    fieldLabel: '佣金编码', 
+			    name: 'commiApplyCode'
+			}
+            ],
+
+            gridModel: 'Hc_Framework.model.HcCommission',
+            gridSubGrid:'',
+            gridColumns: [
+                          {
+                          	header: '佣金编码', 
+                          	dataIndex: 'commiApplyCode', 
+                          	width: '15%',
+                          	renderer: function (data, metadata, record, rowIndex, columnIndex, store) {  
+                          		return '<span onclick=""><a href="#">'+data+' </a></span>';
+                            }
+                          },
+                          {
+                          	header: '申请员工', 
+                          	dataIndex: 'applyEmployName', 
+                          	width: 250
+                          },
+                          {
+              				dataIndex: 'locationDept',
+              				header: '所在部门',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'applyDate',
+                				header: '申请日期',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'commPaymentMode',
+                				header: '佣金支付方式 ',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'commPaymentDate',
+              				header: '申请支付日期',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'commPaymentedDate',
+                				header: '实际支付日期',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'remark',
+                				header: '备注',
+                				width: 150
+                          }            
+            ],
+            allendflag:false,
+            gridPrimaryKey: 'commiApplyCode',
+            gridLoadUrl: Hc.basePath + 'hc_commission_list/list.json',
+            gridLoadSubUrl: Hc.basePath + 'hc_commission_list/listAll.json',
+            gridSaveUrl: Hc.basePath + 'hc_commission_list/batchOperate.json',
+            gridExportUrl: Hc.basePath + 'hc_commission_list/do_export.json',
+            gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_commission_list/deleteMasterCustomer.json',
+            gridAddMasterCustomerUrl: Hc.basePath + 'hc_commission_list/addMasterCustomer.json',
+            gridImportUrl: Hc.basePath + '',
+            subWinTableName:'Hc_Framework.view.hc.SubHcCommission',
+            subformActivate:false
+        });
+        me.callParent();
+    }
+});
+/**
+ * Description: 佣金管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+
+Ext.define('Hc_Framework.view.hc.HcCommissionController', {
+	extend : 'Hc_Common.view.BaseSimplePageController',
+
+	alias : 'controller.hccommissioncontroller',
+	
+	init: function () {
+		var me = this;
+		Ext.apply(me, {
+			windowFlag:true,
+			newobj:this.view.subWinTableName
+		})
+		me.callParent();
+	},
+	onEditClick:function( obj , record , item , index , e , eOpts){
+      
+	},
+	onEditClick_:function(obj , td , cellIndex , record , tr , rowIndex , e , eOpts ){
+		var store = Ext.create('Hc_Common.store.Base', {
+            model:'Hc_Framework.model.HcCommission',
+            autoLoad: false,
+            groupField: 'inquiredQTY_quotedPrice$',
+            proxy: {
+                url: this.view.gridLoadSubUrl
+            }
+        });
+		
+		store.proxy.extraParams['quoteCode'] = record.data.quoteCode; 
+		store.load();	      	 
+		if(cellIndex==0){
+	    	Ext.create(this.view.subWinTableName,{
+	    		title:'编辑',
+	    		record:record,
+	    		me_:this,
+	    		store:store
+	    	}).show();
+	    	this.view.subformActivate=true;
+	    	this.onBtnCancelClick();
+		}
+    	
+    }
+	
+});
+/**
+ * Description: 佣金管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.view.hc.HcCommissionModel', {
+    extend: 'Hc_Common.view.BaseSimplePageModel',
+
+    alias: 'viewmodel.hccommissionmodel'
+});
+Ext.define("Hc_Framework.view.hc.SubHcCommission", {
+    extend: "Hc_Common.view.BaseWinPage",
+
+    alias: 'widget.subhccommission',
+
+    
+
+    controller: "subhccommissioncontroller",
+
+    viewModel: {
+        type: "subhccommissionmodel"
+    },
+    title:'新增',
+    width: 1000,
+    height:620,
+    
+    maxWidth:1000,
+   // maxHeight:620,
+    
+    minWidth:1000,
+    minHeight:620,
+    
+    layout:'border',//设置窗口内部布局
+    closeAction:'hide',
+    plain:false,//true则主体背景透明，false则和主体背景有些差别
+    collapsible:false,//是否可收缩
+    modal:true,//是否为模式窗体
+   
+    dockedItems:[{
+    	 xtype: 'toolbar',
+    	 dock: 'top',
+    	 items: [
+           {
+             text: '保存',
+             handler:'onBtnSaveClick',
+             glyph: Hc.Icon.btnSave
+           },
+           {
+               text: '编辑',
+               handler:'onBtnEditClick',
+               glyph: Hc.Icon.btnEdit
+           },
+           {
+               text: '取消',
+               handler:'onBtnCancelClick',
+               glyph: Hc.Icon.btnCancel
+             }
+         ]
+    }],
+    listeners: {
+    	beforeshow:function(obj ,eOpts){
+    		 var currentUser = Ext.create("Hc_Framework.store.CurrentUser");
+    	        currentUser.load();
+    		 var  userCreator;
+             var   supplierNo_;
+             
+             if(this.title=='新增'){
+            	// this.lookupReference('createUser').setValue(currentUser.getAt(0).data.userName);
+                 supplierNo_='PE'+Ext.util.Format.date((new Date()), "Y").substring(2,5)+Ext.util.Format.date((new Date()), "Y").substring(0,2)+Ext.util.Format.date((new Date()), "dmHis");
+              /*   this.lookupReference('inquiryNo').setValue(supplierNo_);
+                // this.lookupReference('modifyUser').disabled=true;
+                 //this.lookupReference('modifyDate').disabled=true;
+                 
+                 this.lookupReference('contactsName').disabled=true;
+                 this.lookupReference('contactsTel').disabled=true;
+                 this.lookupReference('contactsFax').disabled=true;
+                 this.lookupReference('supplierName').disabled=true;
+                 
+                 
+                // this.lookupReference('localDepartment').setValue(currentUser.getAt(0).data.deptName);
+                 this.lookupReference('inquiryDate').setValue(Ext.util.Format.date((new Date()),'Y-m-d H:i:s'));
+
+            */
+             }else if(this.title=='编辑'){
+           	 for(i=0;i<this.record.getFields().length;i++){
+	                 var  name=Ext.util.Format.trim(this.record.getFields()[i].getName())
+           		 
+           		 if((this.getReferences())[name]){
+           			 if(this.lookupReference(name).is('combo')){
+               			 this.lookupReference(name).setRawValue(this.record.get(name));
+               		 }else{
+               			 this.lookupReference(name).setValue(this.record.get(name));
+               		 }
+           			this.lookupReference(name).disable();
+           		 }
+           	 }
+             }
+             this.lookupReference('subhcsuppliercustomer').title='>>>>'+this.me_.view.title_;
+    	}
+    },
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+       	 items:[
+       	        {
+       	         xtype:'panel',
+       	         defaults: {
+       	        	
+                 },
+                 layout: {
+                	 type: 'absolute'
+                 },
+                 reference:'subhcsuppliercustomer',
+                 region: "north",
+                 bodyStyle: 'background:#cbdbe0;',
+                 padding:'3 0 3 0',//(top, right, bottom, left).
+                    items: [
+                            {
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 3,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价编码',
+									    name: 'quoteCode',
+				     					reference:'quoteCode',
+									    listeners: {
+									    	beforerender: function(obj) {
+											   obj.fieldLabel+='<font size="2px" color="red">*</font>';
+									        }
+										  }
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人编码',
+									    name: 'quoteByCode',
+				     					reference:'quoteByCode'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人名称',
+									    name: 'quoteByName',
+				     					reference:'quoteByName'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价方式',
+									    name: 'quoteMode',
+				     					reference:'quoteMode'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:57,
+                            	width:980,
+                            	layout: {
+                                  	 type: 'table',
+                                       columns:4
+                                   },
+                                x: 3,
+                                y: 35,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                               	items:[
+   									{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户编码',
+	   								    name: 'custCode',
+	   								
+				     					reference:'custCode'
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									   // width:313,
+   									    fieldLabel: '客户名称',
+   									    name: 'custName',
+				     					reference:'custName',
+   									    colspan:1
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									    width:500,
+   									    fieldLabel: '客户地址',
+   									    name: 'custAddr',
+				     					reference:'custAddr',
+   									    colspan:4
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户电话',
+	   								    name: 'custTel',
+	   								
+				     					reference:'custTel'
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户传真',
+	   								    name: 'custFax',
+	   								
+				     					reference:'custFax'
+   									}
+   								
+                               	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 95,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系人名称',
+									    name: 'contact_by',
+				     					reference:'contact_by'
+									   
+									},{
+									    xtype:'datefield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系电话 ',
+									    name: 'contacTByTel',
+				     					reference:'contacTByTel'
+									   
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系邮件',
+									    name: 'contactByEmail',
+				     					reference:'contactByEmail',
+									 
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:56,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 128,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '目的站',
+									    name: 'purposePlace',
+				     					reference:'purposePlace',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '包装',
+									    name: 'packing',
+				     					reference:'packing',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '货币',
+									    name: 'currency',
+				     					reference:'currency',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货方式',
+									    name: 'deliverGoodsMode',
+				     					reference:'deliverGoodsMode',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货时间',
+									    name: 'deliverGoodsDate',
+				     					reference:'deliverGoodsDate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '付款方式',
+									    name: 'paymentMode',
+				     					reference:'paymentMode',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 188,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '运费',
+									    name: 'freight',
+				     					reference:'freight',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '保险',
+									    name: 'insurance',
+				     					reference:'insurance',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '税率',
+									    name: 'tax_rate',
+				     					reference:'tax_rate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '折扣',
+									    name: 'rebate',
+				     					reference:'rebate',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 222,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '审批人',
+									    name: 'examApprByName',
+				     					reference:'examApprByName'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:70,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 255,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注',
+									    name: 'remark',
+				     					reference:'remark',
+									    colspan:4
+									}
+                            	]
+                            }
+                     ]
+       	            
+       	        },{
+          	         xtype:'panel',
+          	         layout: {
+                   	 type: 'fit',
+                    },
+                    region: "center",
+                    bodyStyle: 'background:#ceebe0; padding:0px;border:0px',
+                    scrollable:true,
+                    items:[{
+                   	 xtype:'grid',
+                   	 enableHdMenu:false,
+                   	 sortableColumns:false,
+                   	 columnLines: true,
+                   	 enableColumnHide:false,
+                   	 enableColumnMove:false,
+                   	 store:me.store,
+                   	 features: [{
+             		        ftype: 'summary'
+             		     }],
+                   	 columns: {
+                   		    items: [
+                   		        {
+                   		            text: "序号",
+                   		            dataIndex: "id",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品编码",
+                   		            dataIndex: "prodCode",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品名称",
+                   		            dataIndex: "prodName",
+                   		            width: 150
+                   		        },{
+                   		            text: "型号规格",
+                   		            dataIndex: "typeModel",
+                   		            width: 150
+                   		        },{
+                   		            text: "数量",
+                   		            dataIndex: "qty",
+                   		            width: 150
+                   		        },{
+                   		            text: "单位",
+                   		            dataIndex: "unit",
+                   		            width: 150
+                   		        },{
+                   		            text: "单价",
+                   		            dataIndex: "univalent",
+                   		            width: 150
+                   		        },{
+                   		            text: "货币",
+                   		            dataIndex: "currency",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品描述",
+                   		            dataIndex: "prodDesc",
+                   		            width: 150
+                   		        },{
+                   		            text: "品牌",
+                   		            dataIndex: "brand",
+                   		            width: 150
+                   		        },{
+                   		            text: "制造商名称",
+                   		            dataIndex: "manufName",
+                   		            width: 150
+                   		        },{
+                   		            text: "货期（交期）",
+                   		            dataIndex: "deliveTime",
+                   		            width: 150
+                   		        },{
+                   		            text: "备注",
+                   		            dataIndex: "remark",
+                   		            width: 150
+                   		        },{
+                   		            text: "合计",
+                   		            dataIndex: "inquiredQTY_quotedPrice$",
+                   		            width: 150,
+                   		            summaryType: 'sum',
+   	                		      	summaryRenderer: function(value, summaryData, dataIndex) {
+   	                		            return'金额总计:'+value;
+   	                		        }
+                   		        }
+                   		    ]
+                   		}
+                   	 
+                   	 
+                   	 
+                 }]
+          	   }
+       	 ]
+       });
+        me.callParent();
+    }
+});
+Ext.define('Hc_Framework.view.hc.SubHcCommissionController', {
+	extend : 'Hc_Common.view.BaseWinPageController',
+
+	alias : 'controller.subhccommissioncontroller',
+	flag:false,
+	record_:'',
+	init: function () {
+		var me = this;
+		var  record=Ext.create('Hc_Framework.model.HcCommission',{});
+		this.record_=record
+		for(i=0;i<record.getFields().length;i++){
+			var  name=Ext.util.Format.trim(record.getFields()[i].getName())
+	   		 
+	   		if((this.getReferences())[name]){
+				this.lookupReference(name).on("change", me.onBtnchange, me);	   			 
+	   		 }
+     	}
+		me.callParent();
+	},
+	onBtnEditClick:function(){
+		for(i=0;i<this.record_.getFields().length;i++){
+            var  name=Ext.util.Format.trim(this.record_.getFields()[i].getName())
+  		 if((this.getReferences())[name]){
+  			 if('contactsName'==name||'contactsTel'==name||'contactsFax'==name||'supplierName'==name){
+  				this.lookupReference(name).disable();
+  			 }else{
+  				this.lookupReference(name).enable();
+  			 }
+  			
+  		 }
+  	    }
+		//this.view.lookupReference('inquiryNo').enable()
+
+	},
+	onBtnchange:function(obj , newValue , oldValue , eOpt){
+	 	var  store_=this.view.me_.workObject.store;
+		store_.beginUpdate();
+	 	if(obj.is('combo')){
+	 		this.view.record.set(obj.name, obj.getRawValue()); 		
+	 	}else{
+	 		this.view.record.set(obj.name, obj.getRawValue()); 	
+	 	}
+
+
+	 	
+	 	if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+	 	store_.endUpdate();
+	},
+	onBtnSaveClick:function(){
+	    if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+
+	    for(i=0;i<this.record_.getFields().length-3;i++){
+			
+			  if(!this.lookupReference(Ext.util.Format.trim(this.record_.getFields()[i].getName())).isValid()){
+				  return;
+			  }
+		}
+	    this.view.me_.workObject.store.add(this.view.record);
+	    this.view.me_.onBtnSaveClick(null,this)
+	},
+	onBtnCancelClick:function(){
+		if(this.flag){
+			  this.view.me_.workObject.store.removeAt(this.view.me_.workObject.store.getCount()-1);
+			  //this.view.me_.workObject.getStore().rejectChanges();
+			  this.view.me_.workObject.view.refresh();
+			  this.flag=false
+		}
+		
+      if(this.view.title=='编辑'){
+    		
+      	this.view.me_.workObject.store.rejectChanges()
+      	this.view.me_.workObject.view.refresh();
+    		
+    	}
+          this.view.me_.view.subformActivate=false;
+		  this.view.hide();
+	}
+	
+});
+Ext.define('Hc_Framework.view.hc.SubHcCommissionModel', {
+    extend: 'Hc_Common.view.BaseWinPageModel',
+
+    alias: 'viewmodel.subhccommissionmodel'
+});
+/**
+ * Description: 外出管理  view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2014-2015
+ * Company:     hc.
+ * author:      jinxi.li
+ * Createdate:  2016/01/26
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define("Hc_Framework.view.hc.HcEgress", {
+    extend: "Hc_Common.view.BaseSimplePage",
+
+    alias: 'widget.hcegress',
+
+    
+
+    controller: "hcegresscontroller",
+
+    viewModel: {
+        type: "hcegressmodel"
+    },
+    title_:'外出管理',
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+            searchItems: [ 
+			{
+			    xtype: 'textfield', 
+			    fieldLabel: '外出编码', 
+			    name: 'egressCode'
+			}
+            ],
+
+            gridModel: 'Hc_Framework.model.HcEgress',
+            gridSubGrid:'',
+            gridColumns: [
+                          {
+                          	header: '外出编码', 
+                          	dataIndex: 'egressCode', 
+                          	width: '15%',
+                          	renderer: function (data, metadata, record, rowIndex, columnIndex, store) {  
+                          		return '<span onclick=""><a href="#">'+data+' </a></span>';
+                            }
+                          },
+                          {
+                          	header: '外出员工', 
+                          	dataIndex: 'egressEmployName', 
+                          	width: 250
+                          },
+                          {
+              				dataIndex: 'drawBy',
+              				header: '提请人',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'custName',
+                				header: '客户',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'custAddr',
+                				header: '客户地址 ',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'businessProcess',
+              				header: '事务处理',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'examApprSitu',
+                				header: '审批情况',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'examApprOpinion',
+                				header: '审批意见',
+                				width: 150
+                          }            
+            ],
+            allendflag:false,
+            gridPrimaryKey: 'egressCode',
+            gridLoadUrl: Hc.basePath + 'hc_egress_list/list.json',
+            gridLoadSubUrl: Hc.basePath + 'hc_egress_list/listAll.json',
+            gridSaveUrl: Hc.basePath + 'hc_egress_list/batchOperate.json',
+            gridExportUrl: Hc.basePath + 'hc_egress_list/do_export.json',
+            gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_egress_list/deleteMasterCustomer.json',
+            gridAddMasterCustomerUrl: Hc.basePath + 'hc_egress_list/addMasterCustomer.json',
+            gridImportUrl: Hc.basePath + '',
+            subWinTableName:'Hc_Framework.view.hc.SubHcEgress',
+            subformActivate:false
+        });
+        me.callParent();
+    }
+});
+/**
+ * Description: 外出管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+
+Ext.define('Hc_Framework.view.hc.HcEgressController', {
+	extend : 'Hc_Common.view.BaseSimplePageController',
+
+	alias : 'controller.hcegresscontroller',
+	
+	init: function () {
+		var me = this;
+		Ext.apply(me, {
+			windowFlag:true,
+			newobj:this.view.subWinTableName
+		})
+		me.callParent();
+	},
+	onEditClick:function( obj , record , item , index , e , eOpts){
+      
+	},
+	onEditClick_:function(obj , td , cellIndex , record , tr , rowIndex , e , eOpts ){
+		var store = Ext.create('Hc_Common.store.Base', {
+            model:'Hc_Framework.model.HcEgress',
+            autoLoad: false,
+            groupField: 'inquiredQTY_quotedPrice$',
+            proxy: {
+                url: this.view.gridLoadSubUrl
+            }
+        });
+		
+		store.proxy.extraParams['quoteCode'] = record.data.quoteCode; 
+		store.load();	      	 
+		if(cellIndex==0){
+	    	Ext.create(this.view.subWinTableName,{
+	    		title:'编辑',
+	    		record:record,
+	    		me_:this,
+	    		store:store
+	    	}).show();
+	    	this.view.subformActivate=true;
+	    	this.onBtnCancelClick();
+		}
+    	
+    }
+	
+});
+/**
+ * Description: 外出管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.view.hc.HcEgressModel', {
+    extend: 'Hc_Common.view.BaseSimplePageModel',
+
+    alias: 'viewmodel.hcegressmodel'
+});
+Ext.define("Hc_Framework.view.hc.SubHcEgress", {
+    extend: "Hc_Common.view.BaseWinPage",
+
+    alias: 'widget.subhcegress',
+
+    
+
+    controller: "subhcegresscontroller",
+
+    viewModel: {
+        type: "subhcegressmodel"
+    },
+    title:'新增',
+    width: 1000,
+    height:620,
+    
+    maxWidth:1000,
+   // maxHeight:620,
+    
+    minWidth:1000,
+    minHeight:620,
+    
+    layout:'border',//设置窗口内部布局
+    closeAction:'hide',
+    plain:false,//true则主体背景透明，false则和主体背景有些差别
+    collapsible:false,//是否可收缩
+    modal:true,//是否为模式窗体
+   
+    dockedItems:[{
+    	 xtype: 'toolbar',
+    	 dock: 'top',
+    	 items: [
+           {
+             text: '保存',
+             handler:'onBtnSaveClick',
+             glyph: Hc.Icon.btnSave
+           },
+           {
+               text: '编辑',
+               handler:'onBtnEditClick',
+               glyph: Hc.Icon.btnEdit
+           },
+           {
+               text: '取消',
+               handler:'onBtnCancelClick',
+               glyph: Hc.Icon.btnCancel
+             }
+         ]
+    }],
+    listeners: {
+    	beforeshow:function(obj ,eOpts){
+    		 var currentUser = Ext.create("Hc_Framework.store.CurrentUser");
+    	        currentUser.load();
+    		 var  userCreator;
+             var   supplierNo_;
+             
+             if(this.title=='新增'){
+            	// this.lookupReference('createUser').setValue(currentUser.getAt(0).data.userName);
+                 supplierNo_='PE'+Ext.util.Format.date((new Date()), "Y").substring(2,5)+Ext.util.Format.date((new Date()), "Y").substring(0,2)+Ext.util.Format.date((new Date()), "dmHis");
+              /*   this.lookupReference('inquiryNo').setValue(supplierNo_);
+                // this.lookupReference('modifyUser').disabled=true;
+                 //this.lookupReference('modifyDate').disabled=true;
+                 
+                 this.lookupReference('contactsName').disabled=true;
+                 this.lookupReference('contactsTel').disabled=true;
+                 this.lookupReference('contactsFax').disabled=true;
+                 this.lookupReference('supplierName').disabled=true;
+                 
+                 
+                // this.lookupReference('localDepartment').setValue(currentUser.getAt(0).data.deptName);
+                 this.lookupReference('inquiryDate').setValue(Ext.util.Format.date((new Date()),'Y-m-d H:i:s'));
+
+            */
+             }else if(this.title=='编辑'){
+           	 for(i=0;i<this.record.getFields().length;i++){
+	                 var  name=Ext.util.Format.trim(this.record.getFields()[i].getName())
+           		 
+           		 if((this.getReferences())[name]){
+           			 if(this.lookupReference(name).is('combo')){
+               			 this.lookupReference(name).setRawValue(this.record.get(name));
+               		 }else{
+               			 this.lookupReference(name).setValue(this.record.get(name));
+               		 }
+           			this.lookupReference(name).disable();
+           		 }
+           	 }
+             }
+             this.lookupReference('subhcsuppliercustomer').title='>>>>'+this.me_.view.title_;
+    	}
+    },
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+       	 items:[
+       	        {
+       	         xtype:'panel',
+       	         defaults: {
+       	        	
+                 },
+                 layout: {
+                	 type: 'absolute'
+                 },
+                 reference:'subhcsuppliercustomer',
+                 region: "north",
+                 bodyStyle: 'background:#cbdbe0;',
+                 padding:'3 0 3 0',//(top, right, bottom, left).
+                    items: [
+                            {
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 3,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价编码',
+									    name: 'quoteCode',
+				     					reference:'quoteCode',
+									    listeners: {
+									    	beforerender: function(obj) {
+											   obj.fieldLabel+='<font size="2px" color="red">*</font>';
+									        }
+										  }
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人编码',
+									    name: 'quoteByCode',
+				     					reference:'quoteByCode'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人名称',
+									    name: 'quoteByName',
+				     					reference:'quoteByName'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价方式',
+									    name: 'quoteMode',
+				     					reference:'quoteMode'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:57,
+                            	width:980,
+                            	layout: {
+                                  	 type: 'table',
+                                       columns:4
+                                   },
+                                x: 3,
+                                y: 35,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                               	items:[
+   									{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户编码',
+	   								    name: 'custCode',
+	   								
+				     					reference:'custCode'
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									   // width:313,
+   									    fieldLabel: '客户名称',
+   									    name: 'custName',
+				     					reference:'custName',
+   									    colspan:1
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									    width:500,
+   									    fieldLabel: '客户地址',
+   									    name: 'custAddr',
+				     					reference:'custAddr',
+   									    colspan:4
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户电话',
+	   								    name: 'custTel',
+	   								
+				     					reference:'custTel'
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户传真',
+	   								    name: 'custFax',
+	   								
+				     					reference:'custFax'
+   									}
+   								
+                               	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 95,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系人名称',
+									    name: 'contact_by',
+				     					reference:'contact_by'
+									   
+									},{
+									    xtype:'datefield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系电话 ',
+									    name: 'contacTByTel',
+				     					reference:'contacTByTel'
+									   
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系邮件',
+									    name: 'contactByEmail',
+				     					reference:'contactByEmail',
+									 
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:56,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 128,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '目的站',
+									    name: 'purposePlace',
+				     					reference:'purposePlace',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '包装',
+									    name: 'packing',
+				     					reference:'packing',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '货币',
+									    name: 'currency',
+				     					reference:'currency',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货方式',
+									    name: 'deliverGoodsMode',
+				     					reference:'deliverGoodsMode',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货时间',
+									    name: 'deliverGoodsDate',
+				     					reference:'deliverGoodsDate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '付款方式',
+									    name: 'paymentMode',
+				     					reference:'paymentMode',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 188,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '运费',
+									    name: 'freight',
+				     					reference:'freight',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '保险',
+									    name: 'insurance',
+				     					reference:'insurance',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '税率',
+									    name: 'tax_rate',
+				     					reference:'tax_rate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '折扣',
+									    name: 'rebate',
+				     					reference:'rebate',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 222,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '审批人',
+									    name: 'examApprByName',
+				     					reference:'examApprByName'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:70,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 255,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注',
+									    name: 'remark',
+				     					reference:'remark',
+									    colspan:4
+									}
+                            	]
+                            }
+                     ]
+       	            
+       	        },{
+          	         xtype:'panel',
+          	         layout: {
+                   	 type: 'fit',
+                    },
+                    region: "center",
+                    bodyStyle: 'background:#ceebe0; padding:0px;border:0px',
+                    scrollable:true,
+                    items:[{
+                   	 xtype:'grid',
+                   	 enableHdMenu:false,
+                   	 sortableColumns:false,
+                   	 columnLines: true,
+                   	 enableColumnHide:false,
+                   	 enableColumnMove:false,
+                   	 store:me.store,
+                   	 features: [{
+             		        ftype: 'summary'
+             		     }],
+                   	 columns: {
+                   		    items: [
+                   		        {
+                   		            text: "序号",
+                   		            dataIndex: "id",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品编码",
+                   		            dataIndex: "prodCode",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品名称",
+                   		            dataIndex: "prodName",
+                   		            width: 150
+                   		        },{
+                   		            text: "型号规格",
+                   		            dataIndex: "typeModel",
+                   		            width: 150
+                   		        },{
+                   		            text: "数量",
+                   		            dataIndex: "qty",
+                   		            width: 150
+                   		        },{
+                   		            text: "单位",
+                   		            dataIndex: "unit",
+                   		            width: 150
+                   		        },{
+                   		            text: "单价",
+                   		            dataIndex: "univalent",
+                   		            width: 150
+                   		        },{
+                   		            text: "货币",
+                   		            dataIndex: "currency",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品描述",
+                   		            dataIndex: "prodDesc",
+                   		            width: 150
+                   		        },{
+                   		            text: "品牌",
+                   		            dataIndex: "brand",
+                   		            width: 150
+                   		        },{
+                   		            text: "制造商名称",
+                   		            dataIndex: "manufName",
+                   		            width: 150
+                   		        },{
+                   		            text: "货期（交期）",
+                   		            dataIndex: "deliveTime",
+                   		            width: 150
+                   		        },{
+                   		            text: "备注",
+                   		            dataIndex: "remark",
+                   		            width: 150
+                   		        },{
+                   		            text: "合计",
+                   		            dataIndex: "inquiredQTY_quotedPrice$",
+                   		            width: 150,
+                   		            summaryType: 'sum',
+   	                		      	summaryRenderer: function(value, summaryData, dataIndex) {
+   	                		            return'金额总计:'+value;
+   	                		        }
+                   		        }
+                   		    ]
+                   		}
+                   	 
+                   	 
+                   	 
+                 }]
+          	   }
+       	 ]
+       });
+        me.callParent();
+    }
+});
+Ext.define('Hc_Framework.view.hc.SubHcEgressController', {
+	extend : 'Hc_Common.view.BaseWinPageController',
+
+	alias : 'controller.subhcegresscontroller',
+	flag:false,
+	record_:'',
+	init: function () {
+		var me = this;
+		var  record=Ext.create('Hc_Framework.model.HcEgress',{});
+		this.record_=record
+		for(i=0;i<record.getFields().length;i++){
+			var  name=Ext.util.Format.trim(record.getFields()[i].getName())
+	   		 
+	   		if((this.getReferences())[name]){
+				this.lookupReference(name).on("change", me.onBtnchange, me);	   			 
+	   		 }
+     	}
+		me.callParent();
+	},
+	onBtnEditClick:function(){
+		for(i=0;i<this.record_.getFields().length;i++){
+            var  name=Ext.util.Format.trim(this.record_.getFields()[i].getName())
+  		 if((this.getReferences())[name]){
+  			 if('contactsName'==name||'contactsTel'==name||'contactsFax'==name||'supplierName'==name){
+  				this.lookupReference(name).disable();
+  			 }else{
+  				this.lookupReference(name).enable();
+  			 }
+  			
+  		 }
+  	    }
+		//this.view.lookupReference('inquiryNo').enable()
+
+	},
+	onBtnchange:function(obj , newValue , oldValue , eOpt){
+	 	var  store_=this.view.me_.workObject.store;
+		store_.beginUpdate();
+	 	if(obj.is('combo')){
+	 		this.view.record.set(obj.name, obj.getRawValue()); 		
+	 	}else{
+	 		this.view.record.set(obj.name, obj.getRawValue()); 	
+	 	}
+
+
+	 	
+	 	if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+	 	store_.endUpdate();
+	},
+	onBtnSaveClick:function(){
+	    if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+
+	    for(i=0;i<this.record_.getFields().length-3;i++){
+			
+			  if(!this.lookupReference(Ext.util.Format.trim(this.record_.getFields()[i].getName())).isValid()){
+				  return;
+			  }
+		}
+	    this.view.me_.workObject.store.add(this.view.record);
+	    this.view.me_.onBtnSaveClick(null,this)
+	},
+	onBtnCancelClick:function(){
+		if(this.flag){
+			  this.view.me_.workObject.store.removeAt(this.view.me_.workObject.store.getCount()-1);
+			  //this.view.me_.workObject.getStore().rejectChanges();
+			  this.view.me_.workObject.view.refresh();
+			  this.flag=false
+		}
+		
+      if(this.view.title=='编辑'){
+    		
+      	this.view.me_.workObject.store.rejectChanges()
+      	this.view.me_.workObject.view.refresh();
+    		
+    	}
+          this.view.me_.view.subformActivate=false;
+		  this.view.hide();
+	}
+	
+});
+Ext.define('Hc_Framework.view.hc.SubHcEgressModel', {
+    extend: 'Hc_Common.view.BaseWinPageModel',
+
+    alias: 'viewmodel.subhcegressmodel'
+});
+/**
+ * Description: 员工管理(人事信息)  view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2014-2015
+ * Company:     hc.
+ * author:      jinxi.li
+ * Createdate:  2016/01/26
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define("Hc_Framework.view.hc.HcEmployee", {
+    extend: "Hc_Common.view.BaseSimplePage",
+
+    alias: 'widget.hcemployee',
+
+    
+
+    controller: "hcemployeecontroller",
+
+    viewModel: {
+        type: "hcemployeemodel"
+    },
+    title_:'员工管理',
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+            searchItems: [ 
+			{
+			    xtype: 'textfield', 
+			    fieldLabel: '員工編碼', 
+			    name: 'employeeCode'
+			}
+            ],
+
+            gridModel: 'Hc_Framework.model.HcEmployee',
+            gridSubGrid:'',
+            gridColumns: [
+                          {
+                          	header: '員工編碼', 
+                          	dataIndex: 'employeeCode', 
+                          	width: '15%',
+                          	renderer: function (data, metadata, record, rowIndex, columnIndex, store) {  
+                          		return '<span onclick=""><a href="#">'+data+' </a></span>';
+                            }
+                          },
+                          {
+                          	header: '員工姓名', 
+                          	dataIndex: 'employeeName', 
+                          	width: 250
+                          },
+                          {
+              				dataIndex: 'locationDept',
+              				header: '所在部门',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'position',
+                				header: '职　　位',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'sex',
+                				header: '性　　别 ',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'nation',
+              				header: '民　　族',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'idCardNo',
+                				header: '身份证号码',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'specialty',
+                				header: '特　　长',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'placeOfResidence',
+              				header: '户口所在地',
+              				width: 150
+                        },
+                        {
+              				dataIndex: 'presentResidence',
+              				header: '现居住地',
+              				width: 150
+                        },
+                        {
+            				dataIndex: 'maritalStatus',
+            				header: '婚姻状况',
+            				width: 150
+	                      },
+	                      
+	                      {
+	            				dataIndex: 'contactPhone',
+	            				header: '联系电话',
+	            				width: 150
+	                      } ,{
+	              				dataIndex: 'graduateSchool',
+	              				header: '毕业院校',
+	              				width: 150
+	                        },{
+	              				dataIndex: 'atDate',
+	              				header: '就读时间',
+	              				width: 150
+	                        },{
+	              				dataIndex: 'professional',
+	              				header: '专　　业',
+	              				width: 150
+	                        },{
+	              				dataIndex: 'degree',
+	              				header: '学历',
+	              				width: 150
+	                        },{
+	              				dataIndex: 'orNotTurnover',
+	              				header: '是否离职',
+	              				width: 150
+	                        },{
+	              				dataIndex: 'posiSituation',
+	              				header: '转正情况',
+	              				width: 150
+	                        },{
+	              				dataIndex: 'contractSignSituat',
+	              				header: '合同签订情况',
+	              				width: 150
+	                        },{
+	              				dataIndex: 'remark',
+	              				header: '备　　注',
+	              				width: 150
+	                        }             
+            ],
+            allendflag:false,
+            gridPrimaryKey: 'employeeCode',
+            gridLoadUrl: Hc.basePath + 'hc_employee_list/list.json',
+            gridLoadSubUrl: Hc.basePath + 'hc_employee_list/listAll.json',
+            gridSaveUrl: Hc.basePath + 'hc_employee_list/batchOperate.json',
+            gridExportUrl: Hc.basePath + 'hc_employee_list/do_export.json',
+            gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_employee_list/deleteMasterCustomer.json',
+            gridAddMasterCustomerUrl: Hc.basePath + 'hc_employee_list/addMasterCustomer.json',
+            gridImportUrl: Hc.basePath + '',
+            subWinTableName:'Hc_Framework.view.hc.SubHcEmployee',
+            subformActivate:false
+        });
+        me.callParent();
+    }
+});
+/**
+ * Description: 员工管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+
+Ext.define('Hc_Framework.view.hc.HcEmployeeController', {
+	extend : 'Hc_Common.view.BaseSimplePageController',
+
+	alias : 'controller.hcemployeecontroller',
+	
+	init: function () {
+		var me = this;
+		Ext.apply(me, {
+			windowFlag:true,
+			newobj:this.view.subWinTableName
+		})
+		me.callParent();
+	},
+	onEditClick:function( obj , record , item , index , e , eOpts){
+      
+	},
+	onEditClick_:function(obj , td , cellIndex , record , tr , rowIndex , e , eOpts ){
+		var store = Ext.create('Hc_Common.store.Base', {
+            model:'Hc_Framework.model.HcEmployee',
+            autoLoad: false,
+            groupField: 'inquiredQTY_quotedPrice$',
+            proxy: {
+                url: this.view.gridLoadSubUrl
+            }
+        });
+		
+		store.proxy.extraParams['quoteCode'] = record.data.quoteCode; 
+		store.load();	      	 
+		if(cellIndex==0){
+	    	Ext.create(this.view.subWinTableName,{
+	    		title:'编辑',
+	    		record:record,
+	    		me_:this,
+	    		store:store
+	    	}).show();
+	    	this.view.subformActivate=true;
+	    	this.onBtnCancelClick();
+		}
+    	
+    }
+	
+});
+/**
+ * Description: 员工管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.view.hc.HcEmployeeModel', {
+    extend: 'Hc_Common.view.BaseSimplePageModel',
+
+    alias: 'viewmodel.hcemployeemodel'
+});
+Ext.define("Hc_Framework.view.hc.SubHcEmployee", {
+    extend: "Hc_Common.view.BaseWinPage",
+
+    alias: 'widget.subhcemployee',
+
+    
+
+    controller: "subhcemployeecontroller",
+
+    viewModel: {
+        type: "subhcemployeemodel"
+    },
+    title:'新增',
+    width: 1000,
+    height:620,
+    
+    maxWidth:1000,
+   // maxHeight:620,
+    
+    minWidth:1000,
+    minHeight:620,
+    
+    layout:'border',//设置窗口内部布局
+    closeAction:'hide',
+    plain:false,//true则主体背景透明，false则和主体背景有些差别
+    collapsible:false,//是否可收缩
+    modal:true,//是否为模式窗体
+   
+    dockedItems:[{
+    	 xtype: 'toolbar',
+    	 dock: 'top',
+    	 items: [
+           {
+             text: '保存',
+             handler:'onBtnSaveClick',
+             glyph: Hc.Icon.btnSave
+           },
+           {
+               text: '编辑',
+               handler:'onBtnEditClick',
+               glyph: Hc.Icon.btnEdit
+           },
+           {
+               text: '取消',
+               handler:'onBtnCancelClick',
+               glyph: Hc.Icon.btnCancel
+             }
+         ]
+    }],
+    listeners: {
+    	beforeshow:function(obj ,eOpts){
+    		 var currentUser = Ext.create("Hc_Framework.store.CurrentUser");
+    	        currentUser.load();
+    		 var  userCreator;
+             var   supplierNo_;
+             
+             if(this.title=='新增'){
+            	// this.lookupReference('createUser').setValue(currentUser.getAt(0).data.userName);
+                 supplierNo_='PE'+Ext.util.Format.date((new Date()), "Y").substring(2,5)+Ext.util.Format.date((new Date()), "Y").substring(0,2)+Ext.util.Format.date((new Date()), "dmHis");
+              /*   this.lookupReference('inquiryNo').setValue(supplierNo_);
+                // this.lookupReference('modifyUser').disabled=true;
+                 //this.lookupReference('modifyDate').disabled=true;
+                 
+                 this.lookupReference('contactsName').disabled=true;
+                 this.lookupReference('contactsTel').disabled=true;
+                 this.lookupReference('contactsFax').disabled=true;
+                 this.lookupReference('supplierName').disabled=true;
+                 
+                 
+                // this.lookupReference('localDepartment').setValue(currentUser.getAt(0).data.deptName);
+                 this.lookupReference('inquiryDate').setValue(Ext.util.Format.date((new Date()),'Y-m-d H:i:s'));
+
+            */
+             }else if(this.title=='编辑'){
+           	 for(i=0;i<this.record.getFields().length;i++){
+	                 var  name=Ext.util.Format.trim(this.record.getFields()[i].getName())
+           		 
+           		 if((this.getReferences())[name]){
+           			 if(this.lookupReference(name).is('combo')){
+               			 this.lookupReference(name).setRawValue(this.record.get(name));
+               		 }else{
+               			 this.lookupReference(name).setValue(this.record.get(name));
+               		 }
+           			this.lookupReference(name).disable();
+           		 }
+           	 }
+             }
+             this.lookupReference('subhcsuppliercustomer').title='>>>>'+this.me_.view.title_;
+    	}
+    },
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+       	 items:[
+       	        {
+       	         xtype:'panel',
+       	         defaults: {
+       	        	
+                 },
+                 layout: {
+                	 type: 'absolute'
+                 },
+                 reference:'subhcsuppliercustomer',
+                 region: "north",
+                 bodyStyle: 'background:#cbdbe0;',
+                 padding:'3 0 3 0',//(top, right, bottom, left).
+                    items: [
+                            {
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 3,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价编码',
+									    name: 'quoteCode',
+				     					reference:'quoteCode',
+									    listeners: {
+									    	beforerender: function(obj) {
+											   obj.fieldLabel+='<font size="2px" color="red">*</font>';
+									        }
+										  }
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人编码',
+									    name: 'quoteByCode',
+				     					reference:'quoteByCode'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人名称',
+									    name: 'quoteByName',
+				     					reference:'quoteByName'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价方式',
+									    name: 'quoteMode',
+				     					reference:'quoteMode'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:57,
+                            	width:980,
+                            	layout: {
+                                  	 type: 'table',
+                                       columns:4
+                                   },
+                                x: 3,
+                                y: 35,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                               	items:[
+   									{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户编码',
+	   								    name: 'custCode',
+	   								
+				     					reference:'custCode'
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									   // width:313,
+   									    fieldLabel: '客户名称',
+   									    name: 'custName',
+				     					reference:'custName',
+   									    colspan:1
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									    width:500,
+   									    fieldLabel: '客户地址',
+   									    name: 'custAddr',
+				     					reference:'custAddr',
+   									    colspan:4
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户电话',
+	   								    name: 'custTel',
+	   								
+				     					reference:'custTel'
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户传真',
+	   								    name: 'custFax',
+	   								
+				     					reference:'custFax'
+   									}
+   								
+                               	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 95,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系人名称',
+									    name: 'contact_by',
+				     					reference:'contact_by'
+									   
+									},{
+									    xtype:'datefield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系电话 ',
+									    name: 'contacTByTel',
+				     					reference:'contacTByTel'
+									   
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系邮件',
+									    name: 'contactByEmail',
+				     					reference:'contactByEmail',
+									 
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:56,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 128,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '目的站',
+									    name: 'purposePlace',
+				     					reference:'purposePlace',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '包装',
+									    name: 'packing',
+				     					reference:'packing',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '货币',
+									    name: 'currency',
+				     					reference:'currency',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货方式',
+									    name: 'deliverGoodsMode',
+				     					reference:'deliverGoodsMode',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货时间',
+									    name: 'deliverGoodsDate',
+				     					reference:'deliverGoodsDate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '付款方式',
+									    name: 'paymentMode',
+				     					reference:'paymentMode',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 188,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '运费',
+									    name: 'freight',
+				     					reference:'freight',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '保险',
+									    name: 'insurance',
+				     					reference:'insurance',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '税率',
+									    name: 'tax_rate',
+				     					reference:'tax_rate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '折扣',
+									    name: 'rebate',
+				     					reference:'rebate',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 222,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '审批人',
+									    name: 'examApprByName',
+				     					reference:'examApprByName'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:70,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 255,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注',
+									    name: 'remark',
+				     					reference:'remark',
+									    colspan:4
+									}
+                            	]
+                            }
+                     ]
+       	            
+       	        },{
+          	         xtype:'panel',
+          	         layout: {
+                   	 type: 'fit',
+                    },
+                    region: "center",
+                    bodyStyle: 'background:#ceebe0; padding:0px;border:0px',
+                    scrollable:true,
+                    items:[{
+                   	 xtype:'grid',
+                   	 enableHdMenu:false,
+                   	 sortableColumns:false,
+                   	 columnLines: true,
+                   	 enableColumnHide:false,
+                   	 enableColumnMove:false,
+                   	 store:me.store,
+                   	 features: [{
+             		        ftype: 'summary'
+             		     }],
+                   	 columns: {
+                   		    items: [
+                   		        {
+                   		            text: "序号",
+                   		            dataIndex: "id",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品编码",
+                   		            dataIndex: "prodCode",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品名称",
+                   		            dataIndex: "prodName",
+                   		            width: 150
+                   		        },{
+                   		            text: "型号规格",
+                   		            dataIndex: "typeModel",
+                   		            width: 150
+                   		        },{
+                   		            text: "数量",
+                   		            dataIndex: "qty",
+                   		            width: 150
+                   		        },{
+                   		            text: "单位",
+                   		            dataIndex: "unit",
+                   		            width: 150
+                   		        },{
+                   		            text: "单价",
+                   		            dataIndex: "univalent",
+                   		            width: 150
+                   		        },{
+                   		            text: "货币",
+                   		            dataIndex: "currency",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品描述",
+                   		            dataIndex: "prodDesc",
+                   		            width: 150
+                   		        },{
+                   		            text: "品牌",
+                   		            dataIndex: "brand",
+                   		            width: 150
+                   		        },{
+                   		            text: "制造商名称",
+                   		            dataIndex: "manufName",
+                   		            width: 150
+                   		        },{
+                   		            text: "货期（交期）",
+                   		            dataIndex: "deliveTime",
+                   		            width: 150
+                   		        },{
+                   		            text: "备注",
+                   		            dataIndex: "remark",
+                   		            width: 150
+                   		        },{
+                   		            text: "合计",
+                   		            dataIndex: "inquiredQTY_quotedPrice$",
+                   		            width: 150,
+                   		            summaryType: 'sum',
+   	                		      	summaryRenderer: function(value, summaryData, dataIndex) {
+   	                		            return'金额总计:'+value;
+   	                		        }
+                   		        }
+                   		    ]
+                   		}
+                   	 
+                   	 
+                   	 
+                 }]
+          	   }
+       	 ]
+       });
+        me.callParent();
+    }
+});
+Ext.define('Hc_Framework.view.hc.SubHcEmployeeController', {
+	extend : 'Hc_Common.view.BaseWinPageController',
+
+	alias : 'controller.subhcemployeecontroller',
+	flag:false,
+	record_:'',
+	init: function () {
+		var me = this;
+		var  record=Ext.create('Hc_Framework.model.HcEmployee',{});
+		this.record_=record
+		for(i=0;i<record.getFields().length;i++){
+			var  name=Ext.util.Format.trim(record.getFields()[i].getName())
+	   		 
+	   		if((this.getReferences())[name]){
+				this.lookupReference(name).on("change", me.onBtnchange, me);	   			 
+	   		 }
+     	}
+		me.callParent();
+	},
+	onBtnEditClick:function(){
+		for(i=0;i<this.record_.getFields().length;i++){
+            var  name=Ext.util.Format.trim(this.record_.getFields()[i].getName())
+  		 if((this.getReferences())[name]){
+  			 if('contactsName'==name||'contactsTel'==name||'contactsFax'==name||'supplierName'==name){
+  				this.lookupReference(name).disable();
+  			 }else{
+  				this.lookupReference(name).enable();
+  			 }
+  			
+  		 }
+  	    }
+		//this.view.lookupReference('inquiryNo').enable()
+
+	},
+	onBtnchange:function(obj , newValue , oldValue , eOpt){
+	 	var  store_=this.view.me_.workObject.store;
+		store_.beginUpdate();
+	 	if(obj.is('combo')){
+	 		this.view.record.set(obj.name, obj.getRawValue()); 		
+	 	}else{
+	 		this.view.record.set(obj.name, obj.getRawValue()); 	
+	 	}
+
+
+	 	
+	 	if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+	 	store_.endUpdate();
+	},
+	onBtnSaveClick:function(){
+	    if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+
+	    for(i=0;i<this.record_.getFields().length-3;i++){
+			
+			  if(!this.lookupReference(Ext.util.Format.trim(this.record_.getFields()[i].getName())).isValid()){
+				  return;
+			  }
+		}
+	    this.view.me_.workObject.store.add(this.view.record);
+	    this.view.me_.onBtnSaveClick(null,this)
+	},
+	onBtnCancelClick:function(){
+		if(this.flag){
+			  this.view.me_.workObject.store.removeAt(this.view.me_.workObject.store.getCount()-1);
+			  //this.view.me_.workObject.getStore().rejectChanges();
+			  this.view.me_.workObject.view.refresh();
+			  this.flag=false
+		}
+		
+      if(this.view.title=='编辑'){
+    		
+      	this.view.me_.workObject.store.rejectChanges()
+      	this.view.me_.workObject.view.refresh();
+    		
+    	}
+          this.view.me_.view.subformActivate=false;
+		  this.view.hide();
+	}
+	
+});
+Ext.define('Hc_Framework.view.hc.SubHcEmployeeModel', {
+    extend: 'Hc_Common.view.BaseWinPageModel',
+
+    alias: 'viewmodel.subhcemployeemodel'
+});
+/**
+ * Description: 出差管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2014-2015
+ * Company:     hc.
+ * author:      jinxi.li
+ * Createdate:  2016/01/26
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define("Hc_Framework.view.hc.HcEvection", {
+    extend: "Hc_Common.view.BaseSimplePage",
+
+    alias: 'widget.hcevection',
+
+    
+
+    controller: "hcevectioncontroller",
+
+    viewModel: {
+        type: "hcevectionmodel"
+    },
+    title_:'出差管理',
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+            searchItems: [ 
+			{
+			    xtype: 'textfield', 
+			    fieldLabel: '出差单编码', 
+			    name: 'evectionCode'
+			}
+            ],
+
+            gridModel: 'Hc_Framework.model.HcEvection',
+            gridSubGrid:'',
+            gridColumns: [
+                          {
+                          	header: '出差单编码', 
+                          	dataIndex: 'evectionCode', 
+                          	width: '15%',
+                          	renderer: function (data, metadata, record, rowIndex, columnIndex, store) {  
+                          		return '<span onclick=""><a href="#">'+data+' </a></span>';
+                            }
+                          },
+                          {
+                          	header: '出差员工', 
+                          	dataIndex: 'evectionEmployName', 
+                          	width: 250
+                          },
+                          {
+              				dataIndex: 'drawBy',
+              				header: '提请人',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'applyDate',
+                				header: '申请日期',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'visitCompName',
+                				header: '访问公司 ',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'evectionDate',
+              				header: '出差日期',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'contactName',
+                				header: '联系人',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'visitReason',
+              				header: '访问主要事由',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'remark',
+                				header: '备注',
+                				width: 150
+                          }            
+            ],
+            allendflag:false,
+            gridPrimaryKey: 'evectionCode',
+            gridLoadUrl: Hc.basePath + 'hc_evection_list/list.json',
+            gridLoadSubUrl: Hc.basePath + 'hc_evection_list/listAll.json',
+            gridSaveUrl: Hc.basePath + 'hc_evection_list/batchOperate.json',
+            gridExportUrl: Hc.basePath + 'hc_evection_list/do_export.json',
+            gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_evection_list/deleteMasterCustomer.json',
+            gridAddMasterCustomerUrl: Hc.basePath + 'hc_evection_list/addMasterCustomer.json',
+            gridImportUrl: Hc.basePath + '',
+            subWinTableName:'Hc_Framework.view.hc.SubHcEvection',
+            subformActivate:false
+        });
+        me.callParent();
+    }
+});
+/**
+ * Description: 出差管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+
+Ext.define('Hc_Framework.view.hc.HcEvectionController', {
+	extend : 'Hc_Common.view.BaseSimplePageController',
+
+	alias : 'controller.hcevectioncontroller',
+	
+	init: function () {
+		var me = this;
+		Ext.apply(me, {
+			windowFlag:true,
+			newobj:this.view.subWinTableName
+		})
+		me.callParent();
+	},
+	onEditClick:function( obj , record , item , index , e , eOpts){
+      
+	},
+	onEditClick_:function(obj , td , cellIndex , record , tr , rowIndex , e , eOpts ){
+		var store = Ext.create('Hc_Common.store.Base', {
+            model:'Hc_Framework.model.HcEvection',
+            autoLoad: false,
+            groupField: 'inquiredQTY_quotedPrice$',
+            proxy: {
+                url: this.view.gridLoadSubUrl
+            }
+        });
+		
+		store.proxy.extraParams['quoteCode'] = record.data.quoteCode; 
+		store.load();	      	 
+		if(cellIndex==0){
+	    	Ext.create(this.view.subWinTableName,{
+	    		title:'编辑',
+	    		record:record,
+	    		me_:this,
+	    		store:store
+	    	}).show();
+	    	this.view.subformActivate=true;
+	    	this.onBtnCancelClick();
+		}
+    	
+    }
+	
+});
+/**
+ * Description: 出差管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.view.hc.HcEvectionModel', {
+    extend: 'Hc_Common.view.BaseSimplePageModel',
+
+    alias: 'viewmodel.hcevectionmodel'
+});
+Ext.define("Hc_Framework.view.hc.SubHcEvection", {
+    extend: "Hc_Common.view.BaseWinPage",
+
+    alias: 'widget.subhcevection',
+
+    
+
+    controller: "subhcevectioncontroller",
+
+    viewModel: {
+        type: "subhcevectionmodel"
+    },
+    title:'新增',
+    width: 1000,
+    height:620,
+    
+    maxWidth:1000,
+   // maxHeight:620,
+    
+    minWidth:1000,
+    minHeight:620,
+    
+    layout:'border',//设置窗口内部布局
+    closeAction:'hide',
+    plain:false,//true则主体背景透明，false则和主体背景有些差别
+    collapsible:false,//是否可收缩
+    modal:true,//是否为模式窗体
+   
+    dockedItems:[{
+    	 xtype: 'toolbar',
+    	 dock: 'top',
+    	 items: [
+           {
+             text: '保存',
+             handler:'onBtnSaveClick',
+             glyph: Hc.Icon.btnSave
+           },
+           {
+               text: '编辑',
+               handler:'onBtnEditClick',
+               glyph: Hc.Icon.btnEdit
+           },
+           {
+               text: '取消',
+               handler:'onBtnCancelClick',
+               glyph: Hc.Icon.btnCancel
+             }
+         ]
+    }],
+    listeners: {
+    	beforeshow:function(obj ,eOpts){
+    		 var currentUser = Ext.create("Hc_Framework.store.CurrentUser");
+    	        currentUser.load();
+    		 var  userCreator;
+             var   supplierNo_;
+             
+             if(this.title=='新增'){
+            	// this.lookupReference('createUser').setValue(currentUser.getAt(0).data.userName);
+                 supplierNo_='PE'+Ext.util.Format.date((new Date()), "Y").substring(2,5)+Ext.util.Format.date((new Date()), "Y").substring(0,2)+Ext.util.Format.date((new Date()), "dmHis");
+              /*   this.lookupReference('inquiryNo').setValue(supplierNo_);
+                // this.lookupReference('modifyUser').disabled=true;
+                 //this.lookupReference('modifyDate').disabled=true;
+                 
+                 this.lookupReference('contactsName').disabled=true;
+                 this.lookupReference('contactsTel').disabled=true;
+                 this.lookupReference('contactsFax').disabled=true;
+                 this.lookupReference('supplierName').disabled=true;
+                 
+                 
+                // this.lookupReference('localDepartment').setValue(currentUser.getAt(0).data.deptName);
+                 this.lookupReference('inquiryDate').setValue(Ext.util.Format.date((new Date()),'Y-m-d H:i:s'));
+
+            */
+             }else if(this.title=='编辑'){
+           	 for(i=0;i<this.record.getFields().length;i++){
+	                 var  name=Ext.util.Format.trim(this.record.getFields()[i].getName())
+           		 
+           		 if((this.getReferences())[name]){
+           			 if(this.lookupReference(name).is('combo')){
+               			 this.lookupReference(name).setRawValue(this.record.get(name));
+               		 }else{
+               			 this.lookupReference(name).setValue(this.record.get(name));
+               		 }
+           			this.lookupReference(name).disable();
+           		 }
+           	 }
+             }
+             this.lookupReference('subhcsuppliercustomer').title='>>>>'+this.me_.view.title_;
+    	}
+    },
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+       	 items:[
+       	        {
+       	         xtype:'panel',
+       	         defaults: {
+       	        	
+                 },
+                 layout: {
+                	 type: 'absolute'
+                 },
+                 reference:'subhcsuppliercustomer',
+                 region: "north",
+                 bodyStyle: 'background:#cbdbe0;',
+                 padding:'3 0 3 0',//(top, right, bottom, left).
+                    items: [
+                            {
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 3,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价编码',
+									    name: 'quoteCode',
+				     					reference:'quoteCode',
+									    listeners: {
+									    	beforerender: function(obj) {
+											   obj.fieldLabel+='<font size="2px" color="red">*</font>';
+									        }
+										  }
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人编码',
+									    name: 'quoteByCode',
+				     					reference:'quoteByCode'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人名称',
+									    name: 'quoteByName',
+				     					reference:'quoteByName'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价方式',
+									    name: 'quoteMode',
+				     					reference:'quoteMode'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:57,
+                            	width:980,
+                            	layout: {
+                                  	 type: 'table',
+                                       columns:4
+                                   },
+                                x: 3,
+                                y: 35,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                               	items:[
+   									{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户编码',
+	   								    name: 'custCode',
+	   								
+				     					reference:'custCode'
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									   // width:313,
+   									    fieldLabel: '客户名称',
+   									    name: 'custName',
+				     					reference:'custName',
+   									    colspan:1
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									    width:500,
+   									    fieldLabel: '客户地址',
+   									    name: 'custAddr',
+				     					reference:'custAddr',
+   									    colspan:4
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户电话',
+	   								    name: 'custTel',
+	   								
+				     					reference:'custTel'
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户传真',
+	   								    name: 'custFax',
+	   								
+				     					reference:'custFax'
+   									}
+   								
+                               	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 95,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系人名称',
+									    name: 'contact_by',
+				     					reference:'contact_by'
+									   
+									},{
+									    xtype:'datefield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系电话 ',
+									    name: 'contacTByTel',
+				     					reference:'contacTByTel'
+									   
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系邮件',
+									    name: 'contactByEmail',
+				     					reference:'contactByEmail',
+									 
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:56,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 128,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '目的站',
+									    name: 'purposePlace',
+				     					reference:'purposePlace',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '包装',
+									    name: 'packing',
+				     					reference:'packing',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '货币',
+									    name: 'currency',
+				     					reference:'currency',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货方式',
+									    name: 'deliverGoodsMode',
+				     					reference:'deliverGoodsMode',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货时间',
+									    name: 'deliverGoodsDate',
+				     					reference:'deliverGoodsDate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '付款方式',
+									    name: 'paymentMode',
+				     					reference:'paymentMode',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 188,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '运费',
+									    name: 'freight',
+				     					reference:'freight',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '保险',
+									    name: 'insurance',
+				     					reference:'insurance',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '税率',
+									    name: 'tax_rate',
+				     					reference:'tax_rate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '折扣',
+									    name: 'rebate',
+				     					reference:'rebate',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 222,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '审批人',
+									    name: 'examApprByName',
+				     					reference:'examApprByName'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:70,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 255,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注',
+									    name: 'remark',
+				     					reference:'remark',
+									    colspan:4
+									}
+                            	]
+                            }
+                     ]
+       	            
+       	        },{
+          	         xtype:'panel',
+          	         layout: {
+                   	 type: 'fit',
+                    },
+                    region: "center",
+                    bodyStyle: 'background:#ceebe0; padding:0px;border:0px',
+                    scrollable:true,
+                    items:[{
+                   	 xtype:'grid',
+                   	 enableHdMenu:false,
+                   	 sortableColumns:false,
+                   	 columnLines: true,
+                   	 enableColumnHide:false,
+                   	 enableColumnMove:false,
+                   	 store:me.store,
+                   	 features: [{
+             		        ftype: 'summary'
+             		     }],
+                   	 columns: {
+                   		    items: [
+                   		        {
+                   		            text: "序号",
+                   		            dataIndex: "id",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品编码",
+                   		            dataIndex: "prodCode",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品名称",
+                   		            dataIndex: "prodName",
+                   		            width: 150
+                   		        },{
+                   		            text: "型号规格",
+                   		            dataIndex: "typeModel",
+                   		            width: 150
+                   		        },{
+                   		            text: "数量",
+                   		            dataIndex: "qty",
+                   		            width: 150
+                   		        },{
+                   		            text: "单位",
+                   		            dataIndex: "unit",
+                   		            width: 150
+                   		        },{
+                   		            text: "单价",
+                   		            dataIndex: "univalent",
+                   		            width: 150
+                   		        },{
+                   		            text: "货币",
+                   		            dataIndex: "currency",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品描述",
+                   		            dataIndex: "prodDesc",
+                   		            width: 150
+                   		        },{
+                   		            text: "品牌",
+                   		            dataIndex: "brand",
+                   		            width: 150
+                   		        },{
+                   		            text: "制造商名称",
+                   		            dataIndex: "manufName",
+                   		            width: 150
+                   		        },{
+                   		            text: "货期（交期）",
+                   		            dataIndex: "deliveTime",
+                   		            width: 150
+                   		        },{
+                   		            text: "备注",
+                   		            dataIndex: "remark",
+                   		            width: 150
+                   		        },{
+                   		            text: "合计",
+                   		            dataIndex: "inquiredQTY_quotedPrice$",
+                   		            width: 150,
+                   		            summaryType: 'sum',
+   	                		      	summaryRenderer: function(value, summaryData, dataIndex) {
+   	                		            return'金额总计:'+value;
+   	                		        }
+                   		        }
+                   		    ]
+                   		}
+                   	 
+                   	 
+                   	 
+                 }]
+          	   }
+       	 ]
+       });
+        me.callParent();
+    }
+});
+Ext.define('Hc_Framework.view.hc.SubHcEvectionController', {
+	extend : 'Hc_Common.view.BaseWinPageController',
+
+	alias : 'controller.subhcevectioncontroller',
+	flag:false,
+	record_:'',
+	init: function () {
+		var me = this;
+		var  record=Ext.create('Hc_Framework.model.HcEvection',{});
+		this.record_=record
+		for(i=0;i<record.getFields().length;i++){
+			var  name=Ext.util.Format.trim(record.getFields()[i].getName())
+	   		 
+	   		if((this.getReferences())[name]){
+				this.lookupReference(name).on("change", me.onBtnchange, me);	   			 
+	   		 }
+     	}
+		me.callParent();
+	},
+	onBtnEditClick:function(){
+		for(i=0;i<this.record_.getFields().length;i++){
+            var  name=Ext.util.Format.trim(this.record_.getFields()[i].getName())
+  		 if((this.getReferences())[name]){
+  			 if('contactsName'==name||'contactsTel'==name||'contactsFax'==name||'supplierName'==name){
+  				this.lookupReference(name).disable();
+  			 }else{
+  				this.lookupReference(name).enable();
+  			 }
+  			
+  		 }
+  	    }
+		//this.view.lookupReference('inquiryNo').enable()
+
+	},
+	onBtnchange:function(obj , newValue , oldValue , eOpt){
+	 	var  store_=this.view.me_.workObject.store;
+		store_.beginUpdate();
+	 	if(obj.is('combo')){
+	 		this.view.record.set(obj.name, obj.getRawValue()); 		
+	 	}else{
+	 		this.view.record.set(obj.name, obj.getRawValue()); 	
+	 	}
+
+
+	 	
+	 	if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+	 	store_.endUpdate();
+	},
+	onBtnSaveClick:function(){
+	    if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+
+	    for(i=0;i<this.record_.getFields().length-3;i++){
+			
+			  if(!this.lookupReference(Ext.util.Format.trim(this.record_.getFields()[i].getName())).isValid()){
+				  return;
+			  }
+		}
+	    this.view.me_.workObject.store.add(this.view.record);
+	    this.view.me_.onBtnSaveClick(null,this)
+	},
+	onBtnCancelClick:function(){
+		if(this.flag){
+			  this.view.me_.workObject.store.removeAt(this.view.me_.workObject.store.getCount()-1);
+			  //this.view.me_.workObject.getStore().rejectChanges();
+			  this.view.me_.workObject.view.refresh();
+			  this.flag=false
+		}
+		
+      if(this.view.title=='编辑'){
+    		
+      	this.view.me_.workObject.store.rejectChanges()
+      	this.view.me_.workObject.view.refresh();
+    		
+    	}
+          this.view.me_.view.subformActivate=false;
+		  this.view.hide();
+	}
+	
+});
+Ext.define('Hc_Framework.view.hc.SubHcEvectionModel', {
+    extend: 'Hc_Common.view.BaseWinPageModel',
+
+    alias: 'viewmodel.subhcevectionmodel'
+});
+/**
+ * Description: 商品编码申请管理  view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2014-2015
+ * Company:     hc.
+ * author:      jinxi.li
+ * Createdate:  2016/01/26
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define("Hc_Framework.view.hc.HcGoodsNoApply", {
+    extend: "Hc_Common.view.BaseSimplePage",
+
+    alias: 'widget.hcgoodsnoapply',
+
+    
+
+    controller: "hcgoodsnoapplycontroller",
+
+    viewModel: {
+        type: "hcgoodsnoapplymodel"
+    },
+    title_:'商品编码申请',
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+            searchItems: [ 
+			{
+			    xtype: 'textfield', 
+			    fieldLabel: '商品编码申请单', 
+			    name: 'goodsNoApplCode'
+			}
+            ],
+
+            gridModel: 'Hc_Framework.model.HcGoodsNoApply',
+            gridSubGrid:'',
+            gridColumns: [
+                          {
+                          	header: '商品编码申请单', 
+                          	dataIndex: 'goodsNoApplCode', 
+                          	width: '15%',
+                          	renderer: function (data, metadata, record, rowIndex, columnIndex, store) {  
+                          		return '<span onclick=""><a href="#">'+data+' </a></span>';
+                            }
+                          },
+                          {
+                          	header: '申请员工', 
+                          	dataIndex: 'applyEmployName', 
+                          	width: 250
+                          },
+                          {
+              				dataIndex: 'locationDept',
+              				header: '所在部门',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'applyDate',
+                				header: '申请日期',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'goodsCode',
+                				header: '物品编码 ',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'goodsName',
+              				header: '物品名称',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'specModel',
+                				header: '所属大分类',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'specialty',
+                				header: '规格型号',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'venderCode',
+              				header: '厂家编码',
+              				width: 150
+                        },
+                        {
+              				dataIndex: 'venderName',
+              				header: '厂家名称',
+              				width: 150
+                        },{
+	              				dataIndex: 'remark',
+	              				header: '备　　注',
+	              				width: 150
+	                     }             
+            ],
+            allendflag:false,
+            gridPrimaryKey: 'goodsNoApplCode',
+            gridLoadUrl: Hc.basePath + 'hc_goods_no_apply_list/list.json',
+            gridLoadSubUrl: Hc.basePath + 'hc_goods_no_apply_list/listAll.json',
+            gridSaveUrl: Hc.basePath + 'hc_goods_no_apply_list/batchOperate.json',
+            gridExportUrl: Hc.basePath + 'hc_goods_no_apply_list/do_export.json',
+            gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_goods_no_apply_list/deleteMasterCustomer.json',
+            gridAddMasterCustomerUrl: Hc.basePath + 'hc_goods_no_apply_list/addMasterCustomer.json',
+            gridImportUrl: Hc.basePath + '',
+            subWinTableName:'Hc_Framework.view.hc.SubHcGoodsNoApply',
+            subformActivate:false
+        });
+        me.callParent();
+    }
+});
+/**
+ * Description: 商品编码申请管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+
+Ext.define('Hc_Framework.view.hc.HcGoodsNoApplyController', {
+	extend : 'Hc_Common.view.BaseSimplePageController',
+
+	alias : 'controller.hcgoodsnoapplycontroller',
+	
+	init: function () {
+		var me = this;
+		Ext.apply(me, {
+			windowFlag:true,
+			newobj:this.view.subWinTableName
+		})
+		me.callParent();
+	},
+	onEditClick:function( obj , record , item , index , e , eOpts){
+      
+	},
+	onEditClick_:function(obj , td , cellIndex , record , tr , rowIndex , e , eOpts ){
+		var store = Ext.create('Hc_Common.store.Base', {
+            model:'Hc_Framework.model.HcGoodsNoApply',
+            autoLoad: false,
+            groupField: 'inquiredQTY_quotedPrice$',
+            proxy: {
+                url: this.view.gridLoadSubUrl
+            }
+        });
+		
+		store.proxy.extraParams['quoteCode'] = record.data.quoteCode; 
+		store.load();	      	 
+		if(cellIndex==0){
+	    	Ext.create(this.view.subWinTableName,{
+	    		title:'编辑',
+	    		record:record,
+	    		me_:this,
+	    		store:store
+	    	}).show();
+	    	this.view.subformActivate=true;
+	    	this.onBtnCancelClick();
+		}
+    	
+    }
+	
+});
+/**
+ * Description: 商品编码申请管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.view.hc.HcGoodsNoApplyModel', {
+    extend: 'Hc_Common.view.BaseSimplePageModel',
+
+    alias: 'viewmodel.hcgoodsnoapplymodel'
+});
+Ext.define("Hc_Framework.view.hc.SubHcGoodsNoApply", {
+    extend: "Hc_Common.view.BaseWinPage",
+
+    alias: 'widget.subhcgoodsnoapply',
+
+    
+
+    controller: "subhcgoodsnoapplycontroller",
+
+    viewModel: {
+        type: "subhcgoodsnoapplymodel"
+    },
+    title:'新增',
+    width: 1000,
+    height:620,
+    
+    maxWidth:1000,
+   // maxHeight:620,
+    
+    minWidth:1000,
+    minHeight:620,
+    
+    layout:'border',//设置窗口内部布局
+    closeAction:'hide',
+    plain:false,//true则主体背景透明，false则和主体背景有些差别
+    collapsible:false,//是否可收缩
+    modal:true,//是否为模式窗体
+   
+    dockedItems:[{
+    	 xtype: 'toolbar',
+    	 dock: 'top',
+    	 items: [
+           {
+             text: '保存',
+             handler:'onBtnSaveClick',
+             glyph: Hc.Icon.btnSave
+           },
+           {
+               text: '编辑',
+               handler:'onBtnEditClick',
+               glyph: Hc.Icon.btnEdit
+           },
+           {
+               text: '取消',
+               handler:'onBtnCancelClick',
+               glyph: Hc.Icon.btnCancel
+             }
+         ]
+    }],
+    listeners: {
+    	beforeshow:function(obj ,eOpts){
+    		 var currentUser = Ext.create("Hc_Framework.store.CurrentUser");
+    	        currentUser.load();
+    		 var  userCreator;
+             var   supplierNo_;
+             
+             if(this.title=='新增'){
+            	// this.lookupReference('createUser').setValue(currentUser.getAt(0).data.userName);
+                 supplierNo_='PE'+Ext.util.Format.date((new Date()), "Y").substring(2,5)+Ext.util.Format.date((new Date()), "Y").substring(0,2)+Ext.util.Format.date((new Date()), "dmHis");
+              /*   this.lookupReference('inquiryNo').setValue(supplierNo_);
+                // this.lookupReference('modifyUser').disabled=true;
+                 //this.lookupReference('modifyDate').disabled=true;
+                 
+                 this.lookupReference('contactsName').disabled=true;
+                 this.lookupReference('contactsTel').disabled=true;
+                 this.lookupReference('contactsFax').disabled=true;
+                 this.lookupReference('supplierName').disabled=true;
+                 
+                 
+                // this.lookupReference('localDepartment').setValue(currentUser.getAt(0).data.deptName);
+                 this.lookupReference('inquiryDate').setValue(Ext.util.Format.date((new Date()),'Y-m-d H:i:s'));
+
+            */
+             }else if(this.title=='编辑'){
+           	 for(i=0;i<this.record.getFields().length;i++){
+	                 var  name=Ext.util.Format.trim(this.record.getFields()[i].getName())
+           		 
+           		 if((this.getReferences())[name]){
+           			 if(this.lookupReference(name).is('combo')){
+               			 this.lookupReference(name).setRawValue(this.record.get(name));
+               		 }else{
+               			 this.lookupReference(name).setValue(this.record.get(name));
+               		 }
+           			this.lookupReference(name).disable();
+           		 }
+           	 }
+             }
+             this.lookupReference('subhcsuppliercustomer').title='>>>>'+this.me_.view.title_;
+    	}
+    },
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+       	 items:[
+       	        {
+       	         xtype:'panel',
+       	         defaults: {
+       	        	
+                 },
+                 layout: {
+                	 type: 'absolute'
+                 },
+                 reference:'subhcsuppliercustomer',
+                 region: "north",
+                 bodyStyle: 'background:#cbdbe0;',
+                 padding:'3 0 3 0',//(top, right, bottom, left).
+                    items: [
+                            {
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 3,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价编码',
+									    name: 'quoteCode',
+				     					reference:'quoteCode',
+									    listeners: {
+									    	beforerender: function(obj) {
+											   obj.fieldLabel+='<font size="2px" color="red">*</font>';
+									        }
+										  }
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人编码',
+									    name: 'quoteByCode',
+				     					reference:'quoteByCode'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人名称',
+									    name: 'quoteByName',
+				     					reference:'quoteByName'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价方式',
+									    name: 'quoteMode',
+				     					reference:'quoteMode'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:57,
+                            	width:980,
+                            	layout: {
+                                  	 type: 'table',
+                                       columns:4
+                                   },
+                                x: 3,
+                                y: 35,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                               	items:[
+   									{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户编码',
+	   								    name: 'custCode',
+	   								
+				     					reference:'custCode'
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									   // width:313,
+   									    fieldLabel: '客户名称',
+   									    name: 'custName',
+				     					reference:'custName',
+   									    colspan:1
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									    width:500,
+   									    fieldLabel: '客户地址',
+   									    name: 'custAddr',
+				     					reference:'custAddr',
+   									    colspan:4
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户电话',
+	   								    name: 'custTel',
+	   								
+				     					reference:'custTel'
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户传真',
+	   								    name: 'custFax',
+	   								
+				     					reference:'custFax'
+   									}
+   								
+                               	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 95,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系人名称',
+									    name: 'contact_by',
+				     					reference:'contact_by'
+									   
+									},{
+									    xtype:'datefield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系电话 ',
+									    name: 'contacTByTel',
+				     					reference:'contacTByTel'
+									   
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系邮件',
+									    name: 'contactByEmail',
+				     					reference:'contactByEmail',
+									 
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:56,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 128,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '目的站',
+									    name: 'purposePlace',
+				     					reference:'purposePlace',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '包装',
+									    name: 'packing',
+				     					reference:'packing',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '货币',
+									    name: 'currency',
+				     					reference:'currency',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货方式',
+									    name: 'deliverGoodsMode',
+				     					reference:'deliverGoodsMode',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货时间',
+									    name: 'deliverGoodsDate',
+				     					reference:'deliverGoodsDate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '付款方式',
+									    name: 'paymentMode',
+				     					reference:'paymentMode',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 188,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '运费',
+									    name: 'freight',
+				     					reference:'freight',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '保险',
+									    name: 'insurance',
+				     					reference:'insurance',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '税率',
+									    name: 'tax_rate',
+				     					reference:'tax_rate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '折扣',
+									    name: 'rebate',
+				     					reference:'rebate',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 222,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '审批人',
+									    name: 'examApprByName',
+				     					reference:'examApprByName'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:70,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 255,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注',
+									    name: 'remark',
+				     					reference:'remark',
+									    colspan:4
+									}
+                            	]
+                            }
+                     ]
+       	            
+       	        },{
+          	         xtype:'panel',
+          	         layout: {
+                   	 type: 'fit',
+                    },
+                    region: "center",
+                    bodyStyle: 'background:#ceebe0; padding:0px;border:0px',
+                    scrollable:true,
+                    items:[{
+                   	 xtype:'grid',
+                   	 enableHdMenu:false,
+                   	 sortableColumns:false,
+                   	 columnLines: true,
+                   	 enableColumnHide:false,
+                   	 enableColumnMove:false,
+                   	 store:me.store,
+                   	 features: [{
+             		        ftype: 'summary'
+             		     }],
+                   	 columns: {
+                   		    items: [
+                   		        {
+                   		            text: "序号",
+                   		            dataIndex: "id",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品编码",
+                   		            dataIndex: "prodCode",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品名称",
+                   		            dataIndex: "prodName",
+                   		            width: 150
+                   		        },{
+                   		            text: "型号规格",
+                   		            dataIndex: "typeModel",
+                   		            width: 150
+                   		        },{
+                   		            text: "数量",
+                   		            dataIndex: "qty",
+                   		            width: 150
+                   		        },{
+                   		            text: "单位",
+                   		            dataIndex: "unit",
+                   		            width: 150
+                   		        },{
+                   		            text: "单价",
+                   		            dataIndex: "univalent",
+                   		            width: 150
+                   		        },{
+                   		            text: "货币",
+                   		            dataIndex: "currency",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品描述",
+                   		            dataIndex: "prodDesc",
+                   		            width: 150
+                   		        },{
+                   		            text: "品牌",
+                   		            dataIndex: "brand",
+                   		            width: 150
+                   		        },{
+                   		            text: "制造商名称",
+                   		            dataIndex: "manufName",
+                   		            width: 150
+                   		        },{
+                   		            text: "货期（交期）",
+                   		            dataIndex: "deliveTime",
+                   		            width: 150
+                   		        },{
+                   		            text: "备注",
+                   		            dataIndex: "remark",
+                   		            width: 150
+                   		        },{
+                   		            text: "合计",
+                   		            dataIndex: "inquiredQTY_quotedPrice$",
+                   		            width: 150,
+                   		            summaryType: 'sum',
+   	                		      	summaryRenderer: function(value, summaryData, dataIndex) {
+   	                		            return'金额总计:'+value;
+   	                		        }
+                   		        }
+                   		    ]
+                   		}
+                   	 
+                   	 
+                   	 
+                 }]
+          	   }
+       	 ]
+       });
+        me.callParent();
+    }
+});
+Ext.define('Hc_Framework.view.hc.SubHcGoodsNoApplyController', {
+	extend : 'Hc_Common.view.BaseWinPageController',
+
+	alias : 'controller.subhcgoodsnoapplycontroller',
+	flag:false,
+	record_:'',
+	init: function () {
+		var me = this;
+		var  record=Ext.create('Hc_Framework.model.HcGoodsNoApply',{});
+		this.record_=record
+		for(i=0;i<record.getFields().length;i++){
+			var  name=Ext.util.Format.trim(record.getFields()[i].getName())
+	   		 
+	   		if((this.getReferences())[name]){
+				this.lookupReference(name).on("change", me.onBtnchange, me);	   			 
+	   		 }
+     	}
+		me.callParent();
+	},
+	onBtnEditClick:function(){
+		for(i=0;i<this.record_.getFields().length;i++){
+            var  name=Ext.util.Format.trim(this.record_.getFields()[i].getName())
+  		 if((this.getReferences())[name]){
+  			 if('contactsName'==name||'contactsTel'==name||'contactsFax'==name||'supplierName'==name){
+  				this.lookupReference(name).disable();
+  			 }else{
+  				this.lookupReference(name).enable();
+  			 }
+  			
+  		 }
+  	    }
+		//this.view.lookupReference('inquiryNo').enable()
+
+	},
+	onBtnchange:function(obj , newValue , oldValue , eOpt){
+	 	var  store_=this.view.me_.workObject.store;
+		store_.beginUpdate();
+	 	if(obj.is('combo')){
+	 		this.view.record.set(obj.name, obj.getRawValue()); 		
+	 	}else{
+	 		this.view.record.set(obj.name, obj.getRawValue()); 	
+	 	}
+
+
+	 	
+	 	if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+	 	store_.endUpdate();
+	},
+	onBtnSaveClick:function(){
+	    if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+
+	    for(i=0;i<this.record_.getFields().length-3;i++){
+			
+			  if(!this.lookupReference(Ext.util.Format.trim(this.record_.getFields()[i].getName())).isValid()){
+				  return;
+			  }
+		}
+	    this.view.me_.workObject.store.add(this.view.record);
+	    this.view.me_.onBtnSaveClick(null,this)
+	},
+	onBtnCancelClick:function(){
+		if(this.flag){
+			  this.view.me_.workObject.store.removeAt(this.view.me_.workObject.store.getCount()-1);
+			  //this.view.me_.workObject.getStore().rejectChanges();
+			  this.view.me_.workObject.view.refresh();
+			  this.flag=false
+		}
+		
+      if(this.view.title=='编辑'){
+    		
+      	this.view.me_.workObject.store.rejectChanges()
+      	this.view.me_.workObject.view.refresh();
+    		
+    	}
+          this.view.me_.view.subformActivate=false;
+		  this.view.hide();
+	}
+	
+});
+Ext.define('Hc_Framework.view.hc.SubHcGoodsNoApplyModel', {
+    extend: 'Hc_Common.view.BaseWinPageModel',
+
+    alias: 'viewmodel.subhcgoodsnoapplymodel'
+});
+/**
+ * Description: 内部签呈管理  view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2014-2015
+ * Company:     hc.
+ * author:      jinxi.li
+ * Createdate:  2016/01/26
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define("Hc_Framework.view.hc.HcInsidePetition", {
+    extend: "Hc_Common.view.BaseSimplePage",
+
+    alias: 'widget.hcinsidepetition',
+
+    
+
+    controller: "hcinsidepetitioncontroller",
+
+    viewModel: {
+        type: "hcinsidepetitionmodel"
+    },
+    title_:'内部签呈',
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+            searchItems: [ 
+			{
+			    xtype: 'textfield', 
+			    fieldLabel: '内部签呈编码', 
+			    name: 'goodsNoApplCode'
+			}
+            ],
+
+            gridModel: 'Hc_Framework.model.HcInsidePetition',
+            gridSubGrid:'',
+            gridColumns: [
+                          {
+                          	header: '内部签呈', 
+                          	dataIndex: 'goodsNoApplCode', 
+                          	width: '15%',
+                          	renderer: function (data, metadata, record, rowIndex, columnIndex, store) {  
+                          		return '<span onclick=""><a href="#">'+data+' </a></span>';
+                            }
+                          },
+                          {
+                          	header: '申请员工', 
+                          	dataIndex: 'applyEmployName', 
+                          	width: 250
+                          },
+                          {
+              				dataIndex: 'locationDept',
+              				header: '所在部门',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'applyDate',
+                				header: '申请日期',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'dense',
+                				header: '密级 ',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'urgenTimeLimit',
+              				header: '缓急时限',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'postTo',
+                				header: '张贴至',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'forwardTo',
+                				header: '转发至',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'ccTo',
+              				header: '抄送至',
+              				width: 150
+                        },
+                        {
+              				dataIndex: 'fileName',
+              				header: '文件名称',
+              				width: 150
+                        },{
+	              				dataIndex: 'remark',
+	              				header: '备　　注',
+	              				width: 150
+	                     }             
+            ],
+            allendflag:false,
+            gridPrimaryKey: 'goodsNoApplCode',
+            gridLoadUrl: Hc.basePath + 'hc_insidepetition_list/list.json',
+            gridLoadSubUrl: Hc.basePath + 'hc_insidepetition_list/listAll.json',
+            gridSaveUrl: Hc.basePath + 'hc_insidepetition_list/batchOperate.json',
+            gridExportUrl: Hc.basePath + 'hc_insidepetition_list/do_export.json',
+            gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_insidepetition_list/deleteMasterCustomer.json',
+            gridAddMasterCustomerUrl: Hc.basePath + 'hc_insidepetition_list/addMasterCustomer.json',
+            gridImportUrl: Hc.basePath + '',
+            subWinTableName:'Hc_Framework.view.hc.SubHcInsidePetition',
+            subformActivate:false
+        });
+        me.callParent();
+    }
+});
+/**
+ * Description: 内部签呈管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+
+Ext.define('Hc_Framework.view.hc.HcInsidePetitionController', {
+	extend : 'Hc_Common.view.BaseSimplePageController',
+
+	alias : 'controller.hcinsidepetitioncontroller',
+	
+	init: function () {
+		var me = this;
+		Ext.apply(me, {
+			windowFlag:true,
+			newobj:this.view.subWinTableName
+		})
+		me.callParent();
+	},
+	onEditClick:function( obj , record , item , index , e , eOpts){
+      
+	},
+	onEditClick_:function(obj , td , cellIndex , record , tr , rowIndex , e , eOpts ){
+		var store = Ext.create('Hc_Common.store.Base', {
+            model:'Hc_Framework.model.HcInsidePetition',
+            autoLoad: false,
+            groupField: 'inquiredQTY_quotedPrice$',
+            proxy: {
+                url: this.view.gridLoadSubUrl
+            }
+        });
+		
+		store.proxy.extraParams['quoteCode'] = record.data.quoteCode; 
+		store.load();	      	 
+		if(cellIndex==0){
+	    	Ext.create(this.view.subWinTableName,{
+	    		title:'编辑',
+	    		record:record,
+	    		me_:this,
+	    		store:store
+	    	}).show();
+	    	this.view.subformActivate=true;
+	    	this.onBtnCancelClick();
+		}
+    	
+    }
+	
+});
+/**
+ * Description: 内部签呈管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.view.hc.HcInsidePetitionModel', {
+    extend: 'Hc_Common.view.BaseSimplePageModel',
+
+    alias: 'viewmodel.hcinsidepetitionmodel'
+});
+Ext.define("Hc_Framework.view.hc.SubHcInsidePetition", {
+    extend: "Hc_Common.view.BaseWinPage",
+
+    alias: 'widget.subhcinsidepetition',
+
+    
+
+    controller: "subhcinsidepetitioncontroller",
+
+    viewModel: {
+        type: "subhcinsidepetitionmodel"
+    },
+    title:'新增',
+    width: 1000,
+    height:620,
+    
+    maxWidth:1000,
+   // maxHeight:620,
+    
+    minWidth:1000,
+    minHeight:620,
+    
+    layout:'border',//设置窗口内部布局
+    closeAction:'hide',
+    plain:false,//true则主体背景透明，false则和主体背景有些差别
+    collapsible:false,//是否可收缩
+    modal:true,//是否为模式窗体
+   
+    dockedItems:[{
+    	 xtype: 'toolbar',
+    	 dock: 'top',
+    	 items: [
+           {
+             text: '保存',
+             handler:'onBtnSaveClick',
+             glyph: Hc.Icon.btnSave
+           },
+           {
+               text: '编辑',
+               handler:'onBtnEditClick',
+               glyph: Hc.Icon.btnEdit
+           },
+           {
+               text: '取消',
+               handler:'onBtnCancelClick',
+               glyph: Hc.Icon.btnCancel
+             }
+         ]
+    }],
+    listeners: {
+    	beforeshow:function(obj ,eOpts){
+    		 var currentUser = Ext.create("Hc_Framework.store.CurrentUser");
+    	        currentUser.load();
+    		 var  userCreator;
+             var   supplierNo_;
+             
+             if(this.title=='新增'){
+            	// this.lookupReference('createUser').setValue(currentUser.getAt(0).data.userName);
+                 supplierNo_='PE'+Ext.util.Format.date((new Date()), "Y").substring(2,5)+Ext.util.Format.date((new Date()), "Y").substring(0,2)+Ext.util.Format.date((new Date()), "dmHis");
+              /*   this.lookupReference('inquiryNo').setValue(supplierNo_);
+                // this.lookupReference('modifyUser').disabled=true;
+                 //this.lookupReference('modifyDate').disabled=true;
+                 
+                 this.lookupReference('contactsName').disabled=true;
+                 this.lookupReference('contactsTel').disabled=true;
+                 this.lookupReference('contactsFax').disabled=true;
+                 this.lookupReference('supplierName').disabled=true;
+                 
+                 
+                // this.lookupReference('localDepartment').setValue(currentUser.getAt(0).data.deptName);
+                 this.lookupReference('inquiryDate').setValue(Ext.util.Format.date((new Date()),'Y-m-d H:i:s'));
+
+            */
+             }else if(this.title=='编辑'){
+           	 for(i=0;i<this.record.getFields().length;i++){
+	                 var  name=Ext.util.Format.trim(this.record.getFields()[i].getName())
+           		 
+           		 if((this.getReferences())[name]){
+           			 if(this.lookupReference(name).is('combo')){
+               			 this.lookupReference(name).setRawValue(this.record.get(name));
+               		 }else{
+               			 this.lookupReference(name).setValue(this.record.get(name));
+               		 }
+           			this.lookupReference(name).disable();
+           		 }
+           	 }
+             }
+             this.lookupReference('subhcsuppliercustomer').title='>>>>'+this.me_.view.title_;
+    	}
+    },
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+       	 items:[
+       	        {
+       	         xtype:'panel',
+       	         defaults: {
+       	        	
+                 },
+                 layout: {
+                	 type: 'absolute'
+                 },
+                 reference:'subhcsuppliercustomer',
+                 region: "north",
+                 bodyStyle: 'background:#cbdbe0;',
+                 padding:'3 0 3 0',//(top, right, bottom, left).
+                    items: [
+                            {
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 3,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价编码',
+									    name: 'quoteCode',
+				     					reference:'quoteCode',
+									    listeners: {
+									    	beforerender: function(obj) {
+											   obj.fieldLabel+='<font size="2px" color="red">*</font>';
+									        }
+										  }
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人编码',
+									    name: 'quoteByCode',
+				     					reference:'quoteByCode'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人名称',
+									    name: 'quoteByName',
+				     					reference:'quoteByName'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价方式',
+									    name: 'quoteMode',
+				     					reference:'quoteMode'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:57,
+                            	width:980,
+                            	layout: {
+                                  	 type: 'table',
+                                       columns:4
+                                   },
+                                x: 3,
+                                y: 35,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                               	items:[
+   									{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户编码',
+	   								    name: 'custCode',
+	   								
+				     					reference:'custCode'
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									   // width:313,
+   									    fieldLabel: '客户名称',
+   									    name: 'custName',
+				     					reference:'custName',
+   									    colspan:1
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									    width:500,
+   									    fieldLabel: '客户地址',
+   									    name: 'custAddr',
+				     					reference:'custAddr',
+   									    colspan:4
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户电话',
+	   								    name: 'custTel',
+	   								
+				     					reference:'custTel'
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户传真',
+	   								    name: 'custFax',
+	   								
+				     					reference:'custFax'
+   									}
+   								
+                               	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 95,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系人名称',
+									    name: 'contact_by',
+				     					reference:'contact_by'
+									   
+									},{
+									    xtype:'datefield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系电话 ',
+									    name: 'contacTByTel',
+				     					reference:'contacTByTel'
+									   
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系邮件',
+									    name: 'contactByEmail',
+				     					reference:'contactByEmail',
+									 
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:56,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 128,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '目的站',
+									    name: 'purposePlace',
+				     					reference:'purposePlace',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '包装',
+									    name: 'packing',
+				     					reference:'packing',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '货币',
+									    name: 'currency',
+				     					reference:'currency',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货方式',
+									    name: 'deliverGoodsMode',
+				     					reference:'deliverGoodsMode',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货时间',
+									    name: 'deliverGoodsDate',
+				     					reference:'deliverGoodsDate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '付款方式',
+									    name: 'paymentMode',
+				     					reference:'paymentMode',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 188,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '运费',
+									    name: 'freight',
+				     					reference:'freight',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '保险',
+									    name: 'insurance',
+				     					reference:'insurance',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '税率',
+									    name: 'tax_rate',
+				     					reference:'tax_rate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '折扣',
+									    name: 'rebate',
+				     					reference:'rebate',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 222,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '审批人',
+									    name: 'examApprByName',
+				     					reference:'examApprByName'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:70,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 255,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注',
+									    name: 'remark',
+				     					reference:'remark',
+									    colspan:4
+									}
+                            	]
+                            }
+                     ]
+       	            
+       	        },{
+          	         xtype:'panel',
+          	         layout: {
+                   	 type: 'fit',
+                    },
+                    region: "center",
+                    bodyStyle: 'background:#ceebe0; padding:0px;border:0px',
+                    scrollable:true,
+                    items:[{
+                   	 xtype:'grid',
+                   	 enableHdMenu:false,
+                   	 sortableColumns:false,
+                   	 columnLines: true,
+                   	 enableColumnHide:false,
+                   	 enableColumnMove:false,
+                   	 store:me.store,
+                   	 features: [{
+             		        ftype: 'summary'
+             		     }],
+                   	 columns: {
+                   		    items: [
+                   		        {
+                   		            text: "序号",
+                   		            dataIndex: "id",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品编码",
+                   		            dataIndex: "prodCode",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品名称",
+                   		            dataIndex: "prodName",
+                   		            width: 150
+                   		        },{
+                   		            text: "型号规格",
+                   		            dataIndex: "typeModel",
+                   		            width: 150
+                   		        },{
+                   		            text: "数量",
+                   		            dataIndex: "qty",
+                   		            width: 150
+                   		        },{
+                   		            text: "单位",
+                   		            dataIndex: "unit",
+                   		            width: 150
+                   		        },{
+                   		            text: "单价",
+                   		            dataIndex: "univalent",
+                   		            width: 150
+                   		        },{
+                   		            text: "货币",
+                   		            dataIndex: "currency",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品描述",
+                   		            dataIndex: "prodDesc",
+                   		            width: 150
+                   		        },{
+                   		            text: "品牌",
+                   		            dataIndex: "brand",
+                   		            width: 150
+                   		        },{
+                   		            text: "制造商名称",
+                   		            dataIndex: "manufName",
+                   		            width: 150
+                   		        },{
+                   		            text: "货期（交期）",
+                   		            dataIndex: "deliveTime",
+                   		            width: 150
+                   		        },{
+                   		            text: "备注",
+                   		            dataIndex: "remark",
+                   		            width: 150
+                   		        },{
+                   		            text: "合计",
+                   		            dataIndex: "inquiredQTY_quotedPrice$",
+                   		            width: 150,
+                   		            summaryType: 'sum',
+   	                		      	summaryRenderer: function(value, summaryData, dataIndex) {
+   	                		            return'金额总计:'+value;
+   	                		        }
+                   		        }
+                   		    ]
+                   		}
+                   	 
+                   	 
+                   	 
+                 }]
+          	   }
+       	 ]
+       });
+        me.callParent();
+    }
+});
+Ext.define('Hc_Framework.view.hc.SubHcInsidePetitionController', {
+	extend : 'Hc_Common.view.BaseWinPageController',
+
+	alias : 'controller.subhcinsidepetitioncontroller',
+	flag:false,
+	record_:'',
+	init: function () {
+		var me = this;
+		var  record=Ext.create('Hc_Framework.model.HcInsidePetition',{});
+		this.record_=record
+		for(i=0;i<record.getFields().length;i++){
+			var  name=Ext.util.Format.trim(record.getFields()[i].getName())
+	   		 
+	   		if((this.getReferences())[name]){
+				this.lookupReference(name).on("change", me.onBtnchange, me);	   			 
+	   		 }
+     	}
+		me.callParent();
+	},
+	onBtnEditClick:function(){
+		for(i=0;i<this.record_.getFields().length;i++){
+            var  name=Ext.util.Format.trim(this.record_.getFields()[i].getName())
+  		 if((this.getReferences())[name]){
+  			 if('contactsName'==name||'contactsTel'==name||'contactsFax'==name||'supplierName'==name){
+  				this.lookupReference(name).disable();
+  			 }else{
+  				this.lookupReference(name).enable();
+  			 }
+  			
+  		 }
+  	    }
+		//this.view.lookupReference('inquiryNo').enable()
+
+	},
+	onBtnchange:function(obj , newValue , oldValue , eOpt){
+	 	var  store_=this.view.me_.workObject.store;
+		store_.beginUpdate();
+	 	if(obj.is('combo')){
+	 		this.view.record.set(obj.name, obj.getRawValue()); 		
+	 	}else{
+	 		this.view.record.set(obj.name, obj.getRawValue()); 	
+	 	}
+
+
+	 	
+	 	if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+	 	store_.endUpdate();
+	},
+	onBtnSaveClick:function(){
+	    if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+
+	    for(i=0;i<this.record_.getFields().length-3;i++){
+			
+			  if(!this.lookupReference(Ext.util.Format.trim(this.record_.getFields()[i].getName())).isValid()){
+				  return;
+			  }
+		}
+	    this.view.me_.workObject.store.add(this.view.record);
+	    this.view.me_.onBtnSaveClick(null,this)
+	},
+	onBtnCancelClick:function(){
+		if(this.flag){
+			  this.view.me_.workObject.store.removeAt(this.view.me_.workObject.store.getCount()-1);
+			  //this.view.me_.workObject.getStore().rejectChanges();
+			  this.view.me_.workObject.view.refresh();
+			  this.flag=false
+		}
+		
+      if(this.view.title=='编辑'){
+    		
+      	this.view.me_.workObject.store.rejectChanges()
+      	this.view.me_.workObject.view.refresh();
+    		
+    	}
+          this.view.me_.view.subformActivate=false;
+		  this.view.hide();
+	}
+	
+});
+Ext.define('Hc_Framework.view.hc.SubHcInsidePetitionModel', {
+    extend: 'Hc_Common.view.BaseWinPageModel',
+
+    alias: 'viewmodel.subhcinsidepetitionmodel'
+});
+/**
+ * Description: 请假管理  view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2014-2015
+ * Company:     hc.
+ * author:      jinxi.li
+ * Createdate:  2016/01/26
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define("Hc_Framework.view.hc.HcLeave", {
+    extend: "Hc_Common.view.BaseSimplePage",
+
+    alias: 'widget.hcleave',
+
+    
+
+    controller: "hcleavecontroller",
+
+    viewModel: {
+        type: "hcleavemodel"
+    },
+    title_:'请假管理',
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+            searchItems: [ 
+			{
+			    xtype: 'textfield', 
+			    fieldLabel: '请假单编码', 
+			    name: 'leaveCode'
+			}
+            ],
+
+            gridModel: 'Hc_Framework.model.HcLeave',
+            gridSubGrid:'',
+            gridColumns: [
+                          {
+                          	header: '请假单', 
+                          	dataIndex: 'leaveCode', 
+                          	width: '15%',
+                          	renderer: function (data, metadata, record, rowIndex, columnIndex, store) {  
+                          		return '<span onclick=""><a href="#">'+data+' </a></span>';
+                            }
+                          },
+                          {
+                          	header: '请假人', 
+                          	dataIndex: 'leaveByName', 
+                          	width: 250
+                          },
+                          {
+              				dataIndex: 'leaveType',
+              				header: '请假类别',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'drawByName',
+                				header: '提请人',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'leaveStartDate',
+                				header: '开始时间 ',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'leaveEndDate',
+              				header: '结束时间',
+              				width: 150
+                          },{
+	              				dataIndex: 'remark',
+	              				header: '备　　注',
+	              				width: 150
+	                     }             
+            ],
+            allendflag:false,
+            gridPrimaryKey: 'leaveCode',
+            gridLoadUrl: Hc.basePath + 'hc_leave_list/list.json',
+            gridLoadSubUrl: Hc.basePath + 'hc_leave_list/listAll.json',
+            gridSaveUrl: Hc.basePath + 'hc_leave_list/batchOperate.json',
+            gridExportUrl: Hc.basePath + 'hc_leave_list/do_export.json',
+            gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_leave_list/deleteMasterCustomer.json',
+            gridAddMasterCustomerUrl: Hc.basePath + 'hc_leave_list/addMasterCustomer.json',
+            gridImportUrl: Hc.basePath + '',
+            subWinTableName:'Hc_Framework.view.hc.SubHcLeave',
+            subformActivate:false
+        });
+        me.callParent();
+    }
+});
+/**
+ * Description: 请假管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+
+Ext.define('Hc_Framework.view.hc.HcLeaveController', {
+	extend : 'Hc_Common.view.BaseSimplePageController',
+
+	alias : 'controller.hcleavecontroller',
+	
+	init: function () {
+		var me = this;
+		Ext.apply(me, {
+			windowFlag:true,
+			newobj:this.view.subWinTableName
+		})
+		me.callParent();
+	},
+	onEditClick:function( obj , record , item , index , e , eOpts){
+      
+	},
+	onEditClick_:function(obj , td , cellIndex , record , tr , rowIndex , e , eOpts ){
+		var store = Ext.create('Hc_Common.store.Base', {
+            model:'Hc_Framework.model.HcLeave',
+            autoLoad: false,
+            groupField: 'inquiredQTY_quotedPrice$',
+            proxy: {
+                url: this.view.gridLoadSubUrl
+            }
+        });
+		
+		store.proxy.extraParams['quoteCode'] = record.data.quoteCode; 
+		store.load();	      	 
+		if(cellIndex==0){
+	    	Ext.create(this.view.subWinTableName,{
+	    		title:'编辑',
+	    		record:record,
+	    		me_:this,
+	    		store:store
+	    	}).show();
+	    	this.view.subformActivate=true;
+	    	this.onBtnCancelClick();
+		}
+    	
+    }
+	
+});
+/**
+ * Description: 请假管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.view.hc.HcLeaveModel', {
+    extend: 'Hc_Common.view.BaseSimplePageModel',
+
+    alias: 'viewmodel.hcleavemodel'
+});
+Ext.define("Hc_Framework.view.hc.SubHcLeave", {
+    extend: "Hc_Common.view.BaseWinPage",
+
+    alias: 'widget.subhcleave',
+
+    
+
+    controller: "subhcleavecontroller",
+
+    viewModel: {
+        type: "subhcleavemodel"
+    },
+    title:'新增',
+    width: 1000,
+    height:620,
+    
+    maxWidth:1000,
+   // maxHeight:620,
+    
+    minWidth:1000,
+    minHeight:620,
+    
+    layout:'border',//设置窗口内部布局
+    closeAction:'hide',
+    plain:false,//true则主体背景透明，false则和主体背景有些差别
+    collapsible:false,//是否可收缩
+    modal:true,//是否为模式窗体
+   
+    dockedItems:[{
+    	 xtype: 'toolbar',
+    	 dock: 'top',
+    	 items: [
+           {
+             text: '保存',
+             handler:'onBtnSaveClick',
+             glyph: Hc.Icon.btnSave
+           },
+           {
+               text: '编辑',
+               handler:'onBtnEditClick',
+               glyph: Hc.Icon.btnEdit
+           },
+           {
+               text: '取消',
+               handler:'onBtnCancelClick',
+               glyph: Hc.Icon.btnCancel
+             }
+         ]
+    }],
+    listeners: {
+    	beforeshow:function(obj ,eOpts){
+    		 var currentUser = Ext.create("Hc_Framework.store.CurrentUser");
+    	        currentUser.load();
+    		 var  userCreator;
+             var   supplierNo_;
+             
+             if(this.title=='新增'){
+            	// this.lookupReference('createUser').setValue(currentUser.getAt(0).data.userName);
+                 supplierNo_='PE'+Ext.util.Format.date((new Date()), "Y").substring(2,5)+Ext.util.Format.date((new Date()), "Y").substring(0,2)+Ext.util.Format.date((new Date()), "dmHis");
+              /*   this.lookupReference('inquiryNo').setValue(supplierNo_);
+                // this.lookupReference('modifyUser').disabled=true;
+                 //this.lookupReference('modifyDate').disabled=true;
+                 
+                 this.lookupReference('contactsName').disabled=true;
+                 this.lookupReference('contactsTel').disabled=true;
+                 this.lookupReference('contactsFax').disabled=true;
+                 this.lookupReference('supplierName').disabled=true;
+                 
+                 
+                // this.lookupReference('localDepartment').setValue(currentUser.getAt(0).data.deptName);
+                 this.lookupReference('inquiryDate').setValue(Ext.util.Format.date((new Date()),'Y-m-d H:i:s'));
+
+            */
+             }else if(this.title=='编辑'){
+           	 for(i=0;i<this.record.getFields().length;i++){
+	                 var  name=Ext.util.Format.trim(this.record.getFields()[i].getName())
+           		 
+           		 if((this.getReferences())[name]){
+           			 if(this.lookupReference(name).is('combo')){
+               			 this.lookupReference(name).setRawValue(this.record.get(name));
+               		 }else{
+               			 this.lookupReference(name).setValue(this.record.get(name));
+               		 }
+           			this.lookupReference(name).disable();
+           		 }
+           	 }
+             }
+             this.lookupReference('subhcsuppliercustomer').title='>>>>'+this.me_.view.title_;
+    	}
+    },
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+       	 items:[
+       	        {
+       	         xtype:'panel',
+       	         defaults: {
+       	        	
+                 },
+                 layout: {
+                	 type: 'absolute'
+                 },
+                 reference:'subhcsuppliercustomer',
+                 region: "north",
+                 bodyStyle: 'background:#cbdbe0;',
+                 padding:'3 0 3 0',//(top, right, bottom, left).
+                    items: [
+                            {
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 3,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价编码',
+									    name: 'quoteCode',
+				     					reference:'quoteCode',
+									    listeners: {
+									    	beforerender: function(obj) {
+											   obj.fieldLabel+='<font size="2px" color="red">*</font>';
+									        }
+										  }
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人编码',
+									    name: 'quoteByCode',
+				     					reference:'quoteByCode'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人名称',
+									    name: 'quoteByName',
+				     					reference:'quoteByName'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价方式',
+									    name: 'quoteMode',
+				     					reference:'quoteMode'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:57,
+                            	width:980,
+                            	layout: {
+                                  	 type: 'table',
+                                       columns:4
+                                   },
+                                x: 3,
+                                y: 35,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                               	items:[
+   									{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户编码',
+	   								    name: 'custCode',
+	   								
+				     					reference:'custCode'
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									   // width:313,
+   									    fieldLabel: '客户名称',
+   									    name: 'custName',
+				     					reference:'custName',
+   									    colspan:1
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									    width:500,
+   									    fieldLabel: '客户地址',
+   									    name: 'custAddr',
+				     					reference:'custAddr',
+   									    colspan:4
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户电话',
+	   								    name: 'custTel',
+	   								
+				     					reference:'custTel'
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户传真',
+	   								    name: 'custFax',
+	   								
+				     					reference:'custFax'
+   									}
+   								
+                               	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 95,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系人名称',
+									    name: 'contact_by',
+				     					reference:'contact_by'
+									   
+									},{
+									    xtype:'datefield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系电话 ',
+									    name: 'contacTByTel',
+				     					reference:'contacTByTel'
+									   
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系邮件',
+									    name: 'contactByEmail',
+				     					reference:'contactByEmail',
+									 
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:56,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 128,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '目的站',
+									    name: 'purposePlace',
+				     					reference:'purposePlace',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '包装',
+									    name: 'packing',
+				     					reference:'packing',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '货币',
+									    name: 'currency',
+				     					reference:'currency',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货方式',
+									    name: 'deliverGoodsMode',
+				     					reference:'deliverGoodsMode',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货时间',
+									    name: 'deliverGoodsDate',
+				     					reference:'deliverGoodsDate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '付款方式',
+									    name: 'paymentMode',
+				     					reference:'paymentMode',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 188,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '运费',
+									    name: 'freight',
+				     					reference:'freight',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '保险',
+									    name: 'insurance',
+				     					reference:'insurance',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '税率',
+									    name: 'tax_rate',
+				     					reference:'tax_rate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '折扣',
+									    name: 'rebate',
+				     					reference:'rebate',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 222,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '审批人',
+									    name: 'examApprByName',
+				     					reference:'examApprByName'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:70,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 255,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注',
+									    name: 'remark',
+				     					reference:'remark',
+									    colspan:4
+									}
+                            	]
+                            }
+                     ]
+       	            
+       	        },{
+          	         xtype:'panel',
+          	         layout: {
+                   	 type: 'fit',
+                    },
+                    region: "center",
+                    bodyStyle: 'background:#ceebe0; padding:0px;border:0px',
+                    scrollable:true,
+                    items:[{
+                   	 xtype:'grid',
+                   	 enableHdMenu:false,
+                   	 sortableColumns:false,
+                   	 columnLines: true,
+                   	 enableColumnHide:false,
+                   	 enableColumnMove:false,
+                   	 store:me.store,
+                   	 features: [{
+             		        ftype: 'summary'
+             		     }],
+                   	 columns: {
+                   		    items: [
+                   		        {
+                   		            text: "序号",
+                   		            dataIndex: "id",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品编码",
+                   		            dataIndex: "prodCode",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品名称",
+                   		            dataIndex: "prodName",
+                   		            width: 150
+                   		        },{
+                   		            text: "型号规格",
+                   		            dataIndex: "typeModel",
+                   		            width: 150
+                   		        },{
+                   		            text: "数量",
+                   		            dataIndex: "qty",
+                   		            width: 150
+                   		        },{
+                   		            text: "单位",
+                   		            dataIndex: "unit",
+                   		            width: 150
+                   		        },{
+                   		            text: "单价",
+                   		            dataIndex: "univalent",
+                   		            width: 150
+                   		        },{
+                   		            text: "货币",
+                   		            dataIndex: "currency",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品描述",
+                   		            dataIndex: "prodDesc",
+                   		            width: 150
+                   		        },{
+                   		            text: "品牌",
+                   		            dataIndex: "brand",
+                   		            width: 150
+                   		        },{
+                   		            text: "制造商名称",
+                   		            dataIndex: "manufName",
+                   		            width: 150
+                   		        },{
+                   		            text: "货期（交期）",
+                   		            dataIndex: "deliveTime",
+                   		            width: 150
+                   		        },{
+                   		            text: "备注",
+                   		            dataIndex: "remark",
+                   		            width: 150
+                   		        },{
+                   		            text: "合计",
+                   		            dataIndex: "inquiredQTY_quotedPrice$",
+                   		            width: 150,
+                   		            summaryType: 'sum',
+   	                		      	summaryRenderer: function(value, summaryData, dataIndex) {
+   	                		            return'金额总计:'+value;
+   	                		        }
+                   		        }
+                   		    ]
+                   		}
+                   	 
+                   	 
+                   	 
+                 }]
+          	   }
+       	 ]
+       });
+        me.callParent();
+    }
+});
+Ext.define('Hc_Framework.view.hc.SubHcLeaveController', {
+	extend : 'Hc_Common.view.BaseWinPageController',
+
+	alias : 'controller.subhcleavecontroller',
+	flag:false,
+	record_:'',
+	init: function () {
+		var me = this;
+		var  record=Ext.create('Hc_Framework.model.HcLeave',{});
+		this.record_=record
+		for(i=0;i<record.getFields().length;i++){
+			var  name=Ext.util.Format.trim(record.getFields()[i].getName())
+	   		 
+	   		if((this.getReferences())[name]){
+				this.lookupReference(name).on("change", me.onBtnchange, me);	   			 
+	   		 }
+     	}
+		me.callParent();
+	},
+	onBtnEditClick:function(){
+		for(i=0;i<this.record_.getFields().length;i++){
+            var  name=Ext.util.Format.trim(this.record_.getFields()[i].getName())
+  		 if((this.getReferences())[name]){
+  			 if('contactsName'==name||'contactsTel'==name||'contactsFax'==name||'supplierName'==name){
+  				this.lookupReference(name).disable();
+  			 }else{
+  				this.lookupReference(name).enable();
+  			 }
+  			
+  		 }
+  	    }
+		//this.view.lookupReference('inquiryNo').enable()
+
+	},
+	onBtnchange:function(obj , newValue , oldValue , eOpt){
+	 	var  store_=this.view.me_.workObject.store;
+		store_.beginUpdate();
+	 	if(obj.is('combo')){
+	 		this.view.record.set(obj.name, obj.getRawValue()); 		
+	 	}else{
+	 		this.view.record.set(obj.name, obj.getRawValue()); 	
+	 	}
+
+
+	 	
+	 	if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+	 	store_.endUpdate();
+	},
+	onBtnSaveClick:function(){
+	    if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+
+	    for(i=0;i<this.record_.getFields().length-3;i++){
+			
+			  if(!this.lookupReference(Ext.util.Format.trim(this.record_.getFields()[i].getName())).isValid()){
+				  return;
+			  }
+		}
+	    this.view.me_.workObject.store.add(this.view.record);
+	    this.view.me_.onBtnSaveClick(null,this)
+	},
+	onBtnCancelClick:function(){
+		if(this.flag){
+			  this.view.me_.workObject.store.removeAt(this.view.me_.workObject.store.getCount()-1);
+			  //this.view.me_.workObject.getStore().rejectChanges();
+			  this.view.me_.workObject.view.refresh();
+			  this.flag=false
+		}
+		
+      if(this.view.title=='编辑'){
+    		
+      	this.view.me_.workObject.store.rejectChanges()
+      	this.view.me_.workObject.view.refresh();
+    		
+    	}
+          this.view.me_.view.subformActivate=false;
+		  this.view.hide();
+	}
+	
+});
+Ext.define('Hc_Framework.view.hc.SubHcLeaveModel', {
+    extend: 'Hc_Common.view.BaseWinPageModel',
+
+    alias: 'viewmodel.subhcleavemodel'
+});
+/**
+ * Description: 借款管理  view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2014-2015
+ * Company:     hc.
+ * author:      jinxi.li
+ * Createdate:  2016/01/26
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define("Hc_Framework.view.hc.HcLoan", {
+    extend: "Hc_Common.view.BaseSimplePage",
+
+    alias: 'widget.hcloan',
+
+    
+
+    controller: "hcloancontroller",
+
+    viewModel: {
+        type: "hcloanmodel"
+    },
+    title_:'借款管理',
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+            searchItems: [ 
+			{
+			    xtype: 'textfield', 
+			    fieldLabel: '借款编号', 
+			    name: 'loanCode'
+			}
+            ],
+
+            gridModel: 'Hc_Framework.model.HcLoan',
+            gridSubGrid:'',
+            gridColumns: [
+                          {
+                          	header: '借款编号', 
+                          	dataIndex: 'loanCode', 
+                          	width: '15%',
+                          	renderer: function (data, metadata, record, rowIndex, columnIndex, store) {  
+                          		return '<span onclick=""><a href="#">'+data+' </a></span>';
+                            }
+                          },
+                          {
+                          	header: '借款主题', 
+                          	dataIndex: 'loanTheme', 
+                          	width: 250
+                          },
+                          {
+              				dataIndex: 'loanBy',
+              				header: '借 款 人',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'loanDate',
+                				header: '借款日期',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'loanAmount',
+                				header: '借款金额 ',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'drawBy',
+              				header: '提 请 人',
+              				width: 150
+                          },{
+	              				dataIndex: 'remark',
+	              				header: '备　　注',
+	              				width: 150
+	                     }             
+            ],
+            allendflag:false,
+            gridPrimaryKey: 'loanCode',
+            gridLoadUrl: Hc.basePath + 'hc_loan_list/list.json',
+            gridLoadSubUrl: Hc.basePath + 'hc_loan_list/listAll.json',
+            gridSaveUrl: Hc.basePath + 'hc_loan_list/batchOperate.json',
+            gridExportUrl: Hc.basePath + 'hc_loan_list/do_export.json',
+            gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_loan_list/deleteMasterCustomer.json',
+            gridAddMasterCustomerUrl: Hc.basePath + 'hc_loan_list/addMasterCustomer.json',
+            gridImportUrl: Hc.basePath + '',
+            subWinTableName:'Hc_Framework.view.hc.SubHcLoan',
+            subformActivate:false
+        });
+        me.callParent();
+    }
+});
+/**
+ * Description: 借款管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+
+Ext.define('Hc_Framework.view.hc.HcLoanController', {
+	extend : 'Hc_Common.view.BaseSimplePageController',
+
+	alias : 'controller.hcloancontroller',
+	
+	init: function () {
+		var me = this;
+		Ext.apply(me, {
+			windowFlag:true,
+			newobj:this.view.subWinTableName
+		})
+		me.callParent();
+	},
+	onEditClick:function( obj , record , item , index , e , eOpts){
+      
+	},
+	onEditClick_:function(obj , td , cellIndex , record , tr , rowIndex , e , eOpts ){
+		var store = Ext.create('Hc_Common.store.Base', {
+            model:'Hc_Framework.model.HcLoan',
+            autoLoad: false,
+            groupField: 'inquiredQTY_quotedPrice$',
+            proxy: {
+                url: this.view.gridLoadSubUrl
+            }
+        });
+		
+		store.proxy.extraParams['quoteCode'] = record.data.quoteCode; 
+		store.load();	      	 
+		if(cellIndex==0){
+	    	Ext.create(this.view.subWinTableName,{
+	    		title:'编辑',
+	    		record:record,
+	    		me_:this,
+	    		store:store
+	    	}).show();
+	    	this.view.subformActivate=true;
+	    	this.onBtnCancelClick();
+		}
+    	
+    }
+	
+});
+/**
+ * Description: 借款管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.view.hc.HcLoanModel', {
+    extend: 'Hc_Common.view.BaseSimplePageModel',
+
+    alias: 'viewmodel.hcloanmodel'
+});
+Ext.define("Hc_Framework.view.hc.SubHcLoan", {
+    extend: "Hc_Common.view.BaseWinPage",
+
+    alias: 'widget.subhcloan',
+
+    
+
+    controller: "subhcloancontroller",
+
+    viewModel: {
+        type: "subhcloanmodel"
+    },
+    title:'新增',
+    width: 1000,
+    height:620,
+    
+    maxWidth:1000,
+   // maxHeight:620,
+    
+    minWidth:1000,
+    minHeight:620,
+    
+    layout:'border',//设置窗口内部布局
+    closeAction:'hide',
+    plain:false,//true则主体背景透明，false则和主体背景有些差别
+    collapsible:false,//是否可收缩
+    modal:true,//是否为模式窗体
+   
+    dockedItems:[{
+    	 xtype: 'toolbar',
+    	 dock: 'top',
+    	 items: [
+           {
+             text: '保存',
+             handler:'onBtnSaveClick',
+             glyph: Hc.Icon.btnSave
+           },
+           {
+               text: '编辑',
+               handler:'onBtnEditClick',
+               glyph: Hc.Icon.btnEdit
+           },
+           {
+               text: '取消',
+               handler:'onBtnCancelClick',
+               glyph: Hc.Icon.btnCancel
+             }
+         ]
+    }],
+    listeners: {
+    	beforeshow:function(obj ,eOpts){
+    		 var currentUser = Ext.create("Hc_Framework.store.CurrentUser");
+    	        currentUser.load();
+    		 var  userCreator;
+             var   supplierNo_;
+             
+             if(this.title=='新增'){
+            	// this.lookupReference('createUser').setValue(currentUser.getAt(0).data.userName);
+                 supplierNo_='PE'+Ext.util.Format.date((new Date()), "Y").substring(2,5)+Ext.util.Format.date((new Date()), "Y").substring(0,2)+Ext.util.Format.date((new Date()), "dmHis");
+              /*   this.lookupReference('inquiryNo').setValue(supplierNo_);
+                // this.lookupReference('modifyUser').disabled=true;
+                 //this.lookupReference('modifyDate').disabled=true;
+                 
+                 this.lookupReference('contactsName').disabled=true;
+                 this.lookupReference('contactsTel').disabled=true;
+                 this.lookupReference('contactsFax').disabled=true;
+                 this.lookupReference('supplierName').disabled=true;
+                 
+                 
+                // this.lookupReference('localDepartment').setValue(currentUser.getAt(0).data.deptName);
+                 this.lookupReference('inquiryDate').setValue(Ext.util.Format.date((new Date()),'Y-m-d H:i:s'));
+
+            */
+             }else if(this.title=='编辑'){
+           	 for(i=0;i<this.record.getFields().length;i++){
+	                 var  name=Ext.util.Format.trim(this.record.getFields()[i].getName())
+           		 
+           		 if((this.getReferences())[name]){
+           			 if(this.lookupReference(name).is('combo')){
+               			 this.lookupReference(name).setRawValue(this.record.get(name));
+               		 }else{
+               			 this.lookupReference(name).setValue(this.record.get(name));
+               		 }
+           			this.lookupReference(name).disable();
+           		 }
+           	 }
+             }
+             this.lookupReference('subhcsuppliercustomer').title='>>>>'+this.me_.view.title_;
+    	}
+    },
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+       	 items:[
+       	        {
+       	         xtype:'panel',
+       	         defaults: {
+       	        	
+                 },
+                 layout: {
+                	 type: 'absolute'
+                 },
+                 reference:'subhcsuppliercustomer',
+                 region: "north",
+                 bodyStyle: 'background:#cbdbe0;',
+                 padding:'3 0 3 0',//(top, right, bottom, left).
+                    items: [
+                            {
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 3,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价编码',
+									    name: 'quoteCode',
+				     					reference:'quoteCode',
+									    listeners: {
+									    	beforerender: function(obj) {
+											   obj.fieldLabel+='<font size="2px" color="red">*</font>';
+									        }
+										  }
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人编码',
+									    name: 'quoteByCode',
+				     					reference:'quoteByCode'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人名称',
+									    name: 'quoteByName',
+				     					reference:'quoteByName'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价方式',
+									    name: 'quoteMode',
+				     					reference:'quoteMode'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:57,
+                            	width:980,
+                            	layout: {
+                                  	 type: 'table',
+                                       columns:4
+                                   },
+                                x: 3,
+                                y: 35,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                               	items:[
+   									{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户编码',
+	   								    name: 'custCode',
+	   								
+				     					reference:'custCode'
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									   // width:313,
+   									    fieldLabel: '客户名称',
+   									    name: 'custName',
+				     					reference:'custName',
+   									    colspan:1
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									    width:500,
+   									    fieldLabel: '客户地址',
+   									    name: 'custAddr',
+				     					reference:'custAddr',
+   									    colspan:4
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户电话',
+	   								    name: 'custTel',
+	   								
+				     					reference:'custTel'
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户传真',
+	   								    name: 'custFax',
+	   								
+				     					reference:'custFax'
+   									}
+   								
+                               	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 95,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系人名称',
+									    name: 'contact_by',
+				     					reference:'contact_by'
+									   
+									},{
+									    xtype:'datefield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系电话 ',
+									    name: 'contacTByTel',
+				     					reference:'contacTByTel'
+									   
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系邮件',
+									    name: 'contactByEmail',
+				     					reference:'contactByEmail',
+									 
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:56,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 128,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '目的站',
+									    name: 'purposePlace',
+				     					reference:'purposePlace',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '包装',
+									    name: 'packing',
+				     					reference:'packing',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '货币',
+									    name: 'currency',
+				     					reference:'currency',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货方式',
+									    name: 'deliverGoodsMode',
+				     					reference:'deliverGoodsMode',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货时间',
+									    name: 'deliverGoodsDate',
+				     					reference:'deliverGoodsDate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '付款方式',
+									    name: 'paymentMode',
+				     					reference:'paymentMode',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 188,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '运费',
+									    name: 'freight',
+				     					reference:'freight',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '保险',
+									    name: 'insurance',
+				     					reference:'insurance',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '税率',
+									    name: 'tax_rate',
+				     					reference:'tax_rate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '折扣',
+									    name: 'rebate',
+				     					reference:'rebate',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 222,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '审批人',
+									    name: 'examApprByName',
+				     					reference:'examApprByName'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:70,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 255,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注',
+									    name: 'remark',
+				     					reference:'remark',
+									    colspan:4
+									}
+                            	]
+                            }
+                     ]
+       	            
+       	        },{
+          	         xtype:'panel',
+          	         layout: {
+                   	 type: 'fit',
+                    },
+                    region: "center",
+                    bodyStyle: 'background:#ceebe0; padding:0px;border:0px',
+                    scrollable:true,
+                    items:[{
+                   	 xtype:'grid',
+                   	 enableHdMenu:false,
+                   	 sortableColumns:false,
+                   	 columnLines: true,
+                   	 enableColumnHide:false,
+                   	 enableColumnMove:false,
+                   	 store:me.store,
+                   	 features: [{
+             		        ftype: 'summary'
+             		     }],
+                   	 columns: {
+                   		    items: [
+                   		        {
+                   		            text: "序号",
+                   		            dataIndex: "id",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品编码",
+                   		            dataIndex: "prodCode",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品名称",
+                   		            dataIndex: "prodName",
+                   		            width: 150
+                   		        },{
+                   		            text: "型号规格",
+                   		            dataIndex: "typeModel",
+                   		            width: 150
+                   		        },{
+                   		            text: "数量",
+                   		            dataIndex: "qty",
+                   		            width: 150
+                   		        },{
+                   		            text: "单位",
+                   		            dataIndex: "unit",
+                   		            width: 150
+                   		        },{
+                   		            text: "单价",
+                   		            dataIndex: "univalent",
+                   		            width: 150
+                   		        },{
+                   		            text: "货币",
+                   		            dataIndex: "currency",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品描述",
+                   		            dataIndex: "prodDesc",
+                   		            width: 150
+                   		        },{
+                   		            text: "品牌",
+                   		            dataIndex: "brand",
+                   		            width: 150
+                   		        },{
+                   		            text: "制造商名称",
+                   		            dataIndex: "manufName",
+                   		            width: 150
+                   		        },{
+                   		            text: "货期（交期）",
+                   		            dataIndex: "deliveTime",
+                   		            width: 150
+                   		        },{
+                   		            text: "备注",
+                   		            dataIndex: "remark",
+                   		            width: 150
+                   		        },{
+                   		            text: "合计",
+                   		            dataIndex: "inquiredQTY_quotedPrice$",
+                   		            width: 150,
+                   		            summaryType: 'sum',
+   	                		      	summaryRenderer: function(value, summaryData, dataIndex) {
+   	                		            return'金额总计:'+value;
+   	                		        }
+                   		        }
+                   		    ]
+                   		}
+                   	 
+                   	 
+                   	 
+                 }]
+          	   }
+       	 ]
+       });
+        me.callParent();
+    }
+});
+Ext.define('Hc_Framework.view.hc.SubHcLoanController', {
+	extend : 'Hc_Common.view.BaseWinPageController',
+
+	alias : 'controller.subhcloancontroller',
+	flag:false,
+	record_:'',
+	init: function () {
+		var me = this;
+		var  record=Ext.create('Hc_Framework.model.HcLoan',{});
+		this.record_=record
+		for(i=0;i<record.getFields().length;i++){
+			var  name=Ext.util.Format.trim(record.getFields()[i].getName())
+	   		 
+	   		if((this.getReferences())[name]){
+				this.lookupReference(name).on("change", me.onBtnchange, me);	   			 
+	   		 }
+     	}
+		me.callParent();
+	},
+	onBtnEditClick:function(){
+		for(i=0;i<this.record_.getFields().length;i++){
+            var  name=Ext.util.Format.trim(this.record_.getFields()[i].getName())
+  		 if((this.getReferences())[name]){
+  			 if('contactsName'==name||'contactsTel'==name||'contactsFax'==name||'supplierName'==name){
+  				this.lookupReference(name).disable();
+  			 }else{
+  				this.lookupReference(name).enable();
+  			 }
+  			
+  		 }
+  	    }
+		//this.view.lookupReference('inquiryNo').enable()
+
+	},
+	onBtnchange:function(obj , newValue , oldValue , eOpt){
+	 	var  store_=this.view.me_.workObject.store;
+		store_.beginUpdate();
+	 	if(obj.is('combo')){
+	 		this.view.record.set(obj.name, obj.getRawValue()); 		
+	 	}else{
+	 		this.view.record.set(obj.name, obj.getRawValue()); 	
+	 	}
+
+
+	 	
+	 	if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+	 	store_.endUpdate();
+	},
+	onBtnSaveClick:function(){
+	    if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+
+	    for(i=0;i<this.record_.getFields().length-3;i++){
+			
+			  if(!this.lookupReference(Ext.util.Format.trim(this.record_.getFields()[i].getName())).isValid()){
+				  return;
+			  }
+		}
+	    this.view.me_.workObject.store.add(this.view.record);
+	    this.view.me_.onBtnSaveClick(null,this)
+	},
+	onBtnCancelClick:function(){
+		if(this.flag){
+			  this.view.me_.workObject.store.removeAt(this.view.me_.workObject.store.getCount()-1);
+			  //this.view.me_.workObject.getStore().rejectChanges();
+			  this.view.me_.workObject.view.refresh();
+			  this.flag=false
+		}
+		
+      if(this.view.title=='编辑'){
+    		
+      	this.view.me_.workObject.store.rejectChanges()
+      	this.view.me_.workObject.view.refresh();
+    		
+    	}
+          this.view.me_.view.subformActivate=false;
+		  this.view.hide();
+	}
+	
+});
+Ext.define('Hc_Framework.view.hc.SubHcLoanModel', {
+    extend: 'Hc_Common.view.BaseWinPageModel',
+
+    alias: 'viewmodel.subhcloanmodel'
+});
+/**
+ * Description: 办公用品管理  view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2014-2015
+ * Company:     hc.
+ * author:      jinxi.li
+ * Createdate:  2016/01/26
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define("Hc_Framework.view.hc.HcOfficeSupplies", {
+    extend: "Hc_Common.view.BaseSimplePage",
+
+    alias: 'widget.hcofficesupplies',
+
+    
+
+    controller: "hcofficesuppliescontroller",
+
+    viewModel: {
+        type: "hcofficesuppliesmodel"
+    },
+    title_:'办公用品管理 ',
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+            searchItems: [ 
+			{
+			    xtype: 'textfield', 
+			    fieldLabel: '办公用品编码', 
+			    name: 'offSupplCode'
+			}
+            ],
+
+            gridModel: 'Hc_Framework.model.HcOfficeSupplies',
+            gridSubGrid:'',
+            gridColumns: [
+                          {
+                          	header: '办公用品编码', 
+                          	dataIndex: 'offSupplCode', 
+                          	width: '15%',
+                          	renderer: function (data, metadata, record, rowIndex, columnIndex, store) {  
+                          		return '<span onclick=""><a href="#">'+data+' </a></span>';
+                            }
+                          },
+                          {
+                          	header: '申 请 人', 
+                          	dataIndex: 'applyBy', 
+                          	width: 250
+                          },
+                          {
+              				dataIndex: 'applyForBy',
+              				header: '申 领 人',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'category',
+                				header: '类　　别',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'applyDate',
+                				header: '申请日期 ',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'examineandapproveBy',
+              				header: '审 批 人',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'remark',
+                				header: '备注',
+                				width: 150
+                          }            
+            ],
+            allendflag:false,
+            gridPrimaryKey: 'offSupplCode',
+            gridLoadUrl: Hc.basePath + 'hc_office_supplies_list/list.json',
+            gridLoadSubUrl: Hc.basePath + 'hc_office_supplies_list/listAll.json',
+            gridSaveUrl: Hc.basePath + 'hc_office_supplies_list/batchOperate.json',
+            gridExportUrl: Hc.basePath + 'hc_office_supplies_list/do_export.json',
+            gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_office_supplies_list/deleteMasterCustomer.json',
+            gridAddMasterCustomerUrl: Hc.basePath + 'hc_office_supplies_list/addMasterCustomer.json',
+            gridImportUrl: Hc.basePath + '',
+            subWinTableName:'Hc_Framework.view.hc.SubHcOfficeSupplies',
+            subformActivate:false
+        });
+        me.callParent();
+    }
+});
+/**
+ * Description: 办公用品管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+
+Ext.define('Hc_Framework.view.hc.HcOfficeSuppliesController', {
+	extend : 'Hc_Common.view.BaseSimplePageController',
+
+	alias : 'controller.hcofficesuppliescontroller',
+	
+	init: function () {
+		var me = this;
+		Ext.apply(me, {
+			windowFlag:true,
+			newobj:this.view.subWinTableName
+		})
+		me.callParent();
+	},
+	onEditClick:function( obj , record , item , index , e , eOpts){
+      
+	},
+	onEditClick_:function(obj , td , cellIndex , record , tr , rowIndex , e , eOpts ){
+		var store = Ext.create('Hc_Common.store.Base', {
+            model:'Hc_Framework.model.HcOfficeSupplies',
+            autoLoad: false,
+            groupField: 'inquiredQTY_quotedPrice$',
+            proxy: {
+                url: this.view.gridLoadSubUrl
+            }
+        });
+		
+		store.proxy.extraParams['quoteCode'] = record.data.quoteCode; 
+		store.load();	      	 
+		if(cellIndex==0){
+	    	Ext.create(this.view.subWinTableName,{
+	    		title:'编辑',
+	    		record:record,
+	    		me_:this,
+	    		store:store
+	    	}).show();
+	    	this.view.subformActivate=true;
+	    	this.onBtnCancelClick();
+		}
+    	
+    }
+	
+});
+/**
+ * Description: 办公用品管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.view.hc.HcOfficeSuppliesModel', {
+    extend: 'Hc_Common.view.BaseSimplePageModel',
+
+    alias: 'viewmodel.hcofficesuppliesmodel'
+});
+Ext.define("Hc_Framework.view.hc.SubHcOfficeSupplies", {
+    extend: "Hc_Common.view.BaseWinPage",
+
+    alias: 'widget.subhcofficesupplies',
+
+    
+
+    controller: "subhcofficesuppliescontroller",
+
+    viewModel: {
+        type: "subhcofficesuppliesmodel"
+    },
+    title:'新增',
+    width: 1000,
+    height:620,
+    
+    maxWidth:1000,
+   // maxHeight:620,
+    
+    minWidth:1000,
+    minHeight:620,
+    
+    layout:'border',//设置窗口内部布局
+    closeAction:'hide',
+    plain:false,//true则主体背景透明，false则和主体背景有些差别
+    collapsible:false,//是否可收缩
+    modal:true,//是否为模式窗体
+   
+    dockedItems:[{
+    	 xtype: 'toolbar',
+    	 dock: 'top',
+    	 items: [
+           {
+             text: '保存',
+             handler:'onBtnSaveClick',
+             glyph: Hc.Icon.btnSave
+           },
+           {
+               text: '编辑',
+               handler:'onBtnEditClick',
+               glyph: Hc.Icon.btnEdit
+           },
+           {
+               text: '取消',
+               handler:'onBtnCancelClick',
+               glyph: Hc.Icon.btnCancel
+             }
+         ]
+    }],
+    listeners: {
+    	beforeshow:function(obj ,eOpts){
+    		 var currentUser = Ext.create("Hc_Framework.store.CurrentUser");
+    	        currentUser.load();
+    		 var  userCreator;
+             var   supplierNo_;
+             
+             if(this.title=='新增'){
+            	// this.lookupReference('createUser').setValue(currentUser.getAt(0).data.userName);
+                 supplierNo_='PE'+Ext.util.Format.date((new Date()), "Y").substring(2,5)+Ext.util.Format.date((new Date()), "Y").substring(0,2)+Ext.util.Format.date((new Date()), "dmHis");
+              /*   this.lookupReference('inquiryNo').setValue(supplierNo_);
+                // this.lookupReference('modifyUser').disabled=true;
+                 //this.lookupReference('modifyDate').disabled=true;
+                 
+                 this.lookupReference('contactsName').disabled=true;
+                 this.lookupReference('contactsTel').disabled=true;
+                 this.lookupReference('contactsFax').disabled=true;
+                 this.lookupReference('supplierName').disabled=true;
+                 
+                 
+                // this.lookupReference('localDepartment').setValue(currentUser.getAt(0).data.deptName);
+                 this.lookupReference('inquiryDate').setValue(Ext.util.Format.date((new Date()),'Y-m-d H:i:s'));
+
+            */
+             }else if(this.title=='编辑'){
+           	 for(i=0;i<this.record.getFields().length;i++){
+	                 var  name=Ext.util.Format.trim(this.record.getFields()[i].getName())
+           		 
+           		 if((this.getReferences())[name]){
+           			 if(this.lookupReference(name).is('combo')){
+               			 this.lookupReference(name).setRawValue(this.record.get(name));
+               		 }else{
+               			 this.lookupReference(name).setValue(this.record.get(name));
+               		 }
+           			this.lookupReference(name).disable();
+           		 }
+           	 }
+             }
+             this.lookupReference('subhcsuppliercustomer').title='>>>>'+this.me_.view.title_;
+    	}
+    },
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+       	 items:[
+       	        {
+       	         xtype:'panel',
+       	         defaults: {
+       	        	
+                 },
+                 layout: {
+                	 type: 'absolute'
+                 },
+                 reference:'subhcsuppliercustomer',
+                 region: "north",
+                 bodyStyle: 'background:#cbdbe0;',
+                 padding:'3 0 3 0',//(top, right, bottom, left).
+                    items: [
+                            {
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 3,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '办公用品编码',
+									    name: 'offSupplCode',
+				     					reference:'offSupplCode',
+									    listeners: {
+									    	beforerender: function(obj) {
+											   obj.fieldLabel+='<font size="2px" color="red">*</font>';
+									        }
+										  }
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:57,
+                            	width:980,
+                            	layout: {
+                                  	 type: 'table',
+                                       columns:4
+                                   },
+                                x: 3,
+                                y: 35,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                               	items:[
+   									{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '申 请 人',
+	   								    name: 'applyBy',
+	   								
+				     					reference:'applyBy'
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									   // width:313,
+   									    fieldLabel: '申 领 人',
+   									    name: 'applyForBy',
+				     					reference:'applyForBy',
+   									    colspan:1
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									    width:500,
+   									    fieldLabel: '联 系 人',
+   									    name: 'contactTel',
+				     					reference:'contactTel',
+   									    colspan:1
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '联系电话',
+	   								    name: 'contactTel',
+	   								
+				     					reference:'contactTel'
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '申请日期',
+	   								    name: 'applyDate',
+	   								
+				     					reference:'applyDate'
+   									}
+   								
+                               	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 95,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '类　　别',
+									    name: 'category',
+				     					reference:'category'
+									   
+									},{
+									    xtype:'datefield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '货　　币 ',
+									    name: 'currency',
+				     					reference:'currency'
+									   
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 222,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '审批人',
+									    name: 'examApprByName',
+				     					reference:'examApprByName'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:70,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 255,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注',
+									    name: 'remark',
+				     					reference:'remark',
+									    colspan:4
+									}
+                            	]
+                            }
+                     ]
+       	            
+       	        }
+       	 ]
+       });
+        me.callParent();
+    }
+});
+Ext.define('Hc_Framework.view.hc.SubHcOfficeSuppliesController', {
+	extend : 'Hc_Common.view.BaseWinPageController',
+
+	alias : 'controller.subhcofficesuppliescontroller',
+	flag:false,
+	record_:'',
+	init: function () {
+		var me = this;
+		var  record=Ext.create('Hc_Framework.model.HcOfficeSupplies',{});
+		this.record_=record
+		for(i=0;i<record.getFields().length;i++){
+			var  name=Ext.util.Format.trim(record.getFields()[i].getName())
+	   		 
+	   		if((this.getReferences())[name]){
+				this.lookupReference(name).on("change", me.onBtnchange, me);	   			 
+	   		 }
+     	}
+		me.callParent();
+	},
+	onBtnEditClick:function(){
+		for(i=0;i<this.record_.getFields().length;i++){
+            var  name=Ext.util.Format.trim(this.record_.getFields()[i].getName())
+  		 if((this.getReferences())[name]){
+  			 if('contactsName'==name||'contactsTel'==name||'contactsFax'==name||'supplierName'==name){
+  				this.lookupReference(name).disable();
+  			 }else{
+  				this.lookupReference(name).enable();
+  			 }
+  			
+  		 }
+  	    }
+		//this.view.lookupReference('inquiryNo').enable()
+
+	},
+	onBtnchange:function(obj , newValue , oldValue , eOpt){
+	 	var  store_=this.view.me_.workObject.store;
+		store_.beginUpdate();
+	 	if(obj.is('combo')){
+	 		this.view.record.set(obj.name, obj.getRawValue()); 		
+	 	}else{
+	 		this.view.record.set(obj.name, obj.getRawValue()); 	
+	 	}
+
+
+	 	
+	 	if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+	 	store_.endUpdate();
+	},
+	onBtnSaveClick:function(){
+	    if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+
+	    for(i=0;i<this.record_.getFields().length-3;i++){
+			
+			  if(!this.lookupReference(Ext.util.Format.trim(this.record_.getFields()[i].getName())).isValid()){
+				  return;
+			  }
+		}
+	    this.view.me_.workObject.store.add(this.view.record);
+	    this.view.me_.onBtnSaveClick(null,this)
+	},
+	onBtnCancelClick:function(){
+		if(this.flag){
+			  this.view.me_.workObject.store.removeAt(this.view.me_.workObject.store.getCount()-1);
+			  //this.view.me_.workObject.getStore().rejectChanges();
+			  this.view.me_.workObject.view.refresh();
+			  this.flag=false
+		}
+		
+      if(this.view.title=='编辑'){
+    		
+      	this.view.me_.workObject.store.rejectChanges()
+      	this.view.me_.workObject.view.refresh();
+    		
+    	}
+          this.view.me_.view.subformActivate=false;
+		  this.view.hide();
+	}
+	
+});
+Ext.define('Hc_Framework.view.hc.SubHcOfficeSuppliesModel', {
+    extend: 'Hc_Common.view.BaseWinPageModel',
+
+    alias: 'viewmodel.subhcofficesuppliesmodel'
+});
+/**
+ * Description: 付款管理  view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2014-2015
+ * Company:     hc.
+ * author:      jinxi.li
+ * Createdate:  2016/01/26
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define("Hc_Framework.view.hc.HcPayment", {
+    extend: "Hc_Common.view.BaseSimplePage",
+
+    alias: 'widget.hcpayment',
+
+    
+
+    controller: "hcpaymentcontroller",
+
+    viewModel: {
+        type: "hcpaymentmodel"
+    },
+    title_:'付款管理',
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+            searchItems: [ 
+			{
+			    xtype: 'textfield', 
+			    fieldLabel: '付款编号', 
+			    name: 'paymentCode'
+			}
+            ],
+
+            gridModel: 'Hc_Framework.model.HcPayment',
+            gridSubGrid:'',
+            gridColumns: [
+                          {
+                          	header: '付款编号', 
+                          	dataIndex: 'paymentCode', 
+                          	width: '15%',
+                          	renderer: function (data, metadata, record, rowIndex, columnIndex, store) {  
+                          		return '<span onclick=""><a href="#">'+data+' </a></span>';
+                            }
+                          },
+                          {
+                          	header: '付款日期', 
+                          	dataIndex: 'paymentDate', 
+                          	width: 250
+                          },
+                          {
+              				dataIndex: 'applyBy',
+              				header: '申 请 人',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'applyDept',
+                				header: '申请部门',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'ReceivOrganiz',
+                				header: '收款单位 ',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'ReceivAccount',
+              				header: '收款帐户',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'bankAccount',
+                				header: '开户银行',
+                				width: 150
+                         },
+                         {
+                  				dataIndex: 'paymentMode',
+                  				header: '付款方式',
+                  				width: 150
+                         },{
+	              				dataIndex: 'remark',
+	              				header: '备　　注',
+	              				width: 150
+	                     }             
+            ],
+            allendflag:false,
+            gridPrimaryKey: 'paymentCode',
+            gridLoadUrl: Hc.basePath + 'hc_payment_list/list.json',
+            gridLoadSubUrl: Hc.basePath + 'hc_payment_list/listAll.json',
+            gridSaveUrl: Hc.basePath + 'hc_payment_list/batchOperate.json',
+            gridExportUrl: Hc.basePath + 'hc_payment_list/do_export.json',
+            gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_payment_list/deleteMasterCustomer.json',
+            gridAddMasterCustomerUrl: Hc.basePath + 'hc_payment_list/addMasterCustomer.json',
+            gridImportUrl: Hc.basePath + '',
+            subWinTableName:'Hc_Framework.view.hc.SubHcPayment',
+            subformActivate:false
+        });
+        me.callParent();
+    }
+});
+/**
+ * Description: 付款管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+
+Ext.define('Hc_Framework.view.hc.HcPaymentController', {
+	extend : 'Hc_Common.view.BaseSimplePageController',
+
+	alias : 'controller.hcpaymentcontroller',
+	
+	init: function () {
+		var me = this;
+		Ext.apply(me, {
+			windowFlag:true,
+			newobj:this.view.subWinTableName
+		})
+		me.callParent();
+	},
+	onEditClick:function( obj , record , item , index , e , eOpts){
+      
+	},
+	onEditClick_:function(obj , td , cellIndex , record , tr , rowIndex , e , eOpts ){
+		var store = Ext.create('Hc_Common.store.Base', {
+            model:'Hc_Framework.model.HcPayment',
+            autoLoad: false,
+            groupField: 'inquiredQTY_quotedPrice$',
+            proxy: {
+                url: this.view.gridLoadSubUrl
+            }
+        });
+		
+		store.proxy.extraParams['quoteCode'] = record.data.quoteCode; 
+		store.load();	      	 
+		if(cellIndex==0){
+	    	Ext.create(this.view.subWinTableName,{
+	    		title:'编辑',
+	    		record:record,
+	    		me_:this,
+	    		store:store
+	    	}).show();
+	    	this.view.subformActivate=true;
+	    	this.onBtnCancelClick();
+		}
+    	
+    }
+	
+});
+/**
+ * Description: 付款管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.view.hc.HcPaymentModel', {
+    extend: 'Hc_Common.view.BaseSimplePageModel',
+
+    alias: 'viewmodel.hcpaymentmodel'
+});
+Ext.define("Hc_Framework.view.hc.SubHcPayment", {
+    extend: "Hc_Common.view.BaseWinPage",
+
+    alias: 'widget.subhcpayment',
+
+    
+
+    controller: "subhcpaymentcontroller",
+
+    viewModel: {
+        type: "subhcpaymentmodel"
+    },
+    title:'新增',
+    width: 1000,
+    height:620,
+    
+    maxWidth:1000,
+   // maxHeight:620,
+    
+    minWidth:1000,
+    minHeight:620,
+    
+    layout:'border',//设置窗口内部布局
+    closeAction:'hide',
+    plain:false,//true则主体背景透明，false则和主体背景有些差别
+    collapsible:false,//是否可收缩
+    modal:true,//是否为模式窗体
+   
+    dockedItems:[{
+    	 xtype: 'toolbar',
+    	 dock: 'top',
+    	 items: [
+           {
+             text: '保存',
+             handler:'onBtnSaveClick',
+             glyph: Hc.Icon.btnSave
+           },
+           {
+               text: '编辑',
+               handler:'onBtnEditClick',
+               glyph: Hc.Icon.btnEdit
+           },
+           {
+               text: '取消',
+               handler:'onBtnCancelClick',
+               glyph: Hc.Icon.btnCancel
+             }
+         ]
+    }],
+    listeners: {
+    	beforeshow:function(obj ,eOpts){
+    		 var currentUser = Ext.create("Hc_Framework.store.CurrentUser");
+    	        currentUser.load();
+    		 var  userCreator;
+             var   supplierNo_;
+             
+             if(this.title=='新增'){
+            	// this.lookupReference('createUser').setValue(currentUser.getAt(0).data.userName);
+                 supplierNo_='PE'+Ext.util.Format.date((new Date()), "Y").substring(2,5)+Ext.util.Format.date((new Date()), "Y").substring(0,2)+Ext.util.Format.date((new Date()), "dmHis");
+              /*   this.lookupReference('inquiryNo').setValue(supplierNo_);
+                // this.lookupReference('modifyUser').disabled=true;
+                 //this.lookupReference('modifyDate').disabled=true;
+                 
+                 this.lookupReference('contactsName').disabled=true;
+                 this.lookupReference('contactsTel').disabled=true;
+                 this.lookupReference('contactsFax').disabled=true;
+                 this.lookupReference('supplierName').disabled=true;
+                 
+                 
+                // this.lookupReference('localDepartment').setValue(currentUser.getAt(0).data.deptName);
+                 this.lookupReference('inquiryDate').setValue(Ext.util.Format.date((new Date()),'Y-m-d H:i:s'));
+
+            */
+             }else if(this.title=='编辑'){
+           	 for(i=0;i<this.record.getFields().length;i++){
+	                 var  name=Ext.util.Format.trim(this.record.getFields()[i].getName())
+           		 
+           		 if((this.getReferences())[name]){
+           			 if(this.lookupReference(name).is('combo')){
+               			 this.lookupReference(name).setRawValue(this.record.get(name));
+               		 }else{
+               			 this.lookupReference(name).setValue(this.record.get(name));
+               		 }
+           			this.lookupReference(name).disable();
+           		 }
+           	 }
+             }
+             this.lookupReference('subhcsuppliercustomer').title='>>>>'+this.me_.view.title_;
+    	}
+    },
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+       	 items:[
+       	        {
+       	         xtype:'panel',
+       	         defaults: {
+       	        	
+                 },
+                 layout: {
+                	 type: 'absolute'
+                 },
+                 reference:'subhcsuppliercustomer',
+                 region: "north",
+                 bodyStyle: 'background:#cbdbe0;',
+                 padding:'3 0 3 0',//(top, right, bottom, left).
+                    items: [
+                            {
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 3,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价编码',
+									    name: 'quoteCode',
+				     					reference:'quoteCode',
+									    listeners: {
+									    	beforerender: function(obj) {
+											   obj.fieldLabel+='<font size="2px" color="red">*</font>';
+									        }
+										  }
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人编码',
+									    name: 'quoteByCode',
+				     					reference:'quoteByCode'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人名称',
+									    name: 'quoteByName',
+				     					reference:'quoteByName'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价方式',
+									    name: 'quoteMode',
+				     					reference:'quoteMode'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:57,
+                            	width:980,
+                            	layout: {
+                                  	 type: 'table',
+                                       columns:4
+                                   },
+                                x: 3,
+                                y: 35,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                               	items:[
+   									{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户编码',
+	   								    name: 'custCode',
+	   								
+				     					reference:'custCode'
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									   // width:313,
+   									    fieldLabel: '客户名称',
+   									    name: 'custName',
+				     					reference:'custName',
+   									    colspan:1
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									    width:500,
+   									    fieldLabel: '客户地址',
+   									    name: 'custAddr',
+				     					reference:'custAddr',
+   									    colspan:4
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户电话',
+	   								    name: 'custTel',
+	   								
+				     					reference:'custTel'
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户传真',
+	   								    name: 'custFax',
+	   								
+				     					reference:'custFax'
+   									}
+   								
+                               	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 95,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系人名称',
+									    name: 'contact_by',
+				     					reference:'contact_by'
+									   
+									},{
+									    xtype:'datefield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系电话 ',
+									    name: 'contacTByTel',
+				     					reference:'contacTByTel'
+									   
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系邮件',
+									    name: 'contactByEmail',
+				     					reference:'contactByEmail',
+									 
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:56,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 128,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '目的站',
+									    name: 'purposePlace',
+				     					reference:'purposePlace',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '包装',
+									    name: 'packing',
+				     					reference:'packing',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '货币',
+									    name: 'currency',
+				     					reference:'currency',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货方式',
+									    name: 'deliverGoodsMode',
+				     					reference:'deliverGoodsMode',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货时间',
+									    name: 'deliverGoodsDate',
+				     					reference:'deliverGoodsDate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '付款方式',
+									    name: 'paymentMode',
+				     					reference:'paymentMode',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 188,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '运费',
+									    name: 'freight',
+				     					reference:'freight',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '保险',
+									    name: 'insurance',
+				     					reference:'insurance',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '税率',
+									    name: 'tax_rate',
+				     					reference:'tax_rate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '折扣',
+									    name: 'rebate',
+				     					reference:'rebate',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 222,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '审批人',
+									    name: 'examApprByName',
+				     					reference:'examApprByName'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:70,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 255,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注',
+									    name: 'remark',
+				     					reference:'remark',
+									    colspan:4
+									}
+                            	]
+                            }
+                     ]
+       	            
+       	        },{
+          	         xtype:'panel',
+          	         layout: {
+                   	 type: 'fit',
+                    },
+                    region: "center",
+                    bodyStyle: 'background:#ceebe0; padding:0px;border:0px',
+                    scrollable:true,
+                    items:[{
+                   	 xtype:'grid',
+                   	 enableHdMenu:false,
+                   	 sortableColumns:false,
+                   	 columnLines: true,
+                   	 enableColumnHide:false,
+                   	 enableColumnMove:false,
+                   	 store:me.store,
+                   	 features: [{
+             		        ftype: 'summary'
+             		     }],
+                   	 columns: {
+                   		    items: [
+                   		        {
+                   		            text: "序号",
+                   		            dataIndex: "id",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品编码",
+                   		            dataIndex: "prodCode",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品名称",
+                   		            dataIndex: "prodName",
+                   		            width: 150
+                   		        },{
+                   		            text: "型号规格",
+                   		            dataIndex: "typeModel",
+                   		            width: 150
+                   		        },{
+                   		            text: "数量",
+                   		            dataIndex: "qty",
+                   		            width: 150
+                   		        },{
+                   		            text: "单位",
+                   		            dataIndex: "unit",
+                   		            width: 150
+                   		        },{
+                   		            text: "单价",
+                   		            dataIndex: "univalent",
+                   		            width: 150
+                   		        },{
+                   		            text: "货币",
+                   		            dataIndex: "currency",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品描述",
+                   		            dataIndex: "prodDesc",
+                   		            width: 150
+                   		        },{
+                   		            text: "品牌",
+                   		            dataIndex: "brand",
+                   		            width: 150
+                   		        },{
+                   		            text: "制造商名称",
+                   		            dataIndex: "manufName",
+                   		            width: 150
+                   		        },{
+                   		            text: "货期（交期）",
+                   		            dataIndex: "deliveTime",
+                   		            width: 150
+                   		        },{
+                   		            text: "备注",
+                   		            dataIndex: "remark",
+                   		            width: 150
+                   		        },{
+                   		            text: "合计",
+                   		            dataIndex: "inquiredQTY_quotedPrice$",
+                   		            width: 150,
+                   		            summaryType: 'sum',
+   	                		      	summaryRenderer: function(value, summaryData, dataIndex) {
+   	                		            return'金额总计:'+value;
+   	                		        }
+                   		        }
+                   		    ]
+                   		}
+                   	 
+                   	 
+                   	 
+                 }]
+          	   }
+       	 ]
+       });
+        me.callParent();
+    }
+});
+Ext.define('Hc_Framework.view.hc.SubHcPaymentController', {
+	extend : 'Hc_Common.view.BaseWinPageController',
+
+	alias : 'controller.subhcpaymentcontroller',
+	flag:false,
+	record_:'',
+	init: function () {
+		var me = this;
+		var  record=Ext.create('Hc_Framework.model.HcPayment',{});
+		this.record_=record
+		for(i=0;i<record.getFields().length;i++){
+			var  name=Ext.util.Format.trim(record.getFields()[i].getName())
+	   		 
+	   		if((this.getReferences())[name]){
+				this.lookupReference(name).on("change", me.onBtnchange, me);	   			 
+	   		 }
+     	}
+		me.callParent();
+	},
+	onBtnEditClick:function(){
+		for(i=0;i<this.record_.getFields().length;i++){
+            var  name=Ext.util.Format.trim(this.record_.getFields()[i].getName())
+  		 if((this.getReferences())[name]){
+  			 if('contactsName'==name||'contactsTel'==name||'contactsFax'==name||'supplierName'==name){
+  				this.lookupReference(name).disable();
+  			 }else{
+  				this.lookupReference(name).enable();
+  			 }
+  			
+  		 }
+  	    }
+		//this.view.lookupReference('inquiryNo').enable()
+
+	},
+	onBtnchange:function(obj , newValue , oldValue , eOpt){
+	 	var  store_=this.view.me_.workObject.store;
+		store_.beginUpdate();
+	 	if(obj.is('combo')){
+	 		this.view.record.set(obj.name, obj.getRawValue()); 		
+	 	}else{
+	 		this.view.record.set(obj.name, obj.getRawValue()); 	
+	 	}
+
+
+	 	
+	 	if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+	 	store_.endUpdate();
+	},
+	onBtnSaveClick:function(){
+	    if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+
+	    for(i=0;i<this.record_.getFields().length-3;i++){
+			
+			  if(!this.lookupReference(Ext.util.Format.trim(this.record_.getFields()[i].getName())).isValid()){
+				  return;
+			  }
+		}
+	    this.view.me_.workObject.store.add(this.view.record);
+	    this.view.me_.onBtnSaveClick(null,this)
+	},
+	onBtnCancelClick:function(){
+		if(this.flag){
+			  this.view.me_.workObject.store.removeAt(this.view.me_.workObject.store.getCount()-1);
+			  //this.view.me_.workObject.getStore().rejectChanges();
+			  this.view.me_.workObject.view.refresh();
+			  this.flag=false
+		}
+		
+      if(this.view.title=='编辑'){
+    		
+      	this.view.me_.workObject.store.rejectChanges()
+      	this.view.me_.workObject.view.refresh();
+    		
+    	}
+          this.view.me_.view.subformActivate=false;
+		  this.view.hide();
+	}
+	
+});
+Ext.define('Hc_Framework.view.hc.SubHcPaymentModel', {
+    extend: 'Hc_Common.view.BaseWinPageModel',
+
+    alias: 'viewmodel.subhcpaymentmodel'
+});
+/**
+ * Description: 转正申请管理  view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2014-2015
+ * Company:     hc.
+ * author:      jinxi.li
+ * Createdate:  2016/01/26
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define("Hc_Framework.view.hc.HcPositive", {
+    extend: "Hc_Common.view.BaseSimplePage",
+
+    alias: 'widget.hcpositive',
+
+    
+
+    controller: "hcpositivecontroller",
+
+    viewModel: {
+        type: "hcpositivemodel"
+    },
+    title_:'转正申请',
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+            searchItems: [ 
+			{
+			    xtype: 'textfield', 
+			    fieldLabel: '转正申请编码', 
+			    name: 'positApplyCode'
+			}
+            ],
+
+            gridModel: 'Hc_Framework.model.HcPositive',
+            gridSubGrid:'',
+            gridColumns: [
+                          {
+                          	header: '转正申请', 
+                          	dataIndex: 'positApplyCode', 
+                          	width: '15%',
+                          	renderer: function (data, metadata, record, rowIndex, columnIndex, store) {  
+                          		return '<span onclick=""><a href="#">'+data+' </a></span>';
+                            }
+                          },
+                          {
+                          	header: '转正员工', 
+                          	dataIndex: 'PositiEmploName', 
+                          	width: 250
+                          },
+                          {
+              				dataIndex: 'drawBy',
+              				header: '提请人',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'position',
+                				header: '职位',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'applyDate',
+                				header: '申请日期 ',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'toGangDate',
+              				header: '到岗日期',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'shouPosiDate',
+                				header: '应转正日期',
+                				width: 150
+                         },
+                         {
+                  				dataIndex: 'PositiveState',
+                  				header: '转正状态',
+                  				width: 150
+                         },{
+	              				dataIndex: 'remark',
+	              				header: '备　　注',
+	              				width: 150
+	                     }             
+            ],
+            allendflag:false,
+            gridPrimaryKey: 'positApplyCode',
+            gridLoadUrl: Hc.basePath + 'hc_positive_list/list.json',
+            gridLoadSubUrl: Hc.basePath + 'hc_positive_list/listAll.json',
+            gridSaveUrl: Hc.basePath + 'hc_positive_list/batchOperate.json',
+            gridExportUrl: Hc.basePath + 'hc_positive_list/do_export.json',
+            gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_positive_list/deleteMasterCustomer.json',
+            gridAddMasterCustomerUrl: Hc.basePath + 'hc_positive_list/addMasterCustomer.json',
+            gridImportUrl: Hc.basePath + '',
+            subWinTableName:'Hc_Framework.view.hc.SubHcPositive',
+            subformActivate:false
+        });
+        me.callParent();
+    }
+});
+/**
+ * Description: 转正申请管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+
+Ext.define('Hc_Framework.view.hc.HcPositiveController', {
+	extend : 'Hc_Common.view.BaseSimplePageController',
+
+	alias : 'controller.hcpositivecontroller',
+	
+	init: function () {
+		var me = this;
+		Ext.apply(me, {
+			windowFlag:true,
+			newobj:this.view.subWinTableName
+		})
+		me.callParent();
+	},
+	onEditClick:function( obj , record , item , index , e , eOpts){
+      
+	},
+	onEditClick_:function(obj , td , cellIndex , record , tr , rowIndex , e , eOpts ){
+		var store = Ext.create('Hc_Common.store.Base', {
+            model:'Hc_Framework.model.HcPositive',
+            autoLoad: false,
+            groupField: 'inquiredQTY_quotedPrice$',
+            proxy: {
+                url: this.view.gridLoadSubUrl
+            }
+        });
+		
+		store.proxy.extraParams['quoteCode'] = record.data.quoteCode; 
+		store.load();	      	 
+		if(cellIndex==0){
+	    	Ext.create(this.view.subWinTableName,{
+	    		title:'编辑',
+	    		record:record,
+	    		me_:this,
+	    		store:store
+	    	}).show();
+	    	this.view.subformActivate=true;
+	    	this.onBtnCancelClick();
+		}
+    	
+    }
+	
+});
+/**
+ * Description: 转正申请管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.view.hc.HcPositiveModel', {
+    extend: 'Hc_Common.view.BaseSimplePageModel',
+
+    alias: 'viewmodel.hcpositivemodel'
+});
+Ext.define("Hc_Framework.view.hc.SubHcPositive", {
+    extend: "Hc_Common.view.BaseWinPage",
+
+    alias: 'widget.subhcpositive',
+
+    
+
+    controller: "subhcpositivecontroller",
+
+    viewModel: {
+        type: "subhcpositivemodel"
+    },
+    title:'新增',
+    width: 1000,
+    height:620,
+    
+    maxWidth:1000,
+   // maxHeight:620,
+    
+    minWidth:1000,
+    minHeight:620,
+    
+    layout:'border',//设置窗口内部布局
+    closeAction:'hide',
+    plain:false,//true则主体背景透明，false则和主体背景有些差别
+    collapsible:false,//是否可收缩
+    modal:true,//是否为模式窗体
+   
+    dockedItems:[{
+    	 xtype: 'toolbar',
+    	 dock: 'top',
+    	 items: [
+           {
+             text: '保存',
+             handler:'onBtnSaveClick',
+             glyph: Hc.Icon.btnSave
+           },
+           {
+               text: '编辑',
+               handler:'onBtnEditClick',
+               glyph: Hc.Icon.btnEdit
+           },
+           {
+               text: '取消',
+               handler:'onBtnCancelClick',
+               glyph: Hc.Icon.btnCancel
+             }
+         ]
+    }],
+    listeners: {
+    	beforeshow:function(obj ,eOpts){
+    		 var currentUser = Ext.create("Hc_Framework.store.CurrentUser");
+    	        currentUser.load();
+    		 var  userCreator;
+             var   supplierNo_;
+             
+             if(this.title=='新增'){
+            	// this.lookupReference('createUser').setValue(currentUser.getAt(0).data.userName);
+                 supplierNo_='PE'+Ext.util.Format.date((new Date()), "Y").substring(2,5)+Ext.util.Format.date((new Date()), "Y").substring(0,2)+Ext.util.Format.date((new Date()), "dmHis");
+              /*   this.lookupReference('inquiryNo').setValue(supplierNo_);
+                // this.lookupReference('modifyUser').disabled=true;
+                 //this.lookupReference('modifyDate').disabled=true;
+                 
+                 this.lookupReference('contactsName').disabled=true;
+                 this.lookupReference('contactsTel').disabled=true;
+                 this.lookupReference('contactsFax').disabled=true;
+                 this.lookupReference('supplierName').disabled=true;
+                 
+                 
+                // this.lookupReference('localDepartment').setValue(currentUser.getAt(0).data.deptName);
+                 this.lookupReference('inquiryDate').setValue(Ext.util.Format.date((new Date()),'Y-m-d H:i:s'));
+
+            */
+             }else if(this.title=='编辑'){
+           	 for(i=0;i<this.record.getFields().length;i++){
+	                 var  name=Ext.util.Format.trim(this.record.getFields()[i].getName())
+           		 
+           		 if((this.getReferences())[name]){
+           			 if(this.lookupReference(name).is('combo')){
+               			 this.lookupReference(name).setRawValue(this.record.get(name));
+               		 }else{
+               			 this.lookupReference(name).setValue(this.record.get(name));
+               		 }
+           			this.lookupReference(name).disable();
+           		 }
+           	 }
+             }
+             this.lookupReference('subhcsuppliercustomer').title='>>>>'+this.me_.view.title_;
+    	}
+    },
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+       	 items:[
+       	        {
+       	         xtype:'panel',
+       	         defaults: {
+       	        	
+                 },
+                 layout: {
+                	 type: 'absolute'
+                 },
+                 reference:'subhcsuppliercustomer',
+                 region: "north",
+                 bodyStyle: 'background:#cbdbe0;',
+                 padding:'3 0 3 0',//(top, right, bottom, left).
+                    items: [
+                            {
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 3,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价编码',
+									    name: 'quoteCode',
+				     					reference:'quoteCode',
+									    listeners: {
+									    	beforerender: function(obj) {
+											   obj.fieldLabel+='<font size="2px" color="red">*</font>';
+									        }
+										  }
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人编码',
+									    name: 'quoteByCode',
+				     					reference:'quoteByCode'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人名称',
+									    name: 'quoteByName',
+				     					reference:'quoteByName'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价方式',
+									    name: 'quoteMode',
+				     					reference:'quoteMode'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:57,
+                            	width:980,
+                            	layout: {
+                                  	 type: 'table',
+                                       columns:4
+                                   },
+                                x: 3,
+                                y: 35,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                               	items:[
+   									{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户编码',
+	   								    name: 'custCode',
+	   								
+				     					reference:'custCode'
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									   // width:313,
+   									    fieldLabel: '客户名称',
+   									    name: 'custName',
+				     					reference:'custName',
+   									    colspan:1
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									    width:500,
+   									    fieldLabel: '客户地址',
+   									    name: 'custAddr',
+				     					reference:'custAddr',
+   									    colspan:4
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户电话',
+	   								    name: 'custTel',
+	   								
+				     					reference:'custTel'
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户传真',
+	   								    name: 'custFax',
+	   								
+				     					reference:'custFax'
+   									}
+   								
+                               	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 95,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系人名称',
+									    name: 'contact_by',
+				     					reference:'contact_by'
+									   
+									},{
+									    xtype:'datefield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系电话 ',
+									    name: 'contacTByTel',
+				     					reference:'contacTByTel'
+									   
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系邮件',
+									    name: 'contactByEmail',
+				     					reference:'contactByEmail',
+									 
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:56,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 128,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '目的站',
+									    name: 'purposePlace',
+				     					reference:'purposePlace',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '包装',
+									    name: 'packing',
+				     					reference:'packing',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '货币',
+									    name: 'currency',
+				     					reference:'currency',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货方式',
+									    name: 'deliverGoodsMode',
+				     					reference:'deliverGoodsMode',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货时间',
+									    name: 'deliverGoodsDate',
+				     					reference:'deliverGoodsDate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '付款方式',
+									    name: 'paymentMode',
+				     					reference:'paymentMode',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 188,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '运费',
+									    name: 'freight',
+				     					reference:'freight',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '保险',
+									    name: 'insurance',
+				     					reference:'insurance',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '税率',
+									    name: 'tax_rate',
+				     					reference:'tax_rate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '折扣',
+									    name: 'rebate',
+				     					reference:'rebate',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 222,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '审批人',
+									    name: 'examApprByName',
+				     					reference:'examApprByName'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:70,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 255,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注',
+									    name: 'remark',
+				     					reference:'remark',
+									    colspan:4
+									}
+                            	]
+                            }
+                     ]
+       	            
+       	        },{
+          	         xtype:'panel',
+          	         layout: {
+                   	 type: 'fit',
+                    },
+                    region: "center",
+                    bodyStyle: 'background:#ceebe0; padding:0px;border:0px',
+                    scrollable:true,
+                    items:[{
+                   	 xtype:'grid',
+                   	 enableHdMenu:false,
+                   	 sortableColumns:false,
+                   	 columnLines: true,
+                   	 enableColumnHide:false,
+                   	 enableColumnMove:false,
+                   	 store:me.store,
+                   	 features: [{
+             		        ftype: 'summary'
+             		     }],
+                   	 columns: {
+                   		    items: [
+                   		        {
+                   		            text: "序号",
+                   		            dataIndex: "id",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品编码",
+                   		            dataIndex: "prodCode",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品名称",
+                   		            dataIndex: "prodName",
+                   		            width: 150
+                   		        },{
+                   		            text: "型号规格",
+                   		            dataIndex: "typeModel",
+                   		            width: 150
+                   		        },{
+                   		            text: "数量",
+                   		            dataIndex: "qty",
+                   		            width: 150
+                   		        },{
+                   		            text: "单位",
+                   		            dataIndex: "unit",
+                   		            width: 150
+                   		        },{
+                   		            text: "单价",
+                   		            dataIndex: "univalent",
+                   		            width: 150
+                   		        },{
+                   		            text: "货币",
+                   		            dataIndex: "currency",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品描述",
+                   		            dataIndex: "prodDesc",
+                   		            width: 150
+                   		        },{
+                   		            text: "品牌",
+                   		            dataIndex: "brand",
+                   		            width: 150
+                   		        },{
+                   		            text: "制造商名称",
+                   		            dataIndex: "manufName",
+                   		            width: 150
+                   		        },{
+                   		            text: "货期（交期）",
+                   		            dataIndex: "deliveTime",
+                   		            width: 150
+                   		        },{
+                   		            text: "备注",
+                   		            dataIndex: "remark",
+                   		            width: 150
+                   		        },{
+                   		            text: "合计",
+                   		            dataIndex: "inquiredQTY_quotedPrice$",
+                   		            width: 150,
+                   		            summaryType: 'sum',
+   	                		      	summaryRenderer: function(value, summaryData, dataIndex) {
+   	                		            return'金额总计:'+value;
+   	                		        }
+                   		        }
+                   		    ]
+                   		}
+                   	 
+                   	 
+                   	 
+                 }]
+          	   }
+       	 ]
+       });
+        me.callParent();
+    }
+});
+Ext.define('Hc_Framework.view.hc.SubHcPositiveController', {
+	extend : 'Hc_Common.view.BaseWinPageController',
+
+	alias : 'controller.subhcpositivecontroller',
+	flag:false,
+	record_:'',
+	init: function () {
+		var me = this;
+		var  record=Ext.create('Hc_Framework.model.HcPositive',{});
+		this.record_=record
+		for(i=0;i<record.getFields().length;i++){
+			var  name=Ext.util.Format.trim(record.getFields()[i].getName())
+	   		 
+	   		if((this.getReferences())[name]){
+				this.lookupReference(name).on("change", me.onBtnchange, me);	   			 
+	   		 }
+     	}
+		me.callParent();
+	},
+	onBtnEditClick:function(){
+		for(i=0;i<this.record_.getFields().length;i++){
+            var  name=Ext.util.Format.trim(this.record_.getFields()[i].getName())
+  		 if((this.getReferences())[name]){
+  			 if('contactsName'==name||'contactsTel'==name||'contactsFax'==name||'supplierName'==name){
+  				this.lookupReference(name).disable();
+  			 }else{
+  				this.lookupReference(name).enable();
+  			 }
+  			
+  		 }
+  	    }
+		//this.view.lookupReference('inquiryNo').enable()
+
+	},
+	onBtnchange:function(obj , newValue , oldValue , eOpt){
+	 	var  store_=this.view.me_.workObject.store;
+		store_.beginUpdate();
+	 	if(obj.is('combo')){
+	 		this.view.record.set(obj.name, obj.getRawValue()); 		
+	 	}else{
+	 		this.view.record.set(obj.name, obj.getRawValue()); 	
+	 	}
+
+
+	 	
+	 	if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+	 	store_.endUpdate();
+	},
+	onBtnSaveClick:function(){
+	    if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+
+	    for(i=0;i<this.record_.getFields().length-3;i++){
+			
+			  if(!this.lookupReference(Ext.util.Format.trim(this.record_.getFields()[i].getName())).isValid()){
+				  return;
+			  }
+		}
+	    this.view.me_.workObject.store.add(this.view.record);
+	    this.view.me_.onBtnSaveClick(null,this)
+	},
+	onBtnCancelClick:function(){
+		if(this.flag){
+			  this.view.me_.workObject.store.removeAt(this.view.me_.workObject.store.getCount()-1);
+			  //this.view.me_.workObject.getStore().rejectChanges();
+			  this.view.me_.workObject.view.refresh();
+			  this.flag=false
+		}
+		
+      if(this.view.title=='编辑'){
+    		
+      	this.view.me_.workObject.store.rejectChanges()
+      	this.view.me_.workObject.view.refresh();
+    		
+    	}
+          this.view.me_.view.subformActivate=false;
+		  this.view.hide();
+	}
+	
+});
+Ext.define('Hc_Framework.view.hc.SubHcPositiveModel', {
+    extend: 'Hc_Common.view.BaseWinPageModel',
+
+    alias: 'viewmodel.subhcpositivemodel'
+});
+/**
+ * Description: 报销管理  view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2014-2015
+ * Company:     hc.
+ * author:      jinxi.li
+ * Createdate:  2016/01/26
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define("Hc_Framework.view.hc.HcReimbursement", {
+    extend: "Hc_Common.view.BaseSimplePage",
+
+    alias: 'widget.hcreimbursement',
+
+    
+
+    controller: "hcreimbursementcontroller",
+
+    viewModel: {
+        type: "hcreimbursementmodel"
+    },
+    title_:'报销管理',
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+            searchItems: [ 
+			{
+			    xtype: 'textfield', 
+			    fieldLabel: '报销编号', 
+			    name: 'reimburCode'
+			}
+            ],
+
+            gridModel: 'Hc_Framework.model.HcReimbursement',
+            gridSubGrid:'',
+            gridColumns: [
+                          {
+                          	header: '报销编号', 
+                          	dataIndex: 'reimburCode', 
+                          	width: '15%',
+                          	renderer: function (data, metadata, record, rowIndex, columnIndex, store) {  
+                          		return '<span onclick=""><a href="#">'+data+' </a></span>';
+                            }
+                          },
+                          {
+                          	header: '提 请 人', 
+                          	dataIndex: 'drawByName', 
+                          	width: 250
+                          },
+                          {
+              				dataIndex: 'exacct',
+              				header: '费用科目',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'reimburBy',
+                				header: '报 销 人',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'reimburDate',
+                				header: '报销日期 ',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'reimburAmount',
+              				header: '报销金额',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'reimburDept',
+                				header: '报销部门',
+                				width: 150
+                         },
+                         {
+                  				dataIndex: 'examApprovSituat',
+                  				header: '审批情况',
+                  				width: 150
+                         },{
+	              				dataIndex: 'remark',
+	              				header: '备　　注',
+	              				width: 150
+	                     }             
+            ],
+            allendflag:false,
+            gridPrimaryKey: 'reimburCode',
+            gridLoadUrl: Hc.basePath + 'hc_reimbursement_list/list.json',
+            gridLoadSubUrl: Hc.basePath + 'hc_reimbursement_list/listAll.json',
+            gridSaveUrl: Hc.basePath + 'hc_reimbursement_list/batchOperate.json',
+            gridExportUrl: Hc.basePath + 'hc_reimbursement_list/do_export.json',
+            gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_reimbursement_list/deleteMasterCustomer.json',
+            gridAddMasterCustomerUrl: Hc.basePath + 'hc_reimbursement_list/addMasterCustomer.json',
+            gridImportUrl: Hc.basePath + '',
+            subWinTableName:'Hc_Framework.view.hc.SubHcReimbursement',
+            subformActivate:false
+        });
+        me.callParent();
+    }
+});
+/**
+ * Description: 报销管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+
+Ext.define('Hc_Framework.view.hc.HcReimbursementController', {
+	extend : 'Hc_Common.view.BaseSimplePageController',
+
+	alias : 'controller.hcreimbursementcontroller',
+	
+	init: function () {
+		var me = this;
+		Ext.apply(me, {
+			windowFlag:true,
+			newobj:this.view.subWinTableName
+		})
+		me.callParent();
+	},
+	onEditClick:function( obj , record , item , index , e , eOpts){
+      
+	},
+	onEditClick_:function(obj , td , cellIndex , record , tr , rowIndex , e , eOpts ){
+		var store = Ext.create('Hc_Common.store.Base', {
+            model:'Hc_Framework.model.HcReimbursement',
+            autoLoad: false,
+            groupField: 'inquiredQTY_quotedPrice$',
+            proxy: {
+                url: this.view.gridLoadSubUrl
+            }
+        });
+		
+		store.proxy.extraParams['quoteCode'] = record.data.quoteCode; 
+		store.load();	      	 
+		if(cellIndex==0){
+	    	Ext.create(this.view.subWinTableName,{
+	    		title:'编辑',
+	    		record:record,
+	    		me_:this,
+	    		store:store
+	    	}).show();
+	    	this.view.subformActivate=true;
+	    	this.onBtnCancelClick();
+		}
+    	
+    }
+	
+});
+/**
+ * Description: 报销管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.view.hc.HcReimbursementModel', {
+    extend: 'Hc_Common.view.BaseSimplePageModel',
+
+    alias: 'viewmodel.hcreimbursementmodel'
+});
+Ext.define("Hc_Framework.view.hc.SubHcReimbursement", {
+    extend: "Hc_Common.view.BaseWinPage",
+
+    alias: 'widget.subhcreimbursement',
+
+    
+
+    controller: "subhcreimbursementcontroller",
+
+    viewModel: {
+        type: "subhcreimbursementmodel"
+    },
+    title:'新增',
+    width: 1000,
+    height:620,
+    
+    maxWidth:1000,
+   // maxHeight:620,
+    
+    minWidth:1000,
+    minHeight:620,
+    
+    layout:'border',//设置窗口内部布局
+    closeAction:'hide',
+    plain:false,//true则主体背景透明，false则和主体背景有些差别
+    collapsible:false,//是否可收缩
+    modal:true,//是否为模式窗体
+   
+    dockedItems:[{
+    	 xtype: 'toolbar',
+    	 dock: 'top',
+    	 items: [
+           {
+             text: '保存',
+             handler:'onBtnSaveClick',
+             glyph: Hc.Icon.btnSave
+           },
+           {
+               text: '编辑',
+               handler:'onBtnEditClick',
+               glyph: Hc.Icon.btnEdit
+           },
+           {
+               text: '取消',
+               handler:'onBtnCancelClick',
+               glyph: Hc.Icon.btnCancel
+             }
+         ]
+    }],
+    listeners: {
+    	beforeshow:function(obj ,eOpts){
+    		 var currentUser = Ext.create("Hc_Framework.store.CurrentUser");
+    	        currentUser.load();
+    		 var  userCreator;
+             var   supplierNo_;
+             
+             if(this.title=='新增'){
+            	// this.lookupReference('createUser').setValue(currentUser.getAt(0).data.userName);
+                 supplierNo_='PE'+Ext.util.Format.date((new Date()), "Y").substring(2,5)+Ext.util.Format.date((new Date()), "Y").substring(0,2)+Ext.util.Format.date((new Date()), "dmHis");
+              /*   this.lookupReference('inquiryNo').setValue(supplierNo_);
+                // this.lookupReference('modifyUser').disabled=true;
+                 //this.lookupReference('modifyDate').disabled=true;
+                 
+                 this.lookupReference('contactsName').disabled=true;
+                 this.lookupReference('contactsTel').disabled=true;
+                 this.lookupReference('contactsFax').disabled=true;
+                 this.lookupReference('supplierName').disabled=true;
+                 
+                 
+                // this.lookupReference('localDepartment').setValue(currentUser.getAt(0).data.deptName);
+                 this.lookupReference('inquiryDate').setValue(Ext.util.Format.date((new Date()),'Y-m-d H:i:s'));
+
+            */
+             }else if(this.title=='编辑'){
+           	 for(i=0;i<this.record.getFields().length;i++){
+	                 var  name=Ext.util.Format.trim(this.record.getFields()[i].getName())
+           		 
+           		 if((this.getReferences())[name]){
+           			 if(this.lookupReference(name).is('combo')){
+               			 this.lookupReference(name).setRawValue(this.record.get(name));
+               		 }else{
+               			 this.lookupReference(name).setValue(this.record.get(name));
+               		 }
+           			this.lookupReference(name).disable();
+           		 }
+           	 }
+             }
+             this.lookupReference('subhcsuppliercustomer').title='>>>>'+this.me_.view.title_;
+    	}
+    },
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+       	 items:[
+       	        {
+       	         xtype:'panel',
+       	         defaults: {
+       	        	
+                 },
+                 layout: {
+                	 type: 'absolute'
+                 },
+                 reference:'subhcsuppliercustomer',
+                 region: "north",
+                 bodyStyle: 'background:#cbdbe0;',
+                 padding:'3 0 3 0',//(top, right, bottom, left).
+                    items: [
+                            {
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 3,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价编码',
+									    name: 'quoteCode',
+				     					reference:'quoteCode',
+									    listeners: {
+									    	beforerender: function(obj) {
+											   obj.fieldLabel+='<font size="2px" color="red">*</font>';
+									        }
+										  }
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人编码',
+									    name: 'quoteByCode',
+				     					reference:'quoteByCode'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人名称',
+									    name: 'quoteByName',
+				     					reference:'quoteByName'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价方式',
+									    name: 'quoteMode',
+				     					reference:'quoteMode'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:57,
+                            	width:980,
+                            	layout: {
+                                  	 type: 'table',
+                                       columns:4
+                                   },
+                                x: 3,
+                                y: 35,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                               	items:[
+   									{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户编码',
+	   								    name: 'custCode',
+	   								
+				     					reference:'custCode'
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									   // width:313,
+   									    fieldLabel: '客户名称',
+   									    name: 'custName',
+				     					reference:'custName',
+   									    colspan:1
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									    width:500,
+   									    fieldLabel: '客户地址',
+   									    name: 'custAddr',
+				     					reference:'custAddr',
+   									    colspan:4
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户电话',
+	   								    name: 'custTel',
+	   								
+				     					reference:'custTel'
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户传真',
+	   								    name: 'custFax',
+	   								
+				     					reference:'custFax'
+   									}
+   								
+                               	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 95,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系人名称',
+									    name: 'contact_by',
+				     					reference:'contact_by'
+									   
+									},{
+									    xtype:'datefield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系电话 ',
+									    name: 'contacTByTel',
+				     					reference:'contacTByTel'
+									   
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系邮件',
+									    name: 'contactByEmail',
+				     					reference:'contactByEmail',
+									 
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:56,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 128,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '目的站',
+									    name: 'purposePlace',
+				     					reference:'purposePlace',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '包装',
+									    name: 'packing',
+				     					reference:'packing',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '货币',
+									    name: 'currency',
+				     					reference:'currency',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货方式',
+									    name: 'deliverGoodsMode',
+				     					reference:'deliverGoodsMode',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货时间',
+									    name: 'deliverGoodsDate',
+				     					reference:'deliverGoodsDate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '付款方式',
+									    name: 'paymentMode',
+				     					reference:'paymentMode',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 188,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '运费',
+									    name: 'freight',
+				     					reference:'freight',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '保险',
+									    name: 'insurance',
+				     					reference:'insurance',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '税率',
+									    name: 'tax_rate',
+				     					reference:'tax_rate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '折扣',
+									    name: 'rebate',
+				     					reference:'rebate',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 222,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '审批人',
+									    name: 'examApprByName',
+				     					reference:'examApprByName'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:70,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 255,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注',
+									    name: 'remark',
+				     					reference:'remark',
+									    colspan:4
+									}
+                            	]
+                            }
+                     ]
+       	            
+       	        },{
+          	         xtype:'panel',
+          	         layout: {
+                   	 type: 'fit',
+                    },
+                    region: "center",
+                    bodyStyle: 'background:#ceebe0; padding:0px;border:0px',
+                    scrollable:true,
+                    items:[{
+                   	 xtype:'grid',
+                   	 enableHdMenu:false,
+                   	 sortableColumns:false,
+                   	 columnLines: true,
+                   	 enableColumnHide:false,
+                   	 enableColumnMove:false,
+                   	 store:me.store,
+                   	 features: [{
+             		        ftype: 'summary'
+             		     }],
+                   	 columns: {
+                   		    items: [
+                   		        {
+                   		            text: "序号",
+                   		            dataIndex: "id",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品编码",
+                   		            dataIndex: "prodCode",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品名称",
+                   		            dataIndex: "prodName",
+                   		            width: 150
+                   		        },{
+                   		            text: "型号规格",
+                   		            dataIndex: "typeModel",
+                   		            width: 150
+                   		        },{
+                   		            text: "数量",
+                   		            dataIndex: "qty",
+                   		            width: 150
+                   		        },{
+                   		            text: "单位",
+                   		            dataIndex: "unit",
+                   		            width: 150
+                   		        },{
+                   		            text: "单价",
+                   		            dataIndex: "univalent",
+                   		            width: 150
+                   		        },{
+                   		            text: "货币",
+                   		            dataIndex: "currency",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品描述",
+                   		            dataIndex: "prodDesc",
+                   		            width: 150
+                   		        },{
+                   		            text: "品牌",
+                   		            dataIndex: "brand",
+                   		            width: 150
+                   		        },{
+                   		            text: "制造商名称",
+                   		            dataIndex: "manufName",
+                   		            width: 150
+                   		        },{
+                   		            text: "货期（交期）",
+                   		            dataIndex: "deliveTime",
+                   		            width: 150
+                   		        },{
+                   		            text: "备注",
+                   		            dataIndex: "remark",
+                   		            width: 150
+                   		        },{
+                   		            text: "合计",
+                   		            dataIndex: "inquiredQTY_quotedPrice$",
+                   		            width: 150,
+                   		            summaryType: 'sum',
+   	                		      	summaryRenderer: function(value, summaryData, dataIndex) {
+   	                		            return'金额总计:'+value;
+   	                		        }
+                   		        }
+                   		    ]
+                   		}
+                   	 
+                   	 
+                   	 
+                 }]
+          	   }
+       	 ]
+       });
+        me.callParent();
+    }
+});
+Ext.define('Hc_Framework.view.hc.SubHcReimbursementController', {
+	extend : 'Hc_Common.view.BaseWinPageController',
+
+	alias : 'controller.subhcreimbursementcontroller',
+	flag:false,
+	record_:'',
+	init: function () {
+		var me = this;
+		var  record=Ext.create('Hc_Framework.model.HcReimbursement',{});
+		this.record_=record
+		for(i=0;i<record.getFields().length;i++){
+			var  name=Ext.util.Format.trim(record.getFields()[i].getName())
+	   		 
+	   		if((this.getReferences())[name]){
+				this.lookupReference(name).on("change", me.onBtnchange, me);	   			 
+	   		 }
+     	}
+		me.callParent();
+	},
+	onBtnEditClick:function(){
+		for(i=0;i<this.record_.getFields().length;i++){
+            var  name=Ext.util.Format.trim(this.record_.getFields()[i].getName())
+  		 if((this.getReferences())[name]){
+  			 if('contactsName'==name||'contactsTel'==name||'contactsFax'==name||'supplierName'==name){
+  				this.lookupReference(name).disable();
+  			 }else{
+  				this.lookupReference(name).enable();
+  			 }
+  			
+  		 }
+  	    }
+		//this.view.lookupReference('inquiryNo').enable()
+
+	},
+	onBtnchange:function(obj , newValue , oldValue , eOpt){
+	 	var  store_=this.view.me_.workObject.store;
+		store_.beginUpdate();
+	 	if(obj.is('combo')){
+	 		this.view.record.set(obj.name, obj.getRawValue()); 		
+	 	}else{
+	 		this.view.record.set(obj.name, obj.getRawValue()); 	
+	 	}
+
+
+	 	
+	 	if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+	 	store_.endUpdate();
+	},
+	onBtnSaveClick:function(){
+	    if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+
+	    for(i=0;i<this.record_.getFields().length-3;i++){
+			
+			  if(!this.lookupReference(Ext.util.Format.trim(this.record_.getFields()[i].getName())).isValid()){
+				  return;
+			  }
+		}
+	    this.view.me_.workObject.store.add(this.view.record);
+	    this.view.me_.onBtnSaveClick(null,this)
+	},
+	onBtnCancelClick:function(){
+		if(this.flag){
+			  this.view.me_.workObject.store.removeAt(this.view.me_.workObject.store.getCount()-1);
+			  //this.view.me_.workObject.getStore().rejectChanges();
+			  this.view.me_.workObject.view.refresh();
+			  this.flag=false
+		}
+		
+      if(this.view.title=='编辑'){
+    		
+      	this.view.me_.workObject.store.rejectChanges()
+      	this.view.me_.workObject.view.refresh();
+    		
+    	}
+          this.view.me_.view.subformActivate=false;
+		  this.view.hide();
+	}
+	
+});
+Ext.define('Hc_Framework.view.hc.SubHcReimbursementModel', {
+    extend: 'Hc_Common.view.BaseWinPageModel',
+
+    alias: 'viewmodel.subhcreimbursementmodel'
+});
+/**
+ * Description: 辞职管理  view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2014-2015
+ * Company:     hc.
+ * author:      jinxi.li
+ * Createdate:  2016/01/26
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define("Hc_Framework.view.hc.HcResign", {
+    extend: "Hc_Common.view.BaseSimplePage",
+
+    alias: 'widget.hcresign',
+
+    
+
+    controller: "hcresigncontroller",
+
+    viewModel: {
+        type: "hcresignmodel"
+    },
+    title_:'辞职管理',
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+            searchItems: [ 
+			{
+			    xtype: 'textfield', 
+			    fieldLabel: '辞职单编码', 
+			    name: 'resignCode'
+			}
+            ],
+
+            gridModel: 'Hc_Framework.model.HcResign',
+            gridSubGrid:'',
+            gridColumns: [
+                          {
+                          	header: '辞职单', 
+                          	dataIndex: 'resignCode', 
+                          	width: '15%',
+                          	renderer: function (data, metadata, record, rowIndex, columnIndex, store) {  
+                          		return '<span onclick=""><a href="#">'+data+' </a></span>';
+                            }
+                          },
+                          {
+                          	header: '辞职人', 
+                          	dataIndex: 'resignByName', 
+                          	width: 250
+                          },
+                          {
+              				dataIndex: 'resignType',
+              				header: '辞职类别',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'drawByName',
+                				header: '提请人',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'resignDate',
+                				header: '辞职时间 ',
+                				width: 150
+                          },{
+	              				dataIndex: 'remark',
+	              				header: '备　　注',
+	              				width: 150
+	                     }             
+            ],
+            allendflag:false,
+            gridPrimaryKey: 'resignCode',
+            gridLoadUrl: Hc.basePath + 'hc_resign_list/list.json',
+            gridLoadSubUrl: Hc.basePath + 'hc_resign_list/listAll.json',
+            gridSaveUrl: Hc.basePath + 'hc_resign_list/batchOperate.json',
+            gridExportUrl: Hc.basePath + 'hc_resign_list/do_export.json',
+            gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_resign_list/deleteMasterCustomer.json',
+            gridAddMasterCustomerUrl: Hc.basePath + 'hc_resign_list/addMasterCustomer.json',
+            gridImportUrl: Hc.basePath + '',
+            subWinTableName:'Hc_Framework.view.hc.SubHcResign',
+            subformActivate:false
+        });
+        me.callParent();
+    }
+});
+/**
+ * Description: 辞职管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+
+Ext.define('Hc_Framework.view.hc.HcResignController', {
+	extend : 'Hc_Common.view.BaseSimplePageController',
+
+	alias : 'controller.hcresigncontroller',
+	
+	init: function () {
+		var me = this;
+		Ext.apply(me, {
+			windowFlag:true,
+			newobj:this.view.subWinTableName
+		})
+		me.callParent();
+	},
+	onEditClick:function( obj , record , item , index , e , eOpts){
+      
+	},
+	onEditClick_:function(obj , td , cellIndex , record , tr , rowIndex , e , eOpts ){
+		var store = Ext.create('Hc_Common.store.Base', {
+            model:'Hc_Framework.model.HcResign',
+            autoLoad: false,
+            groupField: 'inquiredQTY_quotedPrice$',
+            proxy: {
+                url: this.view.gridLoadSubUrl
+            }
+        });
+		
+		store.proxy.extraParams['quoteCode'] = record.data.quoteCode; 
+		store.load();	      	 
+		if(cellIndex==0){
+	    	Ext.create(this.view.subWinTableName,{
+	    		title:'编辑',
+	    		record:record,
+	    		me_:this,
+	    		store:store
+	    	}).show();
+	    	this.view.subformActivate=true;
+	    	this.onBtnCancelClick();
+		}
+    	
+    }
+	
+});
+/**
+ * Description: 辞职管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.view.hc.HcResignModel', {
+    extend: 'Hc_Common.view.BaseSimplePageModel',
+
+    alias: 'viewmodel.hcresignmodel'
+});
+Ext.define("Hc_Framework.view.hc.SubHcResign", {
+    extend: "Hc_Common.view.BaseWinPage",
+
+    alias: 'widget.subhcresign',
+
+    
+
+    controller: "subhcresigncontroller",
+
+    viewModel: {
+        type: "subhcresignmodel"
+    },
+    title:'新增',
+    width: 1000,
+    height:620,
+    
+    maxWidth:1000,
+   // maxHeight:620,
+    
+    minWidth:1000,
+    minHeight:620,
+    
+    layout:'border',//设置窗口内部布局
+    closeAction:'hide',
+    plain:false,//true则主体背景透明，false则和主体背景有些差别
+    collapsible:false,//是否可收缩
+    modal:true,//是否为模式窗体
+   
+    dockedItems:[{
+    	 xtype: 'toolbar',
+    	 dock: 'top',
+    	 items: [
+           {
+             text: '保存',
+             handler:'onBtnSaveClick',
+             glyph: Hc.Icon.btnSave
+           },
+           {
+               text: '编辑',
+               handler:'onBtnEditClick',
+               glyph: Hc.Icon.btnEdit
+           },
+           {
+               text: '取消',
+               handler:'onBtnCancelClick',
+               glyph: Hc.Icon.btnCancel
+             }
+         ]
+    }],
+    listeners: {
+    	beforeshow:function(obj ,eOpts){
+    		 var currentUser = Ext.create("Hc_Framework.store.CurrentUser");
+    	        currentUser.load();
+    		 var  userCreator;
+             var   supplierNo_;
+             
+             if(this.title=='新增'){
+            	// this.lookupReference('createUser').setValue(currentUser.getAt(0).data.userName);
+                 supplierNo_='PE'+Ext.util.Format.date((new Date()), "Y").substring(2,5)+Ext.util.Format.date((new Date()), "Y").substring(0,2)+Ext.util.Format.date((new Date()), "dmHis");
+              /*   this.lookupReference('inquiryNo').setValue(supplierNo_);
+                // this.lookupReference('modifyUser').disabled=true;
+                 //this.lookupReference('modifyDate').disabled=true;
+                 
+                 this.lookupReference('contactsName').disabled=true;
+                 this.lookupReference('contactsTel').disabled=true;
+                 this.lookupReference('contactsFax').disabled=true;
+                 this.lookupReference('supplierName').disabled=true;
+                 
+                 
+                // this.lookupReference('localDepartment').setValue(currentUser.getAt(0).data.deptName);
+                 this.lookupReference('inquiryDate').setValue(Ext.util.Format.date((new Date()),'Y-m-d H:i:s'));
+
+            */
+             }else if(this.title=='编辑'){
+           	 for(i=0;i<this.record.getFields().length;i++){
+	                 var  name=Ext.util.Format.trim(this.record.getFields()[i].getName())
+           		 
+           		 if((this.getReferences())[name]){
+           			 if(this.lookupReference(name).is('combo')){
+               			 this.lookupReference(name).setRawValue(this.record.get(name));
+               		 }else{
+               			 this.lookupReference(name).setValue(this.record.get(name));
+               		 }
+           			this.lookupReference(name).disable();
+           		 }
+           	 }
+             }
+             this.lookupReference('subhcsuppliercustomer').title='>>>>'+this.me_.view.title_;
+    	}
+    },
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+       	 items:[
+       	        {
+       	         xtype:'panel',
+       	         defaults: {
+       	        	
+                 },
+                 layout: {
+                	 type: 'absolute'
+                 },
+                 reference:'subhcsuppliercustomer',
+                 region: "north",
+                 bodyStyle: 'background:#cbdbe0;',
+                 padding:'3 0 3 0',//(top, right, bottom, left).
+                    items: [
+                            {
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 3,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价编码',
+									    name: 'quoteCode',
+				     					reference:'quoteCode',
+									    listeners: {
+									    	beforerender: function(obj) {
+											   obj.fieldLabel+='<font size="2px" color="red">*</font>';
+									        }
+										  }
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人编码',
+									    name: 'quoteByCode',
+				     					reference:'quoteByCode'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人名称',
+									    name: 'quoteByName',
+				     					reference:'quoteByName'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价方式',
+									    name: 'quoteMode',
+				     					reference:'quoteMode'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:57,
+                            	width:980,
+                            	layout: {
+                                  	 type: 'table',
+                                       columns:4
+                                   },
+                                x: 3,
+                                y: 35,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                               	items:[
+   									{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户编码',
+	   								    name: 'custCode',
+	   								
+				     					reference:'custCode'
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									   // width:313,
+   									    fieldLabel: '客户名称',
+   									    name: 'custName',
+				     					reference:'custName',
+   									    colspan:1
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									    width:500,
+   									    fieldLabel: '客户地址',
+   									    name: 'custAddr',
+				     					reference:'custAddr',
+   									    colspan:4
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户电话',
+	   								    name: 'custTel',
+	   								
+				     					reference:'custTel'
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户传真',
+	   								    name: 'custFax',
+	   								
+				     					reference:'custFax'
+   									}
+   								
+                               	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 95,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系人名称',
+									    name: 'contact_by',
+				     					reference:'contact_by'
+									   
+									},{
+									    xtype:'datefield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系电话 ',
+									    name: 'contacTByTel',
+				     					reference:'contacTByTel'
+									   
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系邮件',
+									    name: 'contactByEmail',
+				     					reference:'contactByEmail',
+									 
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:56,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 128,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '目的站',
+									    name: 'purposePlace',
+				     					reference:'purposePlace',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '包装',
+									    name: 'packing',
+				     					reference:'packing',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '货币',
+									    name: 'currency',
+				     					reference:'currency',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货方式',
+									    name: 'deliverGoodsMode',
+				     					reference:'deliverGoodsMode',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货时间',
+									    name: 'deliverGoodsDate',
+				     					reference:'deliverGoodsDate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '付款方式',
+									    name: 'paymentMode',
+				     					reference:'paymentMode',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 188,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '运费',
+									    name: 'freight',
+				     					reference:'freight',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '保险',
+									    name: 'insurance',
+				     					reference:'insurance',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '税率',
+									    name: 'tax_rate',
+				     					reference:'tax_rate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '折扣',
+									    name: 'rebate',
+				     					reference:'rebate',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 222,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '审批人',
+									    name: 'examApprByName',
+				     					reference:'examApprByName'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:70,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 255,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注',
+									    name: 'remark',
+				     					reference:'remark',
+									    colspan:4
+									}
+                            	]
+                            }
+                     ]
+       	            
+       	        },{
+          	         xtype:'panel',
+          	         layout: {
+                   	 type: 'fit',
+                    },
+                    region: "center",
+                    bodyStyle: 'background:#ceebe0; padding:0px;border:0px',
+                    scrollable:true,
+                    items:[{
+                   	 xtype:'grid',
+                   	 enableHdMenu:false,
+                   	 sortableColumns:false,
+                   	 columnLines: true,
+                   	 enableColumnHide:false,
+                   	 enableColumnMove:false,
+                   	 store:me.store,
+                   	 features: [{
+             		        ftype: 'summary'
+             		     }],
+                   	 columns: {
+                   		    items: [
+                   		        {
+                   		            text: "序号",
+                   		            dataIndex: "id",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品编码",
+                   		            dataIndex: "prodCode",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品名称",
+                   		            dataIndex: "prodName",
+                   		            width: 150
+                   		        },{
+                   		            text: "型号规格",
+                   		            dataIndex: "typeModel",
+                   		            width: 150
+                   		        },{
+                   		            text: "数量",
+                   		            dataIndex: "qty",
+                   		            width: 150
+                   		        },{
+                   		            text: "单位",
+                   		            dataIndex: "unit",
+                   		            width: 150
+                   		        },{
+                   		            text: "单价",
+                   		            dataIndex: "univalent",
+                   		            width: 150
+                   		        },{
+                   		            text: "货币",
+                   		            dataIndex: "currency",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品描述",
+                   		            dataIndex: "prodDesc",
+                   		            width: 150
+                   		        },{
+                   		            text: "品牌",
+                   		            dataIndex: "brand",
+                   		            width: 150
+                   		        },{
+                   		            text: "制造商名称",
+                   		            dataIndex: "manufName",
+                   		            width: 150
+                   		        },{
+                   		            text: "货期（交期）",
+                   		            dataIndex: "deliveTime",
+                   		            width: 150
+                   		        },{
+                   		            text: "备注",
+                   		            dataIndex: "remark",
+                   		            width: 150
+                   		        },{
+                   		            text: "合计",
+                   		            dataIndex: "inquiredQTY_quotedPrice$",
+                   		            width: 150,
+                   		            summaryType: 'sum',
+   	                		      	summaryRenderer: function(value, summaryData, dataIndex) {
+   	                		            return'金额总计:'+value;
+   	                		        }
+                   		        }
+                   		    ]
+                   		}
+                   	 
+                   	 
+                   	 
+                 }]
+          	   }
+       	 ]
+       });
+        me.callParent();
+    }
+});
+Ext.define('Hc_Framework.view.hc.SubHcResignController', {
+	extend : 'Hc_Common.view.BaseWinPageController',
+
+	alias : 'controller.subhcresigncontroller',
+	flag:false,
+	record_:'',
+	init: function () {
+		var me = this;
+		var  record=Ext.create('Hc_Framework.model.HcResign',{});
+		this.record_=record
+		for(i=0;i<record.getFields().length;i++){
+			var  name=Ext.util.Format.trim(record.getFields()[i].getName())
+	   		 
+	   		if((this.getReferences())[name]){
+				this.lookupReference(name).on("change", me.onBtnchange, me);	   			 
+	   		 }
+     	}
+		me.callParent();
+	},
+	onBtnEditClick:function(){
+		for(i=0;i<this.record_.getFields().length;i++){
+            var  name=Ext.util.Format.trim(this.record_.getFields()[i].getName())
+  		 if((this.getReferences())[name]){
+  			 if('contactsName'==name||'contactsTel'==name||'contactsFax'==name||'supplierName'==name){
+  				this.lookupReference(name).disable();
+  			 }else{
+  				this.lookupReference(name).enable();
+  			 }
+  			
+  		 }
+  	    }
+		//this.view.lookupReference('inquiryNo').enable()
+
+	},
+	onBtnchange:function(obj , newValue , oldValue , eOpt){
+	 	var  store_=this.view.me_.workObject.store;
+		store_.beginUpdate();
+	 	if(obj.is('combo')){
+	 		this.view.record.set(obj.name, obj.getRawValue()); 		
+	 	}else{
+	 		this.view.record.set(obj.name, obj.getRawValue()); 	
+	 	}
+
+
+	 	
+	 	if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+	 	store_.endUpdate();
+	},
+	onBtnSaveClick:function(){
+	    if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+
+	    for(i=0;i<this.record_.getFields().length-3;i++){
+			
+			  if(!this.lookupReference(Ext.util.Format.trim(this.record_.getFields()[i].getName())).isValid()){
+				  return;
+			  }
+		}
+	    this.view.me_.workObject.store.add(this.view.record);
+	    this.view.me_.onBtnSaveClick(null,this)
+	},
+	onBtnCancelClick:function(){
+		if(this.flag){
+			  this.view.me_.workObject.store.removeAt(this.view.me_.workObject.store.getCount()-1);
+			  //this.view.me_.workObject.getStore().rejectChanges();
+			  this.view.me_.workObject.view.refresh();
+			  this.flag=false
+		}
+		
+      if(this.view.title=='编辑'){
+    		
+      	this.view.me_.workObject.store.rejectChanges()
+      	this.view.me_.workObject.view.refresh();
+    		
+    	}
+          this.view.me_.view.subformActivate=false;
+		  this.view.hide();
+	}
+	
+});
+Ext.define('Hc_Framework.view.hc.SubHcResignModel', {
+    extend: 'Hc_Common.view.BaseWinPageModel',
+
+    alias: 'viewmodel.subhcresignmodel'
+});
+/**
+ * Description: 奖惩管理  view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2014-2015
+ * Company:     hc.
+ * author:      jinxi.li
+ * Createdate:  2016/01/26
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define("Hc_Framework.view.hc.HcRewardPunishment", {
+    extend: "Hc_Common.view.BaseSimplePage",
+
+    alias: 'widget.hcrewardpunishment',
+
+    
+
+    controller: "hcrewardpunishmentcontroller",
+
+    viewModel: {
+        type: "hcrewardpunishmentmodel"
+    },
+    title_:'奖惩管理',
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+            searchItems: [ 
+			{
+			    xtype: 'textfield', 
+			    fieldLabel: '奖惩编码', 
+			    name: 'rewardPunishCode'
+			}
+            ],
+
+            gridModel: 'Hc_Framework.model.HcRewardPunishment',
+            gridSubGrid:'',
+            gridColumns: [
+                          {
+                          	header: '奖惩编码', 
+                          	dataIndex: 'rewardPunishCode', 
+                          	width: '15%',
+                          	renderer: function (data, metadata, record, rowIndex, columnIndex, store) {  
+                          		return '<span onclick=""><a href="#">'+data+' </a></span>';
+                            }
+                          },
+                          {
+                          	header: '员工', 
+                          	dataIndex: 'employName', 
+                          	width: 250
+                          },
+                          {
+              				dataIndex: 'compName',
+              				header: '公司',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'dept',
+                				header: '部门',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'position',
+                				header: '职位 ',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'drawBy',
+              				header: '提请人 ',
+              				width: 150
+                          },
+                          {
+            				dataIndex: 'locaDept',
+            				header: '所在部门 ',
+            				width: 150
+                          },
+                          {
+              				dataIndex: 'registerDate',
+              				header: '登记日期 ',
+              				width: 150
+                          },{
+	              				dataIndex: 'remark',
+	              				header: '备　　注',
+	              				width: 150
+	                      }             
+            ],
+            allendflag:false,
+            gridPrimaryKey: 'rewardPunishCode',
+            gridLoadUrl: Hc.basePath + 'hc_reward_punishment_list/list.json',
+            gridLoadSubUrl: Hc.basePath + 'hc_reward_punishment_list/listAll.json',
+            gridSaveUrl: Hc.basePath + 'hc_reward_punishment_list/batchOperate.json',
+            gridExportUrl: Hc.basePath + 'hc_reward_punishment_list/do_export.json',
+            gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_reward_punishment_list/deleteMasterCustomer.json',
+            gridAddMasterCustomerUrl: Hc.basePath + 'hc_reward_punishment_list/addMasterCustomer.json',
+            gridImportUrl: Hc.basePath + '',
+            subWinTableName:'Hc_Framework.view.hc.SubHcRewardPunishment',
+            subformActivate:false
+        });
+        me.callParent();
+    }
+});
+/**
+ * Description: 奖惩管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+
+Ext.define('Hc_Framework.view.hc.HcRewardPunishmentController', {
+	extend : 'Hc_Common.view.BaseSimplePageController',
+
+	alias : 'controller.hcrewardpunishmentcontroller',
+	
+	init: function () {
+		var me = this;
+		Ext.apply(me, {
+			windowFlag:true,
+			newobj:this.view.subWinTableName
+		})
+		me.callParent();
+	},
+	onEditClick:function( obj , record , item , index , e , eOpts){
+      
+	},
+	onEditClick_:function(obj , td , cellIndex , record , tr , rowIndex , e , eOpts ){
+		var store = Ext.create('Hc_Common.store.Base', {
+            model:'Hc_Framework.model.HcRewardPunishment',
+            autoLoad: false,
+            groupField: 'inquiredQTY_quotedPrice$',
+            proxy: {
+                url: this.view.gridLoadSubUrl
+            }
+        });
+		
+		store.proxy.extraParams['quoteCode'] = record.data.quoteCode; 
+		store.load();	      	 
+		if(cellIndex==0){
+	    	Ext.create(this.view.subWinTableName,{
+	    		title:'编辑',
+	    		record:record,
+	    		me_:this,
+	    		store:store
+	    	}).show();
+	    	this.view.subformActivate=true;
+	    	this.onBtnCancelClick();
+		}
+    	
+    }
+	
+});
+/**
+ * Description: 奖惩管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.view.hc.HcRewardPunishmentModel', {
+    extend: 'Hc_Common.view.BaseSimplePageModel',
+
+    alias: 'viewmodel.hcrewardpunishmentmodel'
+});
+Ext.define("Hc_Framework.view.hc.SubHcRewardPunishment", {
+    extend: "Hc_Common.view.BaseWinPage",
+
+    alias: 'widget.subhcrewardpunishment',
+
+    
+
+    controller: "subhcrewardpunishmentcontroller",
+
+    viewModel: {
+        type: "subhcrewardpunishmentmodel"
+    },
+    title:'新增',
+    width: 1000,
+    height:620,
+    
+    maxWidth:1000,
+   // maxHeight:620,
+    
+    minWidth:1000,
+    minHeight:620,
+    
+    layout:'border',//设置窗口内部布局
+    closeAction:'hide',
+    plain:false,//true则主体背景透明，false则和主体背景有些差别
+    collapsible:false,//是否可收缩
+    modal:true,//是否为模式窗体
+   
+    dockedItems:[{
+    	 xtype: 'toolbar',
+    	 dock: 'top',
+    	 items: [
+           {
+             text: '保存',
+             handler:'onBtnSaveClick',
+             glyph: Hc.Icon.btnSave
+           },
+           {
+               text: '编辑',
+               handler:'onBtnEditClick',
+               glyph: Hc.Icon.btnEdit
+           },
+           {
+               text: '取消',
+               handler:'onBtnCancelClick',
+               glyph: Hc.Icon.btnCancel
+             }
+         ]
+    }],
+    listeners: {
+    	beforeshow:function(obj ,eOpts){
+    		 var currentUser = Ext.create("Hc_Framework.store.CurrentUser");
+    	        currentUser.load();
+    		 var  userCreator;
+             var   supplierNo_;
+             
+             if(this.title=='新增'){
+            	// this.lookupReference('createUser').setValue(currentUser.getAt(0).data.userName);
+                 supplierNo_='PE'+Ext.util.Format.date((new Date()), "Y").substring(2,5)+Ext.util.Format.date((new Date()), "Y").substring(0,2)+Ext.util.Format.date((new Date()), "dmHis");
+              /*   this.lookupReference('inquiryNo').setValue(supplierNo_);
+                // this.lookupReference('modifyUser').disabled=true;
+                 //this.lookupReference('modifyDate').disabled=true;
+                 
+                 this.lookupReference('contactsName').disabled=true;
+                 this.lookupReference('contactsTel').disabled=true;
+                 this.lookupReference('contactsFax').disabled=true;
+                 this.lookupReference('supplierName').disabled=true;
+                 
+                 
+                // this.lookupReference('localDepartment').setValue(currentUser.getAt(0).data.deptName);
+                 this.lookupReference('inquiryDate').setValue(Ext.util.Format.date((new Date()),'Y-m-d H:i:s'));
+
+            */
+             }else if(this.title=='编辑'){
+           	 for(i=0;i<this.record.getFields().length;i++){
+	                 var  name=Ext.util.Format.trim(this.record.getFields()[i].getName())
+           		 
+           		 if((this.getReferences())[name]){
+           			 if(this.lookupReference(name).is('combo')){
+               			 this.lookupReference(name).setRawValue(this.record.get(name));
+               		 }else{
+               			 this.lookupReference(name).setValue(this.record.get(name));
+               		 }
+           			this.lookupReference(name).disable();
+           		 }
+           	 }
+             }
+             this.lookupReference('subhcsuppliercustomer').title='>>>>'+this.me_.view.title_;
+    	}
+    },
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+       	 items:[
+       	        {
+       	         xtype:'panel',
+       	         defaults: {
+       	        	
+                 },
+                 layout: {
+                	 type: 'absolute'
+                 },
+                 reference:'subhcsuppliercustomer',
+                 region: "north",
+                 bodyStyle: 'background:#cbdbe0;',
+                 padding:'3 0 3 0',//(top, right, bottom, left).
+                    items: [
+                            {
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 3,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价编码',
+									    name: 'quoteCode',
+				     					reference:'quoteCode',
+									    listeners: {
+									    	beforerender: function(obj) {
+											   obj.fieldLabel+='<font size="2px" color="red">*</font>';
+									        }
+										  }
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人编码',
+									    name: 'quoteByCode',
+				     					reference:'quoteByCode'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人名称',
+									    name: 'quoteByName',
+				     					reference:'quoteByName'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价方式',
+									    name: 'quoteMode',
+				     					reference:'quoteMode'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:57,
+                            	width:980,
+                            	layout: {
+                                  	 type: 'table',
+                                       columns:4
+                                   },
+                                x: 3,
+                                y: 35,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                               	items:[
+   									{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户编码',
+	   								    name: 'custCode',
+	   								
+				     					reference:'custCode'
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									   // width:313,
+   									    fieldLabel: '客户名称',
+   									    name: 'custName',
+				     					reference:'custName',
+   									    colspan:1
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									    width:500,
+   									    fieldLabel: '客户地址',
+   									    name: 'custAddr',
+				     					reference:'custAddr',
+   									    colspan:4
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户电话',
+	   								    name: 'custTel',
+	   								
+				     					reference:'custTel'
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户传真',
+	   								    name: 'custFax',
+	   								
+				     					reference:'custFax'
+   									}
+   								
+                               	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 95,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系人名称',
+									    name: 'contact_by',
+				     					reference:'contact_by'
+									   
+									},{
+									    xtype:'datefield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系电话 ',
+									    name: 'contacTByTel',
+				     					reference:'contacTByTel'
+									   
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系邮件',
+									    name: 'contactByEmail',
+				     					reference:'contactByEmail',
+									 
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:56,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 128,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '目的站',
+									    name: 'purposePlace',
+				     					reference:'purposePlace',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '包装',
+									    name: 'packing',
+				     					reference:'packing',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '货币',
+									    name: 'currency',
+				     					reference:'currency',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货方式',
+									    name: 'deliverGoodsMode',
+				     					reference:'deliverGoodsMode',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货时间',
+									    name: 'deliverGoodsDate',
+				     					reference:'deliverGoodsDate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '付款方式',
+									    name: 'paymentMode',
+				     					reference:'paymentMode',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 188,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '运费',
+									    name: 'freight',
+				     					reference:'freight',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '保险',
+									    name: 'insurance',
+				     					reference:'insurance',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '税率',
+									    name: 'tax_rate',
+				     					reference:'tax_rate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '折扣',
+									    name: 'rebate',
+				     					reference:'rebate',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 222,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '审批人',
+									    name: 'examApprByName',
+				     					reference:'examApprByName'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:70,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 255,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注',
+									    name: 'remark',
+				     					reference:'remark',
+									    colspan:4
+									}
+                            	]
+                            }
+                     ]
+       	            
+       	        },{
+          	         xtype:'panel',
+          	         layout: {
+                   	 type: 'fit',
+                    },
+                    region: "center",
+                    bodyStyle: 'background:#ceebe0; padding:0px;border:0px',
+                    scrollable:true,
+                    items:[{
+                   	 xtype:'grid',
+                   	 enableHdMenu:false,
+                   	 sortableColumns:false,
+                   	 columnLines: true,
+                   	 enableColumnHide:false,
+                   	 enableColumnMove:false,
+                   	 store:me.store,
+                   	 features: [{
+             		        ftype: 'summary'
+             		     }],
+                   	 columns: {
+                   		    items: [
+                   		        {
+                   		            text: "序号",
+                   		            dataIndex: "id",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品编码",
+                   		            dataIndex: "prodCode",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品名称",
+                   		            dataIndex: "prodName",
+                   		            width: 150
+                   		        },{
+                   		            text: "型号规格",
+                   		            dataIndex: "typeModel",
+                   		            width: 150
+                   		        },{
+                   		            text: "数量",
+                   		            dataIndex: "qty",
+                   		            width: 150
+                   		        },{
+                   		            text: "单位",
+                   		            dataIndex: "unit",
+                   		            width: 150
+                   		        },{
+                   		            text: "单价",
+                   		            dataIndex: "univalent",
+                   		            width: 150
+                   		        },{
+                   		            text: "货币",
+                   		            dataIndex: "currency",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品描述",
+                   		            dataIndex: "prodDesc",
+                   		            width: 150
+                   		        },{
+                   		            text: "品牌",
+                   		            dataIndex: "brand",
+                   		            width: 150
+                   		        },{
+                   		            text: "制造商名称",
+                   		            dataIndex: "manufName",
+                   		            width: 150
+                   		        },{
+                   		            text: "货期（交期）",
+                   		            dataIndex: "deliveTime",
+                   		            width: 150
+                   		        },{
+                   		            text: "备注",
+                   		            dataIndex: "remark",
+                   		            width: 150
+                   		        },{
+                   		            text: "合计",
+                   		            dataIndex: "inquiredQTY_quotedPrice$",
+                   		            width: 150,
+                   		            summaryType: 'sum',
+   	                		      	summaryRenderer: function(value, summaryData, dataIndex) {
+   	                		            return'金额总计:'+value;
+   	                		        }
+                   		        }
+                   		    ]
+                   		}
+                   	 
+                   	 
+                   	 
+                 }]
+          	   }
+       	 ]
+       });
+        me.callParent();
+    }
+});
+Ext.define('Hc_Framework.view.hc.SubHcRewardPunishmentController', {
+	extend : 'Hc_Common.view.BaseWinPageController',
+
+	alias : 'controller.subhcrewardpunishmentcontroller',
+	flag:false,
+	record_:'',
+	init: function () {
+		var me = this;
+		var  record=Ext.create('Hc_Framework.model.HcRewardPunishment',{});
+		this.record_=record
+		for(i=0;i<record.getFields().length;i++){
+			var  name=Ext.util.Format.trim(record.getFields()[i].getName())
+	   		 
+	   		if((this.getReferences())[name]){
+				this.lookupReference(name).on("change", me.onBtnchange, me);	   			 
+	   		 }
+     	}
+		me.callParent();
+	},
+	onBtnEditClick:function(){
+		for(i=0;i<this.record_.getFields().length;i++){
+            var  name=Ext.util.Format.trim(this.record_.getFields()[i].getName())
+  		 if((this.getReferences())[name]){
+  			 if('contactsName'==name||'contactsTel'==name||'contactsFax'==name||'supplierName'==name){
+  				this.lookupReference(name).disable();
+  			 }else{
+  				this.lookupReference(name).enable();
+  			 }
+  			
+  		 }
+  	    }
+		//this.view.lookupReference('inquiryNo').enable()
+
+	},
+	onBtnchange:function(obj , newValue , oldValue , eOpt){
+	 	var  store_=this.view.me_.workObject.store;
+		store_.beginUpdate();
+	 	if(obj.is('combo')){
+	 		this.view.record.set(obj.name, obj.getRawValue()); 		
+	 	}else{
+	 		this.view.record.set(obj.name, obj.getRawValue()); 	
+	 	}
+
+
+	 	
+	 	if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+	 	store_.endUpdate();
+	},
+	onBtnSaveClick:function(){
+	    if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+
+	    for(i=0;i<this.record_.getFields().length-3;i++){
+			
+			  if(!this.lookupReference(Ext.util.Format.trim(this.record_.getFields()[i].getName())).isValid()){
+				  return;
+			  }
+		}
+	    this.view.me_.workObject.store.add(this.view.record);
+	    this.view.me_.onBtnSaveClick(null,this)
+	},
+	onBtnCancelClick:function(){
+		if(this.flag){
+			  this.view.me_.workObject.store.removeAt(this.view.me_.workObject.store.getCount()-1);
+			  //this.view.me_.workObject.getStore().rejectChanges();
+			  this.view.me_.workObject.view.refresh();
+			  this.flag=false
+		}
+		
+      if(this.view.title=='编辑'){
+    		
+      	this.view.me_.workObject.store.rejectChanges()
+      	this.view.me_.workObject.view.refresh();
+    		
+    	}
+          this.view.me_.view.subformActivate=false;
+		  this.view.hide();
+	}
+	
+});
+Ext.define('Hc_Framework.view.hc.SubHcRewardPunishmentModel', {
+    extend: 'Hc_Common.view.BaseWinPageModel',
+
+    alias: 'viewmodel.subhcrewardpunishmentmodel'
+});
+/**
+ * Description: 薪资异动管理  view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2014-2015
+ * Company:     hc.
+ * author:      jinxi.li
+ * Createdate:  2016/01/26
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define("Hc_Framework.view.hc.HcSalaryPunishment", {
+    extend: "Hc_Common.view.BaseSimplePage",
+
+    alias: 'widget.hcsalarypunishment',
+
+    
+
+    controller: "hcsalarypunishmentcontroller",
+
+    viewModel: {
+        type: "hcsalarypunishmentmodel"
+    },
+    title_:'薪资异动',
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+            searchItems: [ 
+			{
+			    xtype: 'textfield', 
+			    fieldLabel: '异动编码', 
+			    name: 'salaryPunishCode'
+			}
+            ],
+
+            gridModel: 'Hc_Framework.model.HcSalaryPunishment',
+            gridSubGrid:'',
+            gridColumns: [
+                          {
+                          	header: '异动编码', 
+                          	dataIndex: 'salaryPunishCode', 
+                          	width: '15%',
+                          	renderer: function (data, metadata, record, rowIndex, columnIndex, store) {  
+                          		return '<span onclick=""><a href="#">'+data+' </a></span>';
+                            }
+                          },
+                          {
+                          	header: '申请员工', 
+                          	dataIndex: 'employeeName', 
+                          	width: 250
+                          },
+                          {
+              				dataIndex: 'drawBy',
+              				header: '提请人',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'position',
+                				header: '职位',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'checkDate',
+                				header: '到职日期 ',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'applyDate',
+              				header: '申请日期 ',
+              				width: 150
+                          },
+                          {
+            				dataIndex: 'adjustAmount',
+            				header: '调整金额 ',
+            				width: 150
+                          },
+                          {
+              				dataIndex: 'adjustedAmount',
+              				header: '调整后薪资 ',
+              				width: 150
+                          },{
+	              				dataIndex: 'remark',
+	              				header: '备　　注',
+	              				width: 150
+	                      }             
+            ],
+            allendflag:false,
+            gridPrimaryKey: 'salaryPunishCode',
+            gridLoadUrl: Hc.basePath + 'hc_salary_punishment_list/list.json',
+            gridLoadSubUrl: Hc.basePath + 'hc_salary_punishment_list/listAll.json',
+            gridSaveUrl: Hc.basePath + 'hc_salary_punishment_list/batchOperate.json',
+            gridExportUrl: Hc.basePath + 'hc_salary_punishment_list/do_export.json',
+            gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_salary_punishment_list/deleteMasterCustomer.json',
+            gridAddMasterCustomerUrl: Hc.basePath + 'hc_salary_punishment_list/addMasterCustomer.json',
+            gridImportUrl: Hc.basePath + '',
+            subWinTableName:'Hc_Framework.view.hc.SubHcSalaryPunishment',
+            subformActivate:false
+        });
+        me.callParent();
+    }
+});
+/**
+ * Description: 薪资异动管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+
+Ext.define('Hc_Framework.view.hc.HcSalaryPunishmentController', {
+	extend : 'Hc_Common.view.BaseSimplePageController',
+
+	alias : 'controller.hcsalarypunishmentcontroller',
+	
+	init: function () {
+		var me = this;
+		Ext.apply(me, {
+			windowFlag:true,
+			newobj:this.view.subWinTableName
+		})
+		me.callParent();
+	},
+	onEditClick:function( obj , record , item , index , e , eOpts){
+      
+	},
+	onEditClick_:function(obj , td , cellIndex , record , tr , rowIndex , e , eOpts ){
+		var store = Ext.create('Hc_Common.store.Base', {
+            model:'Hc_Framework.model.HcSalaryPunishment',
+            autoLoad: false,
+            groupField: 'inquiredQTY_quotedPrice$',
+            proxy: {
+                url: this.view.gridLoadSubUrl
+            }
+        });
+		
+		store.proxy.extraParams['quoteCode'] = record.data.quoteCode; 
+		store.load();	      	 
+		if(cellIndex==0){
+	    	Ext.create(this.view.subWinTableName,{
+	    		title:'编辑',
+	    		record:record,
+	    		me_:this,
+	    		store:store
+	    	}).show();
+	    	this.view.subformActivate=true;
+	    	this.onBtnCancelClick();
+		}
+    	
+    }
+	
+});
+/**
+ * Description: 薪资异动管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.view.hc.HcSalaryPunishmentModel', {
+    extend: 'Hc_Common.view.BaseSimplePageModel',
+
+    alias: 'viewmodel.hcsalarypunishmentmodel'
+});
+Ext.define("Hc_Framework.view.hc.SubHcSalaryPunishment", {
+    extend: "Hc_Common.view.BaseWinPage",
+
+    alias: 'widget.subhcsalarypunishment',
+
+    
+
+    controller: "subhcsalarypunishmentcontroller",
+
+    viewModel: {
+        type: "subhcsalarypunishmentmodel"
+    },
+    title:'新增',
+    width: 1000,
+    height:620,
+    
+    maxWidth:1000,
+   // maxHeight:620,
+    
+    minWidth:1000,
+    minHeight:620,
+    
+    layout:'border',//设置窗口内部布局
+    closeAction:'hide',
+    plain:false,//true则主体背景透明，false则和主体背景有些差别
+    collapsible:false,//是否可收缩
+    modal:true,//是否为模式窗体
+   
+    dockedItems:[{
+    	 xtype: 'toolbar',
+    	 dock: 'top',
+    	 items: [
+           {
+             text: '保存',
+             handler:'onBtnSaveClick',
+             glyph: Hc.Icon.btnSave
+           },
+           {
+               text: '编辑',
+               handler:'onBtnEditClick',
+               glyph: Hc.Icon.btnEdit
+           },
+           {
+               text: '取消',
+               handler:'onBtnCancelClick',
+               glyph: Hc.Icon.btnCancel
+             }
+         ]
+    }],
+    listeners: {
+    	beforeshow:function(obj ,eOpts){
+    		 var currentUser = Ext.create("Hc_Framework.store.CurrentUser");
+    	        currentUser.load();
+    		 var  userCreator;
+             var   supplierNo_;
+             
+             if(this.title=='新增'){
+            	// this.lookupReference('createUser').setValue(currentUser.getAt(0).data.userName);
+                 supplierNo_='PE'+Ext.util.Format.date((new Date()), "Y").substring(2,5)+Ext.util.Format.date((new Date()), "Y").substring(0,2)+Ext.util.Format.date((new Date()), "dmHis");
+              /*   this.lookupReference('inquiryNo').setValue(supplierNo_);
+                // this.lookupReference('modifyUser').disabled=true;
+                 //this.lookupReference('modifyDate').disabled=true;
+                 
+                 this.lookupReference('contactsName').disabled=true;
+                 this.lookupReference('contactsTel').disabled=true;
+                 this.lookupReference('contactsFax').disabled=true;
+                 this.lookupReference('supplierName').disabled=true;
+                 
+                 
+                // this.lookupReference('localDepartment').setValue(currentUser.getAt(0).data.deptName);
+                 this.lookupReference('inquiryDate').setValue(Ext.util.Format.date((new Date()),'Y-m-d H:i:s'));
+
+            */
+             }else if(this.title=='编辑'){
+           	 for(i=0;i<this.record.getFields().length;i++){
+	                 var  name=Ext.util.Format.trim(this.record.getFields()[i].getName())
+           		 
+           		 if((this.getReferences())[name]){
+           			 if(this.lookupReference(name).is('combo')){
+               			 this.lookupReference(name).setRawValue(this.record.get(name));
+               		 }else{
+               			 this.lookupReference(name).setValue(this.record.get(name));
+               		 }
+           			this.lookupReference(name).disable();
+           		 }
+           	 }
+             }
+             this.lookupReference('subhcsuppliercustomer').title='>>>>'+this.me_.view.title_;
+    	}
+    },
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+       	 items:[
+       	        {
+       	         xtype:'panel',
+       	         defaults: {
+       	        	
+                 },
+                 layout: {
+                	 type: 'absolute'
+                 },
+                 reference:'subhcsuppliercustomer',
+                 region: "north",
+                 bodyStyle: 'background:#cbdbe0;',
+                 padding:'3 0 3 0',//(top, right, bottom, left).
+                    items: [
+                            {
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 3,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价编码',
+									    name: 'quoteCode',
+				     					reference:'quoteCode',
+									    listeners: {
+									    	beforerender: function(obj) {
+											   obj.fieldLabel+='<font size="2px" color="red">*</font>';
+									        }
+										  }
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人编码',
+									    name: 'quoteByCode',
+				     					reference:'quoteByCode'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人名称',
+									    name: 'quoteByName',
+				     					reference:'quoteByName'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价方式',
+									    name: 'quoteMode',
+				     					reference:'quoteMode'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:57,
+                            	width:980,
+                            	layout: {
+                                  	 type: 'table',
+                                       columns:4
+                                   },
+                                x: 3,
+                                y: 35,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                               	items:[
+   									{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户编码',
+	   								    name: 'custCode',
+	   								
+				     					reference:'custCode'
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									   // width:313,
+   									    fieldLabel: '客户名称',
+   									    name: 'custName',
+				     					reference:'custName',
+   									    colspan:1
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									    width:500,
+   									    fieldLabel: '客户地址',
+   									    name: 'custAddr',
+				     					reference:'custAddr',
+   									    colspan:4
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户电话',
+	   								    name: 'custTel',
+	   								
+				     					reference:'custTel'
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户传真',
+	   								    name: 'custFax',
+	   								
+				     					reference:'custFax'
+   									}
+   								
+                               	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 95,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系人名称',
+									    name: 'contact_by',
+				     					reference:'contact_by'
+									   
+									},{
+									    xtype:'datefield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系电话 ',
+									    name: 'contacTByTel',
+				     					reference:'contacTByTel'
+									   
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系邮件',
+									    name: 'contactByEmail',
+				     					reference:'contactByEmail',
+									 
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:56,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 128,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '目的站',
+									    name: 'purposePlace',
+				     					reference:'purposePlace',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '包装',
+									    name: 'packing',
+				     					reference:'packing',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '货币',
+									    name: 'currency',
+				     					reference:'currency',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货方式',
+									    name: 'deliverGoodsMode',
+				     					reference:'deliverGoodsMode',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货时间',
+									    name: 'deliverGoodsDate',
+				     					reference:'deliverGoodsDate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '付款方式',
+									    name: 'paymentMode',
+				     					reference:'paymentMode',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 188,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '运费',
+									    name: 'freight',
+				     					reference:'freight',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '保险',
+									    name: 'insurance',
+				     					reference:'insurance',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '税率',
+									    name: 'tax_rate',
+				     					reference:'tax_rate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '折扣',
+									    name: 'rebate',
+				     					reference:'rebate',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 222,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '审批人',
+									    name: 'examApprByName',
+				     					reference:'examApprByName'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:70,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 255,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注',
+									    name: 'remark',
+				     					reference:'remark',
+									    colspan:4
+									}
+                            	]
+                            }
+                     ]
+       	            
+       	        },{
+          	         xtype:'panel',
+          	         layout: {
+                   	 type: 'fit',
+                    },
+                    region: "center",
+                    bodyStyle: 'background:#ceebe0; padding:0px;border:0px',
+                    scrollable:true,
+                    items:[{
+                   	 xtype:'grid',
+                   	 enableHdMenu:false,
+                   	 sortableColumns:false,
+                   	 columnLines: true,
+                   	 enableColumnHide:false,
+                   	 enableColumnMove:false,
+                   	 store:me.store,
+                   	 features: [{
+             		        ftype: 'summary'
+             		     }],
+                   	 columns: {
+                   		    items: [
+                   		        {
+                   		            text: "序号",
+                   		            dataIndex: "id",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品编码",
+                   		            dataIndex: "prodCode",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品名称",
+                   		            dataIndex: "prodName",
+                   		            width: 150
+                   		        },{
+                   		            text: "型号规格",
+                   		            dataIndex: "typeModel",
+                   		            width: 150
+                   		        },{
+                   		            text: "数量",
+                   		            dataIndex: "qty",
+                   		            width: 150
+                   		        },{
+                   		            text: "单位",
+                   		            dataIndex: "unit",
+                   		            width: 150
+                   		        },{
+                   		            text: "单价",
+                   		            dataIndex: "univalent",
+                   		            width: 150
+                   		        },{
+                   		            text: "货币",
+                   		            dataIndex: "currency",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品描述",
+                   		            dataIndex: "prodDesc",
+                   		            width: 150
+                   		        },{
+                   		            text: "品牌",
+                   		            dataIndex: "brand",
+                   		            width: 150
+                   		        },{
+                   		            text: "制造商名称",
+                   		            dataIndex: "manufName",
+                   		            width: 150
+                   		        },{
+                   		            text: "货期（交期）",
+                   		            dataIndex: "deliveTime",
+                   		            width: 150
+                   		        },{
+                   		            text: "备注",
+                   		            dataIndex: "remark",
+                   		            width: 150
+                   		        },{
+                   		            text: "合计",
+                   		            dataIndex: "inquiredQTY_quotedPrice$",
+                   		            width: 150,
+                   		            summaryType: 'sum',
+   	                		      	summaryRenderer: function(value, summaryData, dataIndex) {
+   	                		            return'金额总计:'+value;
+   	                		        }
+                   		        }
+                   		    ]
+                   		}
+                   	 
+                   	 
+                   	 
+                 }]
+          	   }
+       	 ]
+       });
+        me.callParent();
+    }
+});
+Ext.define('Hc_Framework.view.hc.SubHcSalaryPunishmentController', {
+	extend : 'Hc_Common.view.BaseWinPageController',
+
+	alias : 'controller.subhcsalarypunishmentcontroller',
+	flag:false,
+	record_:'',
+	init: function () {
+		var me = this;
+		var  record=Ext.create('Hc_Framework.model.HcSalaryPunishment',{});
+		this.record_=record
+		for(i=0;i<record.getFields().length;i++){
+			var  name=Ext.util.Format.trim(record.getFields()[i].getName())
+	   		 
+	   		if((this.getReferences())[name]){
+				this.lookupReference(name).on("change", me.onBtnchange, me);	   			 
+	   		 }
+     	}
+		me.callParent();
+	},
+	onBtnEditClick:function(){
+		for(i=0;i<this.record_.getFields().length;i++){
+            var  name=Ext.util.Format.trim(this.record_.getFields()[i].getName())
+  		 if((this.getReferences())[name]){
+  			 if('contactsName'==name||'contactsTel'==name||'contactsFax'==name||'supplierName'==name){
+  				this.lookupReference(name).disable();
+  			 }else{
+  				this.lookupReference(name).enable();
+  			 }
+  			
+  		 }
+  	    }
+		//this.view.lookupReference('inquiryNo').enable()
+
+	},
+	onBtnchange:function(obj , newValue , oldValue , eOpt){
+	 	var  store_=this.view.me_.workObject.store;
+		store_.beginUpdate();
+	 	if(obj.is('combo')){
+	 		this.view.record.set(obj.name, obj.getRawValue()); 		
+	 	}else{
+	 		this.view.record.set(obj.name, obj.getRawValue()); 	
+	 	}
+
+
+	 	
+	 	if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+	 	store_.endUpdate();
+	},
+	onBtnSaveClick:function(){
+	    if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+
+	    for(i=0;i<this.record_.getFields().length-3;i++){
+			
+			  if(!this.lookupReference(Ext.util.Format.trim(this.record_.getFields()[i].getName())).isValid()){
+				  return;
+			  }
+		}
+	    this.view.me_.workObject.store.add(this.view.record);
+	    this.view.me_.onBtnSaveClick(null,this)
+	},
+	onBtnCancelClick:function(){
+		if(this.flag){
+			  this.view.me_.workObject.store.removeAt(this.view.me_.workObject.store.getCount()-1);
+			  //this.view.me_.workObject.getStore().rejectChanges();
+			  this.view.me_.workObject.view.refresh();
+			  this.flag=false
+		}
+		
+      if(this.view.title=='编辑'){
+    		
+      	this.view.me_.workObject.store.rejectChanges()
+      	this.view.me_.workObject.view.refresh();
+    		
+    	}
+          this.view.me_.view.subformActivate=false;
+		  this.view.hide();
+	}
+	
+});
+Ext.define('Hc_Framework.view.hc.SubHcSalaryPunishmentModel', {
+    extend: 'Hc_Common.view.BaseWinPageModel',
+
+    alias: 'viewmodel.subhcsalarypunishmentmodel'
+});
+/**
+ * Description: 盖章管理  view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2014-2015
+ * Company:     hc.
+ * author:      jinxi.li
+ * Createdate:  2016/01/26
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define("Hc_Framework.view.hc.HcSeal", {
+    extend: "Hc_Common.view.BaseSimplePage",
+
+    alias: 'widget.hcseal',
+
+    
+
+    controller: "hcsealcontroller",
+
+    viewModel: {
+        type: "hcsealmodel"
+    },
+    title_:'盖章管理',
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+            searchItems: [ 
+			{
+			    xtype: 'textfield', 
+			    fieldLabel: '盖章单', 
+			    name: 'sealCode'
+			}
+            ],
+
+            gridModel: 'Hc_Framework.model.HcSeal',
+            gridSubGrid:'',
+            gridColumns: [
+                          {
+                          	header: '盖章单', 
+                          	dataIndex: 'sealCode', 
+                          	width: '15%',
+                          	renderer: function (data, metadata, record, rowIndex, columnIndex, store) {  
+                          		return '<span onclick=""><a href="#">'+data+' </a></span>';
+                            }
+                          },
+                          {
+                          	header: '经办人', 
+                          	dataIndex: 'handleByName', 
+                          	width: 250
+                          },
+                          {
+              				dataIndex: 'borrowDept',
+              				header: '借用部门',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'borrowIndiaByName',
+                				header: '借印人',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'loanDate',
+                				header: '借出时间 ',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'useTerm',
+              				header: '使用期限 ',
+              				width: 150
+                          },
+                          {
+            				dataIndex: 'useScope',
+            				header: '使用范围 ',
+            				width: 150
+                          },
+                          {
+              				dataIndex: 'indiaWitnBy',
+              				header: '见证人 ',
+              				width: 150
+                          },{
+	              				dataIndex: 'remark',
+	              				header: '备　　注',
+	              				width: 150
+	                      }             
+            ],
+            allendflag:false,
+            gridPrimaryKey: 'sealCode',
+            gridLoadUrl: Hc.basePath + 'hc_seal_list/list.json',
+            gridLoadSubUrl: Hc.basePath + 'hc_seal_list/listAll.json',
+            gridSaveUrl: Hc.basePath + 'hc_seal_list/batchOperate.json',
+            gridExportUrl: Hc.basePath + 'hc_seal_list/do_export.json',
+            gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_seal_list/deleteMasterCustomer.json',
+            gridAddMasterCustomerUrl: Hc.basePath + 'hc_seal_list/addMasterCustomer.json',
+            gridImportUrl: Hc.basePath + '',
+            subWinTableName:'Hc_Framework.view.hc.SubHcSeal',
+            subformActivate:false
+        });
+        me.callParent();
+    }
+});
+/**
+ * Description: 盖章管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+
+Ext.define('Hc_Framework.view.hc.HcSealController', {
+	extend : 'Hc_Common.view.BaseSimplePageController',
+
+	alias : 'controller.hcsealcontroller',
+	
+	init: function () {
+		var me = this;
+		Ext.apply(me, {
+			windowFlag:true,
+			newobj:this.view.subWinTableName
+		})
+		me.callParent();
+	},
+	onEditClick:function( obj , record , item , index , e , eOpts){
+      
+	},
+	onEditClick_:function(obj , td , cellIndex , record , tr , rowIndex , e , eOpts ){
+		var store = Ext.create('Hc_Common.store.Base', {
+            model:'Hc_Framework.model.HcSeal',
+            autoLoad: false,
+            groupField: 'inquiredQTY_quotedPrice$',
+            proxy: {
+                url: this.view.gridLoadSubUrl
+            }
+        });
+		
+		store.proxy.extraParams['quoteCode'] = record.data.quoteCode; 
+		store.load();	      	 
+		if(cellIndex==0){
+	    	Ext.create(this.view.subWinTableName,{
+	    		title:'编辑',
+	    		record:record,
+	    		me_:this,
+	    		store:store
+	    	}).show();
+	    	this.view.subformActivate=true;
+	    	this.onBtnCancelClick();
+		}
+    	
+    }
+	
+});
+/**
+ * Description: 盖章管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.view.hc.HcSealModel', {
+    extend: 'Hc_Common.view.BaseSimplePageModel',
+
+    alias: 'viewmodel.hcsealmodel'
+});
+Ext.define("Hc_Framework.view.hc.SubHcSeal", {
+    extend: "Hc_Common.view.BaseWinPage",
+
+    alias: 'widget.subhcseal',
+
+    
+
+    controller: "subhcsealcontroller",
+
+    viewModel: {
+        type: "subhcsealmodel"
+    },
+    title:'新增',
+    width: 1000,
+    height:620,
+    
+    maxWidth:1000,
+   // maxHeight:620,
+    
+    minWidth:1000,
+    minHeight:620,
+    
+    layout:'border',//设置窗口内部布局
+    closeAction:'hide',
+    plain:false,//true则主体背景透明，false则和主体背景有些差别
+    collapsible:false,//是否可收缩
+    modal:true,//是否为模式窗体
+   
+    dockedItems:[{
+    	 xtype: 'toolbar',
+    	 dock: 'top',
+    	 items: [
+           {
+             text: '保存',
+             handler:'onBtnSaveClick',
+             glyph: Hc.Icon.btnSave
+           },
+           {
+               text: '编辑',
+               handler:'onBtnEditClick',
+               glyph: Hc.Icon.btnEdit
+           },
+           {
+               text: '取消',
+               handler:'onBtnCancelClick',
+               glyph: Hc.Icon.btnCancel
+             }
+         ]
+    }],
+    listeners: {
+    	beforeshow:function(obj ,eOpts){
+    		 var currentUser = Ext.create("Hc_Framework.store.CurrentUser");
+    	        currentUser.load();
+    		 var  userCreator;
+             var   supplierNo_;
+             
+             if(this.title=='新增'){
+            	// this.lookupReference('createUser').setValue(currentUser.getAt(0).data.userName);
+                 supplierNo_='PE'+Ext.util.Format.date((new Date()), "Y").substring(2,5)+Ext.util.Format.date((new Date()), "Y").substring(0,2)+Ext.util.Format.date((new Date()), "dmHis");
+              /*   this.lookupReference('inquiryNo').setValue(supplierNo_);
+                // this.lookupReference('modifyUser').disabled=true;
+                 //this.lookupReference('modifyDate').disabled=true;
+                 
+                 this.lookupReference('contactsName').disabled=true;
+                 this.lookupReference('contactsTel').disabled=true;
+                 this.lookupReference('contactsFax').disabled=true;
+                 this.lookupReference('supplierName').disabled=true;
+                 
+                 
+                // this.lookupReference('localDepartment').setValue(currentUser.getAt(0).data.deptName);
+                 this.lookupReference('inquiryDate').setValue(Ext.util.Format.date((new Date()),'Y-m-d H:i:s'));
+
+            */
+             }else if(this.title=='编辑'){
+           	 for(i=0;i<this.record.getFields().length;i++){
+	                 var  name=Ext.util.Format.trim(this.record.getFields()[i].getName())
+           		 
+           		 if((this.getReferences())[name]){
+           			 if(this.lookupReference(name).is('combo')){
+               			 this.lookupReference(name).setRawValue(this.record.get(name));
+               		 }else{
+               			 this.lookupReference(name).setValue(this.record.get(name));
+               		 }
+           			this.lookupReference(name).disable();
+           		 }
+           	 }
+             }
+             this.lookupReference('subhcsuppliercustomer').title='>>>>'+this.me_.view.title_;
+    	}
+    },
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+       	 items:[
+       	        {
+       	         xtype:'panel',
+       	         defaults: {
+       	        	
+                 },
+                 layout: {
+                	 type: 'absolute'
+                 },
+                 reference:'subhcsuppliercustomer',
+                 region: "north",
+                 bodyStyle: 'background:#cbdbe0;',
+                 padding:'3 0 3 0',//(top, right, bottom, left).
+                    items: [
+                            {
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 3,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价编码',
+									    name: 'quoteCode',
+				     					reference:'quoteCode',
+									    listeners: {
+									    	beforerender: function(obj) {
+											   obj.fieldLabel+='<font size="2px" color="red">*</font>';
+									        }
+										  }
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人编码',
+									    name: 'quoteByCode',
+				     					reference:'quoteByCode'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人名称',
+									    name: 'quoteByName',
+				     					reference:'quoteByName'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价方式',
+									    name: 'quoteMode',
+				     					reference:'quoteMode'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:57,
+                            	width:980,
+                            	layout: {
+                                  	 type: 'table',
+                                       columns:4
+                                   },
+                                x: 3,
+                                y: 35,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                               	items:[
+   									{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户编码',
+	   								    name: 'custCode',
+	   								
+				     					reference:'custCode'
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									   // width:313,
+   									    fieldLabel: '客户名称',
+   									    name: 'custName',
+				     					reference:'custName',
+   									    colspan:1
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									    width:500,
+   									    fieldLabel: '客户地址',
+   									    name: 'custAddr',
+				     					reference:'custAddr',
+   									    colspan:4
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户电话',
+	   								    name: 'custTel',
+	   								
+				     					reference:'custTel'
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户传真',
+	   								    name: 'custFax',
+	   								
+				     					reference:'custFax'
+   									}
+   								
+                               	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 95,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系人名称',
+									    name: 'contact_by',
+				     					reference:'contact_by'
+									   
+									},{
+									    xtype:'datefield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系电话 ',
+									    name: 'contacTByTel',
+				     					reference:'contacTByTel'
+									   
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系邮件',
+									    name: 'contactByEmail',
+				     					reference:'contactByEmail',
+									 
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:56,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 128,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '目的站',
+									    name: 'purposePlace',
+				     					reference:'purposePlace',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '包装',
+									    name: 'packing',
+				     					reference:'packing',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '货币',
+									    name: 'currency',
+				     					reference:'currency',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货方式',
+									    name: 'deliverGoodsMode',
+				     					reference:'deliverGoodsMode',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货时间',
+									    name: 'deliverGoodsDate',
+				     					reference:'deliverGoodsDate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '付款方式',
+									    name: 'paymentMode',
+				     					reference:'paymentMode',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 188,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '运费',
+									    name: 'freight',
+				     					reference:'freight',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '保险',
+									    name: 'insurance',
+				     					reference:'insurance',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '税率',
+									    name: 'tax_rate',
+				     					reference:'tax_rate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '折扣',
+									    name: 'rebate',
+				     					reference:'rebate',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 222,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '审批人',
+									    name: 'examApprByName',
+				     					reference:'examApprByName'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:70,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 255,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注',
+									    name: 'remark',
+				     					reference:'remark',
+									    colspan:4
+									}
+                            	]
+                            }
+                     ]
+       	            
+       	        },{
+          	         xtype:'panel',
+          	         layout: {
+                   	 type: 'fit',
+                    },
+                    region: "center",
+                    bodyStyle: 'background:#ceebe0; padding:0px;border:0px',
+                    scrollable:true,
+                    items:[{
+                   	 xtype:'grid',
+                   	 enableHdMenu:false,
+                   	 sortableColumns:false,
+                   	 columnLines: true,
+                   	 enableColumnHide:false,
+                   	 enableColumnMove:false,
+                   	 store:me.store,
+                   	 features: [{
+             		        ftype: 'summary'
+             		     }],
+                   	 columns: {
+                   		    items: [
+                   		        {
+                   		            text: "序号",
+                   		            dataIndex: "id",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品编码",
+                   		            dataIndex: "prodCode",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品名称",
+                   		            dataIndex: "prodName",
+                   		            width: 150
+                   		        },{
+                   		            text: "型号规格",
+                   		            dataIndex: "typeModel",
+                   		            width: 150
+                   		        },{
+                   		            text: "数量",
+                   		            dataIndex: "qty",
+                   		            width: 150
+                   		        },{
+                   		            text: "单位",
+                   		            dataIndex: "unit",
+                   		            width: 150
+                   		        },{
+                   		            text: "单价",
+                   		            dataIndex: "univalent",
+                   		            width: 150
+                   		        },{
+                   		            text: "货币",
+                   		            dataIndex: "currency",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品描述",
+                   		            dataIndex: "prodDesc",
+                   		            width: 150
+                   		        },{
+                   		            text: "品牌",
+                   		            dataIndex: "brand",
+                   		            width: 150
+                   		        },{
+                   		            text: "制造商名称",
+                   		            dataIndex: "manufName",
+                   		            width: 150
+                   		        },{
+                   		            text: "货期（交期）",
+                   		            dataIndex: "deliveTime",
+                   		            width: 150
+                   		        },{
+                   		            text: "备注",
+                   		            dataIndex: "remark",
+                   		            width: 150
+                   		        },{
+                   		            text: "合计",
+                   		            dataIndex: "inquiredQTY_quotedPrice$",
+                   		            width: 150,
+                   		            summaryType: 'sum',
+   	                		      	summaryRenderer: function(value, summaryData, dataIndex) {
+   	                		            return'金额总计:'+value;
+   	                		        }
+                   		        }
+                   		    ]
+                   		}
+                   	 
+                   	 
+                   	 
+                 }]
+          	   }
+       	 ]
+       });
+        me.callParent();
+    }
+});
+Ext.define('Hc_Framework.view.hc.SubHcSealController', {
+	extend : 'Hc_Common.view.BaseWinPageController',
+
+	alias : 'controller.subhcsealcontroller',
+	flag:false,
+	record_:'',
+	init: function () {
+		var me = this;
+		var  record=Ext.create('Hc_Framework.model.HcSeal',{});
+		this.record_=record
+		for(i=0;i<record.getFields().length;i++){
+			var  name=Ext.util.Format.trim(record.getFields()[i].getName())
+	   		 
+	   		if((this.getReferences())[name]){
+				this.lookupReference(name).on("change", me.onBtnchange, me);	   			 
+	   		 }
+     	}
+		me.callParent();
+	},
+	onBtnEditClick:function(){
+		for(i=0;i<this.record_.getFields().length;i++){
+            var  name=Ext.util.Format.trim(this.record_.getFields()[i].getName())
+  		 if((this.getReferences())[name]){
+  			 if('contactsName'==name||'contactsTel'==name||'contactsFax'==name||'supplierName'==name){
+  				this.lookupReference(name).disable();
+  			 }else{
+  				this.lookupReference(name).enable();
+  			 }
+  			
+  		 }
+  	    }
+		//this.view.lookupReference('inquiryNo').enable()
+
+	},
+	onBtnchange:function(obj , newValue , oldValue , eOpt){
+	 	var  store_=this.view.me_.workObject.store;
+		store_.beginUpdate();
+	 	if(obj.is('combo')){
+	 		this.view.record.set(obj.name, obj.getRawValue()); 		
+	 	}else{
+	 		this.view.record.set(obj.name, obj.getRawValue()); 	
+	 	}
+
+
+	 	
+	 	if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+	 	store_.endUpdate();
+	},
+	onBtnSaveClick:function(){
+	    if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+
+	    for(i=0;i<this.record_.getFields().length-3;i++){
+			
+			  if(!this.lookupReference(Ext.util.Format.trim(this.record_.getFields()[i].getName())).isValid()){
+				  return;
+			  }
+		}
+	    this.view.me_.workObject.store.add(this.view.record);
+	    this.view.me_.onBtnSaveClick(null,this)
+	},
+	onBtnCancelClick:function(){
+		if(this.flag){
+			  this.view.me_.workObject.store.removeAt(this.view.me_.workObject.store.getCount()-1);
+			  //this.view.me_.workObject.getStore().rejectChanges();
+			  this.view.me_.workObject.view.refresh();
+			  this.flag=false
+		}
+		
+      if(this.view.title=='编辑'){
+    		
+      	this.view.me_.workObject.store.rejectChanges()
+      	this.view.me_.workObject.view.refresh();
+    		
+    	}
+          this.view.me_.view.subformActivate=false;
+		  this.view.hide();
+	}
+	
+});
+Ext.define('Hc_Framework.view.hc.SubHcSealModel', {
+    extend: 'Hc_Common.view.BaseWinPageModel',
+
+    alias: 'viewmodel.subhcsealmodel'
+});
+/**
+ * Description: 任务管理  view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2014-2015
+ * Company:     hc.
+ * author:      jinxi.li
+ * Createdate:  2016/01/26
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define("Hc_Framework.view.hc.HcTask", {
+    extend: "Hc_Common.view.BaseSimplePage",
+
+    alias: 'widget.hctask',
+
+    
+
+    controller: "hctaskcontroller",
+
+    viewModel: {
+        type: "hctaskmodel"
+    },
+    title_:'任务管理',
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+            searchItems: [ 
+			{
+			    xtype: 'textfield', 
+			    fieldLabel: '任务编码', 
+			    name: 'taskCode'
+			}
+            ],
+
+            gridModel: 'Hc_Framework.model.HcTask',
+            gridSubGrid:'',
+            gridColumns: [
+                          {
+                          	header: '任务编码', 
+                          	dataIndex: 'taskCode', 
+                          	width: '15%',
+                          	renderer: function (data, metadata, record, rowIndex, columnIndex, store) {  
+                          		return '<span onclick=""><a href="#">'+data+' </a></span>';
+                            }
+                          },
+                          {
+                          	header: '下达任务', 
+                          	dataIndex: 'issuedTaskDate', 
+                          	width: 250
+                          },
+                          {
+              				dataIndex: 'finishTaskDate',
+              				header: '完成日期',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'taskSubject',
+                				header: '任务主题',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'taskRespBy',
+                				header: '负责人 ',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'taskInvolvBy',
+              				header: '参与人 ',
+              				width: 150
+                          },
+                          {
+            				dataIndex: 'associatedBy',
+            				header: '关联着 ',
+            				width: 150
+                          },
+                          {
+              				dataIndex: 'taskFinSituation',
+              				header: '完成情况 ',
+              				width: 150
+                          },{
+	              				dataIndex: 'remark',
+	              				header: '备　　注',
+	              				width: 150
+	                      }             
+            ],
+            allendflag:false,
+            gridPrimaryKey: 'taskCode',
+            gridLoadUrl: Hc.basePath + 'hc_task_list/list.json',
+            gridLoadSubUrl: Hc.basePath + 'hc_task_list/listAll.json',
+            gridSaveUrl: Hc.basePath + 'hc_task_list/batchOperate.json',
+            gridExportUrl: Hc.basePath + 'hc_task_list/do_export.json',
+            gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_task_list/deleteMasterCustomer.json',
+            gridAddMasterCustomerUrl: Hc.basePath + 'hc_task_list/addMasterCustomer.json',
+            gridImportUrl: Hc.basePath + '',
+            subWinTableName:'Hc_Framework.view.hc.SubHcTask',
+            subformActivate:false
+        });
+        me.callParent();
+    }
+});
+/**
+ * Description: 任务管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+
+Ext.define('Hc_Framework.view.hc.HcTaskController', {
+	extend : 'Hc_Common.view.BaseSimplePageController',
+
+	alias : 'controller.hctaskcontroller',
+	
+	init: function () {
+		var me = this;
+		Ext.apply(me, {
+			windowFlag:true,
+			newobj:this.view.subWinTableName
+		})
+		me.callParent();
+	},
+	onEditClick:function( obj , record , item , index , e , eOpts){
+      
+	},
+	onEditClick_:function(obj , td , cellIndex , record , tr , rowIndex , e , eOpts ){
+		var store = Ext.create('Hc_Common.store.Base', {
+            model:'Hc_Framework.model.HcTask',
+            autoLoad: false,
+            groupField: 'inquiredQTY_quotedPrice$',
+            proxy: {
+                url: this.view.gridLoadSubUrl
+            }
+        });
+		
+		store.proxy.extraParams['quoteCode'] = record.data.quoteCode; 
+		store.load();	      	 
+		if(cellIndex==0){
+	    	Ext.create(this.view.subWinTableName,{
+	    		title:'编辑',
+	    		record:record,
+	    		me_:this,
+	    		store:store
+	    	}).show();
+	    	this.view.subformActivate=true;
+	    	this.onBtnCancelClick();
+		}
+    	
+    }
+	
+});
+/**
+ * Description: 任务管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.view.hc.HcTaskModel', {
+    extend: 'Hc_Common.view.BaseSimplePageModel',
+
+    alias: 'viewmodel.hctaskmodel'
+});
+Ext.define("Hc_Framework.view.hc.SubHcTask", {
+    extend: "Hc_Common.view.BaseWinPage",
+
+    alias: 'widget.subhctask',
+
+    
+
+    controller: "subhctaskcontroller",
+
+    viewModel: {
+        type: "subhctaskmodel"
+    },
+    title:'新增',
+    width: 1000,
+    height:620,
+    
+    maxWidth:1000,
+   // maxHeight:620,
+    
+    minWidth:1000,
+    minHeight:620,
+    
+    layout:'border',//设置窗口内部布局
+    closeAction:'hide',
+    plain:false,//true则主体背景透明，false则和主体背景有些差别
+    collapsible:false,//是否可收缩
+    modal:true,//是否为模式窗体
+   
+    dockedItems:[{
+    	 xtype: 'toolbar',
+    	 dock: 'top',
+    	 items: [
+           {
+             text: '保存',
+             handler:'onBtnSaveClick',
+             glyph: Hc.Icon.btnSave
+           },
+           {
+               text: '编辑',
+               handler:'onBtnEditClick',
+               glyph: Hc.Icon.btnEdit
+           },
+           {
+               text: '取消',
+               handler:'onBtnCancelClick',
+               glyph: Hc.Icon.btnCancel
+             }
+         ]
+    }],
+    listeners: {
+    	beforeshow:function(obj ,eOpts){
+    		 var currentUser = Ext.create("Hc_Framework.store.CurrentUser");
+    	        currentUser.load();
+    		 var  userCreator;
+             var   supplierNo_;
+             
+             if(this.title=='新增'){
+            	// this.lookupReference('createUser').setValue(currentUser.getAt(0).data.userName);
+                 supplierNo_='PE'+Ext.util.Format.date((new Date()), "Y").substring(2,5)+Ext.util.Format.date((new Date()), "Y").substring(0,2)+Ext.util.Format.date((new Date()), "dmHis");
+              /*   this.lookupReference('inquiryNo').setValue(supplierNo_);
+                // this.lookupReference('modifyUser').disabled=true;
+                 //this.lookupReference('modifyDate').disabled=true;
+                 
+                 this.lookupReference('contactsName').disabled=true;
+                 this.lookupReference('contactsTel').disabled=true;
+                 this.lookupReference('contactsFax').disabled=true;
+                 this.lookupReference('supplierName').disabled=true;
+                 
+                 
+                // this.lookupReference('localDepartment').setValue(currentUser.getAt(0).data.deptName);
+                 this.lookupReference('inquiryDate').setValue(Ext.util.Format.date((new Date()),'Y-m-d H:i:s'));
+
+            */
+             }else if(this.title=='编辑'){
+           	 for(i=0;i<this.record.getFields().length;i++){
+	                 var  name=Ext.util.Format.trim(this.record.getFields()[i].getName())
+           		 
+           		 if((this.getReferences())[name]){
+           			 if(this.lookupReference(name).is('combo')){
+               			 this.lookupReference(name).setRawValue(this.record.get(name));
+               		 }else{
+               			 this.lookupReference(name).setValue(this.record.get(name));
+               		 }
+           			this.lookupReference(name).disable();
+           		 }
+           	 }
+             }
+             this.lookupReference('subhcsuppliercustomer').title='>>>>'+this.me_.view.title_;
+    	}
+    },
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+       	 items:[
+       	        {
+       	         xtype:'panel',
+       	         defaults: {
+       	        	
+                 },
+                 layout: {
+                	 type: 'absolute'
+                 },
+                 reference:'subhcsuppliercustomer',
+                 region: "north",
+                 bodyStyle: 'background:#cbdbe0;',
+                 padding:'3 0 3 0',//(top, right, bottom, left).
+                    items: [
+                            {
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 3,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价编码',
+									    name: 'quoteCode',
+				     					reference:'quoteCode',
+									    listeners: {
+									    	beforerender: function(obj) {
+											   obj.fieldLabel+='<font size="2px" color="red">*</font>';
+									        }
+										  }
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人编码',
+									    name: 'quoteByCode',
+				     					reference:'quoteByCode'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人名称',
+									    name: 'quoteByName',
+				     					reference:'quoteByName'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价方式',
+									    name: 'quoteMode',
+				     					reference:'quoteMode'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:57,
+                            	width:980,
+                            	layout: {
+                                  	 type: 'table',
+                                       columns:4
+                                   },
+                                x: 3,
+                                y: 35,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                               	items:[
+   									{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户编码',
+	   								    name: 'custCode',
+	   								
+				     					reference:'custCode'
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									   // width:313,
+   									    fieldLabel: '客户名称',
+   									    name: 'custName',
+				     					reference:'custName',
+   									    colspan:1
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									    width:500,
+   									    fieldLabel: '客户地址',
+   									    name: 'custAddr',
+				     					reference:'custAddr',
+   									    colspan:4
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户电话',
+	   								    name: 'custTel',
+	   								
+				     					reference:'custTel'
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户传真',
+	   								    name: 'custFax',
+	   								
+				     					reference:'custFax'
+   									}
+   								
+                               	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 95,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系人名称',
+									    name: 'contact_by',
+				     					reference:'contact_by'
+									   
+									},{
+									    xtype:'datefield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系电话 ',
+									    name: 'contacTByTel',
+				     					reference:'contacTByTel'
+									   
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系邮件',
+									    name: 'contactByEmail',
+				     					reference:'contactByEmail',
+									 
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:56,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 128,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '目的站',
+									    name: 'purposePlace',
+				     					reference:'purposePlace',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '包装',
+									    name: 'packing',
+				     					reference:'packing',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '货币',
+									    name: 'currency',
+				     					reference:'currency',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货方式',
+									    name: 'deliverGoodsMode',
+				     					reference:'deliverGoodsMode',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货时间',
+									    name: 'deliverGoodsDate',
+				     					reference:'deliverGoodsDate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '付款方式',
+									    name: 'paymentMode',
+				     					reference:'paymentMode',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 188,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '运费',
+									    name: 'freight',
+				     					reference:'freight',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '保险',
+									    name: 'insurance',
+				     					reference:'insurance',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '税率',
+									    name: 'tax_rate',
+				     					reference:'tax_rate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '折扣',
+									    name: 'rebate',
+				     					reference:'rebate',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 222,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '审批人',
+									    name: 'examApprByName',
+				     					reference:'examApprByName'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:70,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 255,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注',
+									    name: 'remark',
+				     					reference:'remark',
+									    colspan:4
+									}
+                            	]
+                            }
+                     ]
+       	            
+       	        },{
+          	         xtype:'panel',
+          	         layout: {
+                   	 type: 'fit',
+                    },
+                    region: "center",
+                    bodyStyle: 'background:#ceebe0; padding:0px;border:0px',
+                    scrollable:true,
+                    items:[{
+                   	 xtype:'grid',
+                   	 enableHdMenu:false,
+                   	 sortableColumns:false,
+                   	 columnLines: true,
+                   	 enableColumnHide:false,
+                   	 enableColumnMove:false,
+                   	 store:me.store,
+                   	 features: [{
+             		        ftype: 'summary'
+             		     }],
+                   	 columns: {
+                   		    items: [
+                   		        {
+                   		            text: "序号",
+                   		            dataIndex: "id",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品编码",
+                   		            dataIndex: "prodCode",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品名称",
+                   		            dataIndex: "prodName",
+                   		            width: 150
+                   		        },{
+                   		            text: "型号规格",
+                   		            dataIndex: "typeModel",
+                   		            width: 150
+                   		        },{
+                   		            text: "数量",
+                   		            dataIndex: "qty",
+                   		            width: 150
+                   		        },{
+                   		            text: "单位",
+                   		            dataIndex: "unit",
+                   		            width: 150
+                   		        },{
+                   		            text: "单价",
+                   		            dataIndex: "univalent",
+                   		            width: 150
+                   		        },{
+                   		            text: "货币",
+                   		            dataIndex: "currency",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品描述",
+                   		            dataIndex: "prodDesc",
+                   		            width: 150
+                   		        },{
+                   		            text: "品牌",
+                   		            dataIndex: "brand",
+                   		            width: 150
+                   		        },{
+                   		            text: "制造商名称",
+                   		            dataIndex: "manufName",
+                   		            width: 150
+                   		        },{
+                   		            text: "货期（交期）",
+                   		            dataIndex: "deliveTime",
+                   		            width: 150
+                   		        },{
+                   		            text: "备注",
+                   		            dataIndex: "remark",
+                   		            width: 150
+                   		        },{
+                   		            text: "合计",
+                   		            dataIndex: "inquiredQTY_quotedPrice$",
+                   		            width: 150,
+                   		            summaryType: 'sum',
+   	                		      	summaryRenderer: function(value, summaryData, dataIndex) {
+   	                		            return'金额总计:'+value;
+   	                		        }
+                   		        }
+                   		    ]
+                   		}
+                   	 
+                   	 
+                   	 
+                 }]
+          	   }
+       	 ]
+       });
+        me.callParent();
+    }
+});
+Ext.define('Hc_Framework.view.hc.SubHcTaskController', {
+	extend : 'Hc_Common.view.BaseWinPageController',
+
+	alias : 'controller.subhctaskcontroller',
+	flag:false,
+	record_:'',
+	init: function () {
+		var me = this;
+		var  record=Ext.create('Hc_Framework.model.HcTask',{});
+		this.record_=record
+		for(i=0;i<record.getFields().length;i++){
+			var  name=Ext.util.Format.trim(record.getFields()[i].getName())
+	   		 
+	   		if((this.getReferences())[name]){
+				this.lookupReference(name).on("change", me.onBtnchange, me);	   			 
+	   		 }
+     	}
+		me.callParent();
+	},
+	onBtnEditClick:function(){
+		for(i=0;i<this.record_.getFields().length;i++){
+            var  name=Ext.util.Format.trim(this.record_.getFields()[i].getName())
+  		 if((this.getReferences())[name]){
+  			 if('contactsName'==name||'contactsTel'==name||'contactsFax'==name||'supplierName'==name){
+  				this.lookupReference(name).disable();
+  			 }else{
+  				this.lookupReference(name).enable();
+  			 }
+  			
+  		 }
+  	    }
+		//this.view.lookupReference('inquiryNo').enable()
+
+	},
+	onBtnchange:function(obj , newValue , oldValue , eOpt){
+	 	var  store_=this.view.me_.workObject.store;
+		store_.beginUpdate();
+	 	if(obj.is('combo')){
+	 		this.view.record.set(obj.name, obj.getRawValue()); 		
+	 	}else{
+	 		this.view.record.set(obj.name, obj.getRawValue()); 	
+	 	}
+
+
+	 	
+	 	if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+	 	store_.endUpdate();
+	},
+	onBtnSaveClick:function(){
+	    if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+
+	    for(i=0;i<this.record_.getFields().length-3;i++){
+			
+			  if(!this.lookupReference(Ext.util.Format.trim(this.record_.getFields()[i].getName())).isValid()){
+				  return;
+			  }
+		}
+	    this.view.me_.workObject.store.add(this.view.record);
+	    this.view.me_.onBtnSaveClick(null,this)
+	},
+	onBtnCancelClick:function(){
+		if(this.flag){
+			  this.view.me_.workObject.store.removeAt(this.view.me_.workObject.store.getCount()-1);
+			  //this.view.me_.workObject.getStore().rejectChanges();
+			  this.view.me_.workObject.view.refresh();
+			  this.flag=false
+		}
+		
+      if(this.view.title=='编辑'){
+    		
+      	this.view.me_.workObject.store.rejectChanges()
+      	this.view.me_.workObject.view.refresh();
+    		
+    	}
+          this.view.me_.view.subformActivate=false;
+		  this.view.hide();
+	}
+	
+});
+Ext.define('Hc_Framework.view.hc.SubHcTaskModel', {
+    extend: 'Hc_Common.view.BaseWinPageModel',
+
+    alias: 'viewmodel.subhctaskmodel'
+});
+/**
+ * Description: 事物项目管理  view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2014-2015
+ * Company:     hc.
+ * author:      jinxi.li
+ * Createdate:  2016/01/26
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define("Hc_Framework.view.hc.HcThingItem", {
+    extend: "Hc_Common.view.BaseSimplePage",
+
+    alias: 'widget.hcthingitem',
+
+    
+
+    controller: "hcthingitemcontroller",
+
+    viewModel: {
+        type: "hcthingitemmodel"
+    },
+    title_:'事物项目',
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+            searchItems: [ 
+			{
+			    xtype: 'textfield', 
+			    fieldLabel: '事物项目', 
+			    name: 'thingItemCode'
+			}
+            ],
+
+            gridModel: 'Hc_Framework.model.HcThingItem',
+            gridSubGrid:'',
+            gridColumns: [
+                          {
+                          	header: '事物项目', 
+                          	dataIndex: 'thingItemCode', 
+                          	width: '15%',
+                          	renderer: function (data, metadata, record, rowIndex, columnIndex, store) {  
+                          		return '<span onclick=""><a href="#">'+data+' </a></span>';
+                            }
+                          },
+                          {
+                          	header: '立项人', 
+                          	dataIndex: 'projtApprByName', 
+                          	width: 250
+                          },
+                          {
+              				dataIndex: 'projtApprDate',
+              				header: '立项日期',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'startDate',
+                				header: '开始日期',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'expecCompletDate',
+                				header: '预计完成日期 ',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'projectName',
+              				header: '项目名称 ',
+              				width: 150
+                          },
+                          {
+            				dataIndex: 'projtPerCharges',
+            				header: '负责人 ',
+            				width: 150
+                          },{
+	              				dataIndex: 'remark',
+	              				header: '备　　注',
+	              				width: 150
+	                      }             
+            ],
+            allendflag:false,
+            gridPrimaryKey: 'thingItemCode',
+            gridLoadUrl: Hc.basePath + 'hc_thing_item_list/list.json',
+            gridLoadSubUrl: Hc.basePath + 'hc_thing_item_list/listAll.json',
+            gridSaveUrl: Hc.basePath + 'hc_thing_item_list/batchOperate.json',
+            gridExportUrl: Hc.basePath + 'hc_thing_item_list/do_export.json',
+            gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_thing_item_list/deleteMasterCustomer.json',
+            gridAddMasterCustomerUrl: Hc.basePath + 'hc_thing_item_list/addMasterCustomer.json',
+            gridImportUrl: Hc.basePath + '',
+            subWinTableName:'Hc_Framework.view.hc.SubHcThingItem',
+            subformActivate:false
+        });
+        me.callParent();
+    }
+});
+/**
+ * Description: 事物项目管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+
+Ext.define('Hc_Framework.view.hc.HcThingItemController', {
+	extend : 'Hc_Common.view.BaseSimplePageController',
+
+	alias : 'controller.hcthingitemcontroller',
+	
+	init: function () {
+		var me = this;
+		Ext.apply(me, {
+			windowFlag:true,
+			newobj:this.view.subWinTableName
+		})
+		me.callParent();
+	},
+	onEditClick:function( obj , record , item , index , e , eOpts){
+      
+	},
+	onEditClick_:function(obj , td , cellIndex , record , tr , rowIndex , e , eOpts ){
+		var store = Ext.create('Hc_Common.store.Base', {
+            model:'Hc_Framework.model.HcThingItem',
+            autoLoad: false,
+            groupField: 'inquiredQTY_quotedPrice$',
+            proxy: {
+                url: this.view.gridLoadSubUrl
+            }
+        });
+		
+		store.proxy.extraParams['quoteCode'] = record.data.quoteCode; 
+		store.load();	      	 
+		if(cellIndex==0){
+	    	Ext.create(this.view.subWinTableName,{
+	    		title:'编辑',
+	    		record:record,
+	    		me_:this,
+	    		store:store
+	    	}).show();
+	    	this.view.subformActivate=true;
+	    	this.onBtnCancelClick();
+		}
+    	
+    }
+	
+});
+/**
+ * Description: 事物项目管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.view.hc.HcTaskModel', {
+    extend: 'Hc_Common.view.BaseSimplePageModel',
+
+    alias: 'viewmodel.hctaskmodel'
+});
+Ext.define("Hc_Framework.view.hc.SubHcThingItem", {
+    extend: "Hc_Common.view.BaseWinPage",
+
+    alias: 'widget.subhcthingitem',
+
+    
+
+    controller: "subhcthingitemcontroller",
+
+    viewModel: {
+        type: "subhcthingitemmodel"
+    },
+    title:'新增',
+    width: 1000,
+    height:620,
+    
+    maxWidth:1000,
+   // maxHeight:620,
+    
+    minWidth:1000,
+    minHeight:620,
+    
+    layout:'border',//设置窗口内部布局
+    closeAction:'hide',
+    plain:false,//true则主体背景透明，false则和主体背景有些差别
+    collapsible:false,//是否可收缩
+    modal:true,//是否为模式窗体
+   
+    dockedItems:[{
+    	 xtype: 'toolbar',
+    	 dock: 'top',
+    	 items: [
+           {
+             text: '保存',
+             handler:'onBtnSaveClick',
+             glyph: Hc.Icon.btnSave
+           },
+           {
+               text: '编辑',
+               handler:'onBtnEditClick',
+               glyph: Hc.Icon.btnEdit
+           },
+           {
+               text: '取消',
+               handler:'onBtnCancelClick',
+               glyph: Hc.Icon.btnCancel
+             }
+         ]
+    }],
+    listeners: {
+    	beforeshow:function(obj ,eOpts){
+    		 var currentUser = Ext.create("Hc_Framework.store.CurrentUser");
+    	        currentUser.load();
+    		 var  userCreator;
+             var   supplierNo_;
+             
+             if(this.title=='新增'){
+            	// this.lookupReference('createUser').setValue(currentUser.getAt(0).data.userName);
+                 supplierNo_='PE'+Ext.util.Format.date((new Date()), "Y").substring(2,5)+Ext.util.Format.date((new Date()), "Y").substring(0,2)+Ext.util.Format.date((new Date()), "dmHis");
+              /*   this.lookupReference('inquiryNo').setValue(supplierNo_);
+                // this.lookupReference('modifyUser').disabled=true;
+                 //this.lookupReference('modifyDate').disabled=true;
+                 
+                 this.lookupReference('contactsName').disabled=true;
+                 this.lookupReference('contactsTel').disabled=true;
+                 this.lookupReference('contactsFax').disabled=true;
+                 this.lookupReference('supplierName').disabled=true;
+                 
+                 
+                // this.lookupReference('localDepartment').setValue(currentUser.getAt(0).data.deptName);
+                 this.lookupReference('inquiryDate').setValue(Ext.util.Format.date((new Date()),'Y-m-d H:i:s'));
+
+            */
+             }else if(this.title=='编辑'){
+           	 for(i=0;i<this.record.getFields().length;i++){
+	                 var  name=Ext.util.Format.trim(this.record.getFields()[i].getName())
+           		 
+           		 if((this.getReferences())[name]){
+           			 if(this.lookupReference(name).is('combo')){
+               			 this.lookupReference(name).setRawValue(this.record.get(name));
+               		 }else{
+               			 this.lookupReference(name).setValue(this.record.get(name));
+               		 }
+           			this.lookupReference(name).disable();
+           		 }
+           	 }
+             }
+             this.lookupReference('subhcsuppliercustomer').title='>>>>'+this.me_.view.title_;
+    	}
+    },
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+       	 items:[
+       	        {
+       	         xtype:'panel',
+       	         defaults: {
+       	        	
+                 },
+                 layout: {
+                	 type: 'absolute'
+                 },
+                 reference:'subhcsuppliercustomer',
+                 region: "north",
+                 bodyStyle: 'background:#cbdbe0;',
+                 padding:'3 0 3 0',//(top, right, bottom, left).
+                    items: [
+                            {
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 3,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价编码',
+									    name: 'quoteCode',
+				     					reference:'quoteCode',
+									    listeners: {
+									    	beforerender: function(obj) {
+											   obj.fieldLabel+='<font size="2px" color="red">*</font>';
+									        }
+										  }
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人编码',
+									    name: 'quoteByCode',
+				     					reference:'quoteByCode'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人名称',
+									    name: 'quoteByName',
+				     					reference:'quoteByName'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价方式',
+									    name: 'quoteMode',
+				     					reference:'quoteMode'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:57,
+                            	width:980,
+                            	layout: {
+                                  	 type: 'table',
+                                       columns:4
+                                   },
+                                x: 3,
+                                y: 35,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                               	items:[
+   									{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户编码',
+	   								    name: 'custCode',
+	   								
+				     					reference:'custCode'
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									   // width:313,
+   									    fieldLabel: '客户名称',
+   									    name: 'custName',
+				     					reference:'custName',
+   									    colspan:1
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									    width:500,
+   									    fieldLabel: '客户地址',
+   									    name: 'custAddr',
+				     					reference:'custAddr',
+   									    colspan:4
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户电话',
+	   								    name: 'custTel',
+	   								
+				     					reference:'custTel'
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户传真',
+	   								    name: 'custFax',
+	   								
+				     					reference:'custFax'
+   									}
+   								
+                               	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 95,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系人名称',
+									    name: 'contact_by',
+				     					reference:'contact_by'
+									   
+									},{
+									    xtype:'datefield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系电话 ',
+									    name: 'contacTByTel',
+				     					reference:'contacTByTel'
+									   
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系邮件',
+									    name: 'contactByEmail',
+				     					reference:'contactByEmail',
+									 
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:56,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 128,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '目的站',
+									    name: 'purposePlace',
+				     					reference:'purposePlace',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '包装',
+									    name: 'packing',
+				     					reference:'packing',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '货币',
+									    name: 'currency',
+				     					reference:'currency',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货方式',
+									    name: 'deliverGoodsMode',
+				     					reference:'deliverGoodsMode',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货时间',
+									    name: 'deliverGoodsDate',
+				     					reference:'deliverGoodsDate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '付款方式',
+									    name: 'paymentMode',
+				     					reference:'paymentMode',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 188,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '运费',
+									    name: 'freight',
+				     					reference:'freight',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '保险',
+									    name: 'insurance',
+				     					reference:'insurance',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '税率',
+									    name: 'tax_rate',
+				     					reference:'tax_rate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '折扣',
+									    name: 'rebate',
+				     					reference:'rebate',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 222,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '审批人',
+									    name: 'examApprByName',
+				     					reference:'examApprByName'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:70,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 255,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注',
+									    name: 'remark',
+				     					reference:'remark',
+									    colspan:4
+									}
+                            	]
+                            }
+                     ]
+       	            
+       	        },{
+          	         xtype:'panel',
+          	         layout: {
+                   	 type: 'fit',
+                    },
+                    region: "center",
+                    bodyStyle: 'background:#ceebe0; padding:0px;border:0px',
+                    scrollable:true,
+                    items:[{
+                   	 xtype:'grid',
+                   	 enableHdMenu:false,
+                   	 sortableColumns:false,
+                   	 columnLines: true,
+                   	 enableColumnHide:false,
+                   	 enableColumnMove:false,
+                   	 store:me.store,
+                   	 features: [{
+             		        ftype: 'summary'
+             		     }],
+                   	 columns: {
+                   		    items: [
+                   		        {
+                   		            text: "序号",
+                   		            dataIndex: "id",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品编码",
+                   		            dataIndex: "prodCode",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品名称",
+                   		            dataIndex: "prodName",
+                   		            width: 150
+                   		        },{
+                   		            text: "型号规格",
+                   		            dataIndex: "typeModel",
+                   		            width: 150
+                   		        },{
+                   		            text: "数量",
+                   		            dataIndex: "qty",
+                   		            width: 150
+                   		        },{
+                   		            text: "单位",
+                   		            dataIndex: "unit",
+                   		            width: 150
+                   		        },{
+                   		            text: "单价",
+                   		            dataIndex: "univalent",
+                   		            width: 150
+                   		        },{
+                   		            text: "货币",
+                   		            dataIndex: "currency",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品描述",
+                   		            dataIndex: "prodDesc",
+                   		            width: 150
+                   		        },{
+                   		            text: "品牌",
+                   		            dataIndex: "brand",
+                   		            width: 150
+                   		        },{
+                   		            text: "制造商名称",
+                   		            dataIndex: "manufName",
+                   		            width: 150
+                   		        },{
+                   		            text: "货期（交期）",
+                   		            dataIndex: "deliveTime",
+                   		            width: 150
+                   		        },{
+                   		            text: "备注",
+                   		            dataIndex: "remark",
+                   		            width: 150
+                   		        },{
+                   		            text: "合计",
+                   		            dataIndex: "inquiredQTY_quotedPrice$",
+                   		            width: 150,
+                   		            summaryType: 'sum',
+   	                		      	summaryRenderer: function(value, summaryData, dataIndex) {
+   	                		            return'金额总计:'+value;
+   	                		        }
+                   		        }
+                   		    ]
+                   		}
+                   	 
+                   	 
+                   	 
+                 }]
+          	   }
+       	 ]
+       });
+        me.callParent();
+    }
+});
+Ext.define('Hc_Framework.view.hc.SubHcThingItemController', {
+	extend : 'Hc_Common.view.BaseWinPageController',
+
+	alias : 'controller.subhcthingitemcontroller',
+	flag:false,
+	record_:'',
+	init: function () {
+		var me = this;
+		var  record=Ext.create('Hc_Framework.model.HcThingItem',{});
+		this.record_=record
+		for(i=0;i<record.getFields().length;i++){
+			var  name=Ext.util.Format.trim(record.getFields()[i].getName())
+	   		 
+	   		if((this.getReferences())[name]){
+				this.lookupReference(name).on("change", me.onBtnchange, me);	   			 
+	   		 }
+     	}
+		me.callParent();
+	},
+	onBtnEditClick:function(){
+		for(i=0;i<this.record_.getFields().length;i++){
+            var  name=Ext.util.Format.trim(this.record_.getFields()[i].getName())
+  		 if((this.getReferences())[name]){
+  			 if('contactsName'==name||'contactsTel'==name||'contactsFax'==name||'supplierName'==name){
+  				this.lookupReference(name).disable();
+  			 }else{
+  				this.lookupReference(name).enable();
+  			 }
+  			
+  		 }
+  	    }
+		//this.view.lookupReference('inquiryNo').enable()
+
+	},
+	onBtnchange:function(obj , newValue , oldValue , eOpt){
+	 	var  store_=this.view.me_.workObject.store;
+		store_.beginUpdate();
+	 	if(obj.is('combo')){
+	 		this.view.record.set(obj.name, obj.getRawValue()); 		
+	 	}else{
+	 		this.view.record.set(obj.name, obj.getRawValue()); 	
+	 	}
+
+
+	 	
+	 	if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+	 	store_.endUpdate();
+	},
+	onBtnSaveClick:function(){
+	    if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+
+	    for(i=0;i<this.record_.getFields().length-3;i++){
+			
+			  if(!this.lookupReference(Ext.util.Format.trim(this.record_.getFields()[i].getName())).isValid()){
+				  return;
+			  }
+		}
+	    this.view.me_.workObject.store.add(this.view.record);
+	    this.view.me_.onBtnSaveClick(null,this)
+	},
+	onBtnCancelClick:function(){
+		if(this.flag){
+			  this.view.me_.workObject.store.removeAt(this.view.me_.workObject.store.getCount()-1);
+			  //this.view.me_.workObject.getStore().rejectChanges();
+			  this.view.me_.workObject.view.refresh();
+			  this.flag=false
+		}
+		
+      if(this.view.title=='编辑'){
+    		
+      	this.view.me_.workObject.store.rejectChanges()
+      	this.view.me_.workObject.view.refresh();
+    		
+    	}
+          this.view.me_.view.subformActivate=false;
+		  this.view.hide();
+	}
+	
+});
+Ext.define('Hc_Framework.view.hc.SubHcThingItemModel', {
+    extend: 'Hc_Common.view.BaseWinPageModel',
+
+    alias: 'viewmodel.subhcthingitemmodel'
+});
+/**
+ * Description: 用车管理  view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2014-2015
+ * Company:     hc.
+ * author:      jinxi.li
+ * Createdate:  2016/01/26
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define("Hc_Framework.view.hc.HcUseCar", {
+    extend: "Hc_Common.view.BaseSimplePage",
+
+    alias: 'widget.hcusecar',
+
+    
+
+    controller: "hcusecarcontroller",
+
+    viewModel: {
+        type: "hcusecarmodel"
+    },
+    title_:'用车管理',
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+            searchItems: [ 
+			{
+			    xtype: 'textfield', 
+			    fieldLabel: '用车单', 
+			    name: 'useCarCode'
+			}
+            ],
+
+            gridModel: 'Hc_Framework.model.HcUseCar',
+            gridSubGrid:'',
+            gridColumns: [
+                          {
+                          	header: '用车单', 
+                          	dataIndex: 'useCarCode', 
+                          	width: '15%',
+                          	renderer: function (data, metadata, record, rowIndex, columnIndex, store) {  
+                          		return '<span onclick=""><a href="#">'+data+' </a></span>';
+                            }
+                          },
+                          {
+                          	header: '出发地点', 
+                          	dataIndex: 'placeDeparture', 
+                          	width: 250
+                          },
+                          {
+              				dataIndex: 'orNotOneWay',
+              				header: '是否单程',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'destination',
+                				header: '目的地',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'applyReason',
+                				header: '申请原因 ',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'useCarByName',
+              				header: '用车人 ',
+              				width: 150
+                          },
+                          {
+            				dataIndex: 'applyUseCarDate',
+            				header: '申请用车 ',
+            				width: 150
+                          },
+                          {
+              				dataIndex: 'useCarEndDate',
+              				header: '结束时间 ',
+              				width: 150
+                          },
+                          {
+              				dataIndex: 'dept',
+              				header: '部门 ',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'plateNumber',
+                				header: '车牌 ',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'driverName',
+                				header: '司机 ',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'departDate',
+                				header: '出发时间 ',
+                				width: 150
+                          },{
+	              				dataIndex: 'remark',
+	              				header: '备　　注',
+	              				width: 150
+	                      }             
+            ],
+            allendflag:false,
+            gridPrimaryKey: 'useCarCode',
+            gridLoadUrl: Hc.basePath + 'hc_use_car_list/list.json',
+            gridLoadSubUrl: Hc.basePath + 'hc_use_car_list/listAll.json',
+            gridSaveUrl: Hc.basePath + 'hc_use_car_list/batchOperate.json',
+            gridExportUrl: Hc.basePath + 'hc_use_car_list/do_export.json',
+            gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_use_car_list/deleteMasterCustomer.json',
+            gridAddMasterCustomerUrl: Hc.basePath + 'hc_use_car_list/addMasterCustomer.json',
+            gridImportUrl: Hc.basePath + '',
+            subWinTableName:'Hc_Framework.view.hc.SubHcUseCar',
+            subformActivate:false
+        });
+        me.callParent();
+    }
+});
+/**
+ * Description: 用车管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+
+Ext.define('Hc_Framework.view.hc.HcUseCarController', {
+	extend : 'Hc_Common.view.BaseSimplePageController',
+
+	alias : 'controller.hcusecarcontroller',
+	
+	init: function () {
+		var me = this;
+		Ext.apply(me, {
+			windowFlag:true,
+			newobj:this.view.subWinTableName
+		})
+		me.callParent();
+	},
+	onEditClick:function( obj , record , item , index , e , eOpts){
+      
+	},
+	onEditClick_:function(obj , td , cellIndex , record , tr , rowIndex , e , eOpts ){
+		var store = Ext.create('Hc_Common.store.Base', {
+            model:'Hc_Framework.model.HcUseCar',
+            autoLoad: false,
+            groupField: 'inquiredQTY_quotedPrice$',
+            proxy: {
+                url: this.view.gridLoadSubUrl
+            }
+        });
+		
+		store.proxy.extraParams['quoteCode'] = record.data.quoteCode; 
+		store.load();	      	 
+		if(cellIndex==0){
+	    	Ext.create(this.view.subWinTableName,{
+	    		title:'编辑',
+	    		record:record,
+	    		me_:this,
+	    		store:store
+	    	}).show();
+	    	this.view.subformActivate=true;
+	    	this.onBtnCancelClick();
+		}
+    	
+    }
+	
+});
+/**
+ * Description: 用车管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.view.hc.HcUseCarModel', {
+    extend: 'Hc_Common.view.BaseSimplePageModel',
+
+    alias: 'viewmodel.hcusecarmodel'
+});
+Ext.define("Hc_Framework.view.hc.SubHcUseCar", {
+    extend: "Hc_Common.view.BaseWinPage",
+
+    alias: 'widget.subhcusecar',
+
+    
+
+    controller: "subhcusecarcontroller",
+
+    viewModel: {
+        type: "subhcusecarmodel"
+    },
+    title:'新增',
+    width: 1000,
+    height:620,
+    
+    maxWidth:1000,
+   // maxHeight:620,
+    
+    minWidth:1000,
+    minHeight:620,
+    
+    layout:'border',//设置窗口内部布局
+    closeAction:'hide',
+    plain:false,//true则主体背景透明，false则和主体背景有些差别
+    collapsible:false,//是否可收缩
+    modal:true,//是否为模式窗体
+   
+    dockedItems:[{
+    	 xtype: 'toolbar',
+    	 dock: 'top',
+    	 items: [
+           {
+             text: '保存',
+             handler:'onBtnSaveClick',
+             glyph: Hc.Icon.btnSave
+           },
+           {
+               text: '编辑',
+               handler:'onBtnEditClick',
+               glyph: Hc.Icon.btnEdit
+           },
+           {
+               text: '取消',
+               handler:'onBtnCancelClick',
+               glyph: Hc.Icon.btnCancel
+             }
+         ]
+    }],
+    listeners: {
+    	beforeshow:function(obj ,eOpts){
+    		 var currentUser = Ext.create("Hc_Framework.store.CurrentUser");
+    	        currentUser.load();
+    		 var  userCreator;
+             var   supplierNo_;
+             
+             if(this.title=='新增'){
+            	// this.lookupReference('createUser').setValue(currentUser.getAt(0).data.userName);
+                 supplierNo_='PE'+Ext.util.Format.date((new Date()), "Y").substring(2,5)+Ext.util.Format.date((new Date()), "Y").substring(0,2)+Ext.util.Format.date((new Date()), "dmHis");
+              /*   this.lookupReference('inquiryNo').setValue(supplierNo_);
+                // this.lookupReference('modifyUser').disabled=true;
+                 //this.lookupReference('modifyDate').disabled=true;
+                 
+                 this.lookupReference('contactsName').disabled=true;
+                 this.lookupReference('contactsTel').disabled=true;
+                 this.lookupReference('contactsFax').disabled=true;
+                 this.lookupReference('supplierName').disabled=true;
+                 
+                 
+                // this.lookupReference('localDepartment').setValue(currentUser.getAt(0).data.deptName);
+                 this.lookupReference('inquiryDate').setValue(Ext.util.Format.date((new Date()),'Y-m-d H:i:s'));
+
+            */
+             }else if(this.title=='编辑'){
+           	 for(i=0;i<this.record.getFields().length;i++){
+	                 var  name=Ext.util.Format.trim(this.record.getFields()[i].getName())
+           		 
+           		 if((this.getReferences())[name]){
+           			 if(this.lookupReference(name).is('combo')){
+               			 this.lookupReference(name).setRawValue(this.record.get(name));
+               		 }else{
+               			 this.lookupReference(name).setValue(this.record.get(name));
+               		 }
+           			this.lookupReference(name).disable();
+           		 }
+           	 }
+             }
+             this.lookupReference('subhcsuppliercustomer').title='>>>>'+this.me_.view.title_;
+    	}
+    },
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+       	 items:[
+       	        {
+       	         xtype:'panel',
+       	         defaults: {
+       	        	
+                 },
+                 layout: {
+                	 type: 'absolute'
+                 },
+                 reference:'subhcsuppliercustomer',
+                 region: "north",
+                 bodyStyle: 'background:#cbdbe0;',
+                 padding:'3 0 3 0',//(top, right, bottom, left).
+                    items: [
+                            {
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 3,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价编码',
+									    name: 'quoteCode',
+				     					reference:'quoteCode',
+									    listeners: {
+									    	beforerender: function(obj) {
+											   obj.fieldLabel+='<font size="2px" color="red">*</font>';
+									        }
+										  }
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人编码',
+									    name: 'quoteByCode',
+				     					reference:'quoteByCode'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人名称',
+									    name: 'quoteByName',
+				     					reference:'quoteByName'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价方式',
+									    name: 'quoteMode',
+				     					reference:'quoteMode'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:57,
+                            	width:980,
+                            	layout: {
+                                  	 type: 'table',
+                                       columns:4
+                                   },
+                                x: 3,
+                                y: 35,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                               	items:[
+   									{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户编码',
+	   								    name: 'custCode',
+	   								
+				     					reference:'custCode'
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									   // width:313,
+   									    fieldLabel: '客户名称',
+   									    name: 'custName',
+				     					reference:'custName',
+   									    colspan:1
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									    width:500,
+   									    fieldLabel: '客户地址',
+   									    name: 'custAddr',
+				     					reference:'custAddr',
+   									    colspan:4
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户电话',
+	   								    name: 'custTel',
+	   								
+				     					reference:'custTel'
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户传真',
+	   								    name: 'custFax',
+	   								
+				     					reference:'custFax'
+   									}
+   								
+                               	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 95,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系人名称',
+									    name: 'contact_by',
+				     					reference:'contact_by'
+									   
+									},{
+									    xtype:'datefield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系电话 ',
+									    name: 'contacTByTel',
+				     					reference:'contacTByTel'
+									   
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系邮件',
+									    name: 'contactByEmail',
+				     					reference:'contactByEmail',
+									 
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:56,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 128,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '目的站',
+									    name: 'purposePlace',
+				     					reference:'purposePlace',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '包装',
+									    name: 'packing',
+				     					reference:'packing',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '货币',
+									    name: 'currency',
+				     					reference:'currency',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货方式',
+									    name: 'deliverGoodsMode',
+				     					reference:'deliverGoodsMode',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货时间',
+									    name: 'deliverGoodsDate',
+				     					reference:'deliverGoodsDate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '付款方式',
+									    name: 'paymentMode',
+				     					reference:'paymentMode',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 188,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '运费',
+									    name: 'freight',
+				     					reference:'freight',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '保险',
+									    name: 'insurance',
+				     					reference:'insurance',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '税率',
+									    name: 'tax_rate',
+				     					reference:'tax_rate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '折扣',
+									    name: 'rebate',
+				     					reference:'rebate',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 222,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '审批人',
+									    name: 'examApprByName',
+				     					reference:'examApprByName'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:70,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 255,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注',
+									    name: 'remark',
+				     					reference:'remark',
+									    colspan:4
+									}
+                            	]
+                            }
+                     ]
+       	            
+       	        },{
+          	         xtype:'panel',
+          	         layout: {
+                   	 type: 'fit',
+                    },
+                    region: "center",
+                    bodyStyle: 'background:#ceebe0; padding:0px;border:0px',
+                    scrollable:true,
+                    items:[{
+                   	 xtype:'grid',
+                   	 enableHdMenu:false,
+                   	 sortableColumns:false,
+                   	 columnLines: true,
+                   	 enableColumnHide:false,
+                   	 enableColumnMove:false,
+                   	 store:me.store,
+                   	 features: [{
+             		        ftype: 'summary'
+             		     }],
+                   	 columns: {
+                   		    items: [
+                   		        {
+                   		            text: "序号",
+                   		            dataIndex: "id",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品编码",
+                   		            dataIndex: "prodCode",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品名称",
+                   		            dataIndex: "prodName",
+                   		            width: 150
+                   		        },{
+                   		            text: "型号规格",
+                   		            dataIndex: "typeModel",
+                   		            width: 150
+                   		        },{
+                   		            text: "数量",
+                   		            dataIndex: "qty",
+                   		            width: 150
+                   		        },{
+                   		            text: "单位",
+                   		            dataIndex: "unit",
+                   		            width: 150
+                   		        },{
+                   		            text: "单价",
+                   		            dataIndex: "univalent",
+                   		            width: 150
+                   		        },{
+                   		            text: "货币",
+                   		            dataIndex: "currency",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品描述",
+                   		            dataIndex: "prodDesc",
+                   		            width: 150
+                   		        },{
+                   		            text: "品牌",
+                   		            dataIndex: "brand",
+                   		            width: 150
+                   		        },{
+                   		            text: "制造商名称",
+                   		            dataIndex: "manufName",
+                   		            width: 150
+                   		        },{
+                   		            text: "货期（交期）",
+                   		            dataIndex: "deliveTime",
+                   		            width: 150
+                   		        },{
+                   		            text: "备注",
+                   		            dataIndex: "remark",
+                   		            width: 150
+                   		        },{
+                   		            text: "合计",
+                   		            dataIndex: "inquiredQTY_quotedPrice$",
+                   		            width: 150,
+                   		            summaryType: 'sum',
+   	                		      	summaryRenderer: function(value, summaryData, dataIndex) {
+   	                		            return'金额总计:'+value;
+   	                		        }
+                   		        }
+                   		    ]
+                   		}
+                   	 
+                   	 
+                   	 
+                 }]
+          	   }
+       	 ]
+       });
+        me.callParent();
+    }
+});
+Ext.define('Hc_Framework.view.hc.SubHcUseCarController', {
+	extend : 'Hc_Common.view.BaseWinPageController',
+
+	alias : 'controller.subhcusecarcontroller',
+	flag:false,
+	record_:'',
+	init: function () {
+		var me = this;
+		var  record=Ext.create('Hc_Framework.model.HcUseCar',{});
+		this.record_=record
+		for(i=0;i<record.getFields().length;i++){
+			var  name=Ext.util.Format.trim(record.getFields()[i].getName())
+	   		 
+	   		if((this.getReferences())[name]){
+				this.lookupReference(name).on("change", me.onBtnchange, me);	   			 
+	   		 }
+     	}
+		me.callParent();
+	},
+	onBtnEditClick:function(){
+		for(i=0;i<this.record_.getFields().length;i++){
+            var  name=Ext.util.Format.trim(this.record_.getFields()[i].getName())
+  		 if((this.getReferences())[name]){
+  			 if('contactsName'==name||'contactsTel'==name||'contactsFax'==name||'supplierName'==name){
+  				this.lookupReference(name).disable();
+  			 }else{
+  				this.lookupReference(name).enable();
+  			 }
+  			
+  		 }
+  	    }
+		//this.view.lookupReference('inquiryNo').enable()
+
+	},
+	onBtnchange:function(obj , newValue , oldValue , eOpt){
+	 	var  store_=this.view.me_.workObject.store;
+		store_.beginUpdate();
+	 	if(obj.is('combo')){
+	 		this.view.record.set(obj.name, obj.getRawValue()); 		
+	 	}else{
+	 		this.view.record.set(obj.name, obj.getRawValue()); 	
+	 	}
+
+
+	 	
+	 	if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+	 	store_.endUpdate();
+	},
+	onBtnSaveClick:function(){
+	    if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+
+	    for(i=0;i<this.record_.getFields().length-3;i++){
+			
+			  if(!this.lookupReference(Ext.util.Format.trim(this.record_.getFields()[i].getName())).isValid()){
+				  return;
+			  }
+		}
+	    this.view.me_.workObject.store.add(this.view.record);
+	    this.view.me_.onBtnSaveClick(null,this)
+	},
+	onBtnCancelClick:function(){
+		if(this.flag){
+			  this.view.me_.workObject.store.removeAt(this.view.me_.workObject.store.getCount()-1);
+			  //this.view.me_.workObject.getStore().rejectChanges();
+			  this.view.me_.workObject.view.refresh();
+			  this.flag=false
+		}
+		
+      if(this.view.title=='编辑'){
+    		
+      	this.view.me_.workObject.store.rejectChanges()
+      	this.view.me_.workObject.view.refresh();
+    		
+    	}
+          this.view.me_.view.subformActivate=false;
+		  this.view.hide();
+	}
+	
+});
+Ext.define('Hc_Framework.view.hc.SubHcUseCarModel', {
+    extend: 'Hc_Common.view.BaseWinPageModel',
+
+    alias: 'viewmodel.subhcusecarmodel'
+});
+/**
+ * Description: 客户投诉管理  view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2014-2015
+ * Company:     hc.
+ * author:      jinxi.li
+ * Createdate:  2016/01/26
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define("Hc_Framework.view.hc.HcCustomerComplain", {
+    extend: "Hc_Common.view.BaseSimplePage",
+
+    alias: 'widget.hccustomercomplain',
+
+    
+
+    controller: "hccustomercomplaincontroller",
+
+    viewModel: {
+        type: "hccustomercomplainmodel"
+    },
+    title_:'客户投诉',
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+            searchItems: [ 
+			{
+			    xtype: 'textfield', 
+			    fieldLabel: '投诉单', 
+			    name: 'custComplainCode'
+			}
+            ],
+
+            gridModel: 'Hc_Framework.model.HcCustomerComplain',
+            gridSubGrid:'',
+            gridColumns: [
+                          {
+                          	header: '投诉单', 
+                          	dataIndex: 'custComplainCode', 
+                          	width: '15%',
+                          	renderer: function (data, metadata, record, rowIndex, columnIndex, store) {  
+                          		return '<span onclick=""><a href="#">'+data+' </a></span>';
+                            }
+                          },
+                          {
+                          	header: '投诉主题', 
+                          	dataIndex: 'custComplainName', 
+                          	width: 250
+                          },
+                          {
+              				dataIndex: 'complainType',
+              				header: '投诉类别',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'complainLevel',
+                				header: '投诉等级',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'currentState',
+                				header: '当前状态 ',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'useCarByName',
+              				header: '用车人 ',
+              				width: 150
+                          },
+                          {
+            				dataIndex: 'complainDate',
+            				header: '投诉日期 ',
+            				width: 150
+                          },
+                          {
+              				dataIndex: 'invoiceNo',
+              				header: '发票号 ',
+              				width: 150
+                          },
+                          {
+              				dataIndex: 'batchNo',
+              				header: '批号 ',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'orderNo',
+                				header: '订单号 ',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'pactNo',
+                				header: '合同号 ',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'prodCode',
+                				header: '产品编码 ',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'qty',
+              				header: '数量 ',
+              				width: 150
+                          },
+                          {
+            				dataIndex: 'unit',
+            				header: '单位 ',
+            				width: 150
+                          },
+                         {
+	          				dataIndex: 'supplierName',
+	          				header: '供应商 ',
+	          				width: 150
+                         },
+                        {
+	        				dataIndex: 'custName',
+	        				header: '客户',
+	        				width: 150
+		                  },
+		                  {
+		      				dataIndex: 'delivDate',
+		      				header: '发货日期 ',
+		      				width: 150
+		                },{
+	              				dataIndex: 'remark',
+	              				header: '备　　注',
+	              				width: 150
+	                      }             
+            ],
+            allendflag:false,
+            gridPrimaryKey: 'custComplainCode',
+            gridLoadUrl: Hc.basePath + 'hc_customer_complain_list/list.json',
+            gridLoadSubUrl: Hc.basePath + 'hc_customer_complain_list/listAll.json',
+            gridSaveUrl: Hc.basePath + 'hc_customer_complain_list/batchOperate.json',
+            gridExportUrl: Hc.basePath + 'hc_customer_complain_list/do_export.json',
+            gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_customer_complain_list/deleteMasterCustomer.json',
+            gridAddMasterCustomerUrl: Hc.basePath + 'hc_customer_complain_list/addMasterCustomer.json',
+            gridImportUrl: Hc.basePath + '',
+            subWinTableName:'Hc_Framework.view.hc.SubHcCustomerComplain',
+            subformActivate:false
+        });
+        me.callParent();
+    }
+});
+/**
+ * Description: 客户投诉管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+
+Ext.define('Hc_Framework.view.hc.HcCustomerComplainController', {
+	extend : 'Hc_Common.view.BaseSimplePageController',
+
+	alias : 'controller.hccustomercomplaincontroller',
+	
+	init: function () {
+		var me = this;
+		Ext.apply(me, {
+			windowFlag:true,
+			newobj:this.view.subWinTableName
+		})
+		me.callParent();
+	},
+	onEditClick:function( obj , record , item , index , e , eOpts){
+      
+	},
+	onEditClick_:function(obj , td , cellIndex , record , tr , rowIndex , e , eOpts ){
+		var store = Ext.create('Hc_Common.store.Base', {
+            model:'Hc_Framework.model.HcCustomerComplain',
+            autoLoad: false,
+            groupField: 'inquiredQTY_quotedPrice$',
+            proxy: {
+                url: this.view.gridLoadSubUrl
+            }
+        });
+		
+		store.proxy.extraParams['quoteCode'] = record.data.quoteCode; 
+		store.load();	      	 
+		if(cellIndex==0){
+	    	Ext.create(this.view.subWinTableName,{
+	    		title:'编辑',
+	    		record:record,
+	    		me_:this,
+	    		store:store
+	    	}).show();
+	    	this.view.subformActivate=true;
+	    	this.onBtnCancelClick();
+		}
+    	
+    }
+	
+});
+/**
+ * Description: 客户投诉管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.view.hc.HcCustomerComplainModel', {
+    extend: 'Hc_Common.view.BaseSimplePageModel',
+
+    alias: 'viewmodel.hccustomercomplainmodel'
+});
+Ext.define("Hc_Framework.view.hc.SubHcCustomerComplain", {
+    extend: "Hc_Common.view.BaseWinPage",
+
+    alias: 'widget.subhccustomercomplain',
+
+    
+
+    controller: "subhccustomercomplaincontroller",
+
+    viewModel: {
+        type: "subhccustomercomplainmodel"
+    },
+    title:'新增',
+    width: 1000,
+    height:620,
+    
+    maxWidth:1000,
+   // maxHeight:620,
+    
+    minWidth:1000,
+    minHeight:620,
+    
+    layout:'border',//设置窗口内部布局
+    closeAction:'hide',
+    plain:false,//true则主体背景透明，false则和主体背景有些差别
+    collapsible:false,//是否可收缩
+    modal:true,//是否为模式窗体
+   
+    dockedItems:[{
+    	 xtype: 'toolbar',
+    	 dock: 'top',
+    	 items: [
+           {
+             text: '保存',
+             handler:'onBtnSaveClick',
+             glyph: Hc.Icon.btnSave
+           },
+           {
+               text: '编辑',
+               handler:'onBtnEditClick',
+               glyph: Hc.Icon.btnEdit
+           },
+           {
+               text: '取消',
+               handler:'onBtnCancelClick',
+               glyph: Hc.Icon.btnCancel
+             }
+         ]
+    }],
+    listeners: {
+    	beforeshow:function(obj ,eOpts){
+    		 var currentUser = Ext.create("Hc_Framework.store.CurrentUser");
+    	        currentUser.load();
+    		 var  userCreator;
+             var   supplierNo_;
+             
+             if(this.title=='新增'){
+            	// this.lookupReference('createUser').setValue(currentUser.getAt(0).data.userName);
+                 supplierNo_='PE'+Ext.util.Format.date((new Date()), "Y").substring(2,5)+Ext.util.Format.date((new Date()), "Y").substring(0,2)+Ext.util.Format.date((new Date()), "dmHis");
+              /*   this.lookupReference('inquiryNo').setValue(supplierNo_);
+                // this.lookupReference('modifyUser').disabled=true;
+                 //this.lookupReference('modifyDate').disabled=true;
+                 
+                 this.lookupReference('contactsName').disabled=true;
+                 this.lookupReference('contactsTel').disabled=true;
+                 this.lookupReference('contactsFax').disabled=true;
+                 this.lookupReference('supplierName').disabled=true;
+                 
+                 
+                // this.lookupReference('localDepartment').setValue(currentUser.getAt(0).data.deptName);
+                 this.lookupReference('inquiryDate').setValue(Ext.util.Format.date((new Date()),'Y-m-d H:i:s'));
+
+            */
+             }else if(this.title=='编辑'){
+           	 for(i=0;i<this.record.getFields().length;i++){
+	                 var  name=Ext.util.Format.trim(this.record.getFields()[i].getName())
+           		 
+           		 if((this.getReferences())[name]){
+           			 if(this.lookupReference(name).is('combo')){
+               			 this.lookupReference(name).setRawValue(this.record.get(name));
+               		 }else{
+               			 this.lookupReference(name).setValue(this.record.get(name));
+               		 }
+           			this.lookupReference(name).disable();
+           		 }
+           	 }
+             }
+             this.lookupReference('subhcsuppliercustomer').title='>>>>'+this.me_.view.title_;
+    	}
+    },
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+       	 items:[
+       	        {
+       	         xtype:'panel',
+       	         defaults: {
+       	        	
+                 },
+                 layout: {
+                	 type: 'absolute'
+                 },
+                 reference:'subhcsuppliercustomer',
+                 region: "north",
+                 bodyStyle: 'background:#cbdbe0;',
+                 padding:'3 0 3 0',//(top, right, bottom, left).
+                    items: [
+                            {
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 3,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价编码',
+									    name: 'quoteCode',
+				     					reference:'quoteCode',
+									    listeners: {
+									    	beforerender: function(obj) {
+											   obj.fieldLabel+='<font size="2px" color="red">*</font>';
+									        }
+										  }
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人编码',
+									    name: 'quoteByCode',
+				     					reference:'quoteByCode'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人名称',
+									    name: 'quoteByName',
+				     					reference:'quoteByName'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价方式',
+									    name: 'quoteMode',
+				     					reference:'quoteMode'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:57,
+                            	width:980,
+                            	layout: {
+                                  	 type: 'table',
+                                       columns:4
+                                   },
+                                x: 3,
+                                y: 35,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                               	items:[
+   									{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户编码',
+	   								    name: 'custCode',
+	   								
+				     					reference:'custCode'
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									   // width:313,
+   									    fieldLabel: '客户名称',
+   									    name: 'custName',
+				     					reference:'custName',
+   									    colspan:1
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									    width:500,
+   									    fieldLabel: '客户地址',
+   									    name: 'custAddr',
+				     					reference:'custAddr',
+   									    colspan:4
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户电话',
+	   								    name: 'custTel',
+	   								
+				     					reference:'custTel'
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户传真',
+	   								    name: 'custFax',
+	   								
+				     					reference:'custFax'
+   									}
+   								
+                               	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 95,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系人名称',
+									    name: 'contact_by',
+				     					reference:'contact_by'
+									   
+									},{
+									    xtype:'datefield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系电话 ',
+									    name: 'contacTByTel',
+				     					reference:'contacTByTel'
+									   
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系邮件',
+									    name: 'contactByEmail',
+				     					reference:'contactByEmail',
+									 
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:56,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 128,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '目的站',
+									    name: 'purposePlace',
+				     					reference:'purposePlace',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '包装',
+									    name: 'packing',
+				     					reference:'packing',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '货币',
+									    name: 'currency',
+				     					reference:'currency',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货方式',
+									    name: 'deliverGoodsMode',
+				     					reference:'deliverGoodsMode',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货时间',
+									    name: 'deliverGoodsDate',
+				     					reference:'deliverGoodsDate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '付款方式',
+									    name: 'paymentMode',
+				     					reference:'paymentMode',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 188,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '运费',
+									    name: 'freight',
+				     					reference:'freight',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '保险',
+									    name: 'insurance',
+				     					reference:'insurance',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '税率',
+									    name: 'tax_rate',
+				     					reference:'tax_rate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '折扣',
+									    name: 'rebate',
+				     					reference:'rebate',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 222,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '审批人',
+									    name: 'examApprByName',
+				     					reference:'examApprByName'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:70,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 255,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注',
+									    name: 'remark',
+				     					reference:'remark',
+									    colspan:4
+									}
+                            	]
+                            }
+                     ]
+       	            
+       	        },{
+          	         xtype:'panel',
+          	         layout: {
+                   	 type: 'fit',
+                    },
+                    region: "center",
+                    bodyStyle: 'background:#ceebe0; padding:0px;border:0px',
+                    scrollable:true,
+                    items:[{
+                   	 xtype:'grid',
+                   	 enableHdMenu:false,
+                   	 sortableColumns:false,
+                   	 columnLines: true,
+                   	 enableColumnHide:false,
+                   	 enableColumnMove:false,
+                   	 store:me.store,
+                   	 features: [{
+             		        ftype: 'summary'
+             		     }],
+                   	 columns: {
+                   		    items: [
+                   		        {
+                   		            text: "序号",
+                   		            dataIndex: "id",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品编码",
+                   		            dataIndex: "prodCode",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品名称",
+                   		            dataIndex: "prodName",
+                   		            width: 150
+                   		        },{
+                   		            text: "型号规格",
+                   		            dataIndex: "typeModel",
+                   		            width: 150
+                   		        },{
+                   		            text: "数量",
+                   		            dataIndex: "qty",
+                   		            width: 150
+                   		        },{
+                   		            text: "单位",
+                   		            dataIndex: "unit",
+                   		            width: 150
+                   		        },{
+                   		            text: "单价",
+                   		            dataIndex: "univalent",
+                   		            width: 150
+                   		        },{
+                   		            text: "货币",
+                   		            dataIndex: "currency",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品描述",
+                   		            dataIndex: "prodDesc",
+                   		            width: 150
+                   		        },{
+                   		            text: "品牌",
+                   		            dataIndex: "brand",
+                   		            width: 150
+                   		        },{
+                   		            text: "制造商名称",
+                   		            dataIndex: "manufName",
+                   		            width: 150
+                   		        },{
+                   		            text: "货期（交期）",
+                   		            dataIndex: "deliveTime",
+                   		            width: 150
+                   		        },{
+                   		            text: "备注",
+                   		            dataIndex: "remark",
+                   		            width: 150
+                   		        },{
+                   		            text: "合计",
+                   		            dataIndex: "inquiredQTY_quotedPrice$",
+                   		            width: 150,
+                   		            summaryType: 'sum',
+   	                		      	summaryRenderer: function(value, summaryData, dataIndex) {
+   	                		            return'金额总计:'+value;
+   	                		        }
+                   		        }
+                   		    ]
+                   		}
+                   	 
+                   	 
+                   	 
+                 }]
+          	   }
+       	 ]
+       });
+        me.callParent();
+    }
+});
+Ext.define('Hc_Framework.view.hc.SubHcCustomerComplainController', {
+	extend : 'Hc_Common.view.BaseWinPageController',
+
+	alias : 'controller.subhccustomercomplaincontroller',
+	flag:false,
+	record_:'',
+	init: function () {
+		var me = this;
+		var  record=Ext.create('Hc_Framework.model.HcCustomerComplain',{});
+		this.record_=record
+		for(i=0;i<record.getFields().length;i++){
+			var  name=Ext.util.Format.trim(record.getFields()[i].getName())
+	   		 
+	   		if((this.getReferences())[name]){
+				this.lookupReference(name).on("change", me.onBtnchange, me);	   			 
+	   		 }
+     	}
+		me.callParent();
+	},
+	onBtnEditClick:function(){
+		for(i=0;i<this.record_.getFields().length;i++){
+            var  name=Ext.util.Format.trim(this.record_.getFields()[i].getName())
+  		 if((this.getReferences())[name]){
+  			 if('contactsName'==name||'contactsTel'==name||'contactsFax'==name||'supplierName'==name){
+  				this.lookupReference(name).disable();
+  			 }else{
+  				this.lookupReference(name).enable();
+  			 }
+  			
+  		 }
+  	    }
+		//this.view.lookupReference('inquiryNo').enable()
+
+	},
+	onBtnchange:function(obj , newValue , oldValue , eOpt){
+	 	var  store_=this.view.me_.workObject.store;
+		store_.beginUpdate();
+	 	if(obj.is('combo')){
+	 		this.view.record.set(obj.name, obj.getRawValue()); 		
+	 	}else{
+	 		this.view.record.set(obj.name, obj.getRawValue()); 	
+	 	}
+
+
+	 	
+	 	if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+	 	store_.endUpdate();
+	},
+	onBtnSaveClick:function(){
+	    if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+
+	    for(i=0;i<this.record_.getFields().length-3;i++){
+			
+			  if(!this.lookupReference(Ext.util.Format.trim(this.record_.getFields()[i].getName())).isValid()){
+				  return;
+			  }
+		}
+	    this.view.me_.workObject.store.add(this.view.record);
+	    this.view.me_.onBtnSaveClick(null,this)
+	},
+	onBtnCancelClick:function(){
+		if(this.flag){
+			  this.view.me_.workObject.store.removeAt(this.view.me_.workObject.store.getCount()-1);
+			  //this.view.me_.workObject.getStore().rejectChanges();
+			  this.view.me_.workObject.view.refresh();
+			  this.flag=false
+		}
+		
+      if(this.view.title=='编辑'){
+    		
+      	this.view.me_.workObject.store.rejectChanges()
+      	this.view.me_.workObject.view.refresh();
+    		
+    	}
+          this.view.me_.view.subformActivate=false;
+		  this.view.hide();
+	}
+	
+});
+Ext.define('Hc_Framework.view.hc.SubHcCustomerComplainModel', {
+    extend: 'Hc_Common.view.BaseWinPageModel',
+
+    alias: 'viewmodel.subhccustomercomplainmodel'
+});
+/**
+ * Description: 客户服务管理  view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2014-2015
+ * Company:     hc.
+ * author:      jinxi.li
+ * Createdate:  2016/01/26
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define("Hc_Framework.view.hc.HcCustomerServe", {
+    extend: "Hc_Common.view.BaseSimplePage",
+
+    alias: 'widget.hccustomerserve',
+
+    
+
+    controller: "hccustomerservecontroller",
+
+    viewModel: {
+        type: "hccustomerservemodel"
+    },
+    title_:'客户服务',
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+            searchItems: [ 
+			{
+			    xtype: 'textfield', 
+			    fieldLabel: '服务单', 
+			    name: 'custServeCode'
+			}
+            ],
+
+            gridModel: 'Hc_Framework.model.HcCustomerServe',
+            gridSubGrid:'',
+            gridColumns: [
+                          {
+                          	header: '服务单', 
+                          	dataIndex: 'custServeCode', 
+                          	width: '15%',
+                          	renderer: function (data, metadata, record, rowIndex, columnIndex, store) {  
+                          		return '<span onclick=""><a href="#">'+data+' </a></span>';
+                            }
+                          },
+                          {
+                          	header: '服务主题', 
+                          	dataIndex: 'custServeTheme', 
+                          	width: 250
+                          },
+                          {
+              				dataIndex: 'serveType',
+              				header: '服务类别',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'serveLevel',
+                				header: '服务等级',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'currentState',
+                				header: '当前状态 ',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'serveDate',
+              				header: '服务日期 ',
+              				width: 150
+                          },
+                          {
+            				dataIndex: 'orderNo',
+            				header: '订单号 ',
+            				width: 150
+                          },
+                          {
+              				dataIndex: 'pactNo',
+              				header: '合同号 ',
+              				width: 150
+                          },
+                          {
+              				dataIndex: 'endDate',
+              				header: '结束日期 ',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'prodCode',
+                				header: '产品编码 ',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'prodName',
+                				header: '产品名称 ',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'qty',
+                				header: '数量 ',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'unit',
+              				header: '单位 ',
+              				width: 150
+                          },
+                          {
+            				dataIndex: 'custName',
+            				header: '客户 ',
+            				width: 150
+                          },
+                         {
+	          				dataIndex: 'businessBy',
+	          				header: '业务员 ',
+	          				width: 150
+                         },
+                        {
+	        				dataIndex: 'registerBy',
+	        				header: '登记人',
+	        				width: 150
+		                  },
+		                  {
+		      				dataIndex: 'registerDate',
+		      				header: '登记日期 ',
+		      				width: 150
+		                },{
+	              				dataIndex: 'remark',
+	              				header: '备　　注',
+	              				width: 150
+	                      }             
+            ],
+            allendflag:false,
+            gridPrimaryKey: 'custServeCode',
+            gridLoadUrl: Hc.basePath + 'hc_customer_serve_list/list.json',
+            gridLoadSubUrl: Hc.basePath + 'hc_customer_serve_list/listAll.json',
+            gridSaveUrl: Hc.basePath + 'hc_customer_serve_list/batchOperate.json',
+            gridExportUrl: Hc.basePath + 'hc_customer_serve_list/do_export.json',
+            gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_customer_serve_list/deleteMasterCustomer.json',
+            gridAddMasterCustomerUrl: Hc.basePath + 'hc_customer_serve_list/addMasterCustomer.json',
+            gridImportUrl: Hc.basePath + '',
+            subWinTableName:'Hc_Framework.view.hc.SubHcCustomerServe',
+            subformActivate:false
+        });
+        me.callParent();
+    }
+});
+/**
+ * Description: 客户服务管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+
+Ext.define('Hc_Framework.view.hc.HcCustomerServeController', {
+	extend : 'Hc_Common.view.BaseSimplePageController',
+
+	alias : 'controller.hccustomerservecontroller',
+	
+	init: function () {
+		var me = this;
+		Ext.apply(me, {
+			windowFlag:true,
+			newobj:this.view.subWinTableName
+		})
+		me.callParent();
+	},
+	onEditClick:function( obj , record , item , index , e , eOpts){
+      
+	},
+	onEditClick_:function(obj , td , cellIndex , record , tr , rowIndex , e , eOpts ){
+		var store = Ext.create('Hc_Common.store.Base', {
+            model:'Hc_Framework.model.HcCustomerServe',
+            autoLoad: false,
+            groupField: 'inquiredQTY_quotedPrice$',
+            proxy: {
+                url: this.view.gridLoadSubUrl
+            }
+        });
+		
+		store.proxy.extraParams['quoteCode'] = record.data.quoteCode; 
+		store.load();	      	 
+		if(cellIndex==0){
+	    	Ext.create(this.view.subWinTableName,{
+	    		title:'编辑',
+	    		record:record,
+	    		me_:this,
+	    		store:store
+	    	}).show();
+	    	this.view.subformActivate=true;
+	    	this.onBtnCancelClick();
+		}
+    	
+    }
+	
+});
+/**
+ * Description: 客户服务管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.view.hc.HcCustomerServeModel', {
+    extend: 'Hc_Common.view.BaseSimplePageModel',
+
+    alias: 'viewmodel.hccustomerservemodel'
+});
+Ext.define("Hc_Framework.view.hc.SubHcCustomerServe", {
+    extend: "Hc_Common.view.BaseWinPage",
+
+    alias: 'widget.subhccustomerserve',
+
+    
+
+    controller: "subhccustomerservecontroller",
+
+    viewModel: {
+        type: "subhccustomerservemodel"
+    },
+    title:'新增',
+    width: 1000,
+    height:620,
+    
+    maxWidth:1000,
+   // maxHeight:620,
+    
+    minWidth:1000,
+    minHeight:620,
+    
+    layout:'border',//设置窗口内部布局
+    closeAction:'hide',
+    plain:false,//true则主体背景透明，false则和主体背景有些差别
+    collapsible:false,//是否可收缩
+    modal:true,//是否为模式窗体
+   
+    dockedItems:[{
+    	 xtype: 'toolbar',
+    	 dock: 'top',
+    	 items: [
+           {
+             text: '保存',
+             handler:'onBtnSaveClick',
+             glyph: Hc.Icon.btnSave
+           },
+           {
+               text: '编辑',
+               handler:'onBtnEditClick',
+               glyph: Hc.Icon.btnEdit
+           },
+           {
+               text: '取消',
+               handler:'onBtnCancelClick',
+               glyph: Hc.Icon.btnCancel
+             }
+         ]
+    }],
+    listeners: {
+    	beforeshow:function(obj ,eOpts){
+    		 var currentUser = Ext.create("Hc_Framework.store.CurrentUser");
+    	        currentUser.load();
+    		 var  userCreator;
+             var   supplierNo_;
+             
+             if(this.title=='新增'){
+            	// this.lookupReference('createUser').setValue(currentUser.getAt(0).data.userName);
+                 supplierNo_='PE'+Ext.util.Format.date((new Date()), "Y").substring(2,5)+Ext.util.Format.date((new Date()), "Y").substring(0,2)+Ext.util.Format.date((new Date()), "dmHis");
+              /*   this.lookupReference('inquiryNo').setValue(supplierNo_);
+                // this.lookupReference('modifyUser').disabled=true;
+                 //this.lookupReference('modifyDate').disabled=true;
+                 
+                 this.lookupReference('contactsName').disabled=true;
+                 this.lookupReference('contactsTel').disabled=true;
+                 this.lookupReference('contactsFax').disabled=true;
+                 this.lookupReference('supplierName').disabled=true;
+                 
+                 
+                // this.lookupReference('localDepartment').setValue(currentUser.getAt(0).data.deptName);
+                 this.lookupReference('inquiryDate').setValue(Ext.util.Format.date((new Date()),'Y-m-d H:i:s'));
+
+            */
+             }else if(this.title=='编辑'){
+           	 for(i=0;i<this.record.getFields().length;i++){
+	                 var  name=Ext.util.Format.trim(this.record.getFields()[i].getName())
+           		 
+           		 if((this.getReferences())[name]){
+           			 if(this.lookupReference(name).is('combo')){
+               			 this.lookupReference(name).setRawValue(this.record.get(name));
+               		 }else{
+               			 this.lookupReference(name).setValue(this.record.get(name));
+               		 }
+           			this.lookupReference(name).disable();
+           		 }
+           	 }
+             }
+             this.lookupReference('subhcsuppliercustomer').title='>>>>'+this.me_.view.title_;
+    	}
+    },
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+       	 items:[
+       	        {
+       	         xtype:'panel',
+       	         defaults: {
+       	        	
+                 },
+                 layout: {
+                	 type: 'absolute'
+                 },
+                 reference:'subhcsuppliercustomer',
+                 region: "north",
+                 bodyStyle: 'background:#cbdbe0;',
+                 padding:'3 0 3 0',//(top, right, bottom, left).
+                    items: [
+                            {
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 3,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价编码',
+									    name: 'quoteCode',
+				     					reference:'quoteCode',
+									    listeners: {
+									    	beforerender: function(obj) {
+											   obj.fieldLabel+='<font size="2px" color="red">*</font>';
+									        }
+										  }
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人编码',
+									    name: 'quoteByCode',
+				     					reference:'quoteByCode'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人名称',
+									    name: 'quoteByName',
+				     					reference:'quoteByName'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价方式',
+									    name: 'quoteMode',
+				     					reference:'quoteMode'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:57,
+                            	width:980,
+                            	layout: {
+                                  	 type: 'table',
+                                       columns:4
+                                   },
+                                x: 3,
+                                y: 35,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                               	items:[
+   									{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户编码',
+	   								    name: 'custCode',
+	   								
+				     					reference:'custCode'
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									   // width:313,
+   									    fieldLabel: '客户名称',
+   									    name: 'custName',
+				     					reference:'custName',
+   									    colspan:1
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									    width:500,
+   									    fieldLabel: '客户地址',
+   									    name: 'custAddr',
+				     					reference:'custAddr',
+   									    colspan:4
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户电话',
+	   								    name: 'custTel',
+	   								
+				     					reference:'custTel'
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户传真',
+	   								    name: 'custFax',
+	   								
+				     					reference:'custFax'
+   									}
+   								
+                               	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 95,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系人名称',
+									    name: 'contact_by',
+				     					reference:'contact_by'
+									   
+									},{
+									    xtype:'datefield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系电话 ',
+									    name: 'contacTByTel',
+				     					reference:'contacTByTel'
+									   
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系邮件',
+									    name: 'contactByEmail',
+				     					reference:'contactByEmail',
+									 
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:56,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 128,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '目的站',
+									    name: 'purposePlace',
+				     					reference:'purposePlace',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '包装',
+									    name: 'packing',
+				     					reference:'packing',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '货币',
+									    name: 'currency',
+				     					reference:'currency',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货方式',
+									    name: 'deliverGoodsMode',
+				     					reference:'deliverGoodsMode',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货时间',
+									    name: 'deliverGoodsDate',
+				     					reference:'deliverGoodsDate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '付款方式',
+									    name: 'paymentMode',
+				     					reference:'paymentMode',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 188,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '运费',
+									    name: 'freight',
+				     					reference:'freight',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '保险',
+									    name: 'insurance',
+				     					reference:'insurance',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '税率',
+									    name: 'tax_rate',
+				     					reference:'tax_rate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '折扣',
+									    name: 'rebate',
+				     					reference:'rebate',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 222,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '审批人',
+									    name: 'examApprByName',
+				     					reference:'examApprByName'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:70,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 255,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注',
+									    name: 'remark',
+				     					reference:'remark',
+									    colspan:4
+									}
+                            	]
+                            }
+                     ]
+       	            
+       	        },{
+          	         xtype:'panel',
+          	         layout: {
+                   	 type: 'fit',
+                    },
+                    region: "center",
+                    bodyStyle: 'background:#ceebe0; padding:0px;border:0px',
+                    scrollable:true,
+                    items:[{
+                   	 xtype:'grid',
+                   	 enableHdMenu:false,
+                   	 sortableColumns:false,
+                   	 columnLines: true,
+                   	 enableColumnHide:false,
+                   	 enableColumnMove:false,
+                   	 store:me.store,
+                   	 features: [{
+             		        ftype: 'summary'
+             		     }],
+                   	 columns: {
+                   		    items: [
+                   		        {
+                   		            text: "序号",
+                   		            dataIndex: "id",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品编码",
+                   		            dataIndex: "prodCode",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品名称",
+                   		            dataIndex: "prodName",
+                   		            width: 150
+                   		        },{
+                   		            text: "型号规格",
+                   		            dataIndex: "typeModel",
+                   		            width: 150
+                   		        },{
+                   		            text: "数量",
+                   		            dataIndex: "qty",
+                   		            width: 150
+                   		        },{
+                   		            text: "单位",
+                   		            dataIndex: "unit",
+                   		            width: 150
+                   		        },{
+                   		            text: "单价",
+                   		            dataIndex: "univalent",
+                   		            width: 150
+                   		        },{
+                   		            text: "货币",
+                   		            dataIndex: "currency",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品描述",
+                   		            dataIndex: "prodDesc",
+                   		            width: 150
+                   		        },{
+                   		            text: "品牌",
+                   		            dataIndex: "brand",
+                   		            width: 150
+                   		        },{
+                   		            text: "制造商名称",
+                   		            dataIndex: "manufName",
+                   		            width: 150
+                   		        },{
+                   		            text: "货期（交期）",
+                   		            dataIndex: "deliveTime",
+                   		            width: 150
+                   		        },{
+                   		            text: "备注",
+                   		            dataIndex: "remark",
+                   		            width: 150
+                   		        },{
+                   		            text: "合计",
+                   		            dataIndex: "inquiredQTY_quotedPrice$",
+                   		            width: 150,
+                   		            summaryType: 'sum',
+   	                		      	summaryRenderer: function(value, summaryData, dataIndex) {
+   	                		            return'金额总计:'+value;
+   	                		        }
+                   		        }
+                   		    ]
+                   		}
+                   	 
+                   	 
+                   	 
+                 }]
+          	   }
+       	 ]
+       });
+        me.callParent();
+    }
+});
+Ext.define('Hc_Framework.view.hc.SubHcCustomerServeController', {
+	extend : 'Hc_Common.view.BaseWinPageController',
+
+	alias : 'controller.subhccustomerservecontroller',
+	flag:false,
+	record_:'',
+	init: function () {
+		var me = this;
+		var  record=Ext.create('Hc_Framework.model.HcCustomerServe',{});
+		this.record_=record
+		for(i=0;i<record.getFields().length;i++){
+			var  name=Ext.util.Format.trim(record.getFields()[i].getName())
+	   		 
+	   		if((this.getReferences())[name]){
+				this.lookupReference(name).on("change", me.onBtnchange, me);	   			 
+	   		 }
+     	}
+		me.callParent();
+	},
+	onBtnEditClick:function(){
+		for(i=0;i<this.record_.getFields().length;i++){
+            var  name=Ext.util.Format.trim(this.record_.getFields()[i].getName())
+  		 if((this.getReferences())[name]){
+  			 if('contactsName'==name||'contactsTel'==name||'contactsFax'==name||'supplierName'==name){
+  				this.lookupReference(name).disable();
+  			 }else{
+  				this.lookupReference(name).enable();
+  			 }
+  			
+  		 }
+  	    }
+		//this.view.lookupReference('inquiryNo').enable()
+
+	},
+	onBtnchange:function(obj , newValue , oldValue , eOpt){
+	 	var  store_=this.view.me_.workObject.store;
+		store_.beginUpdate();
+	 	if(obj.is('combo')){
+	 		this.view.record.set(obj.name, obj.getRawValue()); 		
+	 	}else{
+	 		this.view.record.set(obj.name, obj.getRawValue()); 	
+	 	}
+
+
+	 	
+	 	if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+	 	store_.endUpdate();
+	},
+	onBtnSaveClick:function(){
+	    if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+
+	    for(i=0;i<this.record_.getFields().length-3;i++){
+			
+			  if(!this.lookupReference(Ext.util.Format.trim(this.record_.getFields()[i].getName())).isValid()){
+				  return;
+			  }
+		}
+	    this.view.me_.workObject.store.add(this.view.record);
+	    this.view.me_.onBtnSaveClick(null,this)
+	},
+	onBtnCancelClick:function(){
+		if(this.flag){
+			  this.view.me_.workObject.store.removeAt(this.view.me_.workObject.store.getCount()-1);
+			  //this.view.me_.workObject.getStore().rejectChanges();
+			  this.view.me_.workObject.view.refresh();
+			  this.flag=false
+		}
+		
+      if(this.view.title=='编辑'){
+    		
+      	this.view.me_.workObject.store.rejectChanges()
+      	this.view.me_.workObject.view.refresh();
+    		
+    	}
+          this.view.me_.view.subformActivate=false;
+		  this.view.hide();
+	}
+	
+});
+Ext.define('Hc_Framework.view.hc.SubHcCustomerServeModel', {
+    extend: 'Hc_Common.view.BaseWinPageModel',
+
+    alias: 'viewmodel.subhccustomerservemodel'
+});
+/**
+ * Description: 维修管理  view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2014-2015
+ * Company:     hc.
+ * author:      jinxi.li
+ * Createdate:  2016/01/26
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define("Hc_Framework.view.hc.HcMaintain", {
+    extend: "Hc_Common.view.BaseSimplePage",
+
+    alias: 'widget.hcmaintain',
+
+    
+
+    controller: "hcmaintaincontroller",
+
+    viewModel: {
+        type: "hcmaintainmodel"
+    },
+    title_:'维修管理',
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+            searchItems: [ 
+			{
+			    xtype: 'textfield', 
+			    fieldLabel: '维修单', 
+			    name: 'maintainCode'
+			}
+            ],
+
+            gridModel: 'Hc_Framework.model.HcMaintain',
+            gridSubGrid:'',
+            gridColumns: [
+                          {
+                          	header: '维修单', 
+                          	dataIndex: 'maintainCode', 
+                          	width: '15%',
+                          	renderer: function (data, metadata, record, rowIndex, columnIndex, store) {  
+                          		return '<span onclick=""><a href="#">'+data+' </a></span>';
+                            }
+                          },
+                          {
+                          	header: '业务员', 
+                          	dataIndex: 'salesmanName', 
+                          	width: 250
+                          },
+                          {
+              				dataIndex: 'maintainByName',
+              				header: '维修员',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'custName',
+                				header: '客户',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'custAddr',
+                				header: '客户地址 ',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'maintainType',
+              				header: '维修类别 ',
+              				width: 150
+                          },
+                          {
+            				dataIndex: 'puttOutFactName',
+            				header: '外发厂 ',
+            				width: 150
+                          },
+                          {
+              				dataIndex: 'prodCode',
+              				header: '产品编码 ',
+              				width: 150
+                          },
+                          {
+              				dataIndex: 'prodName',
+              				header: '产品名称 ',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'airframeNo',
+                				header: '机身号码 ',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'processMode',
+                				header: '处理方式 ',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'freight',
+                				header: '运费 ',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'transportMode',
+              				header: '运输方式 ',
+              				width: 150
+                          },
+                          {
+            				dataIndex: 'consigneeDate',
+            				header: '收件日期 ',
+            				width: 150
+                          },
+                         {
+	          				dataIndex: 'guarantee',
+	          				header: '保修 ',
+	          				width: 150
+                         },{
+	              				dataIndex: 'remark',
+	              				header: '备　　注',
+	              				width: 150
+	                      }             
+            ],
+            allendflag:false,
+            gridPrimaryKey: 'maintainCode',
+            gridLoadUrl: Hc.basePath + 'hc_maintain_list/list.json',
+            gridLoadSubUrl: Hc.basePath + 'hc_maintain_list/listAll.json',
+            gridSaveUrl: Hc.basePath + 'hc_maintain_list/batchOperate.json',
+            gridExportUrl: Hc.basePath + 'hc_maintain_list/do_export.json',
+            gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_maintain_list/deleteMasterCustomer.json',
+            gridAddMasterCustomerUrl: Hc.basePath + 'hc_maintain_list/addMasterCustomer.json',
+            gridImportUrl: Hc.basePath + '',
+            subWinTableName:'Hc_Framework.view.hc.SubHcMaintain',
+            subformActivate:false
+        });
+        me.callParent();
+    }
+});
+/**
+ * Description: 维修管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+
+Ext.define('Hc_Framework.view.hc.HcMaintainController', {
+	extend : 'Hc_Common.view.BaseSimplePageController',
+
+	alias : 'controller.hcmaintaincontroller',
+	
+	init: function () {
+		var me = this;
+		Ext.apply(me, {
+			windowFlag:true,
+			newobj:this.view.subWinTableName
+		})
+		me.callParent();
+	},
+	onEditClick:function( obj , record , item , index , e , eOpts){
+      
+	},
+	onEditClick_:function(obj , td , cellIndex , record , tr , rowIndex , e , eOpts ){
+		var store = Ext.create('Hc_Common.store.Base', {
+            model:'Hc_Framework.model.HcMaintain',
+            autoLoad: false,
+            groupField: 'inquiredQTY_quotedPrice$',
+            proxy: {
+                url: this.view.gridLoadSubUrl
+            }
+        });
+		
+		store.proxy.extraParams['quoteCode'] = record.data.quoteCode; 
+		store.load();	      	 
+		if(cellIndex==0){
+	    	Ext.create(this.view.subWinTableName,{
+	    		title:'编辑',
+	    		record:record,
+	    		me_:this,
+	    		store:store
+	    	}).show();
+	    	this.view.subformActivate=true;
+	    	this.onBtnCancelClick();
+		}
+    	
+    }
+	
+});
+/**
+ * Description: 维修管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.view.hc.HcMaintainModel', {
+    extend: 'Hc_Common.view.BaseSimplePageModel',
+
+    alias: 'viewmodel.hcmaintainmodel'
+});
+Ext.define("Hc_Framework.view.hc.SubHcMaintain", {
+    extend: "Hc_Common.view.BaseWinPage",
+
+    alias: 'widget.subhcmaintain',
+
+    
+
+    controller: "subhcmaintaincontroller",
+
+    viewModel: {
+        type: "subhcmaintainmodel"
+    },
+    title:'新增',
+    width: 1000,
+    height:620,
+    
+    maxWidth:1000,
+   // maxHeight:620,
+    
+    minWidth:1000,
+    minHeight:620,
+    
+    layout:'border',//设置窗口内部布局
+    closeAction:'hide',
+    plain:false,//true则主体背景透明，false则和主体背景有些差别
+    collapsible:false,//是否可收缩
+    modal:true,//是否为模式窗体
+   
+    dockedItems:[{
+    	 xtype: 'toolbar',
+    	 dock: 'top',
+    	 items: [
+           {
+             text: '保存',
+             handler:'onBtnSaveClick',
+             glyph: Hc.Icon.btnSave
+           },
+           {
+               text: '编辑',
+               handler:'onBtnEditClick',
+               glyph: Hc.Icon.btnEdit
+           },
+           {
+               text: '取消',
+               handler:'onBtnCancelClick',
+               glyph: Hc.Icon.btnCancel
+             }
+         ]
+    }],
+    listeners: {
+    	beforeshow:function(obj ,eOpts){
+    		 var currentUser = Ext.create("Hc_Framework.store.CurrentUser");
+    	        currentUser.load();
+    		 var  userCreator;
+             var   supplierNo_;
+             
+             if(this.title=='新增'){
+            	// this.lookupReference('createUser').setValue(currentUser.getAt(0).data.userName);
+                 supplierNo_='PE'+Ext.util.Format.date((new Date()), "Y").substring(2,5)+Ext.util.Format.date((new Date()), "Y").substring(0,2)+Ext.util.Format.date((new Date()), "dmHis");
+              /*   this.lookupReference('inquiryNo').setValue(supplierNo_);
+                // this.lookupReference('modifyUser').disabled=true;
+                 //this.lookupReference('modifyDate').disabled=true;
+                 
+                 this.lookupReference('contactsName').disabled=true;
+                 this.lookupReference('contactsTel').disabled=true;
+                 this.lookupReference('contactsFax').disabled=true;
+                 this.lookupReference('supplierName').disabled=true;
+                 
+                 
+                // this.lookupReference('localDepartment').setValue(currentUser.getAt(0).data.deptName);
+                 this.lookupReference('inquiryDate').setValue(Ext.util.Format.date((new Date()),'Y-m-d H:i:s'));
+
+            */
+             }else if(this.title=='编辑'){
+           	 for(i=0;i<this.record.getFields().length;i++){
+	                 var  name=Ext.util.Format.trim(this.record.getFields()[i].getName())
+           		 
+           		 if((this.getReferences())[name]){
+           			 if(this.lookupReference(name).is('combo')){
+               			 this.lookupReference(name).setRawValue(this.record.get(name));
+               		 }else{
+               			 this.lookupReference(name).setValue(this.record.get(name));
+               		 }
+           			this.lookupReference(name).disable();
+           		 }
+           	 }
+             }
+             this.lookupReference('subhcsuppliercustomer').title='>>>>'+this.me_.view.title_;
+    	}
+    },
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+       	 items:[
+       	        {
+       	         xtype:'panel',
+       	         defaults: {
+       	        	
+                 },
+                 layout: {
+                	 type: 'absolute'
+                 },
+                 reference:'subhcsuppliercustomer',
+                 region: "north",
+                 bodyStyle: 'background:#cbdbe0;',
+                 padding:'3 0 3 0',//(top, right, bottom, left).
+                    items: [
+                            {
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 3,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价编码',
+									    name: 'quoteCode',
+				     					reference:'quoteCode',
+									    listeners: {
+									    	beforerender: function(obj) {
+											   obj.fieldLabel+='<font size="2px" color="red">*</font>';
+									        }
+										  }
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人编码',
+									    name: 'quoteByCode',
+				     					reference:'quoteByCode'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人名称',
+									    name: 'quoteByName',
+				     					reference:'quoteByName'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价方式',
+									    name: 'quoteMode',
+				     					reference:'quoteMode'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:57,
+                            	width:980,
+                            	layout: {
+                                  	 type: 'table',
+                                       columns:4
+                                   },
+                                x: 3,
+                                y: 35,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                               	items:[
+   									{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户编码',
+	   								    name: 'custCode',
+	   								
+				     					reference:'custCode'
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									   // width:313,
+   									    fieldLabel: '客户名称',
+   									    name: 'custName',
+				     					reference:'custName',
+   									    colspan:1
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									    width:500,
+   									    fieldLabel: '客户地址',
+   									    name: 'custAddr',
+				     					reference:'custAddr',
+   									    colspan:4
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户电话',
+	   								    name: 'custTel',
+	   								
+				     					reference:'custTel'
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户传真',
+	   								    name: 'custFax',
+	   								
+				     					reference:'custFax'
+   									}
+   								
+                               	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 95,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系人名称',
+									    name: 'contact_by',
+				     					reference:'contact_by'
+									   
+									},{
+									    xtype:'datefield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系电话 ',
+									    name: 'contacTByTel',
+				     					reference:'contacTByTel'
+									   
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系邮件',
+									    name: 'contactByEmail',
+				     					reference:'contactByEmail',
+									 
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:56,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 128,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '目的站',
+									    name: 'purposePlace',
+				     					reference:'purposePlace',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '包装',
+									    name: 'packing',
+				     					reference:'packing',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '货币',
+									    name: 'currency',
+				     					reference:'currency',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货方式',
+									    name: 'deliverGoodsMode',
+				     					reference:'deliverGoodsMode',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货时间',
+									    name: 'deliverGoodsDate',
+				     					reference:'deliverGoodsDate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '付款方式',
+									    name: 'paymentMode',
+				     					reference:'paymentMode',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 188,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '运费',
+									    name: 'freight',
+				     					reference:'freight',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '保险',
+									    name: 'insurance',
+				     					reference:'insurance',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '税率',
+									    name: 'tax_rate',
+				     					reference:'tax_rate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '折扣',
+									    name: 'rebate',
+				     					reference:'rebate',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 222,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '审批人',
+									    name: 'examApprByName',
+				     					reference:'examApprByName'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:70,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 255,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注',
+									    name: 'remark',
+				     					reference:'remark',
+									    colspan:4
+									}
+                            	]
+                            }
+                     ]
+       	            
+       	        },{
+          	         xtype:'panel',
+          	         layout: {
+                   	 type: 'fit',
+                    },
+                    region: "center",
+                    bodyStyle: 'background:#ceebe0; padding:0px;border:0px',
+                    scrollable:true,
+                    items:[{
+                   	 xtype:'grid',
+                   	 enableHdMenu:false,
+                   	 sortableColumns:false,
+                   	 columnLines: true,
+                   	 enableColumnHide:false,
+                   	 enableColumnMove:false,
+                   	 store:me.store,
+                   	 features: [{
+             		        ftype: 'summary'
+             		     }],
+                   	 columns: {
+                   		    items: [
+                   		        {
+                   		            text: "序号",
+                   		            dataIndex: "id",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品编码",
+                   		            dataIndex: "prodCode",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品名称",
+                   		            dataIndex: "prodName",
+                   		            width: 150
+                   		        },{
+                   		            text: "型号规格",
+                   		            dataIndex: "typeModel",
+                   		            width: 150
+                   		        },{
+                   		            text: "数量",
+                   		            dataIndex: "qty",
+                   		            width: 150
+                   		        },{
+                   		            text: "单位",
+                   		            dataIndex: "unit",
+                   		            width: 150
+                   		        },{
+                   		            text: "单价",
+                   		            dataIndex: "univalent",
+                   		            width: 150
+                   		        },{
+                   		            text: "货币",
+                   		            dataIndex: "currency",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品描述",
+                   		            dataIndex: "prodDesc",
+                   		            width: 150
+                   		        },{
+                   		            text: "品牌",
+                   		            dataIndex: "brand",
+                   		            width: 150
+                   		        },{
+                   		            text: "制造商名称",
+                   		            dataIndex: "manufName",
+                   		            width: 150
+                   		        },{
+                   		            text: "货期（交期）",
+                   		            dataIndex: "deliveTime",
+                   		            width: 150
+                   		        },{
+                   		            text: "备注",
+                   		            dataIndex: "remark",
+                   		            width: 150
+                   		        },{
+                   		            text: "合计",
+                   		            dataIndex: "inquiredQTY_quotedPrice$",
+                   		            width: 150,
+                   		            summaryType: 'sum',
+   	                		      	summaryRenderer: function(value, summaryData, dataIndex) {
+   	                		            return'金额总计:'+value;
+   	                		        }
+                   		        }
+                   		    ]
+                   		}
+                   	 
+                   	 
+                   	 
+                 }]
+          	   }
+       	 ]
+       });
+        me.callParent();
+    }
+});
+Ext.define('Hc_Framework.view.hc.SubHcMaintainController', {
+	extend : 'Hc_Common.view.BaseWinPageController',
+
+	alias : 'controller.subhcmaintaincontroller',
+	flag:false,
+	record_:'',
+	init: function () {
+		var me = this;
+		var  record=Ext.create('Hc_Framework.model.HcMaintain',{});
+		this.record_=record
+		for(i=0;i<record.getFields().length;i++){
+			var  name=Ext.util.Format.trim(record.getFields()[i].getName())
+	   		 
+	   		if((this.getReferences())[name]){
+				this.lookupReference(name).on("change", me.onBtnchange, me);	   			 
+	   		 }
+     	}
+		me.callParent();
+	},
+	onBtnEditClick:function(){
+		for(i=0;i<this.record_.getFields().length;i++){
+            var  name=Ext.util.Format.trim(this.record_.getFields()[i].getName())
+  		 if((this.getReferences())[name]){
+  			 if('contactsName'==name||'contactsTel'==name||'contactsFax'==name||'supplierName'==name){
+  				this.lookupReference(name).disable();
+  			 }else{
+  				this.lookupReference(name).enable();
+  			 }
+  			
+  		 }
+  	    }
+		//this.view.lookupReference('inquiryNo').enable()
+
+	},
+	onBtnchange:function(obj , newValue , oldValue , eOpt){
+	 	var  store_=this.view.me_.workObject.store;
+		store_.beginUpdate();
+	 	if(obj.is('combo')){
+	 		this.view.record.set(obj.name, obj.getRawValue()); 		
+	 	}else{
+	 		this.view.record.set(obj.name, obj.getRawValue()); 	
+	 	}
+
+
+	 	
+	 	if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+	 	store_.endUpdate();
+	},
+	onBtnSaveClick:function(){
+	    if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+
+	    for(i=0;i<this.record_.getFields().length-3;i++){
+			
+			  if(!this.lookupReference(Ext.util.Format.trim(this.record_.getFields()[i].getName())).isValid()){
+				  return;
+			  }
+		}
+	    this.view.me_.workObject.store.add(this.view.record);
+	    this.view.me_.onBtnSaveClick(null,this)
+	},
+	onBtnCancelClick:function(){
+		if(this.flag){
+			  this.view.me_.workObject.store.removeAt(this.view.me_.workObject.store.getCount()-1);
+			  //this.view.me_.workObject.getStore().rejectChanges();
+			  this.view.me_.workObject.view.refresh();
+			  this.flag=false
+		}
+		
+      if(this.view.title=='编辑'){
+    		
+      	this.view.me_.workObject.store.rejectChanges()
+      	this.view.me_.workObject.view.refresh();
+    		
+    	}
+          this.view.me_.view.subformActivate=false;
+		  this.view.hide();
+	}
+	
+});
+Ext.define('Hc_Framework.view.hc.SubHcMaintainModel', {
+    extend: 'Hc_Common.view.BaseWinPageModel',
+
+    alias: 'viewmodel.subhcmaintainmodel'
+});
+/**
+ * Description: 新品换货管理  view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2014-2015
+ * Company:     hc.
+ * author:      jinxi.li
+ * Createdate:  2016/01/26
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define("Hc_Framework.view.hc.HcNewBarterApply", {
+    extend: "Hc_Common.view.BaseSimplePage",
+
+    alias: 'widget.hcnewbarterapply',
+
+    
+
+    controller: "hcnewbarterapplycontroller",
+
+    viewModel: {
+        type: "hcnewbarterapplymodel"
+    },
+    title_:'新品换货',
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+            searchItems: [ 
+			{
+			    xtype: 'textfield', 
+			    fieldLabel: '换货单', 
+			    name: 'newBarApplyCode'
+			}
+            ],
+
+            gridModel: 'Hc_Framework.model.HcNewBarterApply',
+            gridSubGrid:'',
+            gridColumns: [
+                          {
+                          	header: '换货单', 
+                          	dataIndex: 'newBarApplyCode', 
+                          	width: '15%',
+                          	renderer: function (data, metadata, record, rowIndex, columnIndex, store) {  
+                          		return '<span onclick=""><a href="#">'+data+' </a></span>';
+                            }
+                          },
+                          {
+                          	header: '申请员工', 
+                          	dataIndex: 'applyEmployeeName', 
+                          	width: 250
+                          },
+                          {
+              				dataIndex: 'locationDept',
+              				header: '所在部门',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'applyDate',
+                				header: '申请日期',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'fromCompName',
+                				header: '换货公司 ',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'toCompName',
+              				header: '目的公司 ',
+              				width: 150
+                          },
+                          {
+            				dataIndex: 'piOrderNo',
+            				header: 'PI单号 ',
+            				width: 150
+                          },
+                          {
+              				dataIndex: 'consigneeDate',
+              				header: '收件日期 ',
+              				width: 150
+                          },
+                          {
+              				dataIndex: 'salesDate',
+              				header: '销货日期 ',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'airframeNo',
+                				header: '机身号码 ',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'checkoutDate',
+                				header: '检验日期 ',
+                				width: 150
+                          },{
+	              				dataIndex: 'remark',
+	              				header: '备　　注',
+	              				width: 150
+	                      }             
+            ],
+            allendflag:false,
+            gridPrimaryKey: 'newBarApplyCode',
+            gridLoadUrl: Hc.basePath + 'hc_new_barter_apply_list/list.json',
+            gridLoadSubUrl: Hc.basePath + 'hc_new_barter_apply_list/listAll.json',
+            gridSaveUrl: Hc.basePath + 'hc_new_barter_apply_list/batchOperate.json',
+            gridExportUrl: Hc.basePath + 'hc_new_barter_apply_list/do_export.json',
+            gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_new_barter_apply_list/deleteMasterCustomer.json',
+            gridAddMasterCustomerUrl: Hc.basePath + 'hc_new_barter_apply_list/addMasterCustomer.json',
+            gridImportUrl: Hc.basePath + '',
+            subWinTableName:'Hc_Framework.view.hc.SubHcNewBarterApply',
+            subformActivate:false
+        });
+        me.callParent();
+    }
+});
+/**
+ * Description: 新品换货管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+
+Ext.define('Hc_Framework.view.hc.HcNewBarterApplyController', {
+	extend : 'Hc_Common.view.BaseSimplePageController',
+
+	alias : 'controller.hcnewbarterapplycontroller',
+	
+	init: function () {
+		var me = this;
+		Ext.apply(me, {
+			windowFlag:true,
+			newobj:this.view.subWinTableName
+		})
+		me.callParent();
+	},
+	onEditClick:function( obj , record , item , index , e , eOpts){
+      
+	},
+	onEditClick_:function(obj , td , cellIndex , record , tr , rowIndex , e , eOpts ){
+		var store = Ext.create('Hc_Common.store.Base', {
+            model:'Hc_Framework.model.HcNewBarterApply',
+            autoLoad: false,
+            groupField: 'inquiredQTY_quotedPrice$',
+            proxy: {
+                url: this.view.gridLoadSubUrl
+            }
+        });
+		
+		store.proxy.extraParams['quoteCode'] = record.data.quoteCode; 
+		store.load();	      	 
+		if(cellIndex==0){
+	    	Ext.create(this.view.subWinTableName,{
+	    		title:'编辑',
+	    		record:record,
+	    		me_:this,
+	    		store:store
+	    	}).show();
+	    	this.view.subformActivate=true;
+	    	this.onBtnCancelClick();
+		}
+    	
+    }
+	
+});
+/**
+ * Description: 新品换货管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.view.hc.HcNewBarterApplyModel', {
+    extend: 'Hc_Common.view.BaseSimplePageModel',
+
+    alias: 'viewmodel.hcnewbarterapplymodel'
+});
+Ext.define("Hc_Framework.view.hc.SubHcNewBarterApply", {
+    extend: "Hc_Common.view.BaseWinPage",
+
+    alias: 'widget.subhcnewbarterapply',
+
+    
+
+    controller: "subhcnewbarterapplycontroller",
+
+    viewModel: {
+        type: "subhcnewbarterapplymodel"
+    },
+    title:'新增',
+    width: 1000,
+    height:620,
+    
+    maxWidth:1000,
+   // maxHeight:620,
+    
+    minWidth:1000,
+    minHeight:620,
+    
+    layout:'border',//设置窗口内部布局
+    closeAction:'hide',
+    plain:false,//true则主体背景透明，false则和主体背景有些差别
+    collapsible:false,//是否可收缩
+    modal:true,//是否为模式窗体
+   
+    dockedItems:[{
+    	 xtype: 'toolbar',
+    	 dock: 'top',
+    	 items: [
+           {
+             text: '保存',
+             handler:'onBtnSaveClick',
+             glyph: Hc.Icon.btnSave
+           },
+           {
+               text: '编辑',
+               handler:'onBtnEditClick',
+               glyph: Hc.Icon.btnEdit
+           },
+           {
+               text: '取消',
+               handler:'onBtnCancelClick',
+               glyph: Hc.Icon.btnCancel
+             }
+         ]
+    }],
+    listeners: {
+    	beforeshow:function(obj ,eOpts){
+    		 var currentUser = Ext.create("Hc_Framework.store.CurrentUser");
+    	        currentUser.load();
+    		 var  userCreator;
+             var   supplierNo_;
+             
+             if(this.title=='新增'){
+            	// this.lookupReference('createUser').setValue(currentUser.getAt(0).data.userName);
+                 supplierNo_='PE'+Ext.util.Format.date((new Date()), "Y").substring(2,5)+Ext.util.Format.date((new Date()), "Y").substring(0,2)+Ext.util.Format.date((new Date()), "dmHis");
+              /*   this.lookupReference('inquiryNo').setValue(supplierNo_);
+                // this.lookupReference('modifyUser').disabled=true;
+                 //this.lookupReference('modifyDate').disabled=true;
+                 
+                 this.lookupReference('contactsName').disabled=true;
+                 this.lookupReference('contactsTel').disabled=true;
+                 this.lookupReference('contactsFax').disabled=true;
+                 this.lookupReference('supplierName').disabled=true;
+                 
+                 
+                // this.lookupReference('localDepartment').setValue(currentUser.getAt(0).data.deptName);
+                 this.lookupReference('inquiryDate').setValue(Ext.util.Format.date((new Date()),'Y-m-d H:i:s'));
+
+            */
+             }else if(this.title=='编辑'){
+           	 for(i=0;i<this.record.getFields().length;i++){
+	                 var  name=Ext.util.Format.trim(this.record.getFields()[i].getName())
+           		 
+           		 if((this.getReferences())[name]){
+           			 if(this.lookupReference(name).is('combo')){
+               			 this.lookupReference(name).setRawValue(this.record.get(name));
+               		 }else{
+               			 this.lookupReference(name).setValue(this.record.get(name));
+               		 }
+           			this.lookupReference(name).disable();
+           		 }
+           	 }
+             }
+             this.lookupReference('subhcsuppliercustomer').title='>>>>'+this.me_.view.title_;
+    	}
+    },
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+       	 items:[
+       	        {
+       	         xtype:'panel',
+       	         defaults: {
+       	        	
+                 },
+                 layout: {
+                	 type: 'absolute'
+                 },
+                 reference:'subhcsuppliercustomer',
+                 region: "north",
+                 bodyStyle: 'background:#cbdbe0;',
+                 padding:'3 0 3 0',//(top, right, bottom, left).
+                    items: [
+                            {
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 3,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价编码',
+									    name: 'quoteCode',
+				     					reference:'quoteCode',
+									    listeners: {
+									    	beforerender: function(obj) {
+											   obj.fieldLabel+='<font size="2px" color="red">*</font>';
+									        }
+										  }
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人编码',
+									    name: 'quoteByCode',
+				     					reference:'quoteByCode'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人名称',
+									    name: 'quoteByName',
+				     					reference:'quoteByName'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价方式',
+									    name: 'quoteMode',
+				     					reference:'quoteMode'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:57,
+                            	width:980,
+                            	layout: {
+                                  	 type: 'table',
+                                       columns:4
+                                   },
+                                x: 3,
+                                y: 35,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                               	items:[
+   									{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户编码',
+	   								    name: 'custCode',
+	   								
+				     					reference:'custCode'
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									   // width:313,
+   									    fieldLabel: '客户名称',
+   									    name: 'custName',
+				     					reference:'custName',
+   									    colspan:1
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									    width:500,
+   									    fieldLabel: '客户地址',
+   									    name: 'custAddr',
+				     					reference:'custAddr',
+   									    colspan:4
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户电话',
+	   								    name: 'custTel',
+	   								
+				     					reference:'custTel'
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户传真',
+	   								    name: 'custFax',
+	   								
+				     					reference:'custFax'
+   									}
+   								
+                               	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 95,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系人名称',
+									    name: 'contact_by',
+				     					reference:'contact_by'
+									   
+									},{
+									    xtype:'datefield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系电话 ',
+									    name: 'contacTByTel',
+				     					reference:'contacTByTel'
+									   
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系邮件',
+									    name: 'contactByEmail',
+				     					reference:'contactByEmail',
+									 
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:56,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 128,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '目的站',
+									    name: 'purposePlace',
+				     					reference:'purposePlace',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '包装',
+									    name: 'packing',
+				     					reference:'packing',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '货币',
+									    name: 'currency',
+				     					reference:'currency',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货方式',
+									    name: 'deliverGoodsMode',
+				     					reference:'deliverGoodsMode',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货时间',
+									    name: 'deliverGoodsDate',
+				     					reference:'deliverGoodsDate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '付款方式',
+									    name: 'paymentMode',
+				     					reference:'paymentMode',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 188,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '运费',
+									    name: 'freight',
+				     					reference:'freight',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '保险',
+									    name: 'insurance',
+				     					reference:'insurance',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '税率',
+									    name: 'tax_rate',
+				     					reference:'tax_rate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '折扣',
+									    name: 'rebate',
+				     					reference:'rebate',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 222,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '审批人',
+									    name: 'examApprByName',
+				     					reference:'examApprByName'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:70,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 255,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注',
+									    name: 'remark',
+				     					reference:'remark',
+									    colspan:4
+									}
+                            	]
+                            }
+                     ]
+       	            
+       	        },{
+          	         xtype:'panel',
+          	         layout: {
+                   	 type: 'fit',
+                    },
+                    region: "center",
+                    bodyStyle: 'background:#ceebe0; padding:0px;border:0px',
+                    scrollable:true,
+                    items:[{
+                   	 xtype:'grid',
+                   	 enableHdMenu:false,
+                   	 sortableColumns:false,
+                   	 columnLines: true,
+                   	 enableColumnHide:false,
+                   	 enableColumnMove:false,
+                   	 store:me.store,
+                   	 features: [{
+             		        ftype: 'summary'
+             		     }],
+                   	 columns: {
+                   		    items: [
+                   		        {
+                   		            text: "序号",
+                   		            dataIndex: "id",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品编码",
+                   		            dataIndex: "prodCode",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品名称",
+                   		            dataIndex: "prodName",
+                   		            width: 150
+                   		        },{
+                   		            text: "型号规格",
+                   		            dataIndex: "typeModel",
+                   		            width: 150
+                   		        },{
+                   		            text: "数量",
+                   		            dataIndex: "qty",
+                   		            width: 150
+                   		        },{
+                   		            text: "单位",
+                   		            dataIndex: "unit",
+                   		            width: 150
+                   		        },{
+                   		            text: "单价",
+                   		            dataIndex: "univalent",
+                   		            width: 150
+                   		        },{
+                   		            text: "货币",
+                   		            dataIndex: "currency",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品描述",
+                   		            dataIndex: "prodDesc",
+                   		            width: 150
+                   		        },{
+                   		            text: "品牌",
+                   		            dataIndex: "brand",
+                   		            width: 150
+                   		        },{
+                   		            text: "制造商名称",
+                   		            dataIndex: "manufName",
+                   		            width: 150
+                   		        },{
+                   		            text: "货期（交期）",
+                   		            dataIndex: "deliveTime",
+                   		            width: 150
+                   		        },{
+                   		            text: "备注",
+                   		            dataIndex: "remark",
+                   		            width: 150
+                   		        },{
+                   		            text: "合计",
+                   		            dataIndex: "inquiredQTY_quotedPrice$",
+                   		            width: 150,
+                   		            summaryType: 'sum',
+   	                		      	summaryRenderer: function(value, summaryData, dataIndex) {
+   	                		            return'金额总计:'+value;
+   	                		        }
+                   		        }
+                   		    ]
+                   		}
+                   	 
+                   	 
+                   	 
+                 }]
+          	   }
+       	 ]
+       });
+        me.callParent();
+    }
+});
+Ext.define('Hc_Framework.view.hc.SubHcNewBarterApplyController', {
+	extend : 'Hc_Common.view.BaseWinPageController',
+
+	alias : 'controller.subhcnewbarterapplycontroller',
+	flag:false,
+	record_:'',
+	init: function () {
+		var me = this;
+		var  record=Ext.create('Hc_Framework.model.HcNewBarterApply',{});
+		this.record_=record
+		for(i=0;i<record.getFields().length;i++){
+			var  name=Ext.util.Format.trim(record.getFields()[i].getName())
+	   		 
+	   		if((this.getReferences())[name]){
+				this.lookupReference(name).on("change", me.onBtnchange, me);	   			 
+	   		 }
+     	}
+		me.callParent();
+	},
+	onBtnEditClick:function(){
+		for(i=0;i<this.record_.getFields().length;i++){
+            var  name=Ext.util.Format.trim(this.record_.getFields()[i].getName())
+  		 if((this.getReferences())[name]){
+  			 if('contactsName'==name||'contactsTel'==name||'contactsFax'==name||'supplierName'==name){
+  				this.lookupReference(name).disable();
+  			 }else{
+  				this.lookupReference(name).enable();
+  			 }
+  			
+  		 }
+  	    }
+		//this.view.lookupReference('inquiryNo').enable()
+
+	},
+	onBtnchange:function(obj , newValue , oldValue , eOpt){
+	 	var  store_=this.view.me_.workObject.store;
+		store_.beginUpdate();
+	 	if(obj.is('combo')){
+	 		this.view.record.set(obj.name, obj.getRawValue()); 		
+	 	}else{
+	 		this.view.record.set(obj.name, obj.getRawValue()); 	
+	 	}
+
+
+	 	
+	 	if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+	 	store_.endUpdate();
+	},
+	onBtnSaveClick:function(){
+	    if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+
+	    for(i=0;i<this.record_.getFields().length-3;i++){
+			
+			  if(!this.lookupReference(Ext.util.Format.trim(this.record_.getFields()[i].getName())).isValid()){
+				  return;
+			  }
+		}
+	    this.view.me_.workObject.store.add(this.view.record);
+	    this.view.me_.onBtnSaveClick(null,this)
+	},
+	onBtnCancelClick:function(){
+		if(this.flag){
+			  this.view.me_.workObject.store.removeAt(this.view.me_.workObject.store.getCount()-1);
+			  //this.view.me_.workObject.getStore().rejectChanges();
+			  this.view.me_.workObject.view.refresh();
+			  this.flag=false
+		}
+		
+      if(this.view.title=='编辑'){
+    		
+      	this.view.me_.workObject.store.rejectChanges()
+      	this.view.me_.workObject.view.refresh();
+    		
+    	}
+          this.view.me_.view.subformActivate=false;
+		  this.view.hide();
+	}
+	
+});
+Ext.define('Hc_Framework.view.hc.SubHcNewBarterApplyModel', {
+    extend: 'Hc_Common.view.BaseWinPageModel',
+
+    alias: 'viewmodel.subhcnewbarterapplymodel'
+});
+/**
+ * Description: 退货管理  view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2014-2015
+ * Company:     hc.
+ * author:      jinxi.li
+ * Createdate:  2016/01/26
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define("Hc_Framework.view.hc.HcReturnGoods", {
+    extend: "Hc_Common.view.BaseSimplePage",
+
+    alias: 'widget.hcreturngoods',
+
+    
+
+    controller: "hcreturngoodscontroller",
+
+    viewModel: {
+        type: "hcreturngoodsmodel"
+    },
+    title_:'退货管理',
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+            searchItems: [ 
+			{
+			    xtype: 'textfield', 
+			    fieldLabel: '退货单', 
+			    name: 'returnGoodsCode'
+			}
+            ],
+
+            gridModel: 'Hc_Framework.model.HcReturnGoods',
+            gridSubGrid:'',
+            gridColumns: [
+                          {
+                          	header: '退货单', 
+                          	dataIndex: 'returnGoodsCode', 
+                          	width: '15%',
+                          	renderer: function (data, metadata, record, rowIndex, columnIndex, store) {  
+                          		return '<span onclick=""><a href="#">'+data+' </a></span>';
+                            }
+                          },
+                          {
+                          	header: '责任人', 
+                          	dataIndex: 'inChargeByName', 
+                          	width: 250
+                          },
+                          {
+              				dataIndex: 'subject',
+              				header: '主题',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'custName',
+                				header: '客户',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'currency',
+                				header: '货币 ',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'returnGoodsDate',
+              				header: '退货日期 ',
+              				width: 150
+                          },{
+	              				dataIndex: 'remark',
+	              				header: '备　　注',
+	              				width: 150
+	                      }             
+            ],
+            allendflag:false,
+            gridPrimaryKey: 'returnGoodsCode',
+            gridLoadUrl: Hc.basePath + 'hc_return_goods_list/list.json',
+            gridLoadSubUrl: Hc.basePath + 'hc_return_goods_list/listAll.json',
+            gridSaveUrl: Hc.basePath + 'hc_return_goods_list/batchOperate.json',
+            gridExportUrl: Hc.basePath + 'hc_return_goods_list/do_export.json',
+            gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_return_goods_list/deleteMasterCustomer.json',
+            gridAddMasterCustomerUrl: Hc.basePath + 'hc_return_goods_list/addMasterCustomer.json',
+            gridImportUrl: Hc.basePath + '',
+            subWinTableName:'Hc_Framework.view.hc.SubHcReturnGoods',
+            subformActivate:false
+        });
+        me.callParent();
+    }
+});
+/**
+ * Description: 退货管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+
+Ext.define('Hc_Framework.view.hc.HcReturnGoodsController', {
+	extend : 'Hc_Common.view.BaseSimplePageController',
+
+	alias : 'controller.hcreturngoodscontroller',
+	
+	init: function () {
+		var me = this;
+		Ext.apply(me, {
+			windowFlag:true,
+			newobj:this.view.subWinTableName
+		})
+		me.callParent();
+	},
+	onEditClick:function( obj , record , item , index , e , eOpts){
+      
+	},
+	onEditClick_:function(obj , td , cellIndex , record , tr , rowIndex , e , eOpts ){
+		var store = Ext.create('Hc_Common.store.Base', {
+            model:'Hc_Framework.model.HcReturnGoods',
+            autoLoad: false,
+            groupField: 'inquiredQTY_quotedPrice$',
+            proxy: {
+                url: this.view.gridLoadSubUrl
+            }
+        });
+		
+		store.proxy.extraParams['quoteCode'] = record.data.quoteCode; 
+		store.load();	      	 
+		if(cellIndex==0){
+	    	Ext.create(this.view.subWinTableName,{
+	    		title:'编辑',
+	    		record:record,
+	    		me_:this,
+	    		store:store
+	    	}).show();
+	    	this.view.subformActivate=true;
+	    	this.onBtnCancelClick();
+		}
+    	
+    }
+	
+});
+/**
+ * Description: 退货管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.view.hc.HcReturnGoodsModel', {
+    extend: 'Hc_Common.view.BaseSimplePageModel',
+
+    alias: 'viewmodel.hcreturngoodsmodel'
+});
+Ext.define("Hc_Framework.view.hc.SubHcReturnGoods", {
+    extend: "Hc_Common.view.BaseWinPage",
+
+    alias: 'widget.subhcreturngoods',
+
+    
+
+    controller: "subhcreturngoodscontroller",
+
+    viewModel: {
+        type: "subhcreturngoodsmodel"
+    },
+    title:'新增',
+    width: 1000,
+    height:620,
+    
+    maxWidth:1000,
+   // maxHeight:620,
+    
+    minWidth:1000,
+    minHeight:620,
+    
+    layout:'border',//设置窗口内部布局
+    closeAction:'hide',
+    plain:false,//true则主体背景透明，false则和主体背景有些差别
+    collapsible:false,//是否可收缩
+    modal:true,//是否为模式窗体
+   
+    dockedItems:[{
+    	 xtype: 'toolbar',
+    	 dock: 'top',
+    	 items: [
+           {
+             text: '保存',
+             handler:'onBtnSaveClick',
+             glyph: Hc.Icon.btnSave
+           },
+           {
+               text: '编辑',
+               handler:'onBtnEditClick',
+               glyph: Hc.Icon.btnEdit
+           },
+           {
+               text: '取消',
+               handler:'onBtnCancelClick',
+               glyph: Hc.Icon.btnCancel
+             }
+         ]
+    }],
+    listeners: {
+    	beforeshow:function(obj ,eOpts){
+    		 var currentUser = Ext.create("Hc_Framework.store.CurrentUser");
+    	        currentUser.load();
+    		 var  userCreator;
+             var   supplierNo_;
+             
+             if(this.title=='新增'){
+            	// this.lookupReference('createUser').setValue(currentUser.getAt(0).data.userName);
+                 supplierNo_='PE'+Ext.util.Format.date((new Date()), "Y").substring(2,5)+Ext.util.Format.date((new Date()), "Y").substring(0,2)+Ext.util.Format.date((new Date()), "dmHis");
+              /*   this.lookupReference('inquiryNo').setValue(supplierNo_);
+                // this.lookupReference('modifyUser').disabled=true;
+                 //this.lookupReference('modifyDate').disabled=true;
+                 
+                 this.lookupReference('contactsName').disabled=true;
+                 this.lookupReference('contactsTel').disabled=true;
+                 this.lookupReference('contactsFax').disabled=true;
+                 this.lookupReference('supplierName').disabled=true;
+                 
+                 
+                // this.lookupReference('localDepartment').setValue(currentUser.getAt(0).data.deptName);
+                 this.lookupReference('inquiryDate').setValue(Ext.util.Format.date((new Date()),'Y-m-d H:i:s'));
+
+            */
+             }else if(this.title=='编辑'){
+           	 for(i=0;i<this.record.getFields().length;i++){
+	                 var  name=Ext.util.Format.trim(this.record.getFields()[i].getName())
+           		 
+           		 if((this.getReferences())[name]){
+           			 if(this.lookupReference(name).is('combo')){
+               			 this.lookupReference(name).setRawValue(this.record.get(name));
+               		 }else{
+               			 this.lookupReference(name).setValue(this.record.get(name));
+               		 }
+           			this.lookupReference(name).disable();
+           		 }
+           	 }
+             }
+             this.lookupReference('subhcsuppliercustomer').title='>>>>'+this.me_.view.title_;
+    	}
+    },
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+       	 items:[
+       	        {
+       	         xtype:'panel',
+       	         defaults: {
+       	        	
+                 },
+                 layout: {
+                	 type: 'absolute'
+                 },
+                 reference:'subhcsuppliercustomer',
+                 region: "north",
+                 bodyStyle: 'background:#cbdbe0;',
+                 padding:'3 0 3 0',//(top, right, bottom, left).
+                    items: [
+                            {
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 3,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价编码',
+									    name: 'quoteCode',
+				     					reference:'quoteCode',
+									    listeners: {
+									    	beforerender: function(obj) {
+											   obj.fieldLabel+='<font size="2px" color="red">*</font>';
+									        }
+										  }
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人编码',
+									    name: 'quoteByCode',
+				     					reference:'quoteByCode'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价人名称',
+									    name: 'quoteByName',
+				     					reference:'quoteByName'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '报价方式',
+									    name: 'quoteMode',
+				     					reference:'quoteMode'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:57,
+                            	width:980,
+                            	layout: {
+                                  	 type: 'table',
+                                       columns:4
+                                   },
+                                x: 3,
+                                y: 35,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                               	items:[
+   									{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户编码',
+	   								    name: 'custCode',
+	   								
+				     					reference:'custCode'
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									   // width:313,
+   									    fieldLabel: '客户名称',
+   									    name: 'custName',
+				     					reference:'custName',
+   									    colspan:1
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									    width:500,
+   									    fieldLabel: '客户地址',
+   									    name: 'custAddr',
+				     					reference:'custAddr',
+   									    colspan:4
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户电话',
+	   								    name: 'custTel',
+	   								
+				     					reference:'custTel'
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户传真',
+	   								    name: 'custFax',
+	   								
+				     					reference:'custFax'
+   									}
+   								
+                               	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 95,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系人名称',
+									    name: 'contact_by',
+				     					reference:'contact_by'
+									   
+									},{
+									    xtype:'datefield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系电话 ',
+									    name: 'contacTByTel',
+				     					reference:'contacTByTel'
+									   
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '联系邮件',
+									    name: 'contactByEmail',
+				     					reference:'contactByEmail',
+									 
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:56,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 128,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '目的站',
+									    name: 'purposePlace',
+				     					reference:'purposePlace',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '包装',
+									    name: 'packing',
+				     					reference:'packing',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '货币',
+									    name: 'currency',
+				     					reference:'currency',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货方式',
+									    name: 'deliverGoodsMode',
+				     					reference:'deliverGoodsMode',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '交货时间',
+									    name: 'deliverGoodsDate',
+				     					reference:'deliverGoodsDate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '付款方式',
+									    name: 'paymentMode',
+				     					reference:'paymentMode',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 188,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '运费',
+									    name: 'freight',
+				     					reference:'freight',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '保险',
+									    name: 'insurance',
+				     					reference:'insurance',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '税率',
+									    name: 'tax_rate',
+				     					reference:'tax_rate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '折扣',
+									    name: 'rebate',
+				     					reference:'rebate',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 222,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '审批人',
+									    name: 'examApprByName',
+				     					reference:'examApprByName'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:70,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 255,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注',
+									    name: 'remark',
+				     					reference:'remark',
+									    colspan:4
+									}
+                            	]
+                            }
+                     ]
+       	            
+       	        },{
+          	         xtype:'panel',
+          	         layout: {
+                   	 type: 'fit',
+                    },
+                    region: "center",
+                    bodyStyle: 'background:#ceebe0; padding:0px;border:0px',
+                    scrollable:true,
+                    items:[{
+                   	 xtype:'grid',
+                   	 enableHdMenu:false,
+                   	 sortableColumns:false,
+                   	 columnLines: true,
+                   	 enableColumnHide:false,
+                   	 enableColumnMove:false,
+                   	 store:me.store,
+                   	 features: [{
+             		        ftype: 'summary'
+             		     }],
+                   	 columns: {
+                   		    items: [
+                   		        {
+                   		            text: "序号",
+                   		            dataIndex: "id",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品编码",
+                   		            dataIndex: "prodCode",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品名称",
+                   		            dataIndex: "prodName",
+                   		            width: 150
+                   		        },{
+                   		            text: "型号规格",
+                   		            dataIndex: "typeModel",
+                   		            width: 150
+                   		        },{
+                   		            text: "数量",
+                   		            dataIndex: "qty",
+                   		            width: 150
+                   		        },{
+                   		            text: "单位",
+                   		            dataIndex: "unit",
+                   		            width: 150
+                   		        },{
+                   		            text: "单价",
+                   		            dataIndex: "univalent",
+                   		            width: 150
+                   		        },{
+                   		            text: "货币",
+                   		            dataIndex: "currency",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品描述",
+                   		            dataIndex: "prodDesc",
+                   		            width: 150
+                   		        },{
+                   		            text: "品牌",
+                   		            dataIndex: "brand",
+                   		            width: 150
+                   		        },{
+                   		            text: "制造商名称",
+                   		            dataIndex: "manufName",
+                   		            width: 150
+                   		        },{
+                   		            text: "货期（交期）",
+                   		            dataIndex: "deliveTime",
+                   		            width: 150
+                   		        },{
+                   		            text: "备注",
+                   		            dataIndex: "remark",
+                   		            width: 150
+                   		        },{
+                   		            text: "合计",
+                   		            dataIndex: "inquiredQTY_quotedPrice$",
+                   		            width: 150,
+                   		            summaryType: 'sum',
+   	                		      	summaryRenderer: function(value, summaryData, dataIndex) {
+   	                		            return'金额总计:'+value;
+   	                		        }
+                   		        }
+                   		    ]
+                   		}
+                   	 
+                   	 
+                   	 
+                 }]
+          	   }
+       	 ]
+       });
+        me.callParent();
+    }
+});
+Ext.define('Hc_Framework.view.hc.SubHcReturnGoodsController', {
+	extend : 'Hc_Common.view.BaseWinPageController',
+
+	alias : 'controller.subhcreturngoodscontroller',
+	flag:false,
+	record_:'',
+	init: function () {
+		var me = this;
+		var  record=Ext.create('Hc_Framework.model.HcReturnGoods',{});
+		this.record_=record
+		for(i=0;i<record.getFields().length;i++){
+			var  name=Ext.util.Format.trim(record.getFields()[i].getName())
+	   		 
+	   		if((this.getReferences())[name]){
+				this.lookupReference(name).on("change", me.onBtnchange, me);	   			 
+	   		 }
+     	}
+		me.callParent();
+	},
+	onBtnEditClick:function(){
+		for(i=0;i<this.record_.getFields().length;i++){
+            var  name=Ext.util.Format.trim(this.record_.getFields()[i].getName())
+  		 if((this.getReferences())[name]){
+  			 if('contactsName'==name||'contactsTel'==name||'contactsFax'==name||'supplierName'==name){
+  				this.lookupReference(name).disable();
+  			 }else{
+  				this.lookupReference(name).enable();
+  			 }
+  			
+  		 }
+  	    }
+		//this.view.lookupReference('inquiryNo').enable()
+
+	},
+	onBtnchange:function(obj , newValue , oldValue , eOpt){
+	 	var  store_=this.view.me_.workObject.store;
+		store_.beginUpdate();
+	 	if(obj.is('combo')){
+	 		this.view.record.set(obj.name, obj.getRawValue()); 		
+	 	}else{
+	 		this.view.record.set(obj.name, obj.getRawValue()); 	
+	 	}
+
+
+	 	
+	 	if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+	 	store_.endUpdate();
+	},
+	onBtnSaveClick:function(){
+	    if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+
+	    for(i=0;i<this.record_.getFields().length-3;i++){
+			
+			  if(!this.lookupReference(Ext.util.Format.trim(this.record_.getFields()[i].getName())).isValid()){
+				  return;
+			  }
+		}
+	    this.view.me_.workObject.store.add(this.view.record);
+	    this.view.me_.onBtnSaveClick(null,this)
+	},
+	onBtnCancelClick:function(){
+		if(this.flag){
+			  this.view.me_.workObject.store.removeAt(this.view.me_.workObject.store.getCount()-1);
+			  //this.view.me_.workObject.getStore().rejectChanges();
+			  this.view.me_.workObject.view.refresh();
+			  this.flag=false
+		}
+		
+      if(this.view.title=='编辑'){
+    		
+      	this.view.me_.workObject.store.rejectChanges()
+      	this.view.me_.workObject.view.refresh();
+    		
+    	}
+          this.view.me_.view.subformActivate=false;
+		  this.view.hide();
+	}
+	
+});
+Ext.define('Hc_Framework.view.hc.SubHcReturnGoodsModel', {
+    extend: 'Hc_Common.view.BaseWinPageModel',
+
+    alias: 'viewmodel.subhcreturngoodsmodel'
 });
 /**
  * Description: 应收款管理 view
@@ -24042,6 +43376,617 @@ Ext.define('Hc_Framework.view.hc.SubHcSupplierProductListModel', {
     alias: 'viewmodel.subhcsupplierproductlistmodel'
 });
 /**
+ * Description: 询价管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2014-2015
+ * Company:     hc.
+ * author:      jinxi.li
+ * Createdate:  2016/01/26
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define("Hc_Framework.view.hc.HcInquiry", {
+    extend: "Hc_Common.view.BaseSimplePage",
+
+    alias: 'widget.hcinquiry',
+
+    
+
+    controller: "hcinquirycontroller",
+
+    viewModel: {
+        type: "hcinquirymodel"
+    },
+    title_:'询价管理',
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+            searchItems: [ 
+			{
+			    xtype: 'textfield', 
+			    fieldLabel: '询价编码', 
+			    name: 'inquCode'
+			}
+            ],
+
+            gridModel: 'Hc_Framework.model.HcInquiry',
+            gridSubGrid:'',
+            gridColumns: [
+                          {
+                          	header: '询价编码', 
+                          	dataIndex: 'inquCode', 
+                          	width: '15%',
+                          	renderer: function (data, metadata, record, rowIndex, columnIndex, store) {  
+                          		return '<span onclick=""><a href="#">'+data+' </a></span>';
+                            }
+                          },
+                          {
+                          	header: '询价日期', 
+                          	dataIndex: 'inquDate', 
+                          	width: 250
+                          },
+                          {
+              				dataIndex: 'custName',
+              				header: '客户名称',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'custAddr',
+                				header: '客户地址',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'notifierName',
+                				header: '通知人 ',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'remark',
+                				header: '备注',
+                				width: 150
+                          }            
+            ],
+            allendflag:false,
+            gridPrimaryKey: 'inquCode',
+            gridLoadUrl: Hc.basePath + 'hc_inquiry_list/list.json',
+            gridLoadSubUrl: Hc.basePath + 'hc_inquiry_list/listAll.json',
+            gridSaveUrl: Hc.basePath + 'hc_inquiry_list/batchOperate.json',
+            gridExportUrl: Hc.basePath + 'hc_inquiry_list/do_export.json',
+            gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_inquiry_list/deleteMasterCustomer.json',
+            gridAddMasterCustomerUrl: Hc.basePath + 'hc_inquiry_list/addMasterCustomer.json',
+            gridImportUrl: Hc.basePath + '',
+            subWinTableName:'Hc_Framework.view.hc.SubHcInquiry',
+            subformActivate:false
+        });
+        me.callParent();
+    }
+});
+/**
+ * Description: 询价管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+
+Ext.define('Hc_Framework.view.hc.HcInquiryController', {
+	extend : 'Hc_Common.view.BaseSimplePageController',
+
+	alias : 'controller.hcinquirycontroller',
+	
+	init: function () {
+		var me = this;
+		Ext.apply(me, {
+			windowFlag:true,
+			newobj:this.view.subWinTableName
+		})
+		me.callParent();
+	},
+	onEditClick:function( obj , record , item , index , e , eOpts){
+      
+	},
+	onEditClick_:function(obj , td , cellIndex , record , tr , rowIndex , e , eOpts ){
+		var store = Ext.create('Hc_Common.store.Base', {
+            model:'Hc_Framework.model.HcInquiry',
+            autoLoad: false,
+            groupField: 'inquiredQTY_quotedPrice$',
+            proxy: {
+                url: this.view.gridLoadSubUrl
+            }
+        });
+		
+		store.proxy.extraParams['quoteCode'] = record.data.quoteCode; 
+		store.load();	      	 
+		if(cellIndex==0){
+	    	Ext.create(this.view.subWinTableName,{
+	    		title:'编辑',
+	    		record:record,
+	    		me_:this,
+	    		store:store
+	    	}).show();
+	    	this.view.subformActivate=true;
+	    	this.onBtnCancelClick();
+		}
+    	
+    }
+	
+});
+/**
+ * Description: 询价管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.view.hc.HcInquiryModel', {
+    extend: 'Hc_Common.view.BaseSimplePageModel',
+
+    alias: 'viewmodel.hcinquirymodel'
+});
+Ext.define("Hc_Framework.view.hc.SubHcInquiry", {
+    extend: "Hc_Common.view.BaseWinPage",
+
+    alias: 'widget.subhcinquiry',
+
+    
+
+    controller: "subhcinquirycontroller",
+
+    viewModel: {
+        type: "subhcinquirymodel"
+    },
+    title:'新增',
+    width: 1000,
+    height:620,
+    
+    maxWidth:1000,
+   // maxHeight:620,
+    
+    minWidth:1000,
+    minHeight:620,
+    
+    layout:'border',//设置窗口内部布局
+    closeAction:'hide',
+    plain:false,//true则主体背景透明，false则和主体背景有些差别
+    collapsible:false,//是否可收缩
+    modal:true,//是否为模式窗体
+   
+    dockedItems:[{
+    	 xtype: 'toolbar',
+    	 dock: 'top',
+    	 items: [
+           {
+             text: '保存',
+             handler:'onBtnSaveClick',
+             glyph: Hc.Icon.btnSave
+           },
+           {
+               text: '编辑',
+               handler:'onBtnEditClick',
+               glyph: Hc.Icon.btnEdit
+           },
+           {
+               text: '取消',
+               handler:'onBtnCancelClick',
+               glyph: Hc.Icon.btnCancel
+             }
+         ]
+    }],
+    listeners: {
+    	beforeshow:function(obj ,eOpts){
+    		 var currentUser = Ext.create("Hc_Framework.store.CurrentUser");
+    	        currentUser.load();
+    		 var  userCreator;
+             var   supplierNo_;
+             
+             if(this.title=='新增'){
+            	// this.lookupReference('createUser').setValue(currentUser.getAt(0).data.userName);
+                 supplierNo_='PE'+Ext.util.Format.date((new Date()), "Y").substring(2,5)+Ext.util.Format.date((new Date()), "Y").substring(0,2)+Ext.util.Format.date((new Date()), "dmHis");
+              /*   this.lookupReference('inquiryNo').setValue(supplierNo_);
+                // this.lookupReference('modifyUser').disabled=true;
+                 //this.lookupReference('modifyDate').disabled=true;
+                 
+                 this.lookupReference('contactsName').disabled=true;
+                 this.lookupReference('contactsTel').disabled=true;
+                 this.lookupReference('contactsFax').disabled=true;
+                 this.lookupReference('supplierName').disabled=true;
+                 
+                 
+                // this.lookupReference('localDepartment').setValue(currentUser.getAt(0).data.deptName);
+                 this.lookupReference('inquiryDate').setValue(Ext.util.Format.date((new Date()),'Y-m-d H:i:s'));
+
+            */
+             }else if(this.title=='编辑'){
+           	 for(i=0;i<this.record.getFields().length;i++){
+	                 var  name=Ext.util.Format.trim(this.record.getFields()[i].getName())
+           		 
+           		 if((this.getReferences())[name]){
+           			 if(this.lookupReference(name).is('combo')){
+               			 this.lookupReference(name).setRawValue(this.record.get(name));
+               		 }else{
+               			 this.lookupReference(name).setValue(this.record.get(name));
+               		 }
+           			this.lookupReference(name).disable();
+           		 }
+           	 }
+             }
+             this.lookupReference('subhcsuppliercustomer').title='>>>>'+this.me_.view.title_;
+    	}
+    },
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+       	 items:[
+       	        {
+       	         xtype:'panel',
+       	         defaults: {
+       	        	
+                 },
+                 layout: {
+                	 type: 'absolute'
+                 },
+                 reference:'subhcsuppliercustomer',
+                 region: "north",
+                 bodyStyle: 'background:#cbdbe0;',
+                 padding:'3 0 3 0',//(top, right, bottom, left).
+                    items: [
+                            {
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 3,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '询价编码',
+									    name: 'inquCode',
+				     					reference:'inquCode',
+									    listeners: {
+									    	beforerender: function(obj) {
+											   obj.fieldLabel+='<font size="2px" color="red">*</font>';
+									        }
+										  }
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '询价日期',
+									    name: 'inquDate',
+				     					reference:'inquDate'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:57,
+                            	width:980,
+                            	layout: {
+                                  	 type: 'table',
+                                       columns:4
+                                   },
+                                x: 3,
+                                y: 35,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                               	items:[
+   									{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户',
+	   								    name: 'custName',
+	   								
+				     					reference:'custName'
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									   // width:313,
+   									    fieldLabel: '电话',
+   									    name: 'custTel',
+				     					reference:'custTel',
+   									    colspan:1
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									    width:500,
+   									    fieldLabel: '客户地址',
+   									    name: 'custAddr',
+				     					reference:'custAddr',
+   									    colspan:4
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '联系人',
+	   								    name: 'custContactBy',
+	   								
+				     					reference:'custContactBy'
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '联系人电话',
+	   								    name: 'custContactByTel',
+	   								
+				     					reference:'custContactByTel'
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '联系人邮箱',
+	   								    name: 'custContactByEmail',
+	   								
+				     					reference:'custContactByEmail'
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '移动电话',
+	   								    name: 'custContactByPhone',
+	   								
+				     					reference:'custContactByPhone'
+   									}
+   								
+                               	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 95,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '通知人',
+									    name: 'notifierName',
+				     					reference:'notifierName'
+									   
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:70,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 255,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注',
+									    name: 'remark',
+				     					reference:'remark',
+									    colspan:4
+									}
+                            	]
+                            }
+                     ]
+       	            
+       	        },{
+          	         xtype:'panel',
+          	         layout: {
+                   	 type: 'fit',
+                    },
+                    region: "center",
+                    bodyStyle: 'background:#ceebe0; padding:0px;border:0px',
+                    scrollable:true,
+                    items:[{
+                   	 xtype:'grid',
+                   	 enableHdMenu:false,
+                   	 sortableColumns:false,
+                   	 columnLines: true,
+                   	 enableColumnHide:false,
+                   	 enableColumnMove:false,
+                   	 store:me.store,
+                   	 features: [{
+             		        ftype: 'summary'
+             		     }],
+                   	 columns: {
+                   		    items: [
+                   		        {
+                   		            text: "序号",
+                   		            dataIndex: "id",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品编码",
+                   		            dataIndex: "prodCode",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品名称",
+                   		            dataIndex: "prodName",
+                   		            width: 150
+                   		        },{
+                   		            text: "型号规格",
+                   		            dataIndex: "typeModel",
+                   		            width: 150
+                   		        },{
+                   		            text: "数量",
+                   		            dataIndex: "qty",
+                   		            width: 150
+                   		        },{
+                   		            text: "单位",
+                   		            dataIndex: "unit",
+                   		            width: 150
+                   		        },{
+                   		            text: "单价",
+                   		            dataIndex: "univalent",
+                   		            width: 150
+                   		        },{
+                   		            text: "货币",
+                   		            dataIndex: "currency",
+                   		            width: 150
+                   		        },{
+                   		            text: "制造商名称",
+                   		            dataIndex: "manufName",
+                   		            width: 150
+                   		        },{
+                   		            text: "货期（交期）",
+                   		            dataIndex: "deliveTime",
+                   		            width: 150
+                   		        },{
+                   		            text: "备注",
+                   		            dataIndex: "remark",
+                   		            width: 150
+                   		        },{
+                   		            text: "合计",
+                   		            dataIndex: "inquiredQTY_quotedPrice$",
+                   		            width: 150,
+                   		            summaryType: 'sum',
+   	                		      	summaryRenderer: function(value, summaryData, dataIndex) {
+   	                		            return'金额总计:'+value;
+   	                		        }
+                   		        }
+                   		    ]
+                   		}
+                   	 
+                   	 
+                   	 
+                 }]
+          	   }
+       	 ]
+       });
+        me.callParent();
+    }
+});
+Ext.define('Hc_Framework.view.hc.SubHcInquiryController', {
+	extend : 'Hc_Common.view.BaseWinPageController',
+
+	alias : 'controller.subhcinquirycontroller',
+	flag:false,
+	record_:'',
+	init: function () {
+		var me = this;
+		var  record=Ext.create('Hc_Framework.model.HcInquiry',{});
+		this.record_=record
+		for(i=0;i<record.getFields().length;i++){
+			var  name=Ext.util.Format.trim(record.getFields()[i].getName())
+	   		 
+	   		if((this.getReferences())[name]){
+				this.lookupReference(name).on("change", me.onBtnchange, me);	   			 
+	   		 }
+     	}
+		me.callParent();
+	},
+	onBtnEditClick:function(){
+		for(i=0;i<this.record_.getFields().length;i++){
+            var  name=Ext.util.Format.trim(this.record_.getFields()[i].getName())
+  		 if((this.getReferences())[name]){
+  			 if('contactsName'==name||'contactsTel'==name||'contactsFax'==name||'supplierName'==name){
+  				this.lookupReference(name).disable();
+  			 }else{
+  				this.lookupReference(name).enable();
+  			 }
+  			
+  		 }
+  	    }
+		//this.view.lookupReference('inquiryNo').enable()
+
+	},
+	onBtnchange:function(obj , newValue , oldValue , eOpt){
+	 	var  store_=this.view.me_.workObject.store;
+		store_.beginUpdate();
+	 	if(obj.is('combo')){
+	 		this.view.record.set(obj.name, obj.getRawValue()); 		
+	 	}else{
+	 		this.view.record.set(obj.name, obj.getRawValue()); 	
+	 	}
+
+
+	 	
+	 	if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+	 	store_.endUpdate();
+	},
+	onBtnSaveClick:function(){
+	    if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+
+	    for(i=0;i<this.record_.getFields().length-3;i++){
+			
+			  if(!this.lookupReference(Ext.util.Format.trim(this.record_.getFields()[i].getName())).isValid()){
+				  return;
+			  }
+		}
+	    this.view.me_.workObject.store.add(this.view.record);
+	    this.view.me_.onBtnSaveClick(null,this)
+	},
+	onBtnCancelClick:function(){
+		if(this.flag){
+			  this.view.me_.workObject.store.removeAt(this.view.me_.workObject.store.getCount()-1);
+			  //this.view.me_.workObject.getStore().rejectChanges();
+			  this.view.me_.workObject.view.refresh();
+			  this.flag=false
+		}
+		
+      if(this.view.title=='编辑'){
+    		
+      	this.view.me_.workObject.store.rejectChanges()
+      	this.view.me_.workObject.view.refresh();
+    		
+    	}
+          this.view.me_.view.subformActivate=false;
+		  this.view.hide();
+	}
+	
+});
+Ext.define('Hc_Framework.view.hc.SubHcInquiryModel', {
+    extend: 'Hc_Common.view.BaseWinPageModel',
+
+    alias: 'viewmodel.subhcinquirymodel'
+});
+/**
  * Description: 订单管理 view
  * All rights Reserved, Designed By Hc
  * Copyright:   Copyright(C) 2014-2015
@@ -25554,7 +45499,7 @@ Ext.define("Hc_Framework.view.hc.HcQuote", {
             gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_quote_list/deleteMasterCustomer.json',
             gridAddMasterCustomerUrl: Hc.basePath + 'hc_quote_list/addMasterCustomer.json',
             gridImportUrl: Hc.basePath + '',
-            subWinTableName:'Hc_Framework.view.hc.HcQuote',
+            subWinTableName:'Hc_Framework.view.hc.SubHcQuote',
             subformActivate:false
         });
         me.callParent();
@@ -26232,6 +46177,1308 @@ Ext.define('Hc_Framework.view.hc.SubHcQuoteModel', {
     extend: 'Hc_Common.view.BaseWinPageModel',
 
     alias: 'viewmodel.subhcquotemodel'
+});
+/**
+ * Description: 销售机会管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2014-2015
+ * Company:     hc.
+ * author:      jinxi.li
+ * Createdate:  2016/01/26
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define("Hc_Framework.view.hc.HcSalesOpportunities", {
+    extend: "Hc_Common.view.BaseSimplePage",
+
+    alias: 'widget.hcsalesopportunities',
+
+    
+
+    controller: "hcsalesopportunitiescontroller",
+
+    viewModel: {
+        type: "hcsalesopportunitiesmodel"
+    },
+    title_:'销售机会管理',
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+            searchItems: [ 
+			{
+			    xtype: 'textfield', 
+			    fieldLabel: '销售机会单编码', 
+			    name: 'salesOpportCode'
+			}
+            ],
+
+            gridModel: 'Hc_Framework.model.HcSalesOpportunities',
+            gridSubGrid:'',
+            gridColumns: [
+                          {
+                          	header: '销售机会单编码', 
+                          	dataIndex: 'salesOpportCode', 
+                          	width: '15%',
+                          	renderer: function (data, metadata, record, rowIndex, columnIndex, store) {  
+                          		return '<span onclick=""><a href="#">'+data+' </a></span>';
+                            }
+                          },
+                          {
+                          	header: '销售机会', 
+                          	dataIndex: 'salesOpport', 
+                          	width: 250
+                          },
+                          {
+              				dataIndex: 'opportSource',
+              				header: '机会来源',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'salesName',
+                				header: '销售员名称',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'compName',
+                				header: '公司名称 ',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'compContactBy',
+              				header: '公司联系人',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'currentState',
+                				header: '当前状态',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'expectSum',
+              				header: '预计金额',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'remark',
+                				header: '备注',
+                				width: 150
+                          }            
+            ],
+            allendflag:false,
+            gridPrimaryKey: 'salesOpportCode',
+            gridLoadUrl: Hc.basePath + 'hc_sales_opportunities_list/list.json',
+            gridLoadSubUrl: Hc.basePath + 'hc_sales_opportunities_list/listAll.json',
+            gridSaveUrl: Hc.basePath + 'hc_sales_opportunities_list/batchOperate.json',
+            gridExportUrl: Hc.basePath + 'hc_sales_opportunities_list/do_export.json',
+            gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_sales_opportunities_list/deleteMasterCustomer.json',
+            gridAddMasterCustomerUrl: Hc.basePath + 'hc_sales_opportunities_list/addMasterCustomer.json',
+            gridImportUrl: Hc.basePath + '',
+            subWinTableName:'Hc_Framework.view.hc.SubHcSalesOpportunities',
+            subformActivate:false
+        });
+        me.callParent();
+    }
+});
+/**
+ * Description: 销售机会管理view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+
+Ext.define('Hc_Framework.view.hc.HcSalesOpportunitiesController', {
+	extend : 'Hc_Common.view.BaseSimplePageController',
+
+	alias : 'controller.hcsalesopportunitiescontroller',
+	
+	init: function () {
+		var me = this;
+		Ext.apply(me, {
+			windowFlag:true,
+			newobj:this.view.subWinTableName
+		})
+		me.callParent();
+	},
+	onEditClick:function( obj , record , item , index , e , eOpts){
+      
+	},
+	onEditClick_:function(obj , td , cellIndex , record , tr , rowIndex , e , eOpts ){
+		var store = Ext.create('Hc_Common.store.Base', {
+            model:'Hc_Framework.model.HcSalesOpportunities',
+            autoLoad: false,
+            groupField: 'inquiredQTY_quotedPrice$',
+            proxy: {
+                url: this.view.gridLoadSubUrl
+            }
+        });
+		
+		store.proxy.extraParams['quoteCode'] = record.data.quoteCode; 
+		store.load();	      	 
+		if(cellIndex==0){
+	    	Ext.create(this.view.subWinTableName,{
+	    		title:'编辑',
+	    		record:record,
+	    		me_:this,
+	    		store:store
+	    	}).show();
+	    	this.view.subformActivate=true;
+	    	this.onBtnCancelClick();
+		}
+    	
+    }
+	
+});
+/**
+ * Description: 销售机会管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.view.hc.HcSalesOpportunitiesModel', {
+    extend: 'Hc_Common.view.BaseSimplePageModel',
+
+    alias: 'viewmodel.hcsalesopportunitiesmodel'
+});
+Ext.define("Hc_Framework.view.hc.SubHcSalesOpportunities", {
+    extend: "Hc_Common.view.BaseWinPage",
+
+    alias: 'widget.subhcsalesopportunities',
+
+    
+
+    controller: "subhcsalesopportunitiescontroller",
+
+    viewModel: {
+        type: "subhcsalesopportunitiesmodel"
+    },
+    title:'新增',
+    width: 1000,
+    height:620,
+    
+    maxWidth:1000,
+   // maxHeight:620,
+    
+    minWidth:1000,
+    minHeight:620,
+    
+    layout:'border',//设置窗口内部布局
+    closeAction:'hide',
+    plain:false,//true则主体背景透明，false则和主体背景有些差别
+    collapsible:false,//是否可收缩
+    modal:true,//是否为模式窗体
+   
+    dockedItems:[{
+    	 xtype: 'toolbar',
+    	 dock: 'top',
+    	 items: [
+           {
+             text: '保存',
+             handler:'onBtnSaveClick',
+             glyph: Hc.Icon.btnSave
+           },
+           {
+               text: '编辑',
+               handler:'onBtnEditClick',
+               glyph: Hc.Icon.btnEdit
+           },
+           {
+               text: '取消',
+               handler:'onBtnCancelClick',
+               glyph: Hc.Icon.btnCancel
+             }
+         ]
+    }],
+    listeners: {
+    	beforeshow:function(obj ,eOpts){
+    		 var currentUser = Ext.create("Hc_Framework.store.CurrentUser");
+    	        currentUser.load();
+    		 var  userCreator;
+             var   supplierNo_;
+             
+             if(this.title=='新增'){
+            	// this.lookupReference('createUser').setValue(currentUser.getAt(0).data.userName);
+                 supplierNo_='PE'+Ext.util.Format.date((new Date()), "Y").substring(2,5)+Ext.util.Format.date((new Date()), "Y").substring(0,2)+Ext.util.Format.date((new Date()), "dmHis");
+              /*   this.lookupReference('inquiryNo').setValue(supplierNo_);
+                // this.lookupReference('modifyUser').disabled=true;
+                 //this.lookupReference('modifyDate').disabled=true;
+                 
+                 this.lookupReference('contactsName').disabled=true;
+                 this.lookupReference('contactsTel').disabled=true;
+                 this.lookupReference('contactsFax').disabled=true;
+                 this.lookupReference('supplierName').disabled=true;
+                 
+                 
+                // this.lookupReference('localDepartment').setValue(currentUser.getAt(0).data.deptName);
+                 this.lookupReference('inquiryDate').setValue(Ext.util.Format.date((new Date()),'Y-m-d H:i:s'));
+
+            */
+             }else if(this.title=='编辑'){
+           	 for(i=0;i<this.record.getFields().length;i++){
+	                 var  name=Ext.util.Format.trim(this.record.getFields()[i].getName())
+           		 
+           		 if((this.getReferences())[name]){
+           			 if(this.lookupReference(name).is('combo')){
+               			 this.lookupReference(name).setRawValue(this.record.get(name));
+               		 }else{
+               			 this.lookupReference(name).setValue(this.record.get(name));
+               		 }
+           			this.lookupReference(name).disable();
+           		 }
+           	 }
+             }
+             this.lookupReference('subhcsuppliercustomer').title='>>>>'+this.me_.view.title_;
+    	}
+    },
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+       	 items:[
+       	        {
+       	         xtype:'panel',
+       	         defaults: {
+       	        	
+                 },
+                 layout: {
+                	 type: 'absolute'
+                 },
+                 reference:'subhcsuppliercustomer',
+                 region: "north",
+                 bodyStyle: 'background:#cbdbe0;',
+                 padding:'3 0 3 0',//(top, right, bottom, left).
+                    items: [
+                            {
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 3,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '销售机会单编码',
+									    name: 'salesOpportCode',
+				     					reference:'salesOpportCode',
+									    listeners: {
+									    	beforerender: function(obj) {
+											   obj.fieldLabel+='<font size="2px" color="red">*</font>';
+									        }
+										  }
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '销售机会',
+									    name: 'salesOpport',
+				     					reference:'salesOpport'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '销售进度',
+									    name: 'salesOpportSch',
+				     					reference:'salesOpportSch'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '销售员',
+									    name: 'salesName',
+				     					reference:'salesName'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:57,
+                            	width:980,
+                            	layout: {
+                                  	 type: 'table',
+                                       columns:4
+                                   },
+                                x: 3,
+                                y: 35,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                               	items:[
+   									{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '公司',
+	   								    name: 'compName',
+	   								
+				     					reference:'compName'
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									   // width:313,
+   									    fieldLabel: '邮编',
+   									    name: 'compZip',
+				     					reference:'compZip',
+   									    colspan:1
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									    width:500,
+   									    fieldLabel: '地址',
+   									    name: 'compAddr',
+				     					reference:'compAddr',
+   									    colspan:4
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '联系人',
+	   								    name: 'compContactBy',
+	   								
+				     					reference:'compContactBy'
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '联系电话',
+	   								    name: 'compTel',
+	   								
+				     					reference:'compTel'
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '传真',
+	   								    name: 'compFax',
+	   								
+				     					reference:'compFax'
+   									}
+   								
+                               	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 95,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '机会来源',
+									    name: 'opportSource',
+				     					reference:'opportSource'
+									   
+									},{
+									    xtype:'datefield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '预计金额 ',
+									    name: 'expectSum',
+				     					reference:'expectSum'
+									   
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '成功率估计',
+									    name: 'SucRateEstimate',
+				     					reference:'SucRateEstimate',
+									 
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:56,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 128,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '最后更新人',
+									    name: 'updatedByName',
+				     					reference:'updatedByName',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '当前状态',
+									    name: 'currentState',
+				     					reference:'currentState',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '创建日期',
+									    name: 'creatyDate',
+				     					reference:'creatyDate',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '结束日期',
+									    name: 'endDate',
+				     					reference:'endDate',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:70,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 255,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '终止原因',
+									    name: 'endReason',
+				     					reference:'endReason',
+									    colspan:4
+									},{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '相关描述',
+									    name: 'relatDesc',
+				     					reference:'relatDesc',
+									    colspan:4
+									},{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注',
+									    name: 'remark',
+				     					reference:'remark',
+									    colspan:4
+									}
+                            	]
+                            }
+                     ]
+       	            
+       	        }
+       	 ]
+       });
+        me.callParent();
+    }
+});
+Ext.define('Hc_Framework.view.hc.SubHcSalesOpportunitiesController', {
+	extend : 'Hc_Common.view.BaseWinPageController',
+
+	alias : 'controller.subhcsalesopportunitiescontroller',
+	flag:false,
+	record_:'',
+	init: function () {
+		var me = this;
+		var  record=Ext.create('Hc_Framework.model.HcSalesOpportunities',{});
+		this.record_=record
+		for(i=0;i<record.getFields().length;i++){
+			var  name=Ext.util.Format.trim(record.getFields()[i].getName())
+	   		 
+	   		if((this.getReferences())[name]){
+				this.lookupReference(name).on("change", me.onBtnchange, me);	   			 
+	   		 }
+     	}
+		me.callParent();
+	},
+	onBtnEditClick:function(){
+		for(i=0;i<this.record_.getFields().length;i++){
+            var  name=Ext.util.Format.trim(this.record_.getFields()[i].getName())
+  		 if((this.getReferences())[name]){
+  			 if('contactsName'==name||'contactsTel'==name||'contactsFax'==name||'supplierName'==name){
+  				this.lookupReference(name).disable();
+  			 }else{
+  				this.lookupReference(name).enable();
+  			 }
+  			
+  		 }
+  	    }
+		//this.view.lookupReference('inquiryNo').enable()
+
+	},
+	onBtnchange:function(obj , newValue , oldValue , eOpt){
+	 	var  store_=this.view.me_.workObject.store;
+		store_.beginUpdate();
+	 	if(obj.is('combo')){
+	 		this.view.record.set(obj.name, obj.getRawValue()); 		
+	 	}else{
+	 		this.view.record.set(obj.name, obj.getRawValue()); 	
+	 	}
+
+
+	 	
+	 	if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+	 	store_.endUpdate();
+	},
+	onBtnSaveClick:function(){
+	    if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+
+	    for(i=0;i<this.record_.getFields().length-3;i++){
+			
+			  if(!this.lookupReference(Ext.util.Format.trim(this.record_.getFields()[i].getName())).isValid()){
+				  return;
+			  }
+		}
+	    this.view.me_.workObject.store.add(this.view.record);
+	    this.view.me_.onBtnSaveClick(null,this)
+	},
+	onBtnCancelClick:function(){
+		if(this.flag){
+			  this.view.me_.workObject.store.removeAt(this.view.me_.workObject.store.getCount()-1);
+			  //this.view.me_.workObject.getStore().rejectChanges();
+			  this.view.me_.workObject.view.refresh();
+			  this.flag=false
+		}
+		
+      if(this.view.title=='编辑'){
+    		
+      	this.view.me_.workObject.store.rejectChanges()
+      	this.view.me_.workObject.view.refresh();
+    		
+    	}
+          this.view.me_.view.subformActivate=false;
+		  this.view.hide();
+	}
+	
+});
+Ext.define('Hc_Framework.view.hc.SubHcSalesOpportunitiesModel', {
+    extend: 'Hc_Common.view.BaseWinPageModel',
+
+    alias: 'viewmodel.subhcsalesopportunitiesmodel'
+});
+/**
+ * Description: 样品管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2014-2015
+ * Company:     hc.
+ * author:      jinxi.li
+ * Createdate:  2016/01/26
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define("Hc_Framework.view.hc.HcSample", {
+    extend: "Hc_Common.view.BaseSimplePage",
+
+    alias: 'widget.hcsample',
+
+    
+
+    controller: "hcsamplecontroller",
+
+    viewModel: {
+        type: "hcsamplemodel"
+    },
+    title_:'样品管理',
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+            searchItems: [ 
+			{
+			    xtype: 'textfield', 
+			    fieldLabel: '样品单编码', 
+			    name: 'sampleCode'
+			}
+            ],
+
+            gridModel: 'Hc_Framework.model.HcSample',
+            gridSubGrid:'',
+            gridColumns: [
+                          {
+                          	header: '样品单编码', 
+                          	dataIndex: 'sampleCode', 
+                          	width: '15%',
+                          	renderer: function (data, metadata, record, rowIndex, columnIndex, store) {  
+                          		return '<span onclick=""><a href="#">'+data+' </a></span>';
+                            }
+                          },
+                          {
+                          	header: '客户名称', 
+                          	dataIndex: 'custName', 
+                          	width: 250
+                          },
+                          {
+              				dataIndex: 'perLiableName',
+              				header: '责任人',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'warehouseName',
+                				header: '仓库',
+                				width: 150
+                          },
+                          {
+                				dataIndex: 'contactBy',
+                				header: '联系人 ',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'sampleCurrency',
+              				header: '样品货币',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'delivDate',
+                				header: '发货日期',
+                				width: 150
+                          },
+                          {
+              				dataIndex: 'freight',
+              				header: '运费',
+              				width: 150
+                          },
+                          {
+                				dataIndex: 'remark',
+                				header: '备注',
+                				width: 150
+                          }            
+            ],
+            allendflag:false,
+            gridPrimaryKey: 'sampleCode',
+            gridLoadUrl: Hc.basePath + 'hc_sample_list/list.json',
+            gridLoadSubUrl: Hc.basePath + 'hc_sample_list/listAll.json',
+            gridSaveUrl: Hc.basePath + 'hc_sample_list/batchOperate.json',
+            gridExportUrl: Hc.basePath + 'hc_sample_list/do_export.json',
+            gridDeleteMasterCustomerUrl: Hc.basePath + 'hc_sample_list/deleteMasterCustomer.json',
+            gridAddMasterCustomerUrl: Hc.basePath + 'hc_sample_list/addMasterCustomer.json',
+            gridImportUrl: Hc.basePath + '',
+            subWinTableName:'Hc_Framework.view.hc.SubHcSample',
+            subformActivate:false
+        });
+        me.callParent();
+    }
+});
+/**
+ * Description: 样品管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+
+Ext.define('Hc_Framework.view.hc.HcSampleController', {
+	extend : 'Hc_Common.view.BaseSimplePageController',
+
+	alias : 'controller.hcsamplecontroller',
+	
+	init: function () {
+		var me = this;
+		Ext.apply(me, {
+			windowFlag:true,
+			newobj:this.view.subWinTableName
+		})
+		me.callParent();
+	},
+	onEditClick:function( obj , record , item , index , e , eOpts){
+      
+	},
+	onEditClick_:function(obj , td , cellIndex , record , tr , rowIndex , e , eOpts ){
+		var store = Ext.create('Hc_Common.store.Base', {
+            model:'Hc_Framework.model.HcSample',
+            autoLoad: false,
+            groupField: 'inquiredQTY_quotedPrice$',
+            proxy: {
+                url: this.view.gridLoadSubUrl
+            }
+        });
+		
+		store.proxy.extraParams['quoteCode'] = record.data.quoteCode; 
+		store.load();	      	 
+		if(cellIndex==0){
+	    	Ext.create(this.view.subWinTableName,{
+	    		title:'编辑',
+	    		record:record,
+	    		me_:this,
+	    		store:store
+	    	}).show();
+	    	this.view.subformActivate=true;
+	    	this.onBtnCancelClick();
+		}
+    	
+    }
+	
+});
+/**
+ * Description:样品管理 view
+ * All rights Reserved, Designed By Hc
+ * Copyright:   Copyright(C) 2016-2017
+ * Company:     hcsunmo
+ * author:      jinxi.li
+ * Createdate:  2016年8月20日
+ *
+ * Modification  History:
+ * Date         Author             What
+ * ------------------------------------------
+ *
+ */
+Ext.define('Hc_Framework.view.hc.HcSampleModel', {
+    extend: 'Hc_Common.view.BaseSimplePageModel',
+
+    alias: 'viewmodel.hcsamplemodel'
+});
+Ext.define("Hc_Framework.view.hc.SubHcSample", {
+    extend: "Hc_Common.view.BaseWinPage",
+
+    alias: 'widget.subhcsample',
+
+    
+
+    controller: "subhcsamplecontroller",
+
+    viewModel: {
+        type: "subhcsamplemodel"
+    },
+    title:'新增',
+    width: 1000,
+    height:620,
+    
+    maxWidth:1000,
+   // maxHeight:620,
+    
+    minWidth:1000,
+    minHeight:620,
+    
+    layout:'border',//设置窗口内部布局
+    closeAction:'hide',
+    plain:false,//true则主体背景透明，false则和主体背景有些差别
+    collapsible:false,//是否可收缩
+    modal:true,//是否为模式窗体
+   
+    dockedItems:[{
+    	 xtype: 'toolbar',
+    	 dock: 'top',
+    	 items: [
+           {
+             text: '保存',
+             handler:'onBtnSaveClick',
+             glyph: Hc.Icon.btnSave
+           },
+           {
+               text: '编辑',
+               handler:'onBtnEditClick',
+               glyph: Hc.Icon.btnEdit
+           },
+           {
+               text: '取消',
+               handler:'onBtnCancelClick',
+               glyph: Hc.Icon.btnCancel
+             }
+         ]
+    }],
+    listeners: {
+    	beforeshow:function(obj ,eOpts){
+    		 var currentUser = Ext.create("Hc_Framework.store.CurrentUser");
+    	        currentUser.load();
+    		 var  userCreator;
+             var   supplierNo_;
+             
+             if(this.title=='新增'){
+            	// this.lookupReference('createUser').setValue(currentUser.getAt(0).data.userName);
+                 supplierNo_='PE'+Ext.util.Format.date((new Date()), "Y").substring(2,5)+Ext.util.Format.date((new Date()), "Y").substring(0,2)+Ext.util.Format.date((new Date()), "dmHis");
+              /*   this.lookupReference('inquiryNo').setValue(supplierNo_);
+                // this.lookupReference('modifyUser').disabled=true;
+                 //this.lookupReference('modifyDate').disabled=true;
+                 
+                 this.lookupReference('contactsName').disabled=true;
+                 this.lookupReference('contactsTel').disabled=true;
+                 this.lookupReference('contactsFax').disabled=true;
+                 this.lookupReference('supplierName').disabled=true;
+                 
+                 
+                // this.lookupReference('localDepartment').setValue(currentUser.getAt(0).data.deptName);
+                 this.lookupReference('inquiryDate').setValue(Ext.util.Format.date((new Date()),'Y-m-d H:i:s'));
+
+            */
+             }else if(this.title=='编辑'){
+           	 for(i=0;i<this.record.getFields().length;i++){
+	                 var  name=Ext.util.Format.trim(this.record.getFields()[i].getName())
+           		 
+           		 if((this.getReferences())[name]){
+           			 if(this.lookupReference(name).is('combo')){
+               			 this.lookupReference(name).setRawValue(this.record.get(name));
+               		 }else{
+               			 this.lookupReference(name).setValue(this.record.get(name));
+               		 }
+           			this.lookupReference(name).disable();
+           		 }
+           	 }
+             }
+             this.lookupReference('subhcsuppliercustomer').title='>>>>'+this.me_.view.title_;
+    	}
+    },
+    initComponent: function () {
+        var me = this;
+        Ext.apply(me, {
+       	 items:[
+       	        {
+       	         xtype:'panel',
+       	         defaults: {
+       	        	
+                 },
+                 layout: {
+                	 type: 'absolute'
+                 },
+                 reference:'subhcsuppliercustomer',
+                 region: "north",
+                 bodyStyle: 'background:#cbdbe0;',
+                 padding:'3 0 3 0',//(top, right, bottom, left).
+                    items: [
+                            {
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 3,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '样品单编码',
+									    name: 'sampleCode',
+				     					reference:'sampleCode',
+									    listeners: {
+									    	beforerender: function(obj) {
+											   obj.fieldLabel+='<font size="2px" color="red">*</font>';
+									        }
+										  }
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '责任人',
+									    name: 'perLiableName',
+				     					reference:'perLiableName'
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '仓库',
+									    name: 'warehouseName',
+				     					reference:'warehouseName'
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:57,
+                            	width:980,
+                            	layout: {
+                                  	 type: 'table',
+                                       columns:4
+                                   },
+                                x: 3,
+                                y: 35,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                               	items:[
+   									{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '客户',
+	   								    name: 'custName',
+	   								
+				     					reference:'custName'
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									   // width:313,
+   									    fieldLabel: '联系人',
+   									    name: 'contactBy',
+				     					reference:'contactBy',
+   									    colspan:1
+   									},{
+   										xtype:'textfield',
+   									    labelAlign:'right',
+   									    labelWidth:78, 
+   									    width:500,
+   									    fieldLabel: '收货地址',
+   									    name: 'takDelivAddr',
+				     					reference:'takDelivAddr',
+   									    colspan:4
+   									},{
+	   								    xtype:'textfield',
+	   								    labelAlign:'right',
+	   								    labelWidth:78, 
+	   								    fieldLabel: '联系电话',
+	   								    name: 'contactTel',
+	   								
+				     					reference:'contactTel'
+   									}
+                               	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:30,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 95,
+                                padding:'3 0 0 10',// (top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '运输方式',
+									    name: 'transportMode',
+				     					reference:'transportMode'
+									   
+									},{
+									    xtype:'datefield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '样品货币 ',
+									    name: 'sampleCurrency',
+				     					reference:'sampleCurrency'
+									   
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '登记日期',
+									    name: 'registerDate',
+				     					reference:'registerDate',
+									 
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:56,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 128,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '运费',
+									    name: 'freight',
+				     					reference:'freight',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '保险',
+									    name: 'insurance',
+				     					reference:'insurance',
+									
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '发货日期',
+									    name: 'delivDate',
+				     					reference:'delivDate',
+									
+									}
+                            	]
+                            },{
+                            	xtype:'fieldset',
+                            	height:70,
+                            	width:980,
+                            	layout: {
+                               	 type: 'table',
+                                    columns:4
+                                },
+                                x: 3,
+                                y: 255,
+                                padding:'3 0 0 10',//(top, right, bottom, left).
+                            	items:[
+									{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '特别要求',
+									    name: 'adHocRequest',
+				     					reference:'adHocRequest',
+									    colspan:4
+									},{
+
+									    xtype:'textarea',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    width:800,
+									    fieldLabel: '备&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注',
+									    name: 'remark',
+				     					reference:'remark',
+									    colspan:4
+									}
+                            	]
+                            }
+                     ]
+       	            
+       	        },{
+          	         xtype:'panel',
+          	         layout: {
+                   	 type: 'fit',
+                    },
+                    region: "center",
+                    bodyStyle: 'background:#ceebe0; padding:0px;border:0px',
+                    scrollable:true,
+                    items:[{
+                   	 xtype:'grid',
+                   	 enableHdMenu:false,
+                   	 sortableColumns:false,
+                   	 columnLines: true,
+                   	 enableColumnHide:false,
+                   	 enableColumnMove:false,
+                   	 store:me.store,
+                   	 features: [{
+             		        ftype: 'summary'
+             		     }],
+                   	 columns: {
+                   		    items: [
+                   		        {
+                   		            text: "序号",
+                   		            dataIndex: "id",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品编码",
+                   		            dataIndex: "prodCode",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品名称",
+                   		            dataIndex: "prodName",
+                   		            width: 150
+                   		        },{
+                   		            text: "型号规格",
+                   		            dataIndex: "typeModel",
+                   		            width: 150
+                   		        },{
+                   		            text: "产品描述",
+                   		            dataIndex: "prodDesc",
+                   		            width: 150
+                   		        },{
+                   		            text: "数量",
+                   		            dataIndex: "qty",
+                   		            width: 150
+                   		        },{
+                   		            text: "单位",
+                   		            dataIndex: "unit",
+                   		            width: 150
+                   		        },{
+                   		            text: "单价",
+                   		            dataIndex: "currency",
+                   		            width: 150
+                   		        },{
+                   		            text: "货币",
+                   		            dataIndex: "univalent",
+                   		            width: 150
+                   		        },{
+                   		            text: "备注",
+                   		            dataIndex: "remark",
+                   		            width: 150
+                   		        },{
+                   		            text: "合计",
+                   		            dataIndex: "inquiredQTY_quotedPrice$",
+                   		            width: 150,
+                   		            summaryType: 'sum',
+   	                		      	summaryRenderer: function(value, summaryData, dataIndex) {
+   	                		            return'金额总计:'+value;
+   	                		        }
+                   		        }
+                   		    ]
+                   		}
+                   	 
+                   	 
+                   	 
+                 }]
+          	   }
+       	 ]
+       });
+        me.callParent();
+    }
+});
+Ext.define('Hc_Framework.view.hc.SubHcSampleController', {
+	extend : 'Hc_Common.view.BaseWinPageController',
+
+	alias : 'controller.subhcsamplecontroller',
+	flag:false,
+	record_:'',
+	init: function () {
+		var me = this;
+		var  record=Ext.create('Hc_Framework.model.HcSample',{});
+		this.record_=record
+		for(i=0;i<record.getFields().length;i++){
+			var  name=Ext.util.Format.trim(record.getFields()[i].getName())
+	   		 
+	   		if((this.getReferences())[name]){
+				this.lookupReference(name).on("change", me.onBtnchange, me);	   			 
+	   		 }
+     	}
+		me.callParent();
+	},
+	onBtnEditClick:function(){
+		for(i=0;i<this.record_.getFields().length;i++){
+            var  name=Ext.util.Format.trim(this.record_.getFields()[i].getName())
+  		 if((this.getReferences())[name]){
+  			 if('contactsName'==name||'contactsTel'==name||'contactsFax'==name||'supplierName'==name){
+  				this.lookupReference(name).disable();
+  			 }else{
+  				this.lookupReference(name).enable();
+  			 }
+  			
+  		 }
+  	    }
+		//this.view.lookupReference('inquiryNo').enable()
+
+	},
+	onBtnchange:function(obj , newValue , oldValue , eOpt){
+	 	var  store_=this.view.me_.workObject.store;
+		store_.beginUpdate();
+	 	if(obj.is('combo')){
+	 		this.view.record.set(obj.name, obj.getRawValue()); 		
+	 	}else{
+	 		this.view.record.set(obj.name, obj.getRawValue()); 	
+	 	}
+
+
+	 	
+	 	if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+	 	store_.endUpdate();
+	},
+	onBtnSaveClick:function(){
+	    if(this.view.title=='编辑'){
+      		
+			this.flag=false
+      		
+      	}else if(this.view.title=='新增'){
+      		 
+            	
+            	this.flag=true;
+      	}
+
+	    for(i=0;i<this.record_.getFields().length-3;i++){
+			
+			  if(!this.lookupReference(Ext.util.Format.trim(this.record_.getFields()[i].getName())).isValid()){
+				  return;
+			  }
+		}
+	    this.view.me_.workObject.store.add(this.view.record);
+	    this.view.me_.onBtnSaveClick(null,this)
+	},
+	onBtnCancelClick:function(){
+		if(this.flag){
+			  this.view.me_.workObject.store.removeAt(this.view.me_.workObject.store.getCount()-1);
+			  //this.view.me_.workObject.getStore().rejectChanges();
+			  this.view.me_.workObject.view.refresh();
+			  this.flag=false
+		}
+		
+      if(this.view.title=='编辑'){
+    		
+      	this.view.me_.workObject.store.rejectChanges()
+      	this.view.me_.workObject.view.refresh();
+    		
+    	}
+          this.view.me_.view.subformActivate=false;
+		  this.view.hide();
+	}
+	
+});
+Ext.define('Hc_Framework.view.hc.SubHcSampleModel', {
+    extend: 'Hc_Common.view.BaseWinPageModel',
+
+    alias: 'viewmodel.subhcsamplemodel'
 });
 /**
  * Description: 主框架应用程序入口

@@ -1,34 +1,34 @@
-Î¬ĞŞµ¥±àÂë maintain_code    maintainCode
-ÒµÎñÔ±±àÂë salesman_code          salesmanCode
-ÒµÎñÔ±Ãû³Æ salesman_name         salesmanName
-Î¬ĞŞÔ±±àÂë maintain_by_code         maintainByCode
-Î¬ĞŞÔ±Ãû³Æ maintain_by_name       maintainByName
-¿Í»§±àÂë customer_code                  custCode
-¿Í»§Ãû³Æ customer_name                  custName
-¿Í»§µØÖ· customer_addr               custAddr
-¿Í»§µç»° customer_tel                custTel
-¿Í»§´«Õæ customer_fax              custFax
-¿Í»§ÁªÏµÈË customer_contact_by           custContactBy
-¿Í»§ÓÊÏä customer_email                     custEmail
-Î¬ĞŞÀà±ğ maintain_type                        maintainType
-Íâ·¢³§±àÂë putting_out_factory_code          puttOutFactCode
-Íâ·¢³§Ãû³Æ putting_out_factory_name         puttOutFactName
-²úÆ·±àÂë product_code               prodCode
-²úÆ·Ãû³Æ   product_name     prodName
-»úÉíºÅÂë airframe_no         airframeNo
-´¦Àí·½Ê½ process_mode          processMode
-ÔË·ÑÖ§¸¶ freight_payment     freightPayment
-±£ĞŞ guarantee
-ÔË·Ñ freight
-ÔËÊä·½Ê½ transport_mode         transportMode
-ÊıÁ¿  qty
-µ¥Î» unit
-·ÑÓÃÖ§¸¶ cost_payment        costPayment
-ÊÕ¼şÈÕÆÚ consignee_date           consigneeDate
-¹ÊÕÏÏÖÏó fault_phenomenon          faultPhenomenon
-¹ÊÕÏÔ­Òò fault_reason             faultReason
-Î¬ĞŞ¼ÇÂ¼ maintain_record           maintainRecord
-Î¬ĞŞ·ÑÓÃ maintain_cost             maintainCost
-±¸×¢  remark
+ç»´ä¿®å•ç¼–ç  maintain_code    maintainCode
+ä¸šåŠ¡å‘˜ç¼–ç  salesman_code          salesmanCode
+ä¸šåŠ¡å‘˜åç§° salesman_name         salesmanName
+ç»´ä¿®å‘˜ç¼–ç  maintain_by_code         maintainByCode
+ç»´ä¿®å‘˜åç§° maintain_by_name       maintainByName
+å®¢æˆ·ç¼–ç  customer_code                  custCode
+å®¢æˆ·åç§° customer_name                  custName
+å®¢æˆ·åœ°å€ customer_addr               custAddr
+å®¢æˆ·ç”µè¯ customer_tel                custTel
+å®¢æˆ·ä¼ çœŸ customer_fax              custFax
+å®¢æˆ·è”ç³»äºº customer_contact_by           custContactBy
+å®¢æˆ·é‚®ç®± customer_email                     custEmail
+ç»´ä¿®ç±»åˆ« maintain_type                        maintainType
+å¤–å‘å‚ç¼–ç  putting_out_factory_code          puttOutFactCode
+å¤–å‘å‚åç§° putting_out_factory_name         puttOutFactName
+äº§å“ç¼–ç  product_code               prodCode
+äº§å“åç§°   product_name     prodName
+æœºèº«å·ç  airframe_no         airframeNo
+å¤„ç†æ–¹å¼ process_mode          processMode
+è¿è´¹æ”¯ä»˜ freight_payment     freightPayment
+ä¿ä¿® guarantee
+è¿è´¹ freight
+è¿è¾“æ–¹å¼ transport_mode         transportMode
+æ•°é‡  qty
+å•ä½ unit
+è´¹ç”¨æ”¯ä»˜ cost_payment        costPayment
+æ”¶ä»¶æ—¥æœŸ consignee_date           consigneeDate
+æ•…éšœç°è±¡ fault_phenomenon          faultPhenomenon
+æ•…éšœåŸå›  fault_reason             faultReason
+ç»´ä¿®è®°å½• maintain_record           maintainRecord
+ç»´ä¿®è´¹ç”¨ maintain_cost             maintainCost
+å¤‡æ³¨  remark
 
 

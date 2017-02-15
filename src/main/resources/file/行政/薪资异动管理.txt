@@ -1,18 +1,18 @@
-Ğ½×ÊÒì¶¯±àÂë Reward_and_punishment_code     rewardPunishCode
-ÉêÇëÔ±¹¤±àÂë Employee_code    employeeCode
-ÉêÇëÔ±¹¤ĞÕÃû Employee_name     employeeName
- ÌáÇëÈË  drawBy
-Ö°Î»  dept
-µ½Ö°ÈÕÆÚ Check_date     checkDate
- ÉêÇëÈÕÆÚ  apply_date      applyDate
-ÏÖÖ°ÈÕÆÚ Serving_date           serviDate
-Í¨ÖªÊÂÏî notice_Matters          noticeMatters
-Ô­À´Ğ½×Ê Original_Salary     originalSalary
- µ÷Õû±ÈÂÊ  Adjust_rate        adjustRate
-µ÷Õû½ğ¶î Adjust_Amount               adjustAmount
- µ÷ÕûºóĞ½×Ê  Adjusted_Amount     adjustedAmount
-ËµÃ÷   description                   desc
-±¸¡¡¡¡×¢  remark
+è–ªèµ„å¼‚åŠ¨ç¼–ç  salary_and_punishment_code     salaryPunishCode
+ç”³è¯·å‘˜å·¥ç¼–ç  Employee_code    employeeCode
+ç”³è¯·å‘˜å·¥å§“å Employee_name     employeeName
+ æè¯·äºº  drawBy
+èŒä½  position
+åˆ°èŒæ—¥æœŸ Check_date     checkDate
+ ç”³è¯·æ—¥æœŸ  apply_date      applyDate
+ç°èŒæ—¥æœŸ Serving_date           serviDate
+é€šçŸ¥äº‹é¡¹ notice_Matters          noticeMatters
+åŸæ¥è–ªèµ„ Original_Salary     originalSalary
+ è°ƒæ•´æ¯”ç‡  Adjust_rate        adjustRate
+è°ƒæ•´é‡‘é¢ Adjust_Amount               adjustAmount
+ è°ƒæ•´åè–ªèµ„  Adjusted_Amount     adjustedAmount
+è¯´æ˜   description                   desc
+å¤‡ã€€ã€€æ³¨  remark
 
 
 
