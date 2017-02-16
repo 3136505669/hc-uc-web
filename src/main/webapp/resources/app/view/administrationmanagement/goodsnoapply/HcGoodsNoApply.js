@@ -27,14 +27,14 @@ Ext.define("Hc_Framework.view.hc.HcGoodsNoApply", {
     viewModel: {
         type: "hcgoodsnoapplymodel"
     },
-    title_:'商品编码申请',
+    title_:'编码申请',
     initComponent: function () {
         var me = this;
         Ext.apply(me, {
             searchItems: [ 
 			{
 			    xtype: 'textfield', 
-			    fieldLabel: '商品编码申请单', 
+			    fieldLabel: '编码申请单', 
 			    name: 'goodsNoApplCode'
 			}
             ],
@@ -43,7 +43,7 @@ Ext.define("Hc_Framework.view.hc.HcGoodsNoApply", {
             gridSubGrid:'',
             gridColumns: [
                           {
-                          	header: '商品编码申请单', 
+                          	header: '编码申请单', 
                           	dataIndex: 'goodsNoApplCode', 
                           	width: '15%',
                           	renderer: function (data, metadata, record, rowIndex, columnIndex, store) {  

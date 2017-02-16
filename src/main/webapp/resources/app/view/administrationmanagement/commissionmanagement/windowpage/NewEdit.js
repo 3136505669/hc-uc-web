@@ -121,35 +121,14 @@ Ext.define("Hc_Framework.view.hc.SubHcCommission", {
 									    xtype:'textfield',
 									    labelAlign:'right',
 									    labelWidth:78, 
-									    fieldLabel: '报价编码',
-									    name: 'quoteCode',
-				     					reference:'quoteCode',
+									    fieldLabel: '编码',
+									    name: 'commiApplyCode',
+				     					reference:'commiApplyCode',
 									    listeners: {
 									    	beforerender: function(obj) {
 											   obj.fieldLabel+='<font size="2px" color="red">*</font>';
 									        }
 										  }
-									},{
-									    xtype:'textfield',
-									    labelAlign:'right',
-									    labelWidth:78, 
-									    fieldLabel: '报价人编码',
-									    name: 'quoteByCode',
-				     					reference:'quoteByCode'
-									},{
-									    xtype:'textfield',
-									    labelAlign:'right',
-									    labelWidth:78, 
-									    fieldLabel: '报价人名称',
-									    name: 'quoteByName',
-				     					reference:'quoteByName'
-									},{
-									    xtype:'textfield',
-									    labelAlign:'right',
-									    labelWidth:78, 
-									    fieldLabel: '报价方式',
-									    name: 'quoteMode',
-				     					reference:'quoteMode'
 									}
                             	]
                             },{
@@ -168,46 +147,29 @@ Ext.define("Hc_Framework.view.hc.SubHcCommission", {
 	   								    xtype:'textfield',
 	   								    labelAlign:'right',
 	   								    labelWidth:78, 
-	   								    fieldLabel: '客户编码',
-	   								    name: 'custCode',
+	   								    fieldLabel: '申请员工',
+	   								    name: 'applyEmployName',
 	   								
-				     					reference:'custCode'
+				     					reference:'applyEmployName'
    									},{
    										xtype:'textfield',
    									    labelAlign:'right',
    									    labelWidth:78, 
    									   // width:313,
-   									    fieldLabel: '客户名称',
-   									    name: 'custName',
-				     					reference:'custName',
+   									    fieldLabel: '所在部门',
+   									    name: 'locationDept',
+				     					reference:'locationDept',
    									    colspan:1
    									},{
    										xtype:'textfield',
    									    labelAlign:'right',
    									    labelWidth:78, 
-   									    width:500,
-   									    fieldLabel: '客户地址',
-   									    name: 'custAddr',
-				     					reference:'custAddr',
-   									    colspan:4
-   									},{
-	   								    xtype:'textfield',
-	   								    labelAlign:'right',
-	   								    labelWidth:78, 
-	   								    fieldLabel: '客户电话',
-	   								    name: 'custTel',
-	   								
-				     					reference:'custTel'
-   									},{
-	   								    xtype:'textfield',
-	   								    labelAlign:'right',
-	   								    labelWidth:78, 
-	   								    fieldLabel: '客户传真',
-	   								    name: 'custFax',
-	   								
-				     					reference:'custFax'
+   									   // width:500,
+   									    fieldLabel: '申请日期',
+   									    name: 'applyDate',
+				     					reference:'applyDate',
+   									    colspan:1
    									}
-   								
                                	]
                             },{
                             	xtype:'fieldset',
@@ -225,170 +187,69 @@ Ext.define("Hc_Framework.view.hc.SubHcCommission", {
 									    xtype:'textfield',
 									    labelAlign:'right',
 									    labelWidth:78, 
-									    fieldLabel: '联系人名称',
-									    name: 'contact_by',
-				     					reference:'contact_by'
+									    fieldLabel: '支付方式',
+									    name: 'commPaymentMode',
+				     					reference:'commPaymentMode'
 									   
 									},{
 									    xtype:'datefield',
 									    labelAlign:'right',
 									    labelWidth:78, 
-									    fieldLabel: '联系电话 ',
-									    name: 'contacTByTel',
-				     					reference:'contacTByTel'
+									    fieldLabel: '收款银行 ',
+									    name: 'paymentBank',
+				     					reference:'paymentBank'
 									   
 									},{
 									    xtype:'textfield',
 									    labelAlign:'right',
 									    labelWidth:78, 
-									    fieldLabel: '联系邮件',
-									    name: 'contactByEmail',
-				     					reference:'contactByEmail',
+									    fieldLabel: '申请支付日期',
+									    name: 'commPaymentDate',
+				     					reference:'commPaymentDate',
+									 
+									},{
+									    xtype:'textfield',
+									    labelAlign:'right',
+									    labelWidth:78, 
+									    fieldLabel: '实际支付日期',
+									    name: 'commPaymentedDate',
+				     					reference:'commPaymentedDate',
 									 
 									}
                             	]
                             },{
                             	xtype:'fieldset',
-                            	height:56,
+                            	height:200,
                             	width:980,
                             	layout: {
                                	 type: 'table',
                                     columns:4
                                 },
                                 x: 3,
-                                y: 128,
+                                y: 127,
                                 padding:'3 0 0 10',//(top, right, bottom, left).
                             	items:[
 									{
-									    xtype:'textfield',
+
+									    xtype:'textarea',
 									    labelAlign:'right',
 									    labelWidth:78, 
-									    fieldLabel: '目的站',
-									    name: 'purposePlace',
-				     					reference:'purposePlace',
-									
+									    width:800,
+									    fieldLabel: '申请佣金原因',
+									    name: 'commApplyReason',
+				     					reference:'commApplyReason',
+									    colspan:4
 									},{
-									    xtype:'textfield',
+
+									    xtype:'textarea',
 									    labelAlign:'right',
 									    labelWidth:78, 
-									    fieldLabel: '包装',
-									    name: 'packing',
-				     					reference:'packing',
-									
+									    width:800,
+									    fieldLabel: '收取人情况内容(含姓名、职位等)',
+									    name: 'commCollectByContent',
+				     					reference:'commCollectByContent',
+									    colspan:4
 									},{
-									    xtype:'textfield',
-									    labelAlign:'right',
-									    labelWidth:78, 
-									    fieldLabel: '货币',
-									    name: 'currency',
-				     					reference:'currency',
-									
-									},{
-									    xtype:'textfield',
-									    labelAlign:'right',
-									    labelWidth:78, 
-									    fieldLabel: '交货方式',
-									    name: 'deliverGoodsMode',
-				     					reference:'deliverGoodsMode',
-									
-									},{
-									    xtype:'textfield',
-									    labelAlign:'right',
-									    labelWidth:78, 
-									    fieldLabel: '交货时间',
-									    name: 'deliverGoodsDate',
-				     					reference:'deliverGoodsDate',
-									
-									},{
-									    xtype:'textfield',
-									    labelAlign:'right',
-									    labelWidth:78, 
-									    fieldLabel: '付款方式',
-									    name: 'paymentMode',
-				     					reference:'paymentMode',
-									
-									}
-                            	]
-                            },{
-                            	xtype:'fieldset',
-                            	height:30,
-                            	width:980,
-                            	layout: {
-                               	 type: 'table',
-                                    columns:4
-                                },
-                                x: 3,
-                                y: 188,
-                                padding:'3 0 0 10',//(top, right, bottom, left).
-                            	items:[
-									{
-									    xtype:'textfield',
-									    labelAlign:'right',
-									    labelWidth:78, 
-									    fieldLabel: '运费',
-									    name: 'freight',
-				     					reference:'freight',
-									
-									},{
-									    xtype:'textfield',
-									    labelAlign:'right',
-									    labelWidth:78, 
-									    fieldLabel: '保险',
-									    name: 'insurance',
-				     					reference:'insurance',
-									
-									},{
-									    xtype:'textfield',
-									    labelAlign:'right',
-									    labelWidth:78, 
-									    fieldLabel: '税率',
-									    name: 'tax_rate',
-				     					reference:'tax_rate',
-									
-									},{
-									    xtype:'textfield',
-									    labelAlign:'right',
-									    labelWidth:78, 
-									    fieldLabel: '折扣',
-									    name: 'rebate',
-				     					reference:'rebate',
-									
-									}
-                            	]
-                            },{
-                            	xtype:'fieldset',
-                            	height:30,
-                            	width:980,
-                            	layout: {
-                               	 type: 'table',
-                                    columns:4
-                                },
-                                x: 3,
-                                y: 222,
-                                padding:'3 0 0 10',//(top, right, bottom, left).
-                            	items:[
-									{
-									    xtype:'textfield',
-									    labelAlign:'right',
-									    labelWidth:78, 
-									    fieldLabel: '审批人',
-									    name: 'examApprByName',
-				     					reference:'examApprByName'
-									}
-                            	]
-                            },{
-                            	xtype:'fieldset',
-                            	height:70,
-                            	width:980,
-                            	layout: {
-                               	 type: 'table',
-                                    columns:4
-                                },
-                                x: 3,
-                                y: 255,
-                                padding:'3 0 0 10',//(top, right, bottom, left).
-                            	items:[
-									{
 
 									    xtype:'textarea',
 									    labelAlign:'right',
@@ -429,48 +290,36 @@ Ext.define("Hc_Framework.view.hc.SubHcCommission", {
                    		            dataIndex: "id",
                    		            width: 150
                    		        },{
-                   		            text: "产品编码",
-                   		            dataIndex: "prodCode",
+                   		            text: "客户名称",
+                   		            dataIndex: "CustName",
                    		            width: 150
                    		        },{
-                   		            text: "产品名称",
-                   		            dataIndex: "prodName",
+                   		            text: "PI单号",
+                   		            dataIndex: "piNo",
                    		            width: 150
                    		        },{
-                   		            text: "型号规格",
-                   		            dataIndex: "typeModel",
+                   		            text: "品名",
+                   		            dataIndex: "nameOfaPart",
+                   		            width: 150
+                   		        },{
+                   		            text: "单价",
+                   		            dataIndex: "amount",
+                   		            width: 150
+                   		        },{
+                   		            text: "金额单位",
+                   		            dataIndex: "unit",
                    		            width: 150
                    		        },{
                    		            text: "数量",
                    		            dataIndex: "qty",
                    		            width: 150
                    		        },{
-                   		            text: "单位",
-                   		            dataIndex: "unit",
+                   		            text: "数量单位",
+                   		            dataIndex: "qtyUnit",
                    		            width: 150
                    		        },{
-                   		            text: "单价",
-                   		            dataIndex: "univalent",
-                   		            width: 150
-                   		        },{
-                   		            text: "货币",
-                   		            dataIndex: "currency",
-                   		            width: 150
-                   		        },{
-                   		            text: "产品描述",
-                   		            dataIndex: "prodDesc",
-                   		            width: 150
-                   		        },{
-                   		            text: "品牌",
-                   		            dataIndex: "brand",
-                   		            width: 150
-                   		        },{
-                   		            text: "制造商名称",
-                   		            dataIndex: "manufName",
-                   		            width: 150
-                   		        },{
-                   		            text: "货期（交期）",
-                   		            dataIndex: "deliveTime",
+                   		            text: "佣金",
+                   		            dataIndex: "commission",
                    		            width: 150
                    		        },{
                    		            text: "备注",
